@@ -49,10 +49,6 @@ function onUserSettings_SaveBookmarks_Click(event){
   }
 
   buttonSaveBookmarks.tooltipster('show');
-  
-  setTimeout(function(){
-    buttonSaveBookmarks.tooltipster('hide');
-  },3000);
 }
 
 function onUserSettings_LoadBookmarks_Changed(event){
@@ -187,10 +183,6 @@ function onUserSettings_RemoveAllHistory_Click(event){
   buttonRemoveAllHistory.tooltipster('hide');
   buttonRemoveAllHistory.tooltipster('content', '履歴をすべて削除しました。');
   buttonRemoveAllHistory.tooltipster('show');
-  
-  setTimeout(function(){
-    buttonRemoveAllHistory.tooltipster('hide');
-  },3000);
 }
 
 function onUserSettings_SiteFont_FontSizeNormal_Click(event){
