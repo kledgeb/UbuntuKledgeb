@@ -55,7 +55,7 @@ Site Font
 
 .cls_PostNaviWithInfo_spanNext,
 .cls_PostNaviWithInfo_spanPrev{
-  width:258px;/*672(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width / 2)*/
+  width:231px;/*614(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width / 2)*/
   height:144px;
   display:table-cell;
   vertical-align:middle;
