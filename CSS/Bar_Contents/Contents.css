@@ -95,6 +95,9 @@ Post Header Adsence
 .cls_PostHeadeAdsence_divAdsence_1,
 .cls_PostHeadeAdsence_divAdsence_2{
   float:left;
+  max-height:280px;
+  width:50%;
+  overflow: hidden; 
 }
 
 /*-- --------------------------------------------------------------------------------
@@ -206,6 +209,8 @@ Post Footer Adsence
 .cls_PostFooterAdsence_divAdsence_4{
   float:left;
   width:50%;
+  max-height:280px;
+  overflow: hidden;
 }
 
 .adsbygoogle_res_1,
@@ -213,4 +218,9 @@ Post Footer Adsence
   width:336px;
   height:280px;  
   margin:0 auto;
+}
+
+.adsbygoogle_LinkUnit_1,
+.adsbygoogle_LinkUnit_2{
+  margin:0 auto;  
 }

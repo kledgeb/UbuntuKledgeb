@@ -37,14 +37,14 @@ Site Font
 
 .cls_PostHeadeAdsence_divAdsence_1,
 .cls_PostHeadeAdsence_divAdsence_2{
-
+  max-height:250px;
 }
 
 .cls_PostFooterAdsence_divAdsence_1,
 .cls_PostFooterAdsence_divAdsence_2,
 .cls_PostFooterAdsence_divAdsence_3,
 .cls_PostFooterAdsence_divAdsence_4{
-
+  max-height:250px;
 }
 
 .adsbygoogle_res_1,
