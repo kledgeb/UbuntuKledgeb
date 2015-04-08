@@ -205,10 +205,12 @@ Post Footer Adsence
 .cls_PostFooterAdsence_divAdsence_3,
 .cls_PostFooterAdsence_divAdsence_4{
   float:left;
+  width:50%;
 }
 
 .adsbygoogle_res_1,
 .adsbygoogle_res_2{
   width:336px;
   height:280px;  
+  margin:0 auto;
 }
