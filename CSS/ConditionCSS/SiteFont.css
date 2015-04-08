@@ -45,8 +45,13 @@ Site Font
 .cls_PostFooterAdsence_divAdsence_2,
 .cls_PostFooterAdsence_divAdsence_3,
 .cls_PostFooterAdsence_divAdsence_4{
+
+}
+
+.adsbygoogle_res_1,
+.adsbygoogle_res_2{
   width:300px;
-  height:250px;
+  height:250px;  
 }
 
 .cls_PostNaviWithInfo_spanNext,
