@@ -1,0 +1,219 @@
+/*-- --------------------------------------------------------------------------------
+Contents
+-------------------------------------------------------------------------------- */
+.cls_ContentsAndRightBar{
+  width:1170px;
+}
+
+.cls_Contents{
+  margin-left:16px;
+  padding-right:24px;
+  margin-right:24px;
+  border-right:1px solid #ddd;
+
+  float:left;
+  width:750px;
+  min-height:24px;
+}
+
+.cls_Contents_divPost{
+  background-color:white;
+}  
+
+.cls_divPostBody{
+  padding-top:32px;
+}
+
+.cls_Contents_divStatusMessage{
+  display:none;
+  font-size:large;
+  font-weight:bold;
+}
+
+.cls_divPostInfo{
+  display:none;  
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Title
+-------------------------------------------------------------------------------- */
+.cls_PostTitle_divPostTitle{
+  margin-bottom:24px;
+}
+
+.cls_PostTitle_h1PostTitle{
+  font-size:x-large;
+}
+
+.cls_PostTitle_h1PostTitle a{
+  color:#434a54;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Index
+-------------------------------------------------------------------------------- */
+.cls_PostBody_Index_divThumbnail{
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+
+  width:180px;
+  height:180px;
+  
+  float:left;
+  
+  margin-right:24px;
+}
+
+.cls_PostBody_Index_divSummary{
+  min-height:140px;
+  
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.cls_PostBody_Index_divContinueToRead{
+  float:right;        
+  background-color:#333333;
+
+}
+
+.cls_PostBody_Index_divContinueToRead a{
+  color:#FFFFFF;
+  font-weight:bold;
+  
+  display:block;
+  height:38px;
+  line-height:38px;
+  padding:0 16px;
+  text-align:center;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Header Adsence
+-------------------------------------------------------------------------------- */
+.cls_PostHeadeAdsence_divAdsence_1{
+  float:left;
+}
+
+.cls_PostHeadeAdsence_divAdsence_2{
+  float:right;
+  width:336px;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Item/Archive/Static
+-------------------------------------------------------------------------------- */
+.cls_divPostBody h2{
+  padding: 4px 4px 4px 8px;
+  margin:8px 0px;  
+
+  background-color:#333333;
+  color:white;
+  font-size:large;
+}
+
+.cls_divPostBody a{
+  font-weight:bold;
+}
+
+.cls_divPostBody img {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.cls_divPostBody div.separator{
+  overflow:hidden;
+}
+
+.cls_divPostBody h3{
+  border-bottom-color:#434a54;
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+      
+  margin: 4px 16px 4px 4px;
+
+  font-size:inherit;
+  font-weight:bold;
+  line-height:175%;
+}
+
+.cls_divPostBody h4{
+  font-weight:bold;
+  margin:4px 0;
+}
+
+.cls_divPostBody ul,
+.cls_divPostBody ol{
+  list-style-position:outside;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Footer
+-------------------------------------------------------------------------------- */
+.cls_divPostFooter{
+  margin-top:16px;
+  margin-bottom:16px;
+  
+  padding-top:16px;
+  padding-bottom:16px;
+  
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+
+.cls_divPostFooter a{
+  font-weight:bold;
+}
+
+.cls_PostFooter_divPostDate{
+  float:left;
+  
+  margin-right:16px;
+  padding-right:16px;
+  border-right:1px solid #ddd;  
+}
+
+.cls_PostFooter_PostCommentCount{
+  float:left;
+
+  margin-right:16px;
+  padding-right:16px;
+  border-right:1px solid #ddd;  
+}
+
+.cls_PostFooter_divPostLabel{
+  margin-top:16px;
+}
+
+.cls_divRelatedPostContainer{
+  margin-bottom:16px;
+  padding-bottom:16px;
+  border-bottom:1px solid #ddd;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Footer Adsence
+-------------------------------------------------------------------------------- */
+
+.cls_PostFooterAdsence_divContents{
+  margin-top:24px;
+  padding-top:24px;
+
+  border-top:1px solid #ddd;
+}
+
+.cls_PostFooterAdsence_divAdsence_1,
+.cls_PostFooterAdsence_divAdsence_3{
+  float:left;
+}
+
+.cls_PostFooterAdsence_divAdsence_2,
+.cls_PostFooterAdsence_divAdsence_4{
+  float:right;
+  width:336px;
+}
+
+
+

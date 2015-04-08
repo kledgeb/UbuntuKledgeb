@@ -1,0 +1,30 @@
+/*-- --------------------------------------------------------------------------------
+Head Bar  
+-------------------------------------------------------------------------------- --*/
+
+.cls_HeadBar{
+  padding-bottom:24px;
+}
+  
+#NewsBar1{
+  min-height:42px;
+  max-height:64px;
+}  
+
+#Translate1 .goog-te-gadget{
+  font: inherit;
+}
+
+#section_SecondHeadBar{
+  padding:8px;
+}  
+
+#HTML7{
+  float:left;
+  
+}
+
+#Translate1{
+  float:left;
+  margin-left:74px;
+}

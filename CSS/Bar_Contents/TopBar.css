@@ -1,0 +1,34 @@
+/*-- --------------------------------------------------------------------------------
+Top Bar  
+-------------------------------------------------------------------------------- */
+
+.cls_TopBar{
+  background-color:#184583;  
+  border-bottom:8px solid #386099;
+}
+  
+#section_Header{
+  padding:16px 16px 16px 32px;
+  color:white;
+  text-shadow:1px 1px 0px black;
+}
+
+.cls_TopBar_anchorTitle{
+  font-size:xx-large;
+  font-weight:bold;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left;  
+  background-image:url("https://lh4.googleusercontent.com/-ysA1j0yDfsU/UY2K6ZYZJNI/AAAAAAAAW8o/2BqMZTbYsBg/s800/kledgebLogo_Large2_2.png");
+  padding-left:42px;
+} 
+
+.cls_TopBar_Title a:link,
+.cls_TopBar_Title a:visited{
+  color:white;
+}
+
+.cls_TopBar_Description{
+  margin-top:16px;
+}
+  

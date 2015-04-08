@@ -1,0 +1,66 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Message
+-------------------------------------------------------------------------------- */
+/* Dash Message Category */
+.cls_Dash_Category_Title_divPostCommnetList,
+.cls_Dash_Category_Title_divForumCommnetList{
+  background-image: url("https://lh6.googleusercontent.com/-DzagxHudcg0/VQPVDzJDemI/AAAAAAAA_po/5Bi1oeGR9Ew/s800/Dash_Category_Message.png");   
+}
+
+.cls_Dash_Category_Contents_PostCommnetList_divItem,
+.cls_Dash_Category_Contents_PostCommnetList_divIcon{
+  height:96px;
+}
+
+.cls_Dash_Category_Contents_ForumCommnetList_divItem,
+.cls_Dash_Category_Contents_ForumCommnetList_divIcon{
+  height:96px;
+}
+
+.cls_Dash_MessageLens_divDisqusPostRecentComment,
+.cls_Dash_MessageLens_divDisqusForumRecentComment{
+  display:none;
+}
+
+.cls_DashContentsDetail_anchorShowPostCommentButton{
+  float:right;
+  border-radius:4px;  
+  border:1px solid #9D9C9C;
+  padding:8px;
+  color:white;
+  display:block;
+  margin-right:16px;  
+}
+
+.cls_DashContentsDetail_divCommentInfoContainer{
+  padding-bottom:8px;
+}
+
+.cls_DashContentsDetail_divCommentDateContainer,
+.cls_DashContentsDetail_divCommentUserInfoContainer{
+  float:right;  
+}
+
+.cls_DashContentsDetail_divCommentUserInfoContainer{
+  margin-right:16px;
+}
+
+.cls_DashContentsDetail_divCommentUserInfoContainer a{
+  color:white;
+}
+
+.cls_DashContentsDetail_anchorCommentUserName,
+.cls_DashContentsDetail_divCommentDate{
+  display:block;
+  line-height:64px;
+}
+
+.cls_DashContentsDetail_divCommentUserIcon{
+  width:64px;  
+  height:64px;
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-size:contain;  
+  padding-left:16px;
+  float:left;
+}

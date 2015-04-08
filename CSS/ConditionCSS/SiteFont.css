@@ -1,0 +1,68 @@
+/*-- --------------------------------------------------------------------------------
+Site Font
+-------------------------------------------------------------------------------- */
+.cls_TopBar,
+.cls_HeadBar,
+.cls_Contents,
+.cls_RightBar,
+.cls_BottomBar{
+  font-size:small;
+}
+
+.cls_Contents{
+  margin-left:8px;
+  padding-right:16px;
+  margin-right:16px;
+}
+
+.cls_TopBar_anchorTitle{
+  font-size:x-large;
+}
+
+.cls_Contents_divStatusMessage{
+  font-size:medium;
+}
+
+.cls_Contents{
+  width:672px;
+}
+
+.cls_PostTitle_h1PostTitle{
+  font-size:large;
+}
+
+.cls_divPostBody h2{
+  font-size:medium;
+}
+
+.cls_PostHeadeAdsence_divAdsence_2,
+.cls_PostFooterAdsence_divAdsence_4{
+/*  width:auto;*/
+}
+
+.cls_PostNaviWithInfo_spanNext,
+.cls_PostNaviWithInfo_spanPrev{
+  width:258px;/*672(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width / 2)*/
+  height:144px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+div.separator img{
+  max-width: 90% !important;
+  height: auto !important;
+}
+
+.gsc-control-cse .gs-spelling, 
+.gsc-control-cse .gs-result .gs-title, 
+.gsc-control-cse .gs-result .gs-title *{
+  font-size:medium;
+}
+
+.gsc-result-info{
+  font-size:x-small;
+}
+
+.gsc-tabsArea{
+  font-size:x-small;
+}

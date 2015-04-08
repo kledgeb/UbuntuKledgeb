@@ -1,0 +1,211 @@
+/*-- --------------------------------------------------------------------------------
+Window
+-------------------------------------------------------------------------------- */
+.cls_divDashBackground{
+  margin-left:48px;
+
+}
+
+.cls_divDash{
+  position:fixed;
+  visibility:hidden;
+  
+  color:white;
+
+  border: 1px solid #6B6A6A;
+  border-left:0;
+  background-color:rgba(51,51,51,0.8);
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px;  
+  box-shadow: 4px 4px 16px 0px #333333;   
+
+  margin-right:32px;
+  margin-bottom:32px;
+  
+  min-width:590px;
+  min-height:270px;
+}
+
+.cls_divDashClickBackground{
+  position:fixed;
+  display:none;
+
+  width:100%;
+  height:100%;
+}
+
+/* TopBar */
+.cls_Dash_divTopBar{
+  border-top-right-radius:4px;  
+  padding-top:8px;
+  padding-left:8px;
+  position:relative;
+}
+
+.cls_Dash_divSearchBox{
+  background-color:rgba(17,17,17,0.5);
+  border-radius:4px;  
+  border:1px solid #9D9C9C;
+  padding:0px;
+  padding-right:8px;
+}
+
+.cls_Dash_divSearchIcon{
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-image: url("https://lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");
+  width:48px;
+  height:48px;
+    
+  float:left;
+}
+
+.cls_Dash_inputSearchBox{
+  font-size:x-large;
+  color:white;
+  background-color:transparent;  
+  border: 0px solid;
+  height:48px;
+  float:left;
+
+  padding:0px;
+  margin:0px;
+}
+
+.cls_Dash_inputSearchBox:focus{
+  outline: 0;  
+}
+
+
+/* width is 240 pixel */
+.cls_Dash_divTopBarOption{
+  background:linear-gradient(to bottom, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.25)) repeat scroll 0% 0% transparent;
+  width:240px;
+  min-width:240px;
+
+  position: absolute;
+}
+
+.cls_Dash_divWindowSizeOption{
+  width:48px;
+  height:48px;
+  margin-left:16px;
+  
+  float:left;  
+  cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-position: center;  
+  background-image: url("https://lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Board_LargeSize.png");
+}
+
+.cls_Dash_divSearchOption{
+  float:right;
+  width:128px;
+  height:48px;
+
+  float:right;  
+  
+  margin-left:16px;
+  padding-right:16px;
+  
+  line-height:48px;
+  text-align:right;
+
+  background-image: url("https://lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png");
+  background-repeat: no-repeat;
+  background-position: right 4px center;  
+  
+  cursor: pointer;
+}
+
+
+/* Contents */
+.cls_Dash_divContentsContainer{
+  padding:8px 8px 0px 8px;
+  float:left; 
+}
+
+/* RightBar */
+.cls_Dash_divRightBar{
+  background:linear-gradient(to top, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.25)) repeat scroll 0% 0% transparent;
+  float:right;
+  padding:8px;
+  overflow:auto;
+}
+
+/* BottomBar */
+.cls_Dash_divBottomBar{
+  background-color:rgba(0,0, 0, 0.5);
+  border-bottom-right-radius:4px;   
+  height:48px;
+}
+
+.cls_Dash_divLensOuter{
+  margin:0 auto;
+  width:384px; 
+}
+
+.cls_Dash_divLensContainer{
+  float:left;  
+  width:48px;
+  height:48px;
+  cursor: pointer;
+}
+
+.cls_Dash_Lens_divArrow{
+  background-image: url("https://lh6.googleusercontent.com/-aWDGZLJfhEc/VPvBoENK2cI/AAAAAAAA_f4/IWKn_OGQC1c/s800/Dash_BottomBar_Lens_Arrow.png"); 
+
+  float:left;  
+  height:16px;
+  width:48px;
+  
+  background-repeat: no-repeat;
+  background-position: center top; 
+  
+  visibility:hidden;
+}
+
+.cls_Dash_Lens_divIcon{
+  float:left;  
+  height:32px;
+  width:48px;
+  
+  background-repeat: no-repeat;
+  background-position: center top; 
+}
+
+.cls_Dash_HomeLens_divIcon{
+  background-image: url("https://lh3.googleusercontent.com/-V4ulJ1l9zFo/VPu7_IiDeNI/AAAAAAAA_fo/WbUpmPHUhGc/s800/Dash_BottomBar_Lens_Home.png"); 
+}
+
+.cls_Dash_PageLens_divIcon{
+  background-image: url("https://lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
+}
+
+.cls_Dash_StarLens_divIcon{
+  background-image: url("https://lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+}
+
+.cls_Dash_SNSLens_divIcon{
+  background-image: url("https://lh5.googleusercontent.com/-BDE2nP7I0I0/VRpVWY6ZANI/AAAAAAABARs/PYMoLZ1dkco/s800/Dash_BottomBar_Lens_SNS.png");   
+}
+
+.cls_Dash_TagLens_divIcon{
+  background-image: url("https://lh6.googleusercontent.com/-nuFd3BUPQb0/VPu8A2YTLtI/AAAAAAAA_fg/ta3tnXq1dU8/s800/Dash_BottomBar_Lens_Tags.png");   
+}
+
+.cls_Dash_SearchLens_divIcon{
+  background-image: url("https://lh6.googleusercontent.com/-PTCB0-GVhcQ/VPu7_01jziI/AAAAAAAA_fQ/h0mm53c59gc/s800/Dash_BottomBar_Lens_Search.png");   
+}
+
+.cls_Dash_MessageLens_divIcon{
+  background-image: url("https://lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
+}
+
+.cls_Dash_HelpLens_divIcon{
+  background-image: url("https://lh6.googleusercontent.com/-__2WaTpwpcA/VPu7_KC6THI/AAAAAAAA_fE/iWkuMO3aAts/s800/Dash_BottomBar_Lens_Help.png");   
+}
+
+
+

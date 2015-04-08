@@ -1,0 +1,58 @@
+/*-- --------------------------------------------------------------------------------
+Page Navi Button
+-------------------------------------------------------------------------------- */
+.cls_PageNav_divLoading{
+  height:48px;
+  
+  background-image: url("https://lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;  
+}
+
+.cls_divPageNaviContainer{
+  margin:0 auto;
+  display:none;
+}
+
+.cls_PageNavi_divNext,
+.cls_PageNavi_divPrev{
+  visibility:hidden;
+}
+
+.cls_PageNavi_divPageBox{
+  float:left;  
+}
+
+.cls_PageNavi_anchorPageBox{
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-color:#333333;
+  background-position:center;
+
+  display:block;
+  
+  width:48px;
+  height:48px;
+  
+  text-align:center;
+  line-height:48px;
+}
+
+.cls_PageNavi_anchorPageBox:link,
+.cls_PageNavi_anchorPageBox:visited{
+  color:white;
+  font-weight:bold;
+}
+
+.cls_PageNavi_anchorPageBox_Current{
+  background-color:#5981B9;  
+}
+
+.cls_PageNavi_anchorNext{
+  background-image: url("https://lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_cs/elnXbkiaMq8/s800/NextPostButton.png");  
+}
+
+.cls_PageNavi_anchorPrev{
+  background-image: url("https://lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_cs/JyKtquolyno/s800/PrevPostButton.png");
+}

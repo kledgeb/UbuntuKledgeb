@@ -1,0 +1,59 @@
+/* --------------------------------------------------------------------------------
+Main CSS
+-------------------------------------------------------------------------------- */
+   
+a:link,
+a:visited{
+  color:#19529E;
+  text-decoration:none;
+  }
+
+a:hover,
+a:active{
+  color:#FF8E00;
+  text-decoration:none;
+  }
+
+body{
+  font-family: 'Ubuntu','メイリオ','ヒラギノ角ゴ Pro W3','VL Pゴシック','Takao Pゴシック',sans-serif;
+  color:#434a54;
+  background-color:white;
+  letter-spacing:1px;
+  line-height:1.5;
+  margin:0;
+  padding:0;
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;  
+  min-height: 100%;
+  min-width: 100%;
+}
+
+pre {
+  font-family: 'Ubuntu Mono','VL ゴシック','Takaoゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif;
+  font-size: inherit;
+  margin:0;
+}
+
+div .clear{
+  clear:both;
+}
+
+.userNoSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.blog-admin{
+  display:none;
+}

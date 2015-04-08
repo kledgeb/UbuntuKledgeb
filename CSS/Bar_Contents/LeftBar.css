@@ -1,0 +1,97 @@
+/* --------------------------------------------------------------------------------
+Left Bar  
+-------------------------------------------------------------------------------- */
+
+.cls_LeftBar{
+  background-color:#333333;
+  width:48px;
+  height:100%;
+  position:fixed;
+  }
+  
+.cls_LeftBar_divContainer{
+  background-color:#333333;
+
+  float:left;
+  cursor: pointer;
+}  
+
+.cls_LeftBar_divIcon{
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  float:left;
+  
+  width:40px;
+  height:48px;  
+}
+
+
+.cls_LeftBar_divArrow{
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  float:left;
+  
+  margin-right:3px;
+  
+  width:5px;
+  height:48px;  
+}
+
+.cls_LeftBar_divContainer_Dash{
+  margin-bottom:24px;
+}
+
+.cls_LeftBar_divIcon_Dash{
+  background-image: url("https://lh5.googleusercontent.com/-9ej-NyTRftQ/VPfWQKfNqZI/AAAAAAAA_cg/QxnsotH4GvU/s800/LeftBar_Board.png");
+}
+
+.cls_LeftBar_divArrow_Dash{
+  background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+}
+
+.cls_LeftBar_divIcon_Home{
+  background-image: url("https://lh4.googleusercontent.com/-2hoHLWBhAzE/VPfQUQjLEUI/AAAAAAAA_bI/BA2FnM0OKcM/s800/LeftBar_Home.png");    
+}
+
+.cls_LeftBar_divIcon_Ubuntu{
+  background-image: url("https://lh6.googleusercontent.com/-KTNsjuW2GrU/VP2kCkIOECI/AAAAAAAA_iY/6P8hFw9mvVY/s800/LeftBar_OS.png");  
+}
+
+.cls_LeftBar_divArrow_Ubuntu{
+  background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+}
+
+.cls_LeftBar_divIcon_System{
+  background-image: url("https://lh5.googleusercontent.com/-Bswp6V5J6_w/VPfQWfOcnrI/AAAAAAAA_bM/SUbam3uZRP8/s800/LeftBar_System.png");  
+}
+
+.cls_LeftBar_divIcon_Application{
+  background-image: url("https://lh5.googleusercontent.com/-QJfdY2wpCc4/VQKH_y9Dd9I/AAAAAAAA_lo/rFH9XBHuVW4/s800/LeftBar_Application.png");    
+}
+
+.cls_LeftBar_divIcon_Hardware{
+  background-image: url("https://lh4.googleusercontent.com/-uo-KflOF-c4/VPfQTjeejiI/AAAAAAAA_aU/K8UTqVaSQao/s800/LeftBar_Hardware.png");    
+}
+
+.cls_LeftBar_divArrow_Search{
+  background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+}
+
+.cls_LeftBar_divIcon_Search{
+  background-image: url("https://lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");    
+}
+
+.cls_LeftBar_divIcon_Message{
+  background-image: url("https://lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
+}
+
+.cls_LeftBar_divIcon_Bookmark{
+  background-image: url("https://lh5.googleusercontent.com/-3BCO6i2V_KI/VQsXGwKCX-I/AAAAAAAA_vY/PVmgUq6g54o/s800/LeftBar_Bookmark.png");
+}
+
+#id_LeftBar_divBookmark{
+  visibility:hidden;
+}
+  

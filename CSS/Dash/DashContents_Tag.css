@@ -1,0 +1,69 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Tag
+-------------------------------------------------------------------------------- */
+/* Dash Tag Category */
+.cls_Dash_Category_Contents_divTagList{
+  background-image: url("https://lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF"); 
+}
+
+.cls_Dash_Category_Title_divTagList{
+  background-image: url("https://lh5.googleusercontent.com/-CEIiZ978Gmw/VQPFW9T-BhI/AAAAAAAA_pQ/mxxOCigdQqM/s800/Dash_Category_Tag.png");   
+}
+
+
+.cls_Dash_Category_Contents_TagList_divItem{
+  width:192px;
+  height:48px;
+}
+
+.cls_Dash_Category_Contents_TagList_divIcon{
+  background-size:auto;  
+  width:64px;
+  height:48px;
+}
+
+.cls_Dash_Category_Contents_TagList_divTitle{
+  width:120px;
+  height:48px;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPostContainer{
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height:48px;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPostPageTitle{
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPost{
+  padding:8px;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPost a{
+  color:white;
+}
+
+.cls_Dash_Category_Contents_anchorSearchResultPostLink{
+  display:block;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPostImage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;  
+  
+  width:64px;
+  height:64px;
+  float:left;
+  
+  margin-right:16px;
+}
+
+.cls_Dash_Category_Contents_divSearchResultPostTitle{
+  display:table-cell;
+  height:64px;
+  vertical-align:middle;
+}

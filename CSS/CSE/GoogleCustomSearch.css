@@ -1,0 +1,127 @@
+.cls_divCSESearchContainer{
+  padding-top:32px;
+  border-top:1px solid #ddd;
+}
+
+.cls_divCSESearchForm{
+  
+}
+
+.cls_divCSESearchResult{
+  min-height:128px;
+  background-image: url("https://lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;  
+}
+
+.cls_divPostBody .cls_divCSESearchContainer img {
+  background: inherit;
+  box-shadow: none;
+  padding: 0;
+}
+
+.gsc-control-cse, 
+.gsc-control-cse .gsc-table-result{
+  font-size:inherit;
+  font-family:inherit;
+}
+
+.gsc-control-cse .gs-spelling, 
+.gsc-control-cse .gs-result .gs-title, 
+.gsc-control-cse .gs-result .gs-title *{
+  font-size:large;
+}
+
+
+.gs-result .gs-title, 
+.gs-result .gs-title *{
+  text-decoration:none;
+  color:#333;
+}
+
+.gs-result a.gs-visibleUrl, 
+.gs-result .gs-visibleUrl{
+  color:#6B6B6B;  
+}
+
+.gsc-result .gs-title{
+  height:inherit;
+}
+
+.gsc-webResult .gsc-result{
+  padding:16px 0;
+  border-bottom:1px solid #ddd;
+}
+
+.cse .gsc-webResult.gsc-result:hover, 
+.gsc-webResult.gsc-result:hover, 
+.gsc-webResult.gsc-result.gsc-promotion:hover, 
+.gsc-results .gsc-imageResult-classic:hover, 
+.gsc-results .gsc-imageResult-column:hover{
+  border-bottom:1px solid #ddd;
+}
+
+.gsc-result-info{
+  font-size:small;
+}
+
+.gsc-tabsArea{
+  font-size:small;
+}
+
+input.gsc-input{
+  font-size:inherit;
+  font:inherit;
+}
+
+.gsc-input-box{
+  height:auto;
+}
+
+form.gsc-search-box{
+  font-size:inherit;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page:hover{
+  text-decoration:none;  
+  background-color:#205093;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page{
+  margin-right:0;
+  display:inline-block;
+  min-width:2em;
+  text-align:center;
+  background-color:rgb(51, 51, 51);
+  padding:8px;
+  color:white;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page{
+  color:white; 
+  background-color:rgb(89, 129, 185);
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page:hover{
+  color:white; 
+  background-color:rgb(89, 129, 185);
+}
+
+.cse input.gsc-search-button, 
+input.gsc-search-button{
+  border-color:#9D9C9C; 
+  background-image:none;
+  background-color:#6B6B6B;
+}
+
+.cse input.gsc-search-button:hover, 
+input.gsc-search-button:hover{
+  border-color:#9D9C9C; 
+  background-image:none;
+  background-color:#9D9C9C;  
+}
+
+.gsc-url-top{
+  padding-bottom:16px;
+}
