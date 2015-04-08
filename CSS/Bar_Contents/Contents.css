@@ -92,13 +92,11 @@ Post Index
 /*-- --------------------------------------------------------------------------------
 Post Header Adsence
 -------------------------------------------------------------------------------- */
-.cls_PostHeadeAdsence_divAdsence_1{
-  float:left;
-}
-
+.cls_PostHeadeAdsence_divAdsence_1,
 .cls_PostHeadeAdsence_divAdsence_2{
-  float:right;
+  float:left;
   width:336px;
+  height:280px;
 }
 
 /*-- --------------------------------------------------------------------------------
@@ -205,14 +203,12 @@ Post Footer Adsence
 }
 
 .cls_PostFooterAdsence_divAdsence_1,
-.cls_PostFooterAdsence_divAdsence_3{
-  float:left;
-}
-
 .cls_PostFooterAdsence_divAdsence_2,
+.cls_PostFooterAdsence_divAdsence_3,
 .cls_PostFooterAdsence_divAdsence_4{
-  float:right;
+  float:left;
   width:336px;
+  height:280px;
 }
 
 
