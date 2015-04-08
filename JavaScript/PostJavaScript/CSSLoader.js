@@ -3,7 +3,7 @@ CSS Loader
 -------------------------------------------------------------------------------- --*/
 
 function loadCSS(cssFile){
-  var cssFileURL = 'https://googledrive.com/host/' + cssFile;
+  var cssFileURL = 'http://kledgeb.github.io/UbuntuKledgeb/' + cssFile;
   var cssLink = $("<link rel='stylesheet' type='text/css' href='"+ cssFileURL +"'>");
 
   $('head').append(cssLink); 
@@ -11,10 +11,10 @@ function loadCSS(cssFile){
 
 (function(){  
   if(getUserSetting('siteFontSize') == 'Small'){
-    loadCSS('0B0PaLJkr8DuFblFEazdNSVhyY3M');
+    loadCSS('CSS/ConditionCSS/SiteFont.css');
   }
 
   if(getUserSetting('dashFontSize') == 'Small'){
-    loadCSS('0B0PaLJkr8DuFUW1wWEtac25INTQ');
+    loadCSS('CSS/ConditionCSS/DashFont.css');
   }
 }());
