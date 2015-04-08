@@ -183,7 +183,7 @@ Post Footer
 }
 
 .cls_PostFooter_divPostLabel{
-  margin-top:16px;
+  float:left;
 }
 
 .cls_divRelatedPostContainer{
