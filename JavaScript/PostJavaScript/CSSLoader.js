@@ -10,11 +10,13 @@ function loadCSS(cssFile){
 }
 
 (function(){  
-  if(getUserSetting('siteFontSize') == 'Small'){
-    loadCSS('CSS/ConditionCSS/SiteFont.css');
-  }
-
-  if(getUserSetting('dashFontSize') == 'Small'){
-    loadCSS('CSS/ConditionCSS/DashFont.css');
+  if(gIsMobile === false){
+    if(getUserSetting('siteFontSize') == 'Small'){
+      loadCSS('CSS/ConditionCSS/SiteFont.css');
+    }
+  
+    if(getUserSetting('dashFontSize') == 'Small'){
+      loadCSS('CSS/ConditionCSS/DashFont.css');
+    }
   }
 }());

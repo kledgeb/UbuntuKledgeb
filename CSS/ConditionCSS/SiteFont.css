@@ -24,7 +24,7 @@ Site Font
 }
 
 .cls_Contents{
-  width:614px;
+  width:672px;
 }
 
 .cls_PostTitle_h1PostTitle{
@@ -37,25 +37,25 @@ Site Font
 
 .cls_PostHeadeAdsence_divAdsence_1,
 .cls_PostHeadeAdsence_divAdsence_2{
-  max-height:250px;
+  /*max-height:250px;*/
 }
 
 .cls_PostFooterAdsence_divAdsence_1,
 .cls_PostFooterAdsence_divAdsence_2,
 .cls_PostFooterAdsence_divAdsence_3,
 .cls_PostFooterAdsence_divAdsence_4{
-  max-height:250px;
+  /*max-height:250px;*/
 }
 
 .adsbygoogle_res_1,
 .adsbygoogle_res_2{
-  width:300px;
-  height:250px;  
+  /*width:300px;
+  height:250px;  */
 }
 
 .cls_PostNaviWithInfo_spanNext,
 .cls_PostNaviWithInfo_spanPrev{
-  width:231px;/*614(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width / 2)*/
+  width:260px;/*672(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width) / 2 - 48*/
   height:144px;
   display:table-cell;
   vertical-align:middle;
