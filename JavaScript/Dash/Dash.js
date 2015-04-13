@@ -127,6 +127,7 @@ function layoutDash(){
   var divLeftBar = $('#id_divLeftBar');
   var divDash = $('#id_divDash');
   var divDashClickBackground = $('#id_divDashClickBackground');
+  var divWindowSize = $('#id_Dash_divWindowSizeOption');
 
   divDash.css('left',divLeftBar.width());
   divDash.css('top',0);
@@ -146,9 +147,11 @@ function layoutDash(){
   if(gDashSize == 'Normal'){
     dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
+    divWindowSize.css('background-image','url("https://lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Dash_LargeSize.png")');
   }else{
     dashHeight = windowHeight;
     dashWidth = windowWidth;
+    divWindowSize.css('background-image','url("https://lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
   }
   
   if(dashWidth > windowWidth){
