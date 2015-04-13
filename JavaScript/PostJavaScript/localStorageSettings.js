@@ -117,9 +117,13 @@ User Settings
 var gUserSettings = $.localStorage.get('userSettings');
 
 function getAllUserSettings(){  
-  if(!gUserSettings){
+  if((!gUserSettings) || (!gUserSettings.version)){
     //set default settings
     gUserSettings = {
+      //Version
+      version:'1',
+
+      //Font Size
       siteFontSize:'Normal',
       dashFontSize:'Normal',
 
