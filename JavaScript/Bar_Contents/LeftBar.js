@@ -25,6 +25,18 @@ function onLeftBarHardwareClick(event){
   window.location.href = adjustURLForMobile(getHomepageURL() + 'p/blog-page_5799.html');
 }
 
+function onLeftBarStarClick(event){
+  toggleDash('Star');
+}
+
+function onLeftBarSNSClick(event){
+  toggleDash('SNS');
+}
+
+function onLeftBarTagClick(event){
+  toggleDash('Tag');
+}
+
 function onLeftBarSearchClick(event){
   toggleDash('Search');
 }
@@ -44,16 +56,23 @@ function onLeftBarBookmarkClick(event){
   $('#id_LeftBar_divSystem').click(onLeftBarSystemClick);
   $('#id_LeftBar_divApplication').click(onLeftBarApplicationClick);
   $('#id_LeftBar_divHardware').click(onLeftBarHardwareClick);
+  $('#id_LeftBar_divStar').click(onLeftBarStarClick);
+  $('#id_LeftBar_divTag').click(onLeftBarTagClick);
   $('#id_LeftBar_divSearch').click(onLeftBarSearchClick);
   $('#id_LeftBar_divMessage').click(onLeftBarMessageClick);
   
+  var divSNS = $('#id_LeftBar_divSNS');
   var divBookmark = $('#id_LeftBar_divBookmark');
   
   if(gCurrentPageType == 'item'){
-    divBookmark.css('visibility','visible');
+    divSNS.click(onLeftBarSNSClick);
+    divSNS.css('display','block');
+    
     divBookmark.click(onLeftBarBookmarkClick);
     divBookmark.tooltipster({trigger:'custom',position:'right',timer:3000});
+    divBookmark.css('display','block');
   }else{
-    divBookmark.css('visibility','hidden');
+    divSNS.css('display','none');
+    divBookmark.css('display','none');
   }
 }());

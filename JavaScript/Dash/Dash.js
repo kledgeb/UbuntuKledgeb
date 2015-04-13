@@ -135,13 +135,12 @@ function layoutDash(){
   var barWidth;
   var dashHeight;
   var barHeight;
-  var divLeftBarBaseObject = $('#id_LeftBar_divMessage');
   
   windowWidth -= parseInt(divDash.css('margin-right'),10);
   windowHeight -= parseInt(divDash.css('margin-bottom'),10);
   
   if(gDashSize == 1){
-    dashHeight = divLeftBarBaseObject.position().top + divLeftBarBaseObject.height() * 4;
+    dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
   }else{
     dashHeight = windowHeight;

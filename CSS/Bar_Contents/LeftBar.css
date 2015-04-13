@@ -75,6 +75,34 @@ Left Bar
   background-image: url("https://lh4.googleusercontent.com/-uo-KflOF-c4/VPfQTjeejiI/AAAAAAAA_aU/K8UTqVaSQao/s800/LeftBar_Hardware.png");    
 }
 
+.cls_LeftBar_divArrow_Star{
+  background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+}
+
+.cls_LeftBar_divIcon_Star{
+  background-image: url("https://lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+}
+
+#id_LeftBar_divSNS{
+  display:none;  
+}
+
+.cls_LeftBar_divArrow_SNS{
+  background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+}
+
+.cls_LeftBar_divIcon_SNS{
+  background-image: url("https://lh5.googleusercontent.com/-BDE2nP7I0I0/VRpVWY6ZANI/AAAAAAABARs/PYMoLZ1dkco/s800/Dash_BottomBar_Lens_SNS.png");   
+}
+
+.cls_LeftBar_divArrow_Tag{
+  background-image: url("https://lh6.googleusercontent.com/-nuFd3BUPQb0/VPu8A2YTLtI/AAAAAAAA_fg/ta3tnXq1dU8/s800/Dash_BottomBar_Lens_Tags.png");   
+}
+
+.cls_LeftBar_divIcon_Tag{
+  background-image: url("https://lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+}
+
 .cls_LeftBar_divArrow_Search{
   background-image: url("https://lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
 }
@@ -87,11 +115,12 @@ Left Bar
   background-image: url("https://lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
 }
 
+#id_LeftBar_divBookmark{
+  display:none;
+}
+
 .cls_LeftBar_divIcon_Bookmark{
   background-image: url("https://lh5.googleusercontent.com/-3BCO6i2V_KI/VQsXGwKCX-I/AAAAAAAA_vY/PVmgUq6g54o/s800/LeftBar_Bookmark.png");
 }
 
-#id_LeftBar_divBookmark{
-  visibility:hidden;
-}
   
