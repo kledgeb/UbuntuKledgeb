@@ -138,7 +138,7 @@ function getAllUserSettings(){
 
       //Dash Page
       dash_GeneralPage_CategoryHeadState:'close',
-      dash_Linux_CategoryHeadState:'close',
+      dash_LinuxDistributionPage_CategoryHeadState:'close',
       dash_LinkPage_CategoryHeadState:'close',
 
       //Dash Star
