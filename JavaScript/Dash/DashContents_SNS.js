@@ -98,5 +98,4 @@ function setupSNSLens_SharePost(){
   
   divCategoryContents.append("<div class='clear'></div>");
   layoutCategoryHead(categoryName);  
-  toggleCategory(categoryName,'open');
 }

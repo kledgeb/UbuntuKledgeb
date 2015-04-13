@@ -46,7 +46,6 @@ function setupTagLens_CreateTagElement(tags) {
   
   divCategoryContents.append("<div class='clear'></div>");
   layoutCategoryHead(categoryName);
-  toggleCategory(categoryName,'open');
 }
 
 function setupTagContentsDetail(divItem){

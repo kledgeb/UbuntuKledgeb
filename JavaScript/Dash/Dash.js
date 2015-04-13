@@ -3,7 +3,7 @@ Dash
 -------------------------------------------------------------------------------- --*/
 //1 normar
 //2 full
-var gDashSize = 1;
+var gDashSize = getUserSetting('dash_Size');
 var gOpenRightBar = false;
 var gCurrentLens = null;
 var gCurrentLensArrowID = null
@@ -143,7 +143,7 @@ function layoutDash(){
   windowWidth -= parseInt(divDash.css('margin-right'),10);
   windowHeight -= parseInt(divDash.css('margin-bottom'),10);
   
-  if(gDashSize == 1){
+  if(gDashSize == 'Normal'){
     dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
   }else{

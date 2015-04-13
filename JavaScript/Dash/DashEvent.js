@@ -20,13 +20,16 @@ function onDash_HoverOut_Animate(eventObject){
 function onDashWindowSizeClick(eventObject){
   var divWindowSize = $('#id_Dash_divWindowSizeOption');
   
-  if(gDashSize == 1){
-    gDashSize = 2;
+  if(gDashSize == 'Normal'){
+    gDashSize = 'Full';
     divWindowSize.css('background-image','url("https://lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
   }else{
-    gDashSize = 1;
+    gDashSize = 'Normal';
     divWindowSize.css('background-image','url("https://lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Dash_LargeSize.png")');
   }
+
+  //Save State
+  setUserSetting('dash_Size',gDashSize);
   
   layoutDash();
 }
@@ -110,7 +113,7 @@ function onDashHelpLensClick(event){
 
 var onCategoryHeadClick = function(categoryName) {
   return function(event) {
-    toggleCategory(categoryName,null);
+    toggleCategory(categoryName,null,true);
   };
 };
 

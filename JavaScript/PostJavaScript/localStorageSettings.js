@@ -114,20 +114,53 @@ function isValidPostID(postID){
 /*-- --------------------------------------------------------------------------------
 User Settings 
 -------------------------------------------------------------------------------- --*/
-function getAllUserSettings(){
-  var userSettings = $.localStorage.get('userSettings');
-  
-  if(!userSettings){
+var gUserSettings = $.localStorage.get('userSettings');
+
+function getAllUserSettings(){  
+  if(!gUserSettings){
     //set default settings
-    userSettings = {
+    gUserSettings = {
       siteFontSize:'Normal',
       dashFontSize:'Normal',
+
+      //Dash
+      dash_Size:'Normal',
+      
+      //Dash Home
+      dash_RelatedPost_CategoryHeadState:'close',
+      dash_LatestPost_CategoryHeadState:'close',
+      dash_ReleaseSchedule_CategoryHeadState:'close',
+      dash_SupportedVersion_CategoryHeadState:'close',
+
+      //Dash Page
+      dash_GeneralPage_CategoryHeadState:'close',
+      dash_Linux_CategoryHeadState:'close',
+      dash_LinkPage_CategoryHeadState:'close',
+
+      //Dash Star
+      dash_Bookmark_CategoryHeadState:'close',
+      dash_PageHistory_CategoryHeadState:'close',
+      dash_PopularPost_CategoryHeadState:'close',
+
+      //Dash SNS
+      dash_SharePost_CategoryHeadState:'open',
+
+      //Dash Tag
+      dash_TagList_CategoryHeadState:'open',
+
+      //Dash Message
+      dash_PostCommnetList_CategoryHeadState:'close',
+      dash_ForumCommnetList_CategoryHeadState:'close',
+
+      //Dash Help
+      dash_UpdateNotifyPage_CategoryHeadState:'close',
+      dash_HowToCommentPage_CategoryHeadState:'close',
+      dash_PrivacyPage_CategoryHeadState:'close',
+
     };
-    
-    $.localStorage.set('userSettings',userSettings);
   }
   
-  return userSettings;
+  return gUserSettings;
 }
 
 function getUserSetting(key){
@@ -140,10 +173,17 @@ function setUserSetting(key,value){
   var userSettings = getAllUserSettings();
   
   userSettings[key] = value;
-  
-  $.localStorage.set('userSettings',userSettings);
 }
 
+function setDashCategoryHeadState(categoryName,value){
+  var key = 'dash_' + categoryName +'_CategoryHeadState';
+  
+  setUserSetting(key,value);  
+}
 
+function getDashCategoryHeadState(categoryName){
+  var key = 'dash_' + categoryName +'_CategoryHeadState';
 
+  return getUserSetting(key);
+}
 

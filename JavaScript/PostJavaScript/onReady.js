@@ -57,7 +57,12 @@ $(function() {
       
       showAnim:'',
     });
-  
+
+    /*-- --------------------------------------------------------------------------------
+    Storage
+    -------------------------------------------------------------------------------- --*/      
+    $(window).bind("beforeunload", onBeforeUnload);
+    
     /*-- --------------------------------------------------------------------------------
     Other
     -------------------------------------------------------------------------------- --*/      
@@ -113,5 +118,11 @@ function showStatusMessage(){
     }
     
     divStatusMessage.html(statusMessage);
+  }
+}
+
+function onBeforeUnload(event){
+  if(gUserSettings){
+    $.localStorage.set('userSettings',gUserSettings);
   }
 }

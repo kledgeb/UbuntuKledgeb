@@ -51,7 +51,7 @@ function setupDashContents(showParams){
         
         if(showParams.showCategory[optionInfo.categoryName]){
           changeStateDashOption('on',optionInfo);
-          toggleCategory(optionInfo.categoryName,'open');
+          toggleCategory(optionInfo.categoryName,'open',false);
         }else{
           changeStateDashOption('off',optionInfo);
         }
@@ -92,17 +92,21 @@ function setupDashContents(showParams){
   }
 }
 
-function toggleCategory(categoryName,forceArrowState){
+function toggleCategory(categoryName,forceArrowState,isSaveState){
   var divCategoryArrow = $('#id_Dash_Category_Arrow_div' + categoryName);
   var arrowState = divCategoryArrow.data('arrowState');
   
   if(forceArrowState){
     divCategoryArrow.data('arrowState',forceArrowState);
-  }
-  if(arrowState == 'close'){
+  }else if(arrowState == 'close'){
     divCategoryArrow.data('arrowState','open');
   }else if(arrowState == 'open'){
     divCategoryArrow.data('arrowState','close');
+  }
+
+  if(isSaveState){    
+    arrowState = divCategoryArrow.data('arrowState');
+    setDashCategoryHeadState(categoryName,arrowState);
   }
   
   layoutCategoryHead(categoryName);  
@@ -345,7 +349,8 @@ function addCategory(categoryName,categoryTitle){
     divCategoryArrow.attr('id','id_Dash_Category_Arrow_div' + categoryName);
     divCategoryArrow.attr('class','userNoSelect cls_Dash_Category_divArrow cls_Dash_Category_Arrow_div' + categoryName);
     divCategoryArrow.text('すべてのアイテムを表示');
-    divCategoryArrow.data('arrowState','close');
+
+    divCategoryArrow.data('arrowState',getDashCategoryHeadState(categoryName));
     
     divCategoryHead.append(divCategoryArrow);
     divCategoryHead.append($("<div class='clear'></div>"));
