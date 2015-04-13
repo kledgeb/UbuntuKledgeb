@@ -9,7 +9,8 @@ User Settings
 }
 
 .cls_UserSettings_Bookmark_divButtonContainer,
-.cls_UserSettings_History_divButtonContainer{
+.cls_UserSettings_History_divButtonContainer,
+.cls_UserSettings_InitializeUserSettings_divButtonContainer{
   padding-top:16px;
   padding-bottom:16px;
 }

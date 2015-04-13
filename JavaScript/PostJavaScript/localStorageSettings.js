@@ -117,7 +117,7 @@ User Settings
 var gUserSettings = $.localStorage.get('userSettings');
 
 function getAllUserSettings(){  
-  if((!gUserSettings) || (!gUserSettings.version)){
+  if((!gUserSettings) || (gUserSettings.version === undefined)){
     //set default settings
     gUserSettings = {
       //Version
@@ -191,3 +191,6 @@ function getDashCategoryHeadState(categoryName){
   return getUserSetting(key);
 }
 
+function initializeUserSettings(){
+  gUserSettings = null;
+}

@@ -211,6 +211,15 @@ function showPageReloadMessage(elementObject){
   elementObject.tooltipster('show'); 
 }
 
+function onUserSettings_InitializeUserSettings_Click(event){
+  var buttonInitializeUserSettings = $(this);
+  
+  initializeUserSettings();
+
+  buttonInitializeUserSettings.tooltipster('hide');
+  buttonInitializeUserSettings.tooltipster('content', 'ユーザー設定を初期化しました。');
+  buttonInitializeUserSettings.tooltipster('show');  
+}
 
 $(function(){
   $('#id_UserSettings_buttonRemoveAllBookmarks').on('click',onUserSettings_RemoveAllBookmarks_Click);
@@ -249,5 +258,8 @@ $(function(){
   }else{
     $('#id_UserSettings_DashFont_FontSize_inputSmall').prop("checked",true);
   }
+
+  $('#id_UserSettings_buttonInitializeUserSettings').on('click',onUserSettings_InitializeUserSettings_Click);
+  $('#id_UserSettings_buttonInitializeUserSettings').tooltipster({trigger:'custom',position:'top',timer:3000});
 
 });
