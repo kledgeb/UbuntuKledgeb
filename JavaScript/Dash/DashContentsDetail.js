@@ -34,7 +34,7 @@ function setupDashContentsDetail(divItem){
   divCenterSection.mCustomScrollbar({
     theme:'light-3',
     autoHideScrollbar:true,
-    scrollInertia:400,  
+    scrollInertia:1000,  
     mouseWheel:{ preventDefault: true }
   });
   
