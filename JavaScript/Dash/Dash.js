@@ -14,7 +14,11 @@ function toggleDash(showType,showParams){
 
   if(showType){
     if(gIsShowingDash){
-      switchLens(showType,showParams);      
+      if(showType == gCurrentLens){
+        hideDash();
+      }else{
+        switchLens(showType,showParams);
+      }
     }else{
       showDash(showType,showParams);
     }
