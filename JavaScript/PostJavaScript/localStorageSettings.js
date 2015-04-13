@@ -193,4 +193,5 @@ function getDashCategoryHeadState(categoryName){
 
 function initializeUserSettings(){
   gUserSettings = null;
+  getAllUserSettings();
 }
