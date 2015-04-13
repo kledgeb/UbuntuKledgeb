@@ -217,7 +217,7 @@ function onUserSettings_InitializeUserSettings_Click(event){
   initializeUserSettings();
 
   buttonInitializeUserSettings.tooltipster('hide');
-  buttonInitializeUserSettings.tooltipster('content', 'ユーザー設定を初期化しました。');
+  buttonInitializeUserSettings.tooltipster('content', 'ユーザー設定を初期化しました。ページを再読込してください。');
   buttonInitializeUserSettings.tooltipster('show');  
 }
 
