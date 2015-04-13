@@ -77,6 +77,7 @@ function setupDashContents(showParams){
     divContents.mCustomScrollbar({
       theme:'light-3',
       autoHideScrollbar:true,
+      scrollInertia:200,
       mouseWheel:{ preventDefault: true }
     });
   }
@@ -87,6 +88,7 @@ function setupDashContents(showParams){
     divRightBar.mCustomScrollbar({
       theme:'light-3',
       autoHideScrollbar:true,
+      scrollInertia:200,
       mouseWheel:{ preventDefault: true }
     });  
   }

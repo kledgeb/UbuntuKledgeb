@@ -32,9 +32,10 @@ function setupDashContentsDetail(divItem){
   var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
   
   divCenterSection.mCustomScrollbar({
-  theme:'light-3',
-  autoHideScrollbar:true,
-  mouseWheel:{ preventDefault: true }
+    theme:'light-3',
+    autoHideScrollbar:true,
+    scrollInertia:200,  
+    mouseWheel:{ preventDefault: true }
   });
   
   divContentsDetail.show();
