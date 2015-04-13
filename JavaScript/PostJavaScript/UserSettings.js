@@ -230,7 +230,7 @@ $(function(){
    $('#id_UserSettings_Bookmark_divMessageContainer').mCustomScrollbar({
     theme:'light-3',
     autoHideScrollbar:true,
-    scrollInertia:200,
+    scrollInertia:400,
     mouseWheel:{ preventDefault: true }
   });
   
