@@ -228,9 +228,10 @@ $(function(){
   $('#id_UserSettings_buttonRemoveAllHistory').on('click',onUserSettings_RemoveAllHistory_Click);
   
    $('#id_UserSettings_Bookmark_divMessageContainer').mCustomScrollbar({
-  theme:'light-3',
-  autoHideScrollbar:true,
-  mouseWheel:{ preventDefault: true }
+    theme:'light-3',
+    autoHideScrollbar:true,
+    scrollInertia:200,
+    mouseWheel:{ preventDefault: true }
   });
   
   $('#id_UserSettings_buttonRemoveAllBookmarks').tooltipster({trigger:'custom',position:'top',timer:3000});

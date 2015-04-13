@@ -163,6 +163,7 @@ function createRelatedPostElement(relatedPosts,userData){
     divRelatedPostContainer.mCustomScrollbar({
       theme:'minimal-dark',
       autoHideScrollbar:true,
+      scrollInertia:200,
       mouseWheel:{ preventDefault: true }
     });
   }
