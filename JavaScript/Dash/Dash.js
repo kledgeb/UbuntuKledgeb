@@ -56,8 +56,9 @@ function showDash(showType,showParams){
     
     divDashBackground.css('-webkit-filter','blur(4px)');
     divDashBackground.css('filter','blur(4px)');
-    $('#id_divDashClickBackground').show();
   }
+  
+  $('#id_divDashClickBackground').show();
   
   divDash.hide();
   divDash.css('visibility','visible');
@@ -65,8 +66,13 @@ function showDash(showType,showParams){
   if(gCurrentLensArrowID){
     $('#' + gCurrentLensArrowID).css('visibility','visible');
   }
+
+  if(getUserSetting('dashTheme') == 'BlurGlass'){
+    divDash.fadeIn(150);
+  }else{
+    divDash.show();
+  }
   
-  divDash.fadeIn(150);
   gIsShowingDash = true;
 }
 
