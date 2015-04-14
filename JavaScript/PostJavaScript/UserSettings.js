@@ -278,4 +278,10 @@ $(function(){
 
   $('#id_UserSettings_DashTheme_inputSimple').on('click',onUserSettings_DashTheme_Simple_Click);
   $('#id_UserSettings_DashTheme_inputSimple').tooltipster({trigger:'custom',position:'top',timer:3000});
+
+  if(getUserSetting('dashTheme') == 'BlurGlass'){
+    $('#id_UserSettings_DashTheme_inputSimple').prop("checked",true);
+  }else{
+    $('#id_UserSettings_DashTheme_inputSimple').prop("checked",true);
+  }  
 });
