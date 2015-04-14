@@ -24,6 +24,8 @@ Window
   
   min-width:590px;
   min-height:270px;
+
+  z-index:1;
 }
 
 .cls_divDashClickBackground{

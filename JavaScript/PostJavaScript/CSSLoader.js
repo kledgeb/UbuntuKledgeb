@@ -18,5 +18,9 @@ function loadCSS(cssFile){
     if(getUserSetting('dashFontSize') == 'Small'){
       loadCSS('CSS/ConditionCSS/DashFont.css');
     }
+
+    if(getUserSetting('dashTheme') == 'Simple'){
+      loadCSS('CSS/ConditionCSS/DashThemeSimple.css');
+    }
   }
 }());

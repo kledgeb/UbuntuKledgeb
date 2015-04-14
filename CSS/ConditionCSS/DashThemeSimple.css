@@ -1,0 +1,31 @@
+/*-- --------------------------------------------------------------------------------
+Dash Theme Simple
+-------------------------------------------------------------------------------- */
+.cls_divDash{
+  background-color:rgba(51,51,51,1.0);
+  box-shadow: none;
+  border-top-right-radius:0;   
+  border-bottom-right-radius:0;   
+}
+
+.cls_Dash_divTopBar{
+  border-top-right-radius:0;
+}
+
+.cls_Dash_divSearchBox{
+  border-radius:0;
+  background-color:rgba(17,17,17,1.0);
+}
+
+.cls_Dash_divTopBarOption{
+  background:inherit;
+}
+
+.cls_Dash_divRightBar{
+  background:inherit;
+}
+
+.cls_Dash_divBottomBar{
+  background-color:rgba(17,17,17,1.0);
+  border-bottom-right-radius:0;   
+}

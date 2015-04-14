@@ -116,16 +116,23 @@ User Settings
 -------------------------------------------------------------------------------- --*/
 var gUserSettings = $.localStorage.get('userSettings');
 
-function getAllUserSettings(){  
-  if((!gUserSettings) || (gUserSettings.version === undefined)){
+function getAllUserSettings(){
+  if((gUserSettings) && (gUserSettings.version === '1')){
+    gUserSettings.version = '1.1';
+    gUserSettings.dashTheme = 'BlurGlass';
+  }
+  else if((!gUserSettings) || (gUserSettings.version === undefined)){
     //set default settings
     gUserSettings = {
       //Version
-      version:'1',
+      version:'1.1',
 
       //Font Size
       siteFontSize:'Normal',
       dashFontSize:'Normal',
+
+      //Dash Theme
+      dashTheme:'BlurGlass',
 
       //Dash
       dash_Size:'Normal',

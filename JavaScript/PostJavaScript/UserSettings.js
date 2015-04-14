@@ -221,6 +221,16 @@ function onUserSettings_InitializeUserSettings_Click(event){
   buttonInitializeUserSettings.tooltipster('show');  
 }
 
+function onUserSettings_DashTheme_BlurGlass_Click(){
+  setUserSetting('dashTheme','BlurGlass');
+  showPageReloadMessage($(this));
+}
+
+function onUserSettings_DashTheme_Simple_Click(){
+  setUserSetting('dashTheme','Simple');
+  showPageReloadMessage($(this));
+}
+
 $(function(){
   $('#id_UserSettings_buttonRemoveAllBookmarks').on('click',onUserSettings_RemoveAllBookmarks_Click);
   $('#id_UserSettings_buttonSaveBookmark').on('click',onUserSettings_SaveBookmarks_Click);
@@ -263,4 +273,9 @@ $(function(){
   $('#id_UserSettings_buttonInitializeUserSettings').on('click',onUserSettings_InitializeUserSettings_Click);
   $('#id_UserSettings_buttonInitializeUserSettings').tooltipster({trigger:'custom',position:'top',timer:3000});
 
+  $('#id_UserSettings_DashTheme_inputBlurGlass').on('click',onUserSettings_DashTheme_BlurGlass_Click);
+  $('#id_UserSettings_DashTheme_inputBlurGlass').tooltipster({trigger:'custom',position:'top',timer:3000});
+
+  $('#id_UserSettings_DashTheme_inputSimple').on('click',onUserSettings_DashTheme_Simple_Click);
+  $('#id_UserSettings_DashTheme_inputSimple').tooltipster({trigger:'custom',position:'top',timer:3000});
 });

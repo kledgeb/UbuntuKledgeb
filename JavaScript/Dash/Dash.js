@@ -51,11 +51,13 @@ function showDash(showType,showParams){
   switchLens(showType,showParams);
 
   //show
-  var divDashBackground = $('#id_divDashBackground');
-  
-  divDashBackground.css('-webkit-filter','blur(4px)');
-  divDashBackground.css('filter','blur(4px)');
-  $('#id_divDashClickBackground').show();
+  if(getUserSetting('dashTheme') == 'BlurGlass'){
+    var divDashBackground = $('#id_divDashBackground');
+    
+    divDashBackground.css('-webkit-filter','blur(4px)');
+    divDashBackground.css('filter','blur(4px)');
+    $('#id_divDashClickBackground').show();
+  }
   
   divDash.hide();
   divDash.css('visibility','visible');
@@ -79,8 +81,11 @@ function hideDash(){
   divDash.hide();
 
   $('#id_divDashClickBackground').hide();
-  divDashBackground.css('-webkit-filter','none');
-  divDashBackground.css('filter','none');
+
+  if(getUserSetting('dashTheme') == 'BlurGlass'){
+    divDashBackground.css('-webkit-filter','none');
+    divDashBackground.css('filter','none');
+  }
   
   gIsShowingDash = false;
 }
