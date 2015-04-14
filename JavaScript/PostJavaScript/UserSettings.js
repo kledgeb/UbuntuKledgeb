@@ -280,7 +280,7 @@ $(function(){
   $('#id_UserSettings_DashTheme_inputSimple').tooltipster({trigger:'custom',position:'top',timer:3000});
 
   if(getUserSetting('dashTheme') == 'BlurGlass'){
-    $('#id_UserSettings_DashTheme_inputSimple').prop("checked",true);
+    $('#id_UserSettings_DashTheme_inputBlurGlass').prop("checked",true);
   }else{
     $('#id_UserSettings_DashTheme_inputSimple').prop("checked",true);
   }  
