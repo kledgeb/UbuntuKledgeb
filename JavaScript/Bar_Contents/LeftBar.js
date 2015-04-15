@@ -63,16 +63,19 @@ function onLeftBarBookmarkClick(event){
   
   var divSNS = $('#id_LeftBar_divSNS');
   var divBookmark = $('#id_LeftBar_divBookmark');
+
+  if((gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
+    divSNS.click(onLeftBarSNSClick);
+    divSNS.css('display','block');    
+  }else{
+    divSNS.css('display','none');
+  }
   
   if(gCurrentPageType == 'item'){
-    divSNS.click(onLeftBarSNSClick);
-    divSNS.css('display','block');
-    
     divBookmark.click(onLeftBarBookmarkClick);
     divBookmark.tooltipster({trigger:'custom',position:'right',timer:3000});
     divBookmark.css('display','block');
   }else{
-    divSNS.css('display','none');
     divBookmark.css('display','none');
   }
 }());
