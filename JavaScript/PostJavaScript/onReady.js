@@ -74,7 +74,7 @@ $(function() {
 });
 
 function onHoverIn_Animate(eventObject){
-  $(this).stop().animate({ backgroundColor: "#19529E"}, 200);
+  $(this).stop().animate({ backgroundColor: 'rgba(157,156,156,0.4)'}, 200);
 }
 
 function onHoverOut_Animate(eventObject){

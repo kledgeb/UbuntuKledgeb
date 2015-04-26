@@ -123,16 +123,9 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 15.04 最終β',
-      date:'2015年3月26日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/03/ubuntu-1504-5-vivid-vervet.html'),
-      stage:'beta'
-    },
-
-    {
       title:'Ubutntu 15.04',
       date:'2015年4月23日',
-      link:null
+      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html')
     },
   ];
 
@@ -189,6 +182,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 14.10',
       date:'2015年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2014/10/ubuntu-1410-7-ubuntu-1410.html')
+    },
+    
+    {
+      title:'Ubutntu 14.10',
+      date:'2016年1月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html')
     },
   ];
 
