@@ -185,7 +185,7 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 14.10',
+      title:'Ubutntu 15.04',
       date:'2016年1月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html')
     },
