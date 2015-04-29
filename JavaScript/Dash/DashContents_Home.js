@@ -107,25 +107,31 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 12.04.5 LTS',
       date:'2014年8月7日',
-      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html')
+      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
     },
     
     {
       title:'Ubutntu 14.04.2 LTS',
       date:'2015年2月19日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/02/ubuntu-1404-13-ubuntu-14042.html')
+      link:adjustURLForMobile(getHomepageURL() + '2015/02/ubuntu-1404-13-ubuntu-14042.html'),
     },
-    
+
+    {
+      title:'Ubutntu 14.04.3 LTS',
+      date:'2015年8月6日',
+      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1404-14-ubuntu-14043.html'),
+    },
+        
     {
       title:'Ubutntu 14.10',
       date:'2014年10月23日',
-      link:adjustURLForMobile(getHomepageURL() + '2014/10/ubuntu-1410-7-ubuntu-1410.html')
+      link:adjustURLForMobile(getHomepageURL() + '2014/10/ubuntu-1410-7-ubuntu-1410.html'),
     },
 
     {
       title:'Ubutntu 15.04',
       date:'2015年4月23日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html')
+      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html'),
     },
   ];
 
@@ -169,25 +175,25 @@ function setupHomeLens_SupportedVersion(){
     {
       title:'Ubuntu 12.04.5 LTS',
       date:'2017年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html')
+      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
     },
     
     {
       title:'Ubutntu 14.04.2 LTS',
       date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2014/07/ubuntu-1404-12-ubuntu-14041.html')
+      link:adjustURLForMobile(getHomepageURL() + '2014/07/ubuntu-1404-12-ubuntu-14041.html'),
     },
     
     {
       title:'Ubutntu 14.10',
       date:'2015年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2014/10/ubuntu-1410-7-ubuntu-1410.html')
+      link:adjustURLForMobile(getHomepageURL() + '2014/10/ubuntu-1410-7-ubuntu-1410.html'),
     },
     
     {
       title:'Ubutntu 15.04',
       date:'2016年1月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html')
+      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html'),
     },
   ];
 
