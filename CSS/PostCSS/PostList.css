@@ -14,11 +14,6 @@ Post List
   top:-28px;
 }
 
-.cls_PostList_divPost a{
-  color:#434A54;
-  text-decoration:none;
-}
-
 .cls_PostList_divPostIndex {
   position: relative;
   background: #333333;
