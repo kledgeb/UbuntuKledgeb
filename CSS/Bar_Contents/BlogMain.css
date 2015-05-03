@@ -2,11 +2,14 @@
 Main CSS
 -------------------------------------------------------------------------------- */
    
-a:link,
-a:visited{
+a:link{
   color:#19529E;
   text-decoration:none;
   }
+
+a:visited{
+  text-decoration:none;
+}
 
 a:hover,
 a:active{
