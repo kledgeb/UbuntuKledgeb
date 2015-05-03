@@ -204,9 +204,19 @@ a.gsc-trailing-more-results:link {
   background-color:rgb(89, 129, 185);
 }
 
-.gs-web-image-box-landscape img.gs-image{
+.gs-web-image-box-landscape img.gs-image,
+.gs-web-image-box-portrait img.gs-image{
   width:150px;
   height:auto;
   max-width:none;
   max-height:none;
+}
+
+.gsc-url-top{
+  margin-top:4px;
+  margin-bottom:4px;
+}
+
+.gsc-results .gsc-cursor-box{
+  margin-top:48px; 
 }
