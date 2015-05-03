@@ -85,12 +85,6 @@ Popular Post
   display:block;
 }
 
-.cls_PopularPost_anchorPost:hover,
-.cls_PopularPost_anchorPost:active{
-  color:#19529E;
-  text-decoration:none;
-  }
-
 .cls_PopularPost_divThumbnail{
   width:96px;
   height:96px;
