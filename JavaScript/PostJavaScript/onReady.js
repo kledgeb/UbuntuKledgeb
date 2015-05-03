@@ -91,7 +91,7 @@ function onHoverOut_Animate_PageNaviButton(eventObject){
 }
 
 function onHoverIn_AnimateAnchorPost(eventObject){
-  $(this).stop().animate({ backgroundColor: "#D1E0F3"}, 200);
+  $(this).stop().animate({ backgroundColor: "#F4F8FE"}, 200);
 }
 
 function onHoverOut_AnimateAnchorPost(eventObject){

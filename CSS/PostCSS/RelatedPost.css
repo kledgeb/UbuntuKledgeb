@@ -14,12 +14,6 @@ Related Post
   top:-28px;
 }
 
-.cls_RelatedPost_anchorPost:hover,
-.cls_RelatedPost_anchorPost:active{
-  color:#19529E;
-  text-decoration:none;
-}
-
 .cls_RelatedPost_divPostIndex {
   position: relative;
   background: #333333;
