@@ -209,7 +209,7 @@ a.gsc-trailing-more-results:link {
   width:150px;
   height:auto;
   max-width:none;
-  max-height:none;
+  max-height:150px;
 }
 
 .gsc-url-top{
