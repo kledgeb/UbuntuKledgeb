@@ -64,7 +64,8 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   background-color: #FFFFFF;
 }
 
-.gsc-webResult.gsc-result{
+.gsc-webResult.gsc-result,
+.gsc-webResult.gsc-result:hover{
   margin-top:16px;
   margin-bottom:16px;
   padding-top:16px;
