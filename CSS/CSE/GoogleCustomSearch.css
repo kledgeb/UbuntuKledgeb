@@ -236,3 +236,8 @@ a.gsc-trailing-more-results:link {
 .gsc-table-cell-thumbnail, .gs-promotion-image-cell{
   padding-right:8px;
 }
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait{
+  width:auto;  
+  height:auto;  
+}
