@@ -206,7 +206,7 @@ a.gsc-trailing-more-results:link {
 
 .gs-web-image-box-landscape img.gs-image,
 .gs-web-image-box-portrait img.gs-image{
-  width:150px;
+  width:100px;
   height:auto;
   max-width:none;
   max-height:150px;
@@ -223,4 +223,16 @@ a.gsc-trailing-more-results:link {
 
 .gsc-table-cell-snippet-close, .gs-promotion-text-cell{
   width:auto;
+}
+
+.gs-web-image-box, .gs-promotion-image-box{
+  width:auto;
+}
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-landscape{
+  width:auto;  
+}
+
+.gsc-table-cell-thumbnail, .gs-promotion-image-cell{
+  padding-right:8px;
 }
