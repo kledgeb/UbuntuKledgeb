@@ -220,3 +220,7 @@ a.gsc-trailing-more-results:link {
 .gsc-results .gsc-cursor-box{
   margin-top:48px; 
 }
+
+.gsc-table-cell-snippet-close, .gs-promotion-text-cell{
+  width:auto;
+}
