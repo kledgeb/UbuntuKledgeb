@@ -50,5 +50,5 @@ function onSearchResultItemClick(event){
 }
 
 (function(){
-  $('cse').bind('click',onSearchResultItemClick);
+  $('#cse').on('click',onSearchResultItemClick);
 });
