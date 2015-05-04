@@ -32,7 +32,7 @@ google.setOnLoadCallback(function() {
 }, true);
 
 function onSearchResultItemClick(event){
-  var tagName = event.tagName.toUpperCase();
+  var tagName = event.target.tagName.toUpperCase();
 
   if(tagName != 'A' && tagName != 'IMG'){
     var rootDiv = $(event.target).closest( "[class='gsc-webResult gsc-result']");
