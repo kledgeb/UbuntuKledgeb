@@ -30,3 +30,25 @@ google.setOnLoadCallback(function() {
     customSearchControl.execute(urlParams[queryParamName]);
   }
 }, true);
+
+function onSearchResultItemClick(event){
+  var tagName = event.tagName.toUpperCase();
+
+  if(tagName != 'A' && tagName != 'IMG'){
+    var rootDiv = $(event.target).closest( "[class='gsc-webResult gsc-result']");
+
+    if(rootDiv.length){
+      var anchor = rootDiv.find("a[class='gs-title']"');
+
+      if(anchor.length){
+        var href = anchor.attr('href');
+        
+        window.location = href;
+      }
+    }
+  }
+}
+
+(function(){
+  $('cse').bind('click',onSearchResultItemClick);
+});
