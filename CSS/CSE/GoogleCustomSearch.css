@@ -252,3 +252,7 @@ a.gsc-trailing-more-results:link {
   width:auto;  
   height:auto;  
 }
+
+.gsc-tabsArea > div{
+  overflow:hidden;
+}
