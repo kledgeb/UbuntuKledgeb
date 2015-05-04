@@ -51,4 +51,4 @@ function onSearchResultItemClick(event){
 
 (function(){
   $('#cse').on('click',onSearchResultItemClick);
-});
+}());
