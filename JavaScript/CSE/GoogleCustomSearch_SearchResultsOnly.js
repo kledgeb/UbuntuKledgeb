@@ -38,7 +38,7 @@ function onSearchResultItemClick(event){
     var rootDiv = $(event.target).closest( "[class='gsc-webResult gsc-result']");
 
     if(rootDiv.length){
-      var anchor = rootDiv.find("a[class='gs-title']"');
+      var anchor = rootDiv.find("a[class='gs-title']");
 
       if(anchor.length){
         var href = anchor.attr('href');
