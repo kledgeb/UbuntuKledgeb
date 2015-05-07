@@ -204,10 +204,19 @@ Post Footer Adsence
   border-top:1px solid #ddd;
 }
 
+.cls_PostBottomAdsence_divContents{
+  margin-top:24px;
+  padding-top:24px;
+
+  border-top:1px solid #ddd;  
+}
+
 .cls_PostFooterAdsence_divAdsence_1,
 .cls_PostFooterAdsence_divAdsence_2,
 .cls_PostFooterAdsence_divAdsence_3,
-.cls_PostFooterAdsence_divAdsence_4{
+.cls_PostFooterAdsence_divAdsence_4,
+.cls_PostBottomAdsence_divAdsence_1,
+.cls_PostBottomAdsence_divAdsence_2{
   float:left;
   width:50%;
   max-height:280px;
