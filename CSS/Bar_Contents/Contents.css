@@ -160,6 +160,12 @@ Post Footer
   border-top:1px solid #ddd;
 }
 
+.cls_divPostFooter_index {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
 .cls_divPostFooter a{
   font-weight:bold;
 }
