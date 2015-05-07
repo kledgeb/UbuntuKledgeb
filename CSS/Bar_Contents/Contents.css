@@ -154,13 +154,10 @@ Post Footer
 -------------------------------------------------------------------------------- */
 .cls_divPostFooter{
   margin-top:16px;
-  margin-bottom:16px;
   
   padding-top:16px;
-  padding-bottom:16px;
   
   border-top:1px solid #ddd;
-  border-bottom:1px solid #ddd;
 }
 
 .cls_divPostFooter a{

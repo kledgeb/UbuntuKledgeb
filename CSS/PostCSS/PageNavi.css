@@ -10,6 +10,12 @@ Page Navi Button
   background-position:center;  
 }
 
+.cls_divPageNaviOuter {
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    margin-top: 16px;
+}
+
 .cls_divPageNaviContainer{
   margin:0 auto;
   display:none;
