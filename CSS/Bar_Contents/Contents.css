@@ -105,12 +105,12 @@ Post Header Adsence
 Post Item/Archive/Static
 -------------------------------------------------------------------------------- */
 .cls_divPostBody h2{
-  padding: 4px 4px 4px 8px;
+  padding: 8px;
   margin:8px 0px;  
 
   background-color:#333333;
   color:white;
-  font-size:large;
+  font-size:larger;
   position: relative;
   margin-bottom:16px;
 }
