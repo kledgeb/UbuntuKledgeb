@@ -111,6 +111,31 @@ Post Item/Archive/Static
   background-color:#333333;
   color:white;
   font-size:large;
+  position: relative;
+}
+
+.cls_divPostBody h2:after, .cls_divPostBody h2:before {
+	top: 100%;
+	left: 24px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cls_divPostBody h2:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.cls_divPostBody h2:before {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333;
+	border-width: 13px;
+	margin-left: -13px;
 }
 
 .cls_divPostBody a{
