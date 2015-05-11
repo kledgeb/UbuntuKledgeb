@@ -112,6 +112,7 @@ Post Item/Archive/Static
   color:white;
   font-size:large;
   position: relative;
+  margin-bottom:16px;
 }
 
 .cls_divPostBody h2:after, .cls_divPostBody h2:before {
