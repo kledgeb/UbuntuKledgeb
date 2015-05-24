@@ -136,7 +136,7 @@ function setupHomeLens_ReleaseSchedule(){
 
     {
       title:'Ubutntu 15.10',
-      date:'2015年4月23日',
+      date:'2015年10月22日',
       link:adjustURLForMobile(getHomepageURL() + '2015/05/ubuntu-1510-2-ubuntu-1510.html'),
     },
   ];
