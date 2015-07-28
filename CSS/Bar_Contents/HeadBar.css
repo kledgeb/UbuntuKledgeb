@@ -9,10 +9,6 @@ Head Bar
 #NewsBar1{
   min-height:42px;
   max-height:64px;
-}  
-
-#Translate1 .goog-te-gadget{
-  font: inherit;
 }
 
 #section_SecondHeadBar{
@@ -22,9 +18,4 @@ Head Bar
 #HTML7{
   float:left;
   
-}
-
-#Translate1{
-  float:left;
-  margin-left:74px;
 }
