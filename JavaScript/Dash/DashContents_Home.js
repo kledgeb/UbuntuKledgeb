@@ -131,7 +131,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 15.10',
       date:'2015年10月22日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/06/ubuntu-1510-3-wily-werewolf-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2015/07/ubuntu-1510-4-wily-werewolf-2.html'),
     },
   ];
 
