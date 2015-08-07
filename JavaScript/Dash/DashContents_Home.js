@@ -109,17 +109,11 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2014年8月7日',
       link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
     },
-    
-    {
-      title:'Ubutntu 14.04.2 LTS',
-      date:'2015年2月19日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/02/ubuntu-1404-13-ubuntu-14042.html'),
-    },
 
     {
       title:'Ubutntu 14.04.3 LTS',
       date:'2015年8月6日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1404-14-ubuntu-14043.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2015/08/ubuntu-1404-15-ubuntu-14043.html'),
     },
 
     {
@@ -179,9 +173,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 14.04.2 LTS',
+      title:'Ubutntu 14.04.3 LTS',
       date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2014/07/ubuntu-1404-12-ubuntu-14041.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2015/08/ubuntu-1404-15-ubuntu-14043.html'),
     },
     
     {
