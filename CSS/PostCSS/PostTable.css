@@ -13,6 +13,7 @@ overflow-x:auto;
   postTable3 - all cells are clear
   postTable4 - head and first col is grayed
   postTable5 - head is grayed + width 100%
+  postTable6 - all cells are clear and no border and equal space
   
 */
 
@@ -20,7 +21,8 @@ table.postTable1,
 table.postTable2,
 table.postTable3,
 table.postTable4,
-table.postTable5{
+table.postTable5,
+table.postTable6{
   border-collapse: collapse;
   border: 1px solid #BFBFBF;
   margin: 0px auto;
@@ -44,7 +46,8 @@ table.postTable1 td,
 table.postTable2 td,
 table.postTable3 td,
 table.postTable4 td,
-table.postTable5 td{
+table.postTable5 td,
+table.postTable6 td{
   text-align:left;
   border: 1px solid #BFBFBF;
   padding:4px;
@@ -61,6 +64,17 @@ table.postTable4 tr td:first-child{
 
 table.postTable5{
   width:100%;
+}
+
+table.postTable6{
+  border:none;
+  width: 100%;
+  table-layout: fixed;  
+}
+
+table.postTable6 td{
+  border:none;
+  vertical-align: top;
 }
   
 /* PostTable List */
