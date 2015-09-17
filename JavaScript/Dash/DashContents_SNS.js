@@ -14,15 +14,15 @@ function setupSNSLens_SharePost(){
   var postTitle = $('<p>' + gPostInfo.title + '</p>').text();
   var sharePost = [
     {
+      title:'メールでサイトの更新通知を受け取る',
+      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
+      iconURL:'https://lh5.googleusercontent.com/-37zSY8ioXms/VRolAzBPWWI/AAAAAAABAPw/hvffIv0WkMA/s800/MailButton_48.jpg',
+    },
+
+    {
       title:'RSSでサイトの更新通知を受け取る',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_9.html'),
       iconURL:'https://lh6.googleusercontent.com/-yT9fLFsRODQ/VRoo2CXHeFI/AAAAAAABAQs/52HTEMksuIA/s800/RSS_48.jpg',
-    },
-    
-    {
-      title:'記事のリンクをメールで送信',
-      link:"mailto:?body=" + postTitle + "（" + gPostInfo.canonicalUrl + "）",
-      iconURL:'https://lh5.googleusercontent.com/-37zSY8ioXms/VRolAzBPWWI/AAAAAAABAPw/hvffIv0WkMA/s800/MailButton_48.jpg',
     },
     
     {
