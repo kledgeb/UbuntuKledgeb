@@ -119,7 +119,7 @@ function showStatusMessage(){
     }else if(gSearchQuery){
       statusMessage = 'キーワード「<b>' + gSearchQuery + '</b>」に関する記事は、見つかりませんでした。'
     }else{
-      statusMessage = '記事が見つかりません。';
+      statusMessage = '指定された記事が見つかりませんでした。<br><br>リンク元のURL：' + document.referrer + '<br>リンク先のURL：' + window.location.href;
     }
     
     divStatusMessage.html(statusMessage);
