@@ -125,7 +125,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 15.10',
       date:'2015年10月22日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/08/ubuntu-1510-5-wily-werewolf-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
     },
   ];
 
@@ -182,6 +182,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 15.04',
       date:'2016年1月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2015/04/ubuntu-1504-6-ubuntu-1504.html'),
+    },
+    
+    {
+      title:'Ubutntu 15.10',
+      date:'2016年7月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
     },
   ];
 
