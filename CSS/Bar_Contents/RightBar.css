@@ -100,6 +100,8 @@ Popular Post
 
 .cls_PopularPost_anchorPost{
   display:block;
+  width:100%;
+  height:100%;
 }
 
 .cls_PopularPost_divThumbnail{

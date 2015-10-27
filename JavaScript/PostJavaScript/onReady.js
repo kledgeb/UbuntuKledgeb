@@ -26,6 +26,13 @@ $(function() {
     appearElem.one('appear', onPageNaviOuterAppear);
   
     /*-- --------------------------------------------------------------------------------
+    Pickup Post   
+    -------------------------------------------------------------------------------- --*/
+    appearElem = $('#id_divPickupPosts');
+    appearElem.appear();
+    appearElem.one('appear', onPickupPostsAppear);
+  
+    /*-- --------------------------------------------------------------------------------
     Animation Button
     -------------------------------------------------------------------------------- --*/
     $(".animationButton").hover(onHoverIn_Animate,onHoverOut_Animate);     
