@@ -42,6 +42,7 @@ function createPickupPostElement(posts){
     divPickupPostAnchor.append(divPickupPostTitle);
     divPickupPostAnchor.append("<div class='clear'></div>");
     divPickupPost.append(divPickupPostAnchor);
+    divPickupPost.append("<div class='cls_Pickup_Separate'></div>");
     divPickupPosts.append(divPickupPost);
     divPickupPost.hover(onHoverIn_AnimateAnchorPost,onHoverOut_AnimateAnchorPost);
   }

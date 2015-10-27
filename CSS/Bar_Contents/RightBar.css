@@ -133,3 +133,37 @@ Popular Post
 
   border-top:1px solid #ddd;
 }
+
+/* --------------------------------------------------------------------------------
+Pickup Post 
+-------------------------------------------------------------------------------- */
+.cls_PickupPost_divPickupPost {
+  height: 160px;
+  float: left;
+  width: 300px;
+  margin-right: 32px;
+}
+
+.cls_PickupPost_anchorPickupPost {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+.cls_PickupPost_divPickupPostThumbnail {
+  width: 96px;
+  height: 96px;
+  float: left;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cls_PickupPost_Separate {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-top: 1px solid #ddd;
+}
+
