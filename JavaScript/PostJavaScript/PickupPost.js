@@ -3,7 +3,7 @@ Pickup Post
 -------------------------------------------------------------------------------- --*/
 
 function onPickupPostsAppear(){  
-  getTotalAllPostCount(null,createPickupPostElements);
+  getTotalAllPostCount(createPickupPostElements);
 }
 
 function createPickupPostElements(totalPostCount){
