@@ -309,14 +309,14 @@ function addCategoryItem(categoryItemInfo){
     }else if(categoryItemInfo.itemTitleHTML){
       divTitle.html(categoryItemInfo.itemTitleHTML);
     }
-
-    if(categoryItemInfo.autoEllipsis){
-      divTitle.dotdotdot({});
-    }
   }
   
   anchorItem.append("<div class='clear'></div>");
   divCategoryContents.append(divItem);  
+
+  if(categoryItemInfo.autoEllipsis){
+    divTitle.dotdotdot({});
+  }
 }
 
 function addCategory(categoryName,categoryTitle){
