@@ -34,8 +34,8 @@ function createPickupPostElement(posts){
     divPickupPostThumbnail.attr('class','cls_PickupPost_divPickupPostThumbnail');
     divPickupPostTitle.attr('class','cls_PickupPost_divPickupPostTitle');
 
-    divPickupPostAnchor.attr('href',parsePostLink(posts[i].link));
-    divPickupPostThumbnail.css('background-image','url(' + parsePostThumbnail(posts[i].media$thumbnail) + ')');
+    divPickupPostAnchor.attr('href',parsePostLink(posts[0].link));
+    divPickupPostThumbnail.css('background-image','url(' + parsePostThumbnail(posts[0].media$thumbnail) + ')');
     divPickupPostTitle.text(posts[0].title.$t);    
 
     divPickupPostAnchor.append(divPickupPostThumbnail);
