@@ -2,8 +2,8 @@
 Right Bar  
 -------------------------------------------------------------------------------- */
 .cls_RightBar{
-  float:left;
-  max-width:300px;
+  margin-left:816px;
+  max-width:664px;
   background-color:white;
   }
   
@@ -25,20 +25,33 @@ Right Bar
 }
 
 .cls_RightBarAdsence_divAdsence{
-  margin-bottom:16px;
-  }
+}
   
 .adsbygoogle_res_3{
   width:300px;
   height:600px;
 }
-  
-#Text2{
-  margin-bottom:16px;
-}
 
 #Translate1 .goog-te-gadget{
   font: inherit;
+}
+
+#section_RightBar1,
+#section_RightBar2,
+#section_RightBar3{
+  float:left;
+  margin-bottom:24px;
+}
+
+#HTML6,
+#Translate1,
+#HTML2,
+#HTML1,
+#Text2,
+#Text3{
+  float: left;
+  width: 300px;
+  margin-right: 32px;  
 }
 
 /* --------------------------------------------------------------------------------
@@ -46,8 +59,6 @@ Popular Post
 -------------------------------------------------------------------------------- */
 .cls_PopularPost_divPost{
   padding:8px;  
-  position:relative;
-  top:-28px;
 }
 
 .cls_PopularPost_divRanking {
@@ -107,6 +118,9 @@ Popular Post
   
 .cls_divPopularPost li{
   list-style:none;
+  float: left;
+  width: 300px;
+  margin-right: 32px;
 }
   
 .cls_PopularPost_Separate{
