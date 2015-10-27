@@ -55,6 +55,10 @@ Left Bar
   background-image: url("https://lh4.googleusercontent.com/-2hoHLWBhAzE/VPfQUQjLEUI/AAAAAAAA_bI/BA2FnM0OKcM/s800/LeftBar_Home.png");    
 }
 
+.cls_LeftBar_divIcon_Page{
+  background-image: url("https://lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
+}
+
 .cls_LeftBar_divIcon_Ubuntu{
   background-image: url("https://lh6.googleusercontent.com/-KTNsjuW2GrU/VP2kCkIOECI/AAAAAAAA_iY/6P8hFw9mvVY/s800/LeftBar_OS.png");  
 }

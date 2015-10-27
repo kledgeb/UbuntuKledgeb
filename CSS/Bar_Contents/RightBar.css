@@ -38,7 +38,8 @@ Right Bar
 
 #section_RightBar1,
 #section_RightBar2,
-#section_RightBar3{
+#section_RightBar3,
+#section_RightBar4{
   float:left;
   margin-bottom:24px;
 }

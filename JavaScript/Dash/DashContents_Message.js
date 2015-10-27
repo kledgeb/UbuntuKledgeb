@@ -56,7 +56,8 @@ function setupMessageLens_CreateMessageElement(messageInfos,categoryName){
         itemTitle:messageInfos[i].message,
         hasDetail:true,
         itemData:{messageInfo:messageInfos[i]},
-      };
+        autoEllipsis:true,
+     };
 
     addCategoryItem(categoryItemInfo);
   }

@@ -33,7 +33,8 @@ function setupStarLens_PopularPostPost(){
       itemTitleHTML:gPopularPosts[i].itemTitle,
       itemData:{popularPostInfo:gPopularPosts[i]},
       hasDetail:true,
-    };
+      autoEllipsis:true,
+   };
     
     addCategoryItem(categoryItemInfo);
   }
@@ -66,6 +67,7 @@ function setupStarLens_PageHistory(){
         itemTitleHTML:pageHistory[i].title,
         hasDetail:true,
         itemData:{pageHistory:pageHistory[i]},
+        autoEllipsis:true,
       };
       
       addCategoryItem(categoryItemInfo);
@@ -98,6 +100,7 @@ function setupStarLens_Bookmark(){
         itemTitleHTML:bookmark[i].title,
         hasDetail:true,
         itemData:{bookmark:bookmark[i]},
+        autoEllipsis:true,
       };
       
       addCategoryItem(categoryItemInfo);

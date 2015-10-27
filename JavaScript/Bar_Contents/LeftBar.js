@@ -9,6 +9,10 @@ function onLeftBarHomeClick(event){
   window.location.href = gHomepageURL;  
 }
 
+function onLeftBarPageClick(event){
+  toggleDash('Page');
+}
+
 function onLeftBarLinuxClick(event){
   toggleDash('Page',{showCategory:{LinuxDistributionPage:true}});
 }
@@ -52,6 +56,7 @@ function onLeftBarBookmarkClick(event){
 (function(){
   $('#id_LeftBar_divDash').click(onLeftBarDashClick);
   $('#id_LeftBar_divHome').click(onLeftBarHomeClick);
+  $('#id_LeftBar_divPage').click(onLeftBarPageClick);
   $('#id_LeftBar_divUbuntu').click(onLeftBarLinuxClick);
   $('#id_LeftBar_divSystem').click(onLeftBarSystemClick);
   $('#id_LeftBar_divApplication').click(onLeftBarApplicationClick);

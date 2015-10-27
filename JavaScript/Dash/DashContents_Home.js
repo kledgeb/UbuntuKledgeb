@@ -49,7 +49,8 @@ function setupHomeLens_CreateLatestPostElement(latestPosts) {
         itemTitle:latestPosts[i].title.$t,
         hasDetail:true,
         itemData:{feedEntry:latestPosts[i]},
-      };
+        autoEllipsis:true,
+     };
       
       addCategoryItem(categoryItemInfo);
     }
@@ -91,6 +92,7 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
         itemTitle:relatedPosts[i].title.$t,
         hasDetail:true,
         itemData:{feedEntry:relatedPosts[i]},
+        autoEllipsis:true,
       };
 
       addCategoryItem(categoryItemInfo);
