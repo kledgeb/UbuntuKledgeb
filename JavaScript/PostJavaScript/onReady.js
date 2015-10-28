@@ -28,7 +28,7 @@ $(function() {
     /*-- --------------------------------------------------------------------------------
     Pickup Post   
     -------------------------------------------------------------------------------- --*/
-    appearElem = $('#id_divPickupPosts');
+    appearElem = $('#id_PickupPosts_divLoading');
     appearElem.appear();
     appearElem.one('appear', onPickupPostsAppear);
   
