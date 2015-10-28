@@ -14,6 +14,10 @@ function createPickupPostElements(totalPostCount){
       getLatestPostByIndex(getRandomInt(1,totalPostCount),1,createPickupPostElement);
     }    
   }
+
+   //Show
+  $('#id_PickupPosts_divLoading').css('display','none');
+  $('#id_divPickupPosts').css('display','block');
 }
 
 function createPickupPostElement(posts){

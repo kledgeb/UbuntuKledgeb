@@ -44,6 +44,10 @@ Right Bar
   margin-bottom:24px;
 }
 
+#section_RightBar4{
+  min-width: 300px;  
+}
+
 #HTML6,
 #Translate1,
 #HTML2,
@@ -137,6 +141,17 @@ Popular Post
 /* --------------------------------------------------------------------------------
 Pickup Post 
 -------------------------------------------------------------------------------- */
+.cls_PickupPosts_divLoading{
+  background-image: url("https://lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");    
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;
+}
+
+.cls_divPickupPosts{
+  display:none;
+}
+
 .cls_PickupPost_divPickupPost {
   float: left;
   width: 300px;
