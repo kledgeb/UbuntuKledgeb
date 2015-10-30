@@ -72,7 +72,8 @@ function showDash(showType,showParams){
   }else{
     divDash.show();
   }
-  
+
+  $('#id_Dash_inputSearchBox').focus();
   gIsShowingDash = true;
 }
 
