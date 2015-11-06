@@ -129,7 +129,19 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2015年10月22日',
       link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
     },
-  ];
+
+    {
+      title:'Ubutntu 16.04 最終β',
+      date:'2015年10月22日',
+      link:adjustURLForMobile(getHomepageURL() + '2015/11/ubuntu-1604-2-ubuntu-1604.html'),
+    },
+
+    {
+      title:'Ubutntu 16.04 LTS',
+      date:'2015年10月22日',
+      link:adjustURLForMobile(getHomepageURL() + '2015/11/ubuntu-1604-2-ubuntu-1604.html'),
+    },
+];
 
   var categoryName = 'ReleaseSchedule';
   

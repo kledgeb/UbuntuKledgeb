@@ -60,6 +60,64 @@ Right Bar
 }
 
 /* --------------------------------------------------------------------------------
+Release Schedule
+-------------------------------------------------------------------------------- */
+.cls_ReleaseSchedule_divUbuntu{
+}
+
+.cls_ReleaseSchedule_spanIcon{
+  width:32px;
+  height:32px;
+  vertical-align:middle;
+
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  display:inline-block;
+
+  background-image: url("https://lh3.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/18NoESuL9Hw/s800-Ic42/Dash_Category_Ubuntu_Item.png");  
+}
+
+.cls_ReleaseSchedule_spanIconBeta{
+  background-image: url("https://lh3.googleusercontent.com/-0pUHT0N6zKk/VP6GIR5KhsI/AAAAAAAA_jo/x9sng3GrAWk/s800-Ic42/Dash_Category_Ubuntu_Item_Beta.png");    
+}
+
+.cls_ReleaseSchedule_spanVersion{
+  vertical-align:middle;
+  font-weight: bold;
+}
+
+.cls_ReleaseSchedule_pDate{
+}
+
+/* --------------------------------------------------------------------------------
+Supported Version
+-------------------------------------------------------------------------------- */
+.cls_SupportedVersion_divUbuntu{
+}
+
+.cls_SupportedVersion_spanIcon{
+  width:32px;
+  height:32px;
+  vertical-align:middle;
+
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+  display:inline-block;
+
+  background-image: url("https://lh3.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/18NoESuL9Hw/s800-Ic42/Dash_Category_Ubuntu_Item.png");    
+}
+
+.cls_SupportedVersion_spanVersion{
+  vertical-align:middle;
+  font-weight: bold;
+}
+
+.cls_SupportedVersion_pDate{
+}
+
+/* --------------------------------------------------------------------------------
 Popular Post 
 -------------------------------------------------------------------------------- */
 .cls_PopularPost_divPost{
