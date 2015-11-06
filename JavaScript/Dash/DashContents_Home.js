@@ -133,6 +133,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 16.04 最終β',
       date:'2015年10月22日',
+      stage:'FinalBeta',
       link:adjustURLForMobile(getHomepageURL() + '2015/11/ubuntu-1604-2-ubuntu-1604.html'),
     },
 
