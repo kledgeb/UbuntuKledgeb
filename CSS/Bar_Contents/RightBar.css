@@ -88,6 +88,9 @@ Release Schedule
 }
 
 .cls_ReleaseSchedule_pDate{
+  margin-top: 4px;
+  margin-bottom: 32px;
+  margin-left: 38px;
 }
 
 /* --------------------------------------------------------------------------------
@@ -115,6 +118,8 @@ Supported Version
 }
 
 .cls_SupportedVersion_pDate{
+  margin-top: 4px;
+  margin-bottom: 32px;
 }
 
 /* --------------------------------------------------------------------------------
