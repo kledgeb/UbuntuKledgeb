@@ -170,8 +170,8 @@ function createRelatedPostElement(relatedPosts,userData){
 
     
   if((relatedPosts.length) && (userData) && (userData.scrollToAnchor === true)){
-    var h3RelatedPostTitle = $('#id_h3RelatedPostTitle');
-    $('html,body').animate({scrollTop:h3RelatedPostTitle.offset().top}, 500);
+    var divRelatedPostTitle = $('#id_divRelatedPostTitle');
+    $('html,body').animate({scrollTop:divRelatedPostTitle.offset().top}, 500);
   }
 }
 
