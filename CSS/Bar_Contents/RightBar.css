@@ -229,6 +229,7 @@ Pickup Post
   display: block;
   height: 160px;
   padding:8px;
+  overflow: hidden;
 }
 
 .cls_PickupPost_divPickupPostThumbnail {
