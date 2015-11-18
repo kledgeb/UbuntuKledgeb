@@ -33,7 +33,7 @@ function setupSNSLens_SharePost(){
     
     {
       title:'記事をツイッターで共有',
-      link:"http://twitter.com/share?url=" + gPostInfo.canonicalUrl + "&text="  + postTitle + "&hashtags=Ubuntu",
+      link:"http://twitter.com/share?url=" + gPostInfo.canonicalUrl + "&text="  + postTitle + "&hashtags=kledgeb",
       iconURL:'https://lh5.googleusercontent.com/-NpqimLJuM8k/VRolBlZAFsI/AAAAAAABAQI/3lH9wOOFmR4/s800/TweetButton_48.jpg',
     },
 
