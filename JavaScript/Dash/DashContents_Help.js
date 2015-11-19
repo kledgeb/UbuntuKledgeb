@@ -20,25 +20,25 @@ function setupPageLens_UpdateNotifyPage(){
     {
       title:'RSSで更新通知を受け取る',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_9.html'),
-      iconURL:'https://lh3.googleusercontent.com/-rmNE3mrkPNU/VQV_LItltzI/AAAAAAAA_ro/bBQBkx8eyRc/s800/Dash_UpdateNotifyPage_AddRSS.png',
+      iconURL:'//lh3.googleusercontent.com/-rmNE3mrkPNU/VQV_LItltzI/AAAAAAAA_ro/bBQBkx8eyRc/s800/Dash_UpdateNotifyPage_AddRSS.png',
     },
     
     {
       title:'RSSの更新通知を停止する',
       link:adjustURLForMobile(getHomepageURL() + 'p/rss.html'),
-      iconURL:'https://lh4.googleusercontent.com/-T90Sixm35tI/VQV_MQstR1I/AAAAAAAA_r0/Jyb-hAs0JWU/s800/Dash_UpdateNotifyPage_RemoveRSS.png',
+      iconURL:'//lh4.googleusercontent.com/-T90Sixm35tI/VQV_MQstR1I/AAAAAAAA_r0/Jyb-hAs0JWU/s800/Dash_UpdateNotifyPage_RemoveRSS.png',
     },
     
     {
       title:'メールで更新通知を受け取る',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
-      iconURL:'https://lh4.googleusercontent.com/-vyjh1pvHOuY/VQV_KuwoBgI/AAAAAAAA_rU/kqJMSuNzAXc/s800/Dash_UpdateNotifyPage_AddMail.png',
+      iconURL:'//lh4.googleusercontent.com/-vyjh1pvHOuY/VQV_KuwoBgI/AAAAAAAA_rU/kqJMSuNzAXc/s800/Dash_UpdateNotifyPage_AddMail.png',
     },
 
     {
       title:'メールの更新通知を停止する',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_15.html'),
-      iconURL:'https://lh5.googleusercontent.com/-fuqWXdqco8w/VQV_Lo7h-iI/AAAAAAAA_rg/5KmGKJrMBOY/s800/Dash_UpdateNotifyPage_RemoveMail.png',
+      iconURL:'//lh5.googleusercontent.com/-fuqWXdqco8w/VQV_Lo7h-iI/AAAAAAAA_rg/5KmGKJrMBOY/s800/Dash_UpdateNotifyPage_RemoveMail.png',
     },
   ];
 
@@ -72,7 +72,7 @@ function setupPageLens_HowToCommentPage(){
     {
       title:'コメントと掲示板の使い方',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_8387.html'),
-      iconURL:'https://lh3.googleusercontent.com/-64pzFLfdrsg/VQV_KE2Z3iI/AAAAAAAA_rQ/HpSi6XqNQXc/s800/Dash_HowToCommentPage_Comment.png',
+      iconURL:'//lh3.googleusercontent.com/-64pzFLfdrsg/VQV_KE2Z3iI/AAAAAAAA_rQ/HpSi6XqNQXc/s800/Dash_HowToCommentPage_Comment.png',
     },
   ];
 
@@ -106,7 +106,7 @@ function setupPageLens_PrivacyPage(){
     {
       title:'プライバシーポリシー',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_30.html'),
-      iconURL:'https://lh4.googleusercontent.com/-fxIWmidZrn0/VQV_KTpNsPI/AAAAAAAA_r4/aEdZKf9O51I/s800/Dash_PrivacyPage_PrivacyPolicy.png',
+      iconURL:'//lh4.googleusercontent.com/-fxIWmidZrn0/VQV_KTpNsPI/AAAAAAAA_r4/aEdZKf9O51I/s800/Dash_PrivacyPage_PrivacyPolicy.png',
     },
   ];
 

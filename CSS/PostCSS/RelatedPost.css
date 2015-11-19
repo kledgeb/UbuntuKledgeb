@@ -51,7 +51,7 @@ Related Post
 }
 
 .cls_RelatedPost_divLoading{
-  background-image: url("https://lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
   background-repeat:no-repeat;
   background-size:auto;
   background-position:center;    
@@ -119,9 +119,9 @@ Related Post
 }
 
 .cls_divRelatedPostNaviPrev{
-  background-image:url("https://lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
+  background-image:url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
 }
 
 .cls_divRelatedPostNaviNext{
-  background-image:url("https://lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
+  background-image:url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
 }

@@ -232,7 +232,7 @@ function doDashCategoryContentsQuickSearchClick(){
   var divMessageText = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divMessageText');
     
   if(itemInfo.itemData.errorMessage){
-    divMessageIcon.css('background-image','url("https://lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
+    divMessageIcon.css('background-image','url("//lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
     divMessageText.html(itemInfo.itemData.errorMessage);
   }else{
     setDefaultMessage(itemInfo.categoryName);
@@ -244,7 +244,7 @@ function setDefaultMessage(categoryName){
   var divMessageIcon = $('#id_Dash_Category_Contents_' + categoryName + '_divMessageIcon');
   var divMessageText = $('#id_Dash_Category_Contents_' + categoryName + '_divMessageText');
  
-  divMessageIcon.css('background-image','url("https://lh4.googleusercontent.com/-ySGf4MAzLx4/VQfAxiLWcSI/AAAAAAAA_tE/gD3zQsb5fnU/s800/Dash_Search_InfoIcon.png")');
+  divMessageIcon.css('background-image','url("//lh4.googleusercontent.com/-ySGf4MAzLx4/VQfAxiLWcSI/AAAAAAAA_tE/gD3zQsb5fnU/s800/Dash_Search_InfoIcon.png")');
   divMessageText.html('クイック検索やGoogleカスタム検索では、検索オプションは反映されません。<br>検索では、「検索する記事の日付」は反映されません。<br>期間検索では、「検索キーワード」及び「記事の日付順」は反映されません。');
   
 }
@@ -257,7 +257,7 @@ function onDashCategoryContentsNormalSearchClick(event){
   var divMessageText = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divMessageText');
     
   if(itemInfo.itemData.errorMessage){
-    divMessageIcon.css('background-image','url("https://lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
+    divMessageIcon.css('background-image','url("//lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
     divMessageText.html(itemInfo.itemData.errorMessage);
   }else{
     var params = createSearchPostParams(itemInfo,searchType);
@@ -275,7 +275,7 @@ function onDashCategoryContentsTermSearchClick(event){
   var divMessageText = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divMessageText');
     
   if(itemInfo.itemData.errorMessage){
-    divMessageIcon.css('background-image','url("https://lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
+    divMessageIcon.css('background-image','url("//lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
     divMessageText.html(itemInfo.itemData.errorMessage);
   }else{
     var params = createSearchPostParams(itemInfo,searchType);
@@ -458,7 +458,7 @@ function setupSearchContentsDetail(divItem){
   {
     var divSearchResultPostContainer = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divSearchResultPostContainer');
     
-    divSearchResultPostContainer.css('background-image','url("https://lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF")');    
+    divSearchResultPostContainer.css('background-image','url("//lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF")');    
   }
   
   getSearchPost(params,setupSearchContentsDetail_SearchPostCallback,itemInfo);

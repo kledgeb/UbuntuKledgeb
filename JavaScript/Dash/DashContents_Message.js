@@ -42,7 +42,7 @@ function setupMessageLens_CreateMessageElement(messageInfos,categoryName){
     messageInfo = messageInfos[i];
     
     if((messageInfos[i].userIcon.indexOf('/288/6469/avatar92.jpg') !== -1) || (messageInfos[i].userIcon.indexOf('/303/5312/avatar92.jpg') !== -1)){
-      itemIconURL = 'https://lh5.googleusercontent.com/-CBezBCTG5nM/VQQFkjz2KlI/AAAAAAAA_qM/RB7jrnSyKYg/s800/Dash_Message_Message.png';
+      itemIconURL = '//lh5.googleusercontent.com/-CBezBCTG5nM/VQQFkjz2KlI/AAAAAAAA_qM/RB7jrnSyKYg/s800/Dash_Message_Message.png';
     }else{
       itemIconURL = messageInfos[i].userIcon;
     }

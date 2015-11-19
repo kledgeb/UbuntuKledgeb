@@ -55,7 +55,7 @@ Window
 .cls_Dash_divSearchIcon{
   background-repeat: no-repeat;
   background-position: center;  
-  background-image: url("https://lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");
+  background-image: url("//lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");
   width:48px;
   height:48px;
     
@@ -98,7 +98,7 @@ Window
 
   background-repeat: no-repeat;
   background-position: center;  
-  background-image: url("https://lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Board_LargeSize.png");
+  background-image: url("//lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Board_LargeSize.png");
 }
 
 .cls_Dash_divSearchOption{
@@ -114,7 +114,7 @@ Window
   line-height:48px;
   text-align:right;
 
-  background-image: url("https://lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png");
+  background-image: url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png");
   background-repeat: no-repeat;
   background-position: right 4px center;  
   
@@ -156,7 +156,7 @@ Window
 }
 
 .cls_Dash_Lens_divArrow{
-  background-image: url("https://lh6.googleusercontent.com/-aWDGZLJfhEc/VPvBoENK2cI/AAAAAAAA_f4/IWKn_OGQC1c/s800/Dash_BottomBar_Lens_Arrow.png"); 
+  background-image: url("//lh6.googleusercontent.com/-aWDGZLJfhEc/VPvBoENK2cI/AAAAAAAA_f4/IWKn_OGQC1c/s800/Dash_BottomBar_Lens_Arrow.png"); 
 
   float:left;  
   height:16px;
@@ -178,35 +178,35 @@ Window
 }
 
 .cls_Dash_HomeLens_divIcon{
-  background-image: url("https://lh3.googleusercontent.com/-V4ulJ1l9zFo/VPu7_IiDeNI/AAAAAAAA_fo/WbUpmPHUhGc/s800/Dash_BottomBar_Lens_Home.png"); 
+  background-image: url("//lh3.googleusercontent.com/-V4ulJ1l9zFo/VPu7_IiDeNI/AAAAAAAA_fo/WbUpmPHUhGc/s800/Dash_BottomBar_Lens_Home.png"); 
 }
 
 .cls_Dash_PageLens_divIcon{
-  background-image: url("https://lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
+  background-image: url("//lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
 }
 
 .cls_Dash_StarLens_divIcon{
-  background-image: url("https://lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+  background-image: url("//lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
 }
 
 .cls_Dash_SNSLens_divIcon{
-  background-image: url("https://lh5.googleusercontent.com/-BDE2nP7I0I0/VRpVWY6ZANI/AAAAAAABARs/PYMoLZ1dkco/s800/Dash_BottomBar_Lens_SNS.png");   
+  background-image: url("//lh5.googleusercontent.com/-BDE2nP7I0I0/VRpVWY6ZANI/AAAAAAABARs/PYMoLZ1dkco/s800/Dash_BottomBar_Lens_SNS.png");   
 }
 
 .cls_Dash_TagLens_divIcon{
-  background-image: url("https://lh6.googleusercontent.com/-nuFd3BUPQb0/VPu8A2YTLtI/AAAAAAAA_fg/ta3tnXq1dU8/s800/Dash_BottomBar_Lens_Tags.png");   
+  background-image: url("//lh6.googleusercontent.com/-nuFd3BUPQb0/VPu8A2YTLtI/AAAAAAAA_fg/ta3tnXq1dU8/s800/Dash_BottomBar_Lens_Tags.png");   
 }
 
 .cls_Dash_SearchLens_divIcon{
-  background-image: url("https://lh6.googleusercontent.com/-PTCB0-GVhcQ/VPu7_01jziI/AAAAAAAA_fQ/h0mm53c59gc/s800/Dash_BottomBar_Lens_Search.png");   
+  background-image: url("//lh6.googleusercontent.com/-PTCB0-GVhcQ/VPu7_01jziI/AAAAAAAA_fQ/h0mm53c59gc/s800/Dash_BottomBar_Lens_Search.png");   
 }
 
 .cls_Dash_MessageLens_divIcon{
-  background-image: url("https://lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
+  background-image: url("//lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
 }
 
 .cls_Dash_HelpLens_divIcon{
-  background-image: url("https://lh6.googleusercontent.com/-__2WaTpwpcA/VPu7_KC6THI/AAAAAAAA_fE/iWkuMO3aAts/s800/Dash_BottomBar_Lens_Help.png");   
+  background-image: url("//lh6.googleusercontent.com/-__2WaTpwpcA/VPu7_KC6THI/AAAAAAAA_fE/iWkuMO3aAts/s800/Dash_BottomBar_Lens_Help.png");   
 }
 
 

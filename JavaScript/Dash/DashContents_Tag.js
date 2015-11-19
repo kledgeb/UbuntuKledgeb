@@ -35,7 +35,7 @@ function setupTagLens_CreateTagElement(tags) {
       itemTotalCount:tags.length,
       categoryName:categoryName,
       itemLink:adjustURLForMobile(getHomepageURL() + 'search/label/' + encodeURIComponent(tags[i].term) + '?max-results=' + gPostCountPerPage),
-      itemIconURL:'https://lh3.googleusercontent.com/-CrTTlWsjwIY/VRWvm7OyHbI/AAAAAAABAOU/-TTXxEfCIKA/s800/Dash_Tag_Tag.png',
+      itemIconURL:'//lh3.googleusercontent.com/-CrTTlWsjwIY/VRWvm7OyHbI/AAAAAAABAOU/-TTXxEfCIKA/s800/Dash_Tag_Tag.png',
       itemTitle:tags[i].term,
       hasDetail:true,
       itemData:{postIndex:1,pageIndex:1,postCountPerPage:20},
@@ -65,7 +65,7 @@ function setupTagContentsDetail(divItem){
   {
     var divSearchResultPostContainer = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divSearchResultPostContainer');
     
-    divSearchResultPostContainer.css('background-image','url("https://lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF")');    
+    divSearchResultPostContainer.css('background-image','url("//lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF")');    
   }
   
   getLabelPostByIndex(itemInfo.itemData.postIndex,itemInfo.itemTitle,itemInfo.itemData.postCountPerPage,setupTagContentsDetail_labelPostByIndexCallback,itemInfo);

@@ -173,11 +173,11 @@ function layoutCategoryHead(categoryName){
       divCategoryArrow.css('visibility','visible');
 
       if(arrowState == 'close'){
-        divCategoryArrow.css('background-image','url("https://lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');        
+        divCategoryArrow.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');        
         divCategoryArrow.text('すべてのアイテムを表示');
         divCategoryContents.css('max-height',divFirstItem.outerHeight() + 'px');
       }else if(arrowState == 'open'){
-        divCategoryArrow.css('background-image','url("https://lh4.googleusercontent.com/-LvKGjUWTr9s/VPr2KeW05EI/AAAAAAAA_eg/uzK8mZNKnbM/s800/LeftBar_Board_SearchOption_Open.png")');
+        divCategoryArrow.css('background-image','url("//lh4.googleusercontent.com/-LvKGjUWTr9s/VPr2KeW05EI/AAAAAAAA_eg/uzK8mZNKnbM/s800/LeftBar_Board_SearchOption_Open.png")');
         divCategoryArrow.text('一部のアイテムを表示');
         divCategoryContents.css('max-height','');
       }

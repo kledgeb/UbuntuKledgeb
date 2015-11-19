@@ -164,9 +164,9 @@ function setupHomeLens_ReleaseSchedule(){
     itemTitle = releaseSchedules[i].title + '<br>' + releaseSchedules[i].date;
       
     if(releaseSchedules[i].stage){
-      itemIconURL = 'https://lh6.googleusercontent.com/-0pUHT0N6zKk/VP6GIR5KhsI/AAAAAAAA_jo/9zgoMPszvBc/s800/Dash_Category_Ubuntu_Item_Beta.png';
+      itemIconURL = '//lh6.googleusercontent.com/-0pUHT0N6zKk/VP6GIR5KhsI/AAAAAAAA_jo/9zgoMPszvBc/s800/Dash_Category_Ubuntu_Item_Beta.png';
     }else{
-      itemIconURL = 'https://lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
+      itemIconURL = '//lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
     }
 
     categoryItemInfo = {
@@ -224,7 +224,7 @@ function setupHomeLens_SupportedVersion(){
   
   for(i = 0 ; i < supportedVersions.length ; i ++){
     itemTitle = supportedVersions[i].title + '<br>' + supportedVersions[i].date;    
-    itemIconURL = 'https://lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
+    itemIconURL = '//lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
 
     categoryItemInfo = {
       itemIndex:i,

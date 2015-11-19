@@ -24,16 +24,16 @@ Post Navi Button
 }
 
 .cls_PostNavi_anchorNext{
-  background-image: url("https://lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
+  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
   visibility:hidden;
 }
 
 .cls_PostNavi_anchorTop{
-  background-image: url("https://lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
+  background-image: url("//lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
 }
 
 .cls_PostNavi_anchorPrev{
-  background-image: url("https://lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
+  background-image: url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
   visibility:hidden;
 }
 
@@ -48,7 +48,7 @@ Post Navi Button with Info
 .cls_PostNaviWithInfo_divLoading{
   height:144px;
   
-  background-image: url("https://lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
   background-repeat:no-repeat;
   background-size:auto;
   background-position:center;
@@ -76,19 +76,19 @@ Post Navi Button with Info
 }
 
 .cls_PostNaviWithInfo_anchorNext{
-  background-image: url("https://lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
+  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
   background-position:left;
 }
 
 .cls_PostNaviWithInfo_anchorTop{
-  background-image: url("https://lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
+  background-image: url("//lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
   background-position:center;
   width:72px;
 
 }
 
 .cls_PostNaviWithInfo_anchorPrev{
-  background-image: url("https://lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
+  background-image: url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
   background-position:right;
   float:right;
 }

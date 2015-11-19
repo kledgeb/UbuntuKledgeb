@@ -38,11 +38,11 @@ function setPostNewIcon(newImgID,postID,postISO8601Date){
     
     switch(iconType){
     case 1:
-      newImgObj.attr('src','https://lh5.googleusercontent.com/-OonXsLudspM/UXOSY3bybYI/AAAAAAAAUbQ/vgBMdFUBFs8/s800/Icon_New_Blue.png');
+      newImgObj.attr('src','//lh5.googleusercontent.com/-OonXsLudspM/UXOSY3bybYI/AAAAAAAAUbQ/vgBMdFUBFs8/s800/Icon_New_Blue.png');
       newImgObj.attr('title','1週間以内に投稿されています。未読です。');
     break;
     case 2:
-      newImgObj.attr('src','https://lh4.googleusercontent.com/-c0rPEZmPjcQ/UXOSYyqhy4I/AAAAAAAAUbU/jYWgoUhAhRk/s800/Icon_New_Red.png');
+      newImgObj.attr('src','//lh4.googleusercontent.com/-c0rPEZmPjcQ/UXOSYyqhy4I/AAAAAAAAUbU/jYWgoUhAhRk/s800/Icon_New_Red.png');
       newImgObj.attr('title','3日以内に投稿されています。未読です。');
     break;
     }

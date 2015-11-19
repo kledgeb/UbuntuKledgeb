@@ -9,13 +9,27 @@ function setPostDate (spanID, postDate) {
 }  
 
 function getSizedThumbnailURL(thumbnailURL,thumbnailSize){
-  return thumbnailURL.replace('/s72-c/','/s' + thumbnailSize + '-a/');
+  return adjustURLProtocol(thumbnailURL.replace('/s72-c/','/s' + thumbnailSize + '-a/'));
 }
 
 function adjustPostDate(postDate){
   var tempDate = postDate.split("/");
   
   return tempDate[2] + "/" + tempDate[0] + "/" + tempDate[1];
+}
+
+function adjustURLProtocol(url){  
+  if("https:"==document.location.protocol){
+    if(url.startsWith('http:')){
+      url = 'https:' + url.substr(5);
+    }    
+  }else{
+    if(url.startsWith('https:')){
+      url = 'http:' + url.substr(6);
+    }    
+  }
+
+  return url;
 }
 
 function isTestSite(){

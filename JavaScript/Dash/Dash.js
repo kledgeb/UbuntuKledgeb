@@ -159,11 +159,11 @@ function layoutDash(){
   if(gDashSize == 'Normal'){
     dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
-    divWindowSize.css('background-image','url("https://lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Dash_LargeSize.png")');
+    divWindowSize.css('background-image','url("//lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Dash_LargeSize.png")');
   }else{
     dashHeight = windowHeight;
     dashWidth = windowWidth;
-    divWindowSize.css('background-image','url("https://lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
+    divWindowSize.css('background-image','url("//lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
   }
   
   if(dashWidth > windowWidth){
@@ -212,10 +212,10 @@ function layoutDash(){
 
   if(gOpenRightBar){
     divContentsContainer.outerWidth(barWidth);
-    divSearchOption.css('background-image','url("https://lh4.googleusercontent.com/-LvKGjUWTr9s/VPr2KeW05EI/AAAAAAAA_eg/uzK8mZNKnbM/s800/LeftBar_Board_SearchOption_Open.png")');
+    divSearchOption.css('background-image','url("//lh4.googleusercontent.com/-LvKGjUWTr9s/VPr2KeW05EI/AAAAAAAA_eg/uzK8mZNKnbM/s800/LeftBar_Board_SearchOption_Open.png")');
   }else{
     divContentsContainer.outerWidth(dashWidth);
-    divSearchOption.css('background-image','url("https://lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');
+    divSearchOption.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');
   }
   
   barHeight = dashHeight - divTopBar.outerHeight(true) - divBottomBar.outerHeight(true);

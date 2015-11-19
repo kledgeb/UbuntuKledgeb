@@ -165,10 +165,10 @@ function showUserSettingsMessage(messageType,iconType,message,isAppendMessage){
   }
 
   if(iconType == 'info'){
-    divMessageIcon.css('background-image','URL("https://lh6.googleusercontent.com/-I9dI3H-u3CI/VRhdupRnAGI/AAAAAAABAO0/hIz0U4CzBFo/s800/Message_InfoIcon_32.png")');
+    divMessageIcon.css('background-image','URL("//lh6.googleusercontent.com/-I9dI3H-u3CI/VRhdupRnAGI/AAAAAAABAO0/hIz0U4CzBFo/s800/Message_InfoIcon_32.png")');
     divMessageIcon.css('display','block');
   }else if(iconType == 'warn'){
-    divMessageIcon.css('background-image','URL("https://lh3.googleusercontent.com/-gmT1EgWLKyo/VRhdu-p7rNI/AAAAAAABAO4/FzdCauHw50Q/s800/Message_WarningIcon_32.png")');
+    divMessageIcon.css('background-image','URL("//lh3.googleusercontent.com/-gmT1EgWLKyo/VRhdu-p7rNI/AAAAAAABAO4/FzdCauHw50Q/s800/Message_WarningIcon_32.png")');
     divMessageIcon.css('display','block');
   }else{
     divMessageIcon.css('display','none');
