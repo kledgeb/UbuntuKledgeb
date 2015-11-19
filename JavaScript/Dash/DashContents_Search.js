@@ -293,11 +293,11 @@ function onDashCategoryContentsGoogleCustomSearchClick(event){
   var divMessageText = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divMessageText');
     
   if(itemInfo.itemData.errorMessage){
-    divMessageIcon.css('background-image','url("https://lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
+    divMessageIcon.css('background-image','url("//lh5.googleusercontent.com/-eAlUY5qd_7k/VQeuIk1rJrI/AAAAAAAA_s0/RN506olTU48/s800/Dash_Search_ErrorIcon.png")');
     divMessageText.html(itemInfo.itemData.errorMessage);
   }else{
     var params = createSearchPostParams(itemInfo,searchType);
-    var href = 'http://kledgeb.blogspot.com/p/cseresult.html?cseq=' + params.searchQuery;
+    var href = '//kledgeb.blogspot.com/p/cseresult.html?cseq=' + params.searchQuery;
     
     window.location.href = href;
   }  

@@ -4,7 +4,7 @@ google.setOnLoadCallback(function() {
   var customSearchControl =   new google.search.CustomSearchControl('007629158291309610641:cuw_v2pvi2c', customSearchOptions);
   customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
   var options = new google.search.DrawOptions();
-  options.enableSearchboxOnly('http://kledgeb.blogspot.com/p/cseresult.html', 'cseq');
+  options.enableSearchboxOnly('//kledgeb.blogspot.com/p/cseresult.html', 'cseq');
   options.setAutoComplete(true);
   customSearchControl.setAutoCompletionId('007629158291309610641:cuw_v2pvi2c+qtype:1');
   customSearchControl.draw('cse-search-form', options);
