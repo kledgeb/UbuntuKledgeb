@@ -234,7 +234,7 @@ function parseFeedLink(link,key){
   
   for (i = (link.length - 1) ; i >= 0 ; i --) {
     if(link[i].rel == key){
-      feedLink = link[i].href;
+      feedLink = adjustURLProtocol(link[i].href);
       break;
     }
   }
