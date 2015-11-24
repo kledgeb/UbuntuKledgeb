@@ -313,10 +313,11 @@ function addCategoryItem(categoryItemInfo){
   
   anchorItem.append("<div class='clear'></div>");
   divCategoryContents.append(divItem);  
-
+/*
   if(categoryItemInfo.autoEllipsis){
     divTitle.dotdotdot({watch:true});
   }
+*/
 }
 
 function addCategory(categoryName,categoryTitle){
