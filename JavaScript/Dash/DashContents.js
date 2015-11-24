@@ -315,7 +315,7 @@ function addCategoryItem(categoryItemInfo){
   divCategoryContents.append(divItem);  
 
   if(categoryItemInfo.autoEllipsis){
-    divTitle.dotdotdot({});
+    divTitle.dotdotdot({watch:true});
   }
 }
 
