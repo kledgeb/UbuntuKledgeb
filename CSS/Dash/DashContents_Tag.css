@@ -14,16 +14,10 @@ Dash Contents Tag
 .cls_Dash_Category_Contents_TagList_divItem{
   width:192px;
   height:48px;
-}
-
-.cls_Dash_Category_Contents_TagList_divIcon{
   background-size:auto;  
-  width:64px;
-  height:48px;
 }
 
-.cls_Dash_Category_Contents_TagList_divTitle{
-  width:120px;
+.cls_Dash_Category_Contents_TagList_anchorItem{
   height:48px;
 }
 
