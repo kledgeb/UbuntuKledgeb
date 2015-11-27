@@ -300,10 +300,11 @@ function addCategoryItem(categoryItemInfo){
     
   divCategoryContents.append(divItem);  
 
-  if(categoryItemInfo.autoEllipsis){    
-    if(anchorItem.text().length > 110)
+  if(categoryItemInfo.autoEllipsis){
+    var maxLength = 90;   
+    if(anchorItem.text().length > maxLength)
     {
-      anchorItem.text(anchorItem.text().substr(0,110) + '...');
+      anchorItem.text(anchorItem.text().substr(0,maxLength) + '...');
     }
   }
 
