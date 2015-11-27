@@ -17,15 +17,13 @@ Dash Contents Star
 .cls_Dash_Category_Contents_PopularPost_divItem,
 .cls_Dash_Category_Contents_PageHistory_divItem,
 .cls_Dash_Category_Contents_Bookmark_divItem{
-  width:424px;
+  width:352px;
+  height:128px;
 }
 
-.cls_Dash_Category_Contents_PopularPost_divItem,
-.cls_Dash_Category_Contents_PopularPost_divIcon,
-.cls_Dash_Category_Contents_PageHistory_divItem,
-.cls_Dash_Category_Contents_PageHistory_divIcon,
-.cls_Dash_Category_Contents_Bookmark_divItem,
-.cls_Dash_Category_Contents_Bookmark_divIcon{
+.cls_Dash_Category_Contents_PopularPost_anchorItem,
+.cls_Dash_Category_Contents_PageHistory_anchorItem,
+.cls_Dash_Category_Contents_Bookmark_anchorItem{
   height:128px;
 }
 
