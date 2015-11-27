@@ -62,7 +62,9 @@ Dash Contents Category
 
 
 .cls_Dash_Category_Contents_anchorItem{
-  display:table;
+  display:table-cell;
+  vertical-align:middle;  
+  height:120px;
 }
 
 .cls_Dash_Category_Contents_anchorItem:link,
