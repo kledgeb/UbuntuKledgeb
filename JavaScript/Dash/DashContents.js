@@ -256,6 +256,10 @@ function addCategoryItem(categoryItemInfo){
   {
     divItem.attr('id',idPrefix + categoryItemInfo.itemIndex);
     divItem.attr('class','cls_Dash_Category_Contents_divItem ' + clsPrefix + 'divItem');
+    
+    if(categoryItemInfo.itemIconURL){
+      divItem.css('background-image','url(' + categoryItemInfo.itemIconURL + ')');
+    }
   }
   
   if(categoryItemInfo.itemLink){
@@ -281,43 +285,30 @@ function addCategoryItem(categoryItemInfo){
         anchorItem.attr('target','_blank');
       }
     }else{
-      //anchorItem.attr('href','#');
       anchorItem.css('cursor','default');
       anchorItem.on("click", onEventPrevent);
     }
-        
+
+    if(categoryItemInfo.itemTitle){
+      anchorItem.text(categoryItemInfo.itemTitle);
+    }else if(categoryItemInfo.itemTitleHTML){
+      anchorItem.html(categoryItemInfo.itemTitleHTML);
+    }
+            
     anchorItem.appendTo(divItem);
   }
-  
-  //icon
-  {
-    divIcon.attr('class','cls_Dash_Category_Contents_divIcon ' + clsPrefix + 'divIcon');
-    if(categoryItemInfo.itemIconURL){
-      divIcon.css('background-image','url(' + categoryItemInfo.itemIconURL + ')');
-    }
     
-    divIcon.appendTo(anchorItem);
-  }
-  
-  //title
-  {
-    divTitle.appendTo(anchorItem);
-    divTitle.attr('class','cls_Dash_Category_Contents_divTitle ' + clsPrefix + 'divTitle');
-    
-    if(categoryItemInfo.itemTitle){
-      divTitle.text(categoryItemInfo.itemTitle);
-    }else if(categoryItemInfo.itemTitleHTML){
-      divTitle.html(categoryItemInfo.itemTitleHTML);
-    }
-  }
-  
-  anchorItem.append("<div class='clear'></div>");
   divCategoryContents.append(divItem);  
-/*
+
   if(categoryItemInfo.autoEllipsis){
-    divTitle.dotdotdot({watch:true});
+    anchorItem.text().length;
+    
+    if(len > 110)
+    {
+      anchorItem.text(anchorItem.text().substr(0,110) + '...');
+    }
   }
-*/
+
 }
 
 function addCategory(categoryName,categoryTitle){

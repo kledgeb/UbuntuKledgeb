@@ -50,9 +50,14 @@ Dash Contents Category
   float:left;
   padding:8px;  
   height:64px;
+  padding-left:80px;
   overflow:hidden;
   margin-right:16px;
   margin-bottom:16px;
+
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 64px;
 }
 
 
@@ -74,20 +79,4 @@ Dash Contents Category
   outline: 0;
 }
 
-.cls_Dash_Category_Contents_divIcon{
-  background-repeat: no-repeat;
-  background-position: center; 
-  width:64px;
-  height:64px;
-  float:left;
-  background-size:contain;
-}
 
-.cls_Dash_Category_Contents_divTitle{
-  display:table-cell;
-  vertical-align:middle;
-  width:100%;
-  height:100%;
-  padding-left:8px;
-  overflow:hidden;    
-}
