@@ -29,12 +29,12 @@ Top Bar
 .cls_TopBar_Title a:visited{
   color:white;
 }
-
-.cls_TopBar_Description{
-  margin-left: 16px;
-}
   
 #HTML7 {
-  margin-top: 24px;
-  height: 24px;
+  margin-top: 16px;
+  height: 16px;
+}
+
+.cls_TopBar_spanDescription{
+  margin-left: 16px;  
 }
