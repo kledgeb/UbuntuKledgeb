@@ -9,16 +9,15 @@ Dash Contents Message
 
 .cls_Dash_Category_Contents_PostCommnetList_divItem,
 .cls_Dash_Category_Contents_ForumCommnetList_divItem{
-  width:424px;
-}
-
-.cls_Dash_Category_Contents_PostCommnetList_divItem,
-.cls_Dash_Category_Contents_PostCommnetList_divIcon{
+  width:352px;
   height:128px;
 }
 
-.cls_Dash_Category_Contents_ForumCommnetList_divItem,
-.cls_Dash_Category_Contents_ForumCommnetList_divIcon{
+.cls_Dash_Category_Contents_PostCommnetList_anchorItem{
+  height:128px;
+}
+
+.cls_Dash_Category_Contents_ForumCommnetList_anchorItem{
   height:128px;
 }
 
