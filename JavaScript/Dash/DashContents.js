@@ -300,10 +300,8 @@ function addCategoryItem(categoryItemInfo){
     
   divCategoryContents.append(divItem);  
 
-  if(categoryItemInfo.autoEllipsis){
-    anchorItem.text().length;
-    
-    if(len > 110)
+  if(categoryItemInfo.autoEllipsis){    
+    if(anchorItem.text().length > 110)
     {
       anchorItem.text(anchorItem.text().substr(0,110) + '...');
     }
