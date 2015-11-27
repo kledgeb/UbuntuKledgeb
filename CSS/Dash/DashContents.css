@@ -46,7 +46,7 @@ Dash Contents Category
 
 /* Dash Category Contents */
 .cls_Dash_Category_Contents_divItem{
-  width:272px;
+  width:200px;
   float:left;
   padding:8px;  
   height:64px;
@@ -64,7 +64,7 @@ Dash Contents Category
 .cls_Dash_Category_Contents_anchorItem{
   display:table-cell;
   vertical-align:middle;  
-  height:120px;
+  height:48px;
 }
 
 .cls_Dash_Category_Contents_anchorItem:link,
