@@ -19,8 +19,10 @@ Top Bar
   background-repeat:no-repeat;
   background-size:contain;
   background-position:left;  
-  background-image:url("//lh4.googleusercontent.com/-ysA1j0yDfsU/UY2K6ZYZJNI/AAAAAAAAW8o/2BqMZTbYsBg/s800/kledgebLogo_Large2_2.png");
-  padding-left:42px;
+  background-image:url("//lh3.googleusercontent.com/-QfhEsfViWlY/VliHgYf7-SI/AAAAAAABPEY/KgYwP-nRwS0/s800-Ic42/WebSite_Logo_kledgeb_48.png");
+  padding-left:50px;
+  display: inline-block;
+  height: 42px;  
 } 
 
 .cls_TopBar_Title a:link,
@@ -29,6 +31,10 @@ Top Bar
 }
 
 .cls_TopBar_Description{
-  margin-top:16px;
+  margin-left: 16px;
 }
   
+#HTML7 {
+  margin-top: 24px;
+  height: 24px;
+}
