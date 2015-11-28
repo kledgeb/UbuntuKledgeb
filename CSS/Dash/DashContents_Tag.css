@@ -34,30 +34,20 @@ Dash Contents Tag
 
 .cls_Dash_Category_Contents_divSearchResultPost{
   padding:8px;
-}
+  padding-left:80px;
+  height:64px;
 
-.cls_Dash_Category_Contents_divSearchResultPost a{
-  color:white;
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size:64px;
+
+  overflow:hidden;
 }
 
 .cls_Dash_Category_Contents_anchorSearchResultPostLink{
-  display:block;
-}
-
-.cls_Dash_Category_Contents_divSearchResultPostImage{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:contain;  
-  
-  width:64px;
-  height:64px;
-  float:left;
-  
-  margin-right:16px;
-}
-
-.cls_Dash_Category_Contents_divSearchResultPostTitle{
   display:table-cell;
   height:64px;
   vertical-align:middle;
+  color:white;
 }
+

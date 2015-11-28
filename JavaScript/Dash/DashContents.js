@@ -247,8 +247,6 @@ function addCategoryItem(categoryItemInfo){
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryItemInfo.categoryName);
   var divItem = $('<div/>');
   var anchorItem = $('<a/>');
-  var divIcon = $('<div/>');
-  var divTitle = $('<div/>');
   
   var idPrefix = 'id_Dash_Category_Contents_' + categoryItemInfo.categoryName + '_divItem_';
   var clsPrefix = 'cls_Dash_Category_Contents_' + categoryItemInfo.categoryName +'_';
@@ -301,7 +299,8 @@ function addCategoryItem(categoryItemInfo){
   divCategoryContents.append(divItem);  
 
   if(categoryItemInfo.autoEllipsis){
-    var maxLength = 90;   
+    var maxLength = 90;
+     
     if(anchorItem.text().length > maxLength)
     {
       anchorItem.text(anchorItem.text().substr(0,maxLength) + '...');

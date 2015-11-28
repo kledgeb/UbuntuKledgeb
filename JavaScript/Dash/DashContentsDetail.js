@@ -272,8 +272,6 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
   var divSearchResultPostContainer = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divSearchResultPostContainer');
   var divSearchResultPost;
   var anchorSearchResultPostLink;
-  var divSearchResultPostImage;
-  var divSearchResultPostTitle;
   
   if(itemInfo.itemData.totalPostCount === undefined){
     itemInfo.itemData['totalPostCount'] = parseInt(feed.openSearch$totalResults.$t,10);
@@ -292,6 +290,10 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
       divSearchResultPost.data('itemInfo',itemInfo);
       divSearchResultPost.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
       divSearchResultPostContainer.append(divSearchResultPost);
+
+       if(entry[i].media$thumbnail){
+        divSearchResultPost.css('background-image','url("' + parsePostThumbnail(entry[i].media$thumbnail,entry[i].media$thumbnail.width * 2) + '")');
+      }
     }
     
     //anchorSearchResultPostLink
@@ -299,30 +301,9 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
       anchorSearchResultPostLink = $('<a>');
       anchorSearchResultPostLink.attr('class','cls_Dash_Category_Contents_anchorSearchResultPostLink cls_Dash_Category_Contents' +  itemInfo.categoryName + '_anchorSearchResultPostLink');
       anchorSearchResultPostLink.attr('href',parsePostLink(entry[i].link));
+      anchorSearchResultPostLink.text(entry[i].title.$t);
       divSearchResultPost.append(anchorSearchResultPostLink);
     }
-    
-    //divSearchResultPostImage
-    {
-      divSearchResultPostImage = $('<div>');
-      divSearchResultPostImage.attr('class','cls_Dash_Category_Contents_divSearchResultPostImage cls_Dash_Category_Contents' +  itemInfo.categoryName + '_divSearchResultPostImage');
-      
-      if(entry[i].media$thumbnail){
-        divSearchResultPostImage.css('background-image','url("' + parsePostThumbnail(entry[i].media$thumbnail,entry[i].media$thumbnail.width * 2) + '")');
-      }
-      
-      anchorSearchResultPostLink.append(divSearchResultPostImage);
-    }
-    
-    //divSearchResultPostTitle
-    {
-      divSearchResultPostTitle = $('<div>');
-      divSearchResultPostTitle.attr('class','cls_Dash_Category_Contents_divSearchResultPostTitle cls_Dash_Category_Contents' +  itemInfo.categoryName + '_divSearchResultPostTitle');
-      divSearchResultPostTitle.text(entry[i].title.$t);
-      anchorSearchResultPostLink.append(divSearchResultPostTitle);      
-    }
-    
-    anchorSearchResultPostLink.append("<div class='clear'></div>");
   }
 
 }
