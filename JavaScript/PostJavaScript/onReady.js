@@ -86,7 +86,8 @@ $(function() {
 });
 
 function onHoverIn_Animate(eventObject){
-  $(this).stop().animate({ backgroundColor: "#19529E"}, 200);
+//  $(this).stop().animate({ backgroundColor: "#19529E"}, 200);
+  $(this).stop().animate({ backgroundColor: "#DD4814"}, 200);
 }
 
 function onHoverOut_Animate(eventObject){
@@ -94,11 +95,13 @@ function onHoverOut_Animate(eventObject){
 }
 
 function onHoverOut_Animate_PageNaviButton(eventObject){
-  $(this).stop().animate({ backgroundColor: "#5981B9"}, 200);
+//  $(this).stop().animate({ backgroundColor: "#5981B9"}, 200);
+  $(this).stop().animate({ backgroundColor: "#EEA389"}, 200);
 }
 
 function onHoverIn_AnimateAnchorPost(eventObject){
-  $(this).stop().animate({ backgroundColor: "#F4F8FE"}, 200);
+//  $(this).stop().animate({ backgroundColor: "#F4F8FE"}, 200);
+  $(this).stop().animate({ backgroundColor: "#F6D1C4"}, 200);
 }
 
 function onHoverOut_AnimateAnchorPost(eventObject){
