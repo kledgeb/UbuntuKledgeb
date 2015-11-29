@@ -185,16 +185,18 @@ Post Footer
 -------------------------------------------------------------------------------- */
 .cls_divPostFooter{
   margin-top:16px;
-  
   padding-top:16px;
-  
   border-top:1px solid #ddd;
 }
 
+.divPostFooter_PostInfo{
+  border-bottom: 1px solid #ddd;  
+}
+
 .cls_divPostFooter_index {
-    margin-bottom: 24px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
 }
 
 .cls_divPostFooter a{
@@ -232,10 +234,7 @@ Post Footer Adsence
 -------------------------------------------------------------------------------- */
 
 .cls_PostFooterAdsence_divContents{
-  margin-top:24px;
-  padding-top:24px;
 
-  border-top:1px solid #ddd;
 }
 
 .cls_PostBottomAdsence_divContents{
