@@ -259,8 +259,6 @@ Post Footer Adsence
 
 .cls_PostFooterAdsence_divLinkContents{
   width:200px;
-  height:200px;
-  margin:auto;
   float:left;  
 }
 
@@ -272,7 +270,7 @@ Post Footer Adsence
 }
 
 .cls_PostFooterAdsence_divLinkAdsence_1{
-  padding-bottom:16px;
+  padding-bottom:64px;
 }
 
 .adsbygoogle_res_1,
