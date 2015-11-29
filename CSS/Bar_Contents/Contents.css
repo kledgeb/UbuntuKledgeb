@@ -99,6 +99,8 @@ Post Header Adsence
   overflow: hidden;
   margin-top:16px;
   margin-bottom:16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .adsbygoogle_res_4{
@@ -186,7 +188,6 @@ Post Footer
 .cls_divPostFooter{
   margin-top:16px;
   padding-top:16px;
-  border-top:1px solid #ddd;
 }
 
 .cls_divPostFooter_PostInfo{
