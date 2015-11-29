@@ -257,6 +257,24 @@ Post Footer Adsence
   overflow: hidden;
 }
 
+.cls_PostFooterAdsence_divLinkContents{
+  width:200px;
+  height:200px;
+  margin:auto;
+  float:left;  
+}
+
+.cls_PostFooterAdsence_divLinkAdsence_1,
+.cls_PostFooterAdsence_divLinkAdsence_2{
+  width:200px;
+  height:90px;
+  float:left;  
+}
+
+.cls_PostFooterAdsence_divLinkAdsence_1{
+  padding-bottom:16px;
+}
+
 .adsbygoogle_res_1,
 .adsbygoogle_res_2{
   width:336px;
