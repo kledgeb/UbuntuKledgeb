@@ -93,12 +93,17 @@ Post Index
 /*-- --------------------------------------------------------------------------------
 Post Header Adsence
 -------------------------------------------------------------------------------- */
-.cls_PostHeadeAdsence_divAdsence_1,
-.cls_PostHeadeAdsence_divAdsence_2{
-  float:left;
-  max-height:280px;
-  width:50%;
-  overflow: hidden; 
+.cls_PostHeadAdsence_divAdsence_1{
+  width:728px;
+  height:90px;
+  overflow: hidden;
+  margin-top:16px;
+  margin-bottom:16px;
+}
+
+.adsbygoogle_res_4{
+  width:728px;
+  height:90px;  
 }
 
 /*-- --------------------------------------------------------------------------------
@@ -248,7 +253,7 @@ Post Footer Adsence
 .cls_PostBottomAdsence_divAdsence_2{
   float:left;
   width:50%;
-  max-height:280px;
+  height:280px;
   overflow: hidden;
 }
 
@@ -263,4 +268,5 @@ Post Footer Adsence
 .adsbygoogle_LinkUnit_2{
   margin:0 auto;  
 }
+
 
