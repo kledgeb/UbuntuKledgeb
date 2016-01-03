@@ -120,7 +120,7 @@ function setupHomeLens_ReleaseSchedule(){
 
     {
       title:'Ubutntu 14.04.4 LTS',
-      date:'2016年2月6日',
+      date:'2016年2月4日',
       link:adjustURLForMobile(getHomepageURL() + '2015/11/ubuntu-1404-17-ubuntu-14044.html'),
     },
 
