@@ -48,3 +48,11 @@ div.clPostFrame h3{
       
   margin: 4px 0px;
 }
+
+.clBlockquote {
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid gray;
+    border-left-width: 8px;
+    background-color: WhiteSmoke;
+}
