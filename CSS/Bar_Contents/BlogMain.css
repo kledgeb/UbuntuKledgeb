@@ -61,5 +61,14 @@ button{
   display:none;
 }
 
-.goog-te-banner-frame.skiptranslate {display: none !important;} 
-body { top: 0px !important; }
+/* --------------------------------------------------------------------------------
+Hide Google Translate Top Bar
+-------------------------------------------------------------------------------- */
+
+.goog-te-banner-frame.skiptranslate{
+  display: none !important;
+}
+ 
+body{
+  top: 0px !important;
+}
