@@ -120,8 +120,8 @@ function setupHomeLens_ReleaseSchedule(){
 
     {
       title:'Ubutntu 14.04.4 LTS',
-      date:'2016年2月11日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/11/ubuntu-1404-17-ubuntu-14044.html'),
+      date:'2016年2月18日',
+      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-21-ubuntu-14044.html'),
     },
 
     {
@@ -134,13 +134,13 @@ function setupHomeLens_ReleaseSchedule(){
       title:'Ubutntu 16.04 最終β',
       date:'2016年3月24日',
       stage:'FinalBeta',
-      link:adjustURLForMobile(getHomepageURL() + '2016/01/ubuntu-1604-11-xenial-xerus-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/01/ubuntu-1604-13-xenial-xerus-2.html'),
     },
 
     {
       title:'Ubutntu 16.04 LTS',
       date:'2016年4月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/01/ubuntu-1604-11-xenial-xerus-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/01/ubuntu-1604-13-xenial-xerus-2.html'),
     },
 ];
 
