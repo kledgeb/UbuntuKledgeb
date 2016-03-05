@@ -113,15 +113,9 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 14.04.3 LTS',
-      date:'2015年8月6日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/08/ubuntu-1404-15-ubuntu-14043.html'),
-    },
-
-    {
       title:'Ubutntu 14.04.4 LTS',
       date:'2016年2月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-21-ubuntu-14044.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-22-ubuntu-14044.html'),
     },
 
     {
