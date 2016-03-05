@@ -188,9 +188,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 14.04.3 LTS',
+      title:'Ubutntu 14.04.4 LTS',
       date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2015/08/ubuntu-1404-15-ubuntu-14043.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-22-ubuntu-14044.html'),
     },
     
     {
