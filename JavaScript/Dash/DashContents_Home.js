@@ -128,13 +128,13 @@ function setupHomeLens_ReleaseSchedule(){
       title:'Ubutntu 16.04 最終β',
       date:'2016年3月24日',
       stage:'FinalBeta',
-      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1604-17-xenial-xerus-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/03/ubuntu-1604-23-xenial-xerus.html'),
     },
 
     {
       title:'Ubutntu 16.04 LTS',
       date:'2016年4月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1604-17-xenial-xerus-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/03/ubuntu-1604-23-xenial-xerus.html'),
     },
 ];
 
