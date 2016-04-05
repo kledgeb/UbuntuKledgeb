@@ -7,6 +7,7 @@ Left Bar
   width:48px;
   height:100%;
   position:fixed;
+  z-index:1;
   }
   
 .cls_LeftBar_divContainer{
