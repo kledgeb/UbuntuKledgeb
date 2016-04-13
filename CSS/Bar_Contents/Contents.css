@@ -188,7 +188,6 @@ Post Footer
 .cls_divPostFooter{
   margin-top:16px;
   padding-top:16px;
-  border-top:1px solid #ddd;
 }
 
 .cls_divPostFooter_PostInfo{
@@ -238,7 +237,9 @@ Post Footer Adsence
 
 .cls_PostFooterAdsence_divContents{
   margin-bottom: 24px;
-}
+  padding-top: 24px;
+  border-top: solid 1px #ddd;
+  }
 
 .cls_PostBottomAdsence_divContents{
   margin-top:24px;
