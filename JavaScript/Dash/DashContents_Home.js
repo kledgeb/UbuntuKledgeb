@@ -125,16 +125,15 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 16.04 最終β',
-      date:'2016年3月24日',
-      stage:'FinalBeta',
-      link:adjustURLForMobile(getHomepageURL() + '2016/03/ubuntu-1604-23-xenial-xerus.html'),
+      title:'Ubutntu 16.04 LTS',
+      date:'2016年4月21日',
+      link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1604-40-ubuntu-1604.html'),
     },
 
     {
-      title:'Ubutntu 16.04 LTS',
-      date:'2016年4月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/03/ubuntu-1604-23-xenial-xerus.html'),
+      title:'Ubutntu 16.10',
+      date:'2016年10月20日',
+      link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1610-1-ubuntu-1610ubuntu-1610.html'),
     },
 ];
 
@@ -191,6 +190,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 15.10',
       date:'2016年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
+    },
+
+    {
+      title:'Ubutntu 16.04 LTS',
+      date:'2021年4月までサポート（5年）',
+      link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1604-40-ubuntu-1604.html'),
     },
   ];
 
