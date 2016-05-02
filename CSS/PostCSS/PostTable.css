@@ -17,6 +17,10 @@ overflow-x:auto;
   
 */
 
+table.postTable100Percent{
+  width:100%;  
+}
+
 table.postTable1,
 table.postTable2,
 table.postTable3,
