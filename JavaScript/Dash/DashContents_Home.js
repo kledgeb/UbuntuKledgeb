@@ -131,6 +131,12 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
+      title:'Ubutntu 16.04.1 LTS',
+      date:'2016年7月21日',
+      link:adjustURLForMobile(getHomepageURL() + '2016/05/ubuntu-1604-54-ubuntu-16041ubuntu.html'),
+    },
+
+    {
       title:'Ubutntu 16.10',
       date:'2016年10月20日',
       link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1610-1-ubuntu-1610ubuntu-1610.html'),
