@@ -74,6 +74,10 @@ div.clPostFrame h3{
   color:white;
 }
 
+.clsInstallAppButton:link{
+  color:white;
+}
+
 .clsInstallAppButton:hover{
   background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
 	background-image: linear-gradient(to bottom, #E95420, #F08763);  
