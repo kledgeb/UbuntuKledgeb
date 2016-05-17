@@ -353,6 +353,7 @@ function createSearchItemInfo(searchType){
   
   var errorMessage = null;
   
+  /*
   if(divSearchCategory.data('checkedButtonID') == 'id_Dash_Category_Contents_' + categoryName + '_divSearchOrderByRelativity'){
     orderBy = 'false';
   }
@@ -383,7 +384,7 @@ function createSearchItemInfo(searchType){
       //endDate = '' + stratDateObject.getFullYear() + '-' + (stratDateObject.getMonth() + 1) + '-' + stratDateObject.getDate() + 'T23:59:59%2B09:00';      
     }
   }
-  
+  */
   {
     var inputSearchBox = $('#id_Dash_inputSearchBox');
     
