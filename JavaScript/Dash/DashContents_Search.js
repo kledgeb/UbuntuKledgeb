@@ -23,7 +23,7 @@ function setupSearchLensContents(showParams){
     divSearchCategory.data('categoryName',categoryName);
     divContents.append(divSearchCategory);
   }
-  
+  /*
   {  
     divSearchCategoryHead = $('<div>');
     divSearchCategoryHead.attr('class','cls_Dash_Category_Head_div' + categoryName + ' cls_Dash_Category_Head_' + categoryName + '_divSearchOrderBy');
@@ -119,7 +119,7 @@ function setupSearchLensContents(showParams){
 
     divSearchCategory.append(divSearchCategoryContents);
   }
-
+*/
   {
     divSearchCategoryHead = $('<div>');
     divSearchCategoryHead.attr('class','cls_Dash_Category_Head_div' + categoryName + ' cls_Dash_Category_Head_' + categoryName + '_divSearchRun');
@@ -131,7 +131,7 @@ function setupSearchLensContents(showParams){
   {    
     divSearchCategoryContents = $('<div>');
     divSearchCategoryContents.attr('class','cls_Dash_Category_Contents_div' + categoryName + ' cls_Dash_Category_Contents_' + categoryName + '_divSearchRun');
-    
+    /*
     divButton = $('<div>');
     divButton.attr('id','id_Dash_Category_Contents_' + categoryName + '_divQuickSearch');
     divButton.attr('class','userNoSelect cls_Dash_Category_Contents_' + categoryName + '_divQuickSearch');
@@ -158,11 +158,11 @@ function setupSearchLensContents(showParams){
     divButton.on('click',onDashCategoryContentsTermSearchClick);
     divButton.data('searchType','termSearch');
     divSearchCategoryContents.append(divButton);
-
+    */
     divButton = $('<div>');
     divButton.attr('id','id_Dash_Category_Contents_' + categoryName + '_divGoogleCustomSearch');
     divButton.attr('class','userNoSelect cls_Dash_Category_Contents_' + categoryName + '_divGoogleCustomSearch');
-    divButton.text('Googleカスタム検索');    
+    divButton.text('検索');    
     divButton.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
     divButton.on('click',onDashCategoryContentsGoogleCustomSearchClick);
     divButton.data('searchType','googleCustomSearch');
@@ -172,7 +172,7 @@ function setupSearchLensContents(showParams){
 
     divSearchCategory.append(divSearchCategoryContents);    
   }
-  
+  /*
   {
     var divMessageIcon;
     var divMessageText;
@@ -195,6 +195,7 @@ function setupSearchLensContents(showParams){
 
     setDefaultMessage(categoryName);
   }
+  */ 
 }
 
 function onDashSearchCategoryContentsSearchOrderByClick(event){

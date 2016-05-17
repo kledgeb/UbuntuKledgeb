@@ -7,8 +7,8 @@ function setupStarLensContents(showParams){
 
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
   setupStarLens_Bookmark();
-  setupStarLens_PageHistory();
-  setupStarLens_PopularPostPost();
+  //setupStarLens_PageHistory();
+  //setupStarLens_PopularPostPost();
 
   //Option
   addShowHideAllOption();
