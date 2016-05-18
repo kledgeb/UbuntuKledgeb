@@ -29,13 +29,15 @@ function setupStarLens_PopularPostPost(){
     var popularPost;
 
     if(anchorPopularPosts){
+      var anchorPopularPost;
             
       for(i = 0 ; i < anchorPopularPosts.length ; i ++){
+        anchorPopularPost = $(anchorPopularPosts[i]);
         popularPost = {};
-        popularPost.itemLink = $(anchorPopularPosts[i]).attr('href');
-        popularPost.itemIconURL = $(anchorPopularPosts[i].children(':first')).attr('src');
-        popularPost.itemTitle = $(anchorPopularPosts[i].children(':eq(2)')).text();
-        popularPost.itemSummary = $(anchorPopularPosts[i].children(':eq(3)')).text();
+        popularPost.itemLink = anchorPopularPost.attr('href');
+        popularPost.itemIconURL = $(anchorPopularPost.children(':first')).attr('src');
+        popularPost.itemTitle = $(anchorPopularPost.children(':eq(2)')).text();
+        popularPost.itemSummary = $(anchorPopularPost.children(':eq(3)')).text();
 
         gPopularPosts.push(popularPost);
       }
