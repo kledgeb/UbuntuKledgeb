@@ -51,4 +51,12 @@ function onSearchResultItemClick(event){
 
 (function(){
   $('#cse').on('click',onSearchResultItemClick);
+
+  {
+    var searchQuery = getGoogleCustomSearchQuery();
+
+    if(searchQuery !== null){
+      $('#gsc-i-id1').val(searchQuery);
+    }
+  }
 }());
