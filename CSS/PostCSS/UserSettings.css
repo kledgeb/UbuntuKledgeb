@@ -6,6 +6,7 @@ User Settings
   padding:8px;
   margin-left:8px;
   margin-right:8px;
+  min-width:256px;
 }
 
 .cls_UserSettings_Bookmark_divButtonContainer,
@@ -63,5 +64,6 @@ User Settings
   display:inline-block;
   position:relative;
   margin-left:8px;
-  margin-right:8px;  
+  margin-right:8px;
+  margin-top:32px;
 }
