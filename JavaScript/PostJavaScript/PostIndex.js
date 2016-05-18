@@ -2,7 +2,7 @@
 Post Index  
 -------------------------------------------------------------------------------- --*/
 function setPostThumbnail(divPostThumbnailID,thumbnailURL){
-  var imageSize = 300;
+  var imageSize = 180;
   var divElem = $("#" + divPostThumbnailID);
   
   thumbnailURL = getSizedThumbnailURL(thumbnailURL,imageSize);
