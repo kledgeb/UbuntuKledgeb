@@ -54,7 +54,9 @@ function onGoogleCustomSearchResult(object){
   var searchQuery = getGoogleCustomSearchQuery();
 
   if(searchQuery !== null){
-    $('#gsc-i-id1').val(searchQuery);
+    var inputsearchBox = $('#gsc-i-id1');
+    inputsearchBox.val(searchQuery);
+    inputsearchBox.attr('background','none');
   }
 }
 
