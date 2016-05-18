@@ -8,7 +8,7 @@ function setupStarLensContents(showParams){
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
   setupStarLens_Bookmark();
   //setupStarLens_PageHistory();
-  //setupStarLens_PopularPostPost();
+  setupStarLens_PopularPostPost();
 
   //Option
   addShowHideAllOption();
@@ -22,6 +22,23 @@ function setupStarLens_PopularPostPost(){
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   var i;
   var categoryItemInfo;
+  
+  var gPopularPosts = [];
+  {
+    var anchorPopularPost = $('#id_divPopularPost .cls_PopularPost_anchorPost');
+    var popularPost;
+
+    if(anchorPopularPost){
+      for(i = 0 ; i < anchorPopularPost.length ; i ++){
+        popularPost.itemLink = anchorPopularPost[i].attr('href');
+        popularPost.itemIconURL = anchorPopularPost[i].children(':first').attr('src');
+        popularPost.itemTitle = anchorPopularPost[i].children(':eq(2)').text();
+        popularPost.itemSummary = anchorPopularPost[i].children(':eq(3)').text();
+
+        gPopularPosts.push(popularPost);
+      }
+    }
+  }
   
   for(i = 0 ; i < gPopularPosts.length ; i ++){
     categoryItemInfo = {
