@@ -10,6 +10,7 @@ google.setOnLoadCallback(function() {
   var options = new google.search.DrawOptions();
   options.enableSearchResultsOnly();
   options.setAutoComplete(true);
+  customSearchControl.setSearchCompleteCallback(null, onGoogleCustomSearchResult)
   customSearchControl.setAutoCompletionId('007629158291309610641:cuw_v2pvi2c+qtype:1');
   customSearchControl.draw('cse', options);
   function parseParamsFromUrl() {
@@ -49,14 +50,14 @@ function onSearchResultItemClick(event){
   }
 }
 
+function onGoogleCustomSearchResult(object){
+  var searchQuery = getGoogleCustomSearchQuery();
+
+  if(searchQuery !== null){
+    $('#gsc-i-id1').val(searchQuery);
+  }
+}
+
 (function(){
   $('#cse').on('click',onSearchResultItemClick);
-
-  {
-    var searchQuery = getGoogleCustomSearchQuery();
-
-    if(searchQuery !== null){
-      $('#gsc-i-id1').val(searchQuery);
-    }
-  }
 }());
