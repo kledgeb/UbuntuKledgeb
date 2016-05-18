@@ -301,7 +301,7 @@ function onDashCategoryContentsTermSearchClick(event){
 }
 
 function doDashCategoryContentsGoogleCustomSearchClick(){
-  var searchType = $(this).data('searchType');
+  var searchType = 'googleCustomSearch';
   var itemInfo = createSearchItemInfo(searchType);
 
   var divMessageIcon = $('#id_Dash_Category_Contents_' + itemInfo.categoryName + '_divMessageIcon');
