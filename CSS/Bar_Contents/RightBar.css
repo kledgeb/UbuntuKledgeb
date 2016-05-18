@@ -186,6 +186,18 @@ Popular Post
   background-position:center;
 }
 
+.cls_PopularPost_imgThumbnail{
+  width:72px;
+  height:72px;
+
+  float:left;
+  margin-right:16px;
+  
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
 .cls_divPopularPost ul{
   padding-left:0;
 }
