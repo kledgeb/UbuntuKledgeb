@@ -56,7 +56,7 @@ function onGoogleCustomSearchResult(object){
   if(searchQuery !== null){
     var inputsearchBox = $('#gsc-i-id1');
     inputsearchBox.val(searchQuery);
-    inputsearchBox.attr('background','none');
+    inputsearchBox.css({'background':'none'});
   }
 }
 
