@@ -31,6 +31,7 @@ function setupStarLens_PopularPostPost(){
     if(anchorPopularPosts){
             
       for(i = 0 ; i < anchorPopularPosts.length ; i ++){
+        popularPost = {};
         popularPost.itemLink = $(anchorPopularPosts[i]).attr('href');
         popularPost.itemIconURL = $(anchorPopularPosts[i].children(':first')).attr('src');
         popularPost.itemTitle = $(anchorPopularPosts[i].children(':eq(2)')).text();
