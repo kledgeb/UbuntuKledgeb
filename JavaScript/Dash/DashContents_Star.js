@@ -25,15 +25,16 @@ function setupStarLens_PopularPostPost(){
   
   var gPopularPosts = [];
   {
-    var anchorPopularPost = $('#id_divPopularPost .cls_PopularPost_anchorPost');
+    var anchorPopularPosts = $('#id_divPopularPost .cls_PopularPost_anchorPost');
     var popularPost;
 
-    if(anchorPopularPost){
-      for(i = 0 ; i < anchorPopularPost.length ; i ++){
-        popularPost.itemLink = anchorPopularPost[i].attr('href');
-        popularPost.itemIconURL = anchorPopularPost[i].children(':first').attr('src');
-        popularPost.itemTitle = anchorPopularPost[i].children(':eq(2)').text();
-        popularPost.itemSummary = anchorPopularPost[i].children(':eq(3)').text();
+    if(anchorPopularPosts){
+            
+      for(i = 0 ; i < anchorPopularPosts.length ; i ++){
+        popularPost.itemLink = $(anchorPopularPosts[i]).attr('href');
+        popularPost.itemIconURL = $(anchorPopularPosts[i].children(':first')).attr('src');
+        popularPost.itemTitle = $(anchorPopularPosts[i].children(':eq(2)')).text();
+        popularPost.itemSummary = $(anchorPopularPosts[i].children(':eq(3)')).text();
 
         gPopularPosts.push(popularPost);
       }
