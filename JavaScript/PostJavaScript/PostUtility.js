@@ -87,6 +87,14 @@ function getSearchQuery(){
   return searchQuery;
 }
 
+function getGoogleCustomSearchQuery(){
+  var searchQuery = null;
+  
+  searchQuery = getURLQueryString('cseq');
+  
+  return searchQuery;
+}
+
 function getURLQueryStrings(){
   var queryStrings = {};
   var urlSplit = $(location).attr('href').split('?');

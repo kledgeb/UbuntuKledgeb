@@ -2,10 +2,20 @@
 Dash Contents Search
 -------------------------------------------------------------------------------- --*/
 function setupSearchLensContents(showParams){
+  var inputSearchBox = $('#id_Dash_inputSearchBox')
+
   gCurrentLensArrowID = 'id_Dash_SearchLens_divArrow';
   $('#' + gCurrentLensArrowID).css('visibility','visible');
 
-  $('#id_Dash_inputSearchBox').attr('placeholder','検索');
+  {
+    var searchQuery = getGoogleCustomSearchQuery();
+
+    inputSearchBox.attr('placeholder','検索');
+
+    if(searchQuery !== null){
+      inputSearchBox.val(searchQuery);
+    }
+  }
   
   var divSearchCategory;
   var divSearchCategoryHead;
@@ -119,7 +129,7 @@ function setupSearchLensContents(showParams){
 
     divSearchCategory.append(divSearchCategoryContents);
   }
-*/
+
   {
     divSearchCategoryHead = $('<div>');
     divSearchCategoryHead.attr('class','cls_Dash_Category_Head_div' + categoryName + ' cls_Dash_Category_Head_' + categoryName + '_divSearchRun');
@@ -127,11 +137,13 @@ function setupSearchLensContents(showParams){
 
     divSearchCategory.append(divSearchCategoryHead);
   }
-  
+*/
+
+/*
   {    
     divSearchCategoryContents = $('<div>');
     divSearchCategoryContents.attr('class','cls_Dash_Category_Contents_div' + categoryName + ' cls_Dash_Category_Contents_' + categoryName + '_divSearchRun');
-    /*
+    
     divButton = $('<div>');
     divButton.attr('id','id_Dash_Category_Contents_' + categoryName + '_divQuickSearch');
     divButton.attr('class','userNoSelect cls_Dash_Category_Contents_' + categoryName + '_divQuickSearch');
@@ -158,7 +170,7 @@ function setupSearchLensContents(showParams){
     divButton.on('click',onDashCategoryContentsTermSearchClick);
     divButton.data('searchType','termSearch');
     divSearchCategoryContents.append(divButton);
-    */
+    
     divButton = $('<div>');
     divButton.attr('id','id_Dash_Category_Contents_' + categoryName + '_divGoogleCustomSearch');
     divButton.attr('class','userNoSelect cls_Dash_Category_Contents_' + categoryName + '_divGoogleCustomSearch');
@@ -172,7 +184,9 @@ function setupSearchLensContents(showParams){
 
     divSearchCategory.append(divSearchCategoryContents);    
   }
-  /*
+  */
+  
+  
   {
     var divMessageIcon;
     var divMessageText;
@@ -195,7 +209,7 @@ function setupSearchLensContents(showParams){
 
     setDefaultMessage(categoryName);
   }
-  */ 
+  
 }
 
 function onDashSearchCategoryContentsSearchOrderByClick(event){
@@ -246,7 +260,7 @@ function setDefaultMessage(categoryName){
   var divMessageText = $('#id_Dash_Category_Contents_' + categoryName + '_divMessageText');
  
   divMessageIcon.css('background-image','url("//lh4.googleusercontent.com/-ySGf4MAzLx4/VQfAxiLWcSI/AAAAAAAA_tE/gD3zQsb5fnU/s800/Dash_Search_InfoIcon.png")');
-  divMessageText.html('クイック検索やGoogleカスタム検索では、検索オプションは反映されません。<br>検索では、「検索する記事の日付」は反映されません。<br>期間検索では、「検索キーワード」及び「記事の日付順」は反映されません。');
+  divMessageText.html('検索を実行するには、検索キーワードを入力し「エンター」キーを押してください。');
   
 }
 
@@ -286,7 +300,7 @@ function onDashCategoryContentsTermSearchClick(event){
   }
 }
 
-function onDashCategoryContentsGoogleCustomSearchClick(event){
+function doDashCategoryContentsGoogleCustomSearchClick(){
   var searchType = $(this).data('searchType');
   var itemInfo = createSearchItemInfo(searchType);
 
@@ -302,6 +316,10 @@ function onDashCategoryContentsGoogleCustomSearchClick(event){
     
     window.location.href = href;
   }  
+}
+
+function onDashCategoryContentsGoogleCustomSearchClick(event){
+  doDashCategoryContentsGoogleCustomSearchClick();
 }
 
 function onDashBeforeShowDatepicker(input, inst){
@@ -381,7 +399,7 @@ function createSearchItemInfo(searchType){
   if(stratDateObject && endDateObject){
     if((stratDateObject > endDateObject) && (!errorMessage)){
       errorMessage = '入力された日付が不正です。<br>入力された終了日が開始日より前に設定されています。';
-      //endDate = '' + stratDateObject.getFullYear() + '-' + (stratDateObject.getMonth() + 1) + '-' + stratDateObject.getDate() + 'T23:59:59%2B09:00';      
+      endDate = '' + stratDateObject.getFullYear() + '-' + (stratDateObject.getMonth() + 1) + '-' + stratDateObject.getDate() + 'T23:59:59%2B09:00';      
     }
   }
   */
@@ -573,6 +591,6 @@ function showPrevNextItem_Search(itemInfo,offset){
 
 function searchDashContents_Search(searchText,byTimer){
   if((byTimer === false) && (searchText)){
-    doDashCategoryContentsQuickSearchClick();  
+    doDashCategoryContentsGoogleCustomSearchClick();  
   }
 }
