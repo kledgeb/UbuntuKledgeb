@@ -129,6 +129,7 @@ Popular Post
 .cls_PopularPost_divPost{
   padding:8px;
   height:160px;
+  overflow: hidden;
 }
 
 .cls_PopularPost_divRanking {
@@ -142,6 +143,7 @@ Popular Post
  
 	z-index: 1;
 }
+/*
 .cls_PopularPost_divRanking:after, .cls_PopularPost_divRanking:before {
 	top: 100%;
 	left: 50%;
@@ -165,7 +167,7 @@ Popular Post
 	border-width: 11px;
 	margin-left: -11px;
 }
-
+*/
 .cls_PopularPost_anchorPost{
   display:block;
   width:100%;

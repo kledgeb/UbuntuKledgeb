@@ -52,7 +52,7 @@ Post Index
 -------------------------------------------------------------------------------- */
 .cls_PostBody_Index_divThumbnail{
   background-repeat:no-repeat;
-  background-size:cover;
+  background-size:contain;
   background-position:top;
 
   width:180px;
