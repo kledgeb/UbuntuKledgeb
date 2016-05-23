@@ -128,6 +128,10 @@ function getURLQueryString(key){
     queryString = queryStrings[key];
   }
 
+  if(queryString){
+    queryString = decodeURIComponent(queryString);
+  }
+
   return queryString;
 }
 
