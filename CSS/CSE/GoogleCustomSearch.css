@@ -192,7 +192,10 @@ a.gsc-trailing-more-results:link {
 /* override */
 .gsc-results .gsc-cursor-box .gsc-cursor-page:hover{
   text-decoration:none;  
-  background-color:#205093;
+  background-color: #DD4814;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-page{
@@ -200,19 +203,32 @@ a.gsc-trailing-more-results:link {
   display:inline-block;
   min-width:2em;
   text-align:center;
-  background-color:rgb(51, 51, 51);
   padding:8px;
   color:white;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 48px;
+
+  background-color:#333333;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page{
   color:white; 
-  background-color:rgb(89, 129, 185);
+  background-color:#E36C43;  
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page:hover{
-  color:white; 
-  background-color:rgb(89, 129, 185);
+  background-color: #DD4814;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .gs-web-image-box-landscape img.gs-image,

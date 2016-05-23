@@ -44,7 +44,7 @@ Page Navi Button
   font-weight:bold;
 }
 
-.cls_PageNavi_anchorPageBox_Current{
+a.cls_PageNavi_anchorPageBox_Current{
   background-color:#E36C43;  
   transition-property: background-color;
   transition-duration: 0.25s;

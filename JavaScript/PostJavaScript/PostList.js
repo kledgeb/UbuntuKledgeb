@@ -147,7 +147,7 @@ function createPostListNaviElement(){
       divAppendBox.after(divPageBox);
   
       if(gPostListInfo.currentPageIndex == pageIndex){
-        anchorPageBox.AddClass('cls_PostList_anchorPageBox_Current');    
+        anchorPageBox.addClass('cls_PostList_anchorPageBox_Current');    
       }
       
       anchorPageBox.on('click',onPostList_anchorPageBox_Click);

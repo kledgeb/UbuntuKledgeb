@@ -107,7 +107,7 @@ Post List Navi
   font-weight:bold;
 }
 
-.cls_PostList_anchorPageBox_Current{
+a.cls_PostList_anchorPageBox_Current{
   background-color:#E36C43;  
   transition-property: background-color;
   transition-duration: 0.25s;

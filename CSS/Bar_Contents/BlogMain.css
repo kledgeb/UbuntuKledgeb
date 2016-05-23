@@ -5,7 +5,10 @@ Main CSS
 a:link{
   color:#19529E;
   text-decoration:none;
-  }
+
+  transition-property: color;
+  transition-duration: 0.25s;
+}
 
 a:visited{
   text-decoration:none;
@@ -15,7 +18,10 @@ a:hover,
 a:active{
   color:#FF8E00;
   text-decoration:none;
-  }
+
+  transition-property: color;
+  transition-duration: 0.25s;
+}
 
 body{
   font-family: 'Ubuntu','メイリオ','ヒラギノ角ゴ Pro W3','VL Pゴシック','Takao Pゴシック',sans-serif;
