@@ -7,15 +7,6 @@ Dash Contents Home
   background-image: url("//lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF"); 
 }
 
-.cls_Dash_Category_Contents_RelatedPost_divItem{
-  width:424px;
-  height:128px;
-}
-
-.cls_Dash_Category_Contents_RelatedPost_anchorItem{
-  height:128px;  
-}
-
 .cls_Dash_Category_Title_divRelatedPost{
   background-image: url("//lh5.googleusercontent.com/-7kX_p4uxEn8/VP2kBpTZzLI/AAAAAAAA_iM/JH5zmuRJQwU/s800/Dash_Category_RelatedPost.png");   
 }
@@ -23,15 +14,6 @@ Dash Contents Home
 /* Dash Latest Post Category */
 .cls_Dash_Category_Contents_divLatestPost{
   background-image: url("//lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF"); 
-}
-
-.cls_Dash_Category_Contents_LatestPost_divItem{
-  width:424px;
-  height:128px;
-}
-
-.cls_Dash_Category_Contents_LatestPost_anchorItem{
-  height:128px;  
 }
 
 .cls_Dash_Category_Title_divLatestPost{

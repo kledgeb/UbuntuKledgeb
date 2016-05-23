@@ -81,4 +81,12 @@ Dash Contents Category
   outline: 0;
 }
 
+.cls_Dash_Category_Contents_divStringItem{
+  width:392px;
+  height:80px;
+  margin-right:48px;
+}
 
+.cls_Dash_Category_Contents_anchorStringItem{
+  height:80px;  
+}

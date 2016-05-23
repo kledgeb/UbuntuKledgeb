@@ -299,12 +299,14 @@ function addCategoryItem(categoryItemInfo){
   divCategoryContents.append(divItem);  
 
   if(categoryItemInfo.autoEllipsis){
-    var maxLength = 90;
+    var maxLength = 80;
      
-    if(anchorItem.text().length > maxLength)
-    {
+    if(anchorItem.text().length > maxLength){
       anchorItem.text(anchorItem.text().substr(0,maxLength) + '...');
     }
+
+    divItem.addClass("cls_Dash_Category_Contents_divStringItem");
+    anchorItem.addClass("cls_Dash_Category_Contents_anchorStringItem");
   }
 
 }

@@ -7,20 +7,6 @@ Dash Contents Message
   background-image: url("//lh6.googleusercontent.com/-DzagxHudcg0/VQPVDzJDemI/AAAAAAAA_po/5Bi1oeGR9Ew/s800/Dash_Category_Message.png");   
 }
 
-.cls_Dash_Category_Contents_PostCommnetList_divItem,
-.cls_Dash_Category_Contents_ForumCommnetList_divItem{
-  width:424px;
-  height:128px;
-}
-
-.cls_Dash_Category_Contents_PostCommnetList_anchorItem{
-  height:128px;
-}
-
-.cls_Dash_Category_Contents_ForumCommnetList_anchorItem{
-  height:128px;
-}
-
 .cls_Dash_MessageLens_divDisqusPostRecentComment,
 .cls_Dash_MessageLens_divDisqusForumRecentComment{
   display:none;
