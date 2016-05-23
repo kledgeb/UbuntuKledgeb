@@ -60,7 +60,6 @@ function createPostListPostElementCallback(jsonData){
       post = feedEntry[i];
       
       divPost = $('<div/>');
-      divPost.hover(onHoverIn_AnimateAnchorPost,onHoverOut_AnimateAnchorPost); 
       divPost.attr('class','cls_PostList_divPost');
       
       divPostIndex = $('<div/>');
@@ -140,7 +139,7 @@ function createPostListNaviElement(){
       divPageBox.attr('class','cls_PostList_divPageBox');
       divPageBox.attr('attrPageIndexBox','');
       
-      anchorPageBox.attr('class','cls_PostList_anchorPageBox');
+      anchorPageBox.attr('class','cls_PostList_anchorPageBox cls_DarkButtonAnimation');
       anchorPageBox.attr('href',pageIndex);
       anchorPageBox.text(pageIndex + 1);      
       divPageBox.append(anchorPageBox);
@@ -148,10 +147,7 @@ function createPostListNaviElement(){
       divAppendBox.after(divPageBox);
   
       if(gPostListInfo.currentPageIndex == pageIndex){
-        anchorPageBox.attr('class','cls_PostList_anchorPageBox cls_PostList_anchorPageBox_Current');    
-        anchorPageBox.hover(onHoverIn_Animate,onHoverOut_Animate_PageNaviButton);     
-      }else{
-        anchorPageBox.hover(onHoverIn_Animate,onHoverOut_Animate);
+        anchorPageBox.AddClass('cls_PostList_anchorPageBox_Current');    
       }
       
       anchorPageBox.on('click',onPostList_anchorPageBox_Click);
@@ -192,12 +188,9 @@ function onPostList_anchorPageBox_Click(event){
 
 (function(){
   var anchorPageBox = $('#id_PostList_anchorPrevBox');
-  
-  anchorPageBox.hover(onHoverIn_Animate,onHoverOut_Animate);
   anchorPageBox.on('click',onPostList_anchorPageBox_Click);
   
   anchorPageBox = $('#id_PostList_anchorNextBox');
-  anchorPageBox.hover(onHoverIn_Animate,onHoverOut_Animate);
   anchorPageBox.on('click',onPostList_anchorPageBox_Click);
 
   getTotalAllPostCount(setupPostListNavi);

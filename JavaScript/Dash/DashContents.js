@@ -261,7 +261,7 @@ function addCategoryItem(categoryItemInfo){
   }
   
   if(categoryItemInfo.itemLink){
-    divItem.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+    divItem.addClass("cls_Dash_ButtonAnimation");
   }
   
   //itemInfo
@@ -323,8 +323,7 @@ function addCategory(categoryName,categoryTitle){
   //CategoryHead
   {    
     divCategoryHead.attr('id','id_Dash_Category_Head_div' + categoryName);
-    divCategoryHead.attr('class','cls_Dash_Category_divHead cls_Dash_Category_Head_div' + categoryName);
-    divCategoryHead.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+    divCategoryHead.attr('class','cls_Dash_Category_divHead cls_Dash_ButtonAnimation cls_Dash_Category_Head_div' + categoryName);
     divCategoryHead.on('click',onCategoryHeadClick(categoryName));
     
     divCategory.append(divCategoryHead);

@@ -73,17 +73,14 @@ function createPageNaviElement(totalPostCount){
       pageIndex = startPageIndex + i;
           
       pageIndexDIV.attr('class','cls_PageNavi_divPageBox');
-      pageIndexAnchor.attr('class','cls_PageNavi_anchorPageBox');
+      pageIndexAnchor.attr('class','cls_PageNavi_anchorPageBox cls_DarkButtonAnimation');
       pageIndexAnchor.text(pageIndex + 1);
       
       pageIndexDIV.append(pageIndexAnchor);
       divAppend.after(pageIndexDIV);
   
       if(currentPageIndex == pageIndex){
-        pageIndexAnchor.attr('class','cls_PageNavi_anchorPageBox cls_PageNavi_anchorPageBox_Current');    
-        pageIndexAnchor.hover(onHoverIn_Animate,onHoverOut_Animate_PageNaviButton);     
-      }else{
-        pageIndexAnchor.hover(onHoverIn_Animate,onHoverOut_Animate);
+        pageIndexAnchor.addClass('cls_PageNavi_anchorPageBox_Current');    
       }
   
       divAppend = pageIndexDIV;   

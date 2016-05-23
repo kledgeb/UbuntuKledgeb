@@ -13,6 +13,16 @@ Dash Option
 
 .cls_divOptionItem_On{
   background-color:rgba(157,156,156,0.4);
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.cls_divOptionItem_On:hover{
+  background-color:transparent;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .cls_OptionItem_divShowAll{

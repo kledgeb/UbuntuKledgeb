@@ -9,14 +9,6 @@ function onDashClickBackgroundClick(event){
   hideDash();
 }
 
-function onDash_HoverIn_Animate(eventObject){
-  $(this).stop().animate({ backgroundColor: 'rgba(157,156,156,0.4)'}, 200);
-}
-
-function onDash_HoverOut_Animate(eventObject){
-  $(this).stop().animate({ backgroundColor: 'transparent'}, 200);
-}
-
 function onDashWindowSizeClick(eventObject){
   
   if(gDashSize == 'Normal'){

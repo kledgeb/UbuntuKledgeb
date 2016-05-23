@@ -27,7 +27,6 @@ Page Navi Button
 .cls_PageNavi_anchorPageBox{
   background-repeat:no-repeat;
   background-size:auto;
-  background-color:#333333;
   background-position:center;
 
   display:block;
@@ -47,6 +46,8 @@ Page Navi Button
 
 .cls_PageNavi_anchorPageBox_Current{
   background-color:#E36C43;  
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .cls_PageNavi_anchorNext{

@@ -29,7 +29,6 @@ function setAllPopularPostThumbnail(){
 }
 
 (function(){
-  $(".cls_PopularPost_divPost").hover(onHoverIn_AnimateAnchorPost,onHoverOut_AnimateAnchorPost);
   setAllPopularPostThumbnail();
 }());
 

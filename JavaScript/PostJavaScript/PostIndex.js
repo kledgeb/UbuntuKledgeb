@@ -17,14 +17,6 @@ function setPostSummary(divPostBodySummaryID){
   str = adjustPostSummary(str);
   divElem.html(str);
   
-  /*
-  var height = divElem.height();
-  var lineHeight = parseInt(divElem.css('line-height'),10);
-  var lineNum = Math.floor(height / lineHeight);
-  
-  height = lineNum * lineHeight + 1;
-  */
-  
   divElem.css('visibility','visible');
 }
 

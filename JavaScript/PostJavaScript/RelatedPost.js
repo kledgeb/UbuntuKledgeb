@@ -112,7 +112,6 @@ function createRelatedPostElement(relatedPosts,userData){
       postTitleDIV = $('<div/>');
       
       postDIV.attr('class','cls_RelatedPost_divPost');
-      postDIV.hover(onHoverIn_AnimateAnchorPost,onHoverOut_AnimateAnchorPost); 
       
       divPostIndex.attr('class','cls_RelatedPost_divPostIndex');
       divPostIndex.text(i + postIndex);

@@ -104,8 +104,7 @@ function setupContentsDetail_createSectionElement(itemInfo){
     divLeftSection.attr('id','id_DashContentsDetail_divLeftSection');
     divLeftSection.attr('class','cls_DashContentsDetail_divLeftSection');
     divArrow = $('<div/>');
-    divArrow.attr('class','cls_DashContentsDetail_divLeftArrow');
-    divArrow.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+    divArrow.attr('class','cls_DashContentsDetail_divLeftArrow cls_Dash_ButtonAnimation');
     divArrow.on('click',onDashContentsDetail_PrevButtonClick);
     
     divLeftSection.append(divArrow);
@@ -140,8 +139,7 @@ function setupContentsDetail_createSectionElement(itemInfo){
     divRightSection.attr('class','cls_DashContentsDetail_divRightSection');
     
     divArrow = $('<div/>');
-    divArrow.attr('class','cls_DashContentsDetail_divRightArrow');
-    divArrow.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+    divArrow.attr('class','cls_DashContentsDetail_divRightArrow cls_Dash_ButtonAnimation');
     divArrow.on('click',onDashContentsDetail_NextButtonClick);
 
     divRightSection.append(divArrow);
@@ -201,11 +199,9 @@ function setupContentsDetail_createButtons(itemInfo,additionalButtons){
 
   //anchorShowPostButton
   {
-    anchorShowPostButton.attr('class','cls_DashContentsDetail_anchorShowPostButton cls_DashContentsDetail_' + itemInfo.categoryName + '_anchorShowPostButton userNoSelect');
+    anchorShowPostButton.attr('class','cls_DashContentsDetail_anchorShowPostButton cls_Dash_ButtonAnimation cls_DashContentsDetail_' + itemInfo.categoryName + '_anchorShowPostButton userNoSelect');
     anchorShowPostButton.text('記事を表示');
     anchorShowPostButton.attr('href',itemInfo.itemLink);
-    //anchorShowPostButton.attr('target','_blank');
-    anchorShowPostButton.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
     divButtonContainer.append(anchorShowPostButton);
   }
   
@@ -214,7 +210,7 @@ function setupContentsDetail_createButtons(itemInfo,additionalButtons){
     var i;
     
     for(i = 0 ; i < additionalButtons.length ; i ++){
-      additionalButtons[i].hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+      additionalButtons[i].addClass("cls_Dash_ButtonAnimation");
       divButtonContainer.append(additionalButtons[i]);
     }
   }  
@@ -235,14 +231,14 @@ function setupContentsDetail_createBackButton(itemInfo,buttonTitle){
   var divBackButton = $('<div/>');
   var divButtonContainer = $('#id_DashContentsDetail_' + itemInfo.categoryName + '_divButtonContainer');
 
-  divBackButton.attr('class','cls_DashContentsDetail_divBackButton cls_DashContentsDetail_' + itemInfo.categoryName + '_divBackButton userNoSelect');
+  divBackButton.attr('class','cls_DashContentsDetail_divBackButton cls_Dash_ButtonAnimation cls_DashContentsDetail_' + itemInfo.categoryName + '_divBackButton userNoSelect');
   
   if(buttonTitle){
     divBackButton.text(buttonTitle);
   }else{
     divBackButton.text('一覧に戻る');
   }
-  divBackButton.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+
   divBackButton.on('click',onDashContentsDetail_BackButtonClick);
   divButtonContainer.append(divBackButton);
 }
@@ -285,10 +281,10 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
     //divSearchResultPost
     {
       divSearchResultPost = $('<div>');
-      divSearchResultPost.attr('class','cls_Dash_Category_Contents_divSearchResultPost cls_Dash_Category_Contents' +  itemInfo.categoryName + '_divSearchResultPost');
+      divSearchResultPost.attr('class','cls_Dash_Category_Contents_divSearchResultPost cls_Dash_ButtonAnimation cls_Dash_Category_Contents' +  itemInfo.categoryName + '_divSearchResultPost');
       divSearchResultPost.data('feedEntry',entry);
       divSearchResultPost.data('itemInfo',itemInfo);
-      divSearchResultPost.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
+
       divSearchResultPostContainer.append(divSearchResultPost);
 
        if(entry[i].media$thumbnail){

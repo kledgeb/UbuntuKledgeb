@@ -7,7 +7,7 @@ function addDashOption(optionInfo){
   
   divOptionItem.text(optionInfo.title);
   divOptionItem.attr('id','id_OptionItem_div' + optionInfo.categoryName);
-  divOptionItem.attr('class','userNoSelect cls_divOptionItem cls_OptionItem_div' + optionInfo.categoryName);
+  divOptionItem.attr('class','userNoSelect cls_divOptionItem cls_Dash_ButtonAnimation cls_OptionItem_div' + optionInfo.categoryName);
   divOptionItem.data('optionInfo',optionInfo);
   divOptionItem.on('click',onDashOptionButtonClick);
   
@@ -44,23 +44,6 @@ function addShowHideAllOption(){
   divRightBar.append("<div class='clear'></div>");
 }
 
-function layoutDashOptions(){
-  /*var divShowAll = $('#id_OptionItem_divShowAll');
-  var divHideAll = $('#id_OptionItem_divHideAll');
-  var divRightBar = $('#id_Dash_divRightBar');
- 
-  if(divShowAll.length){
-    var width = Math.floor(divRightBar.width() / 2);
-    var marginRight = parseInt(divShowAll.css('margin-right').replace('px',''),10);
-    var marginLeft = parseInt(divShowAll.css('margin-left').replace('px',''),10);
-  
-    width = width - marginRight - marginLeft;
-    
-    divShowAll.outerWidth(width);
-    divHideAll.outerWidth(width);  
-  }*/
-}
-
 function clearDashOptions(){
   var divRightBar = $('#id_Dash_divRightBar');
   
@@ -77,12 +60,10 @@ function changeStateDashOption(state,optionInfo){
   case 'off':  
     optionInfo.currentState = 'off';
     divOptionItem.removeClass('cls_divOptionItem_On');
-    divOptionItem.hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);
     break;
   case 'on':  
     optionInfo.currentState = 'on';
     divOptionItem.addClass('cls_divOptionItem_On');
-    divOptionItem.hover(onDash_HoverOut_Animate,onDash_HoverIn_Animate);
     break;
   }
 }

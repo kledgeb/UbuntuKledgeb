@@ -8,11 +8,9 @@ Left Bar
   height:100%;
   position:fixed;
   z-index:1;
-  }
+}
   
 .cls_LeftBar_divContainer{
-  background-color:#333333;
-
   float:left;
   cursor: pointer;
 }  
@@ -27,6 +25,19 @@ Left Bar
   height:48px;  
 }
 
+.cls_DarkButtonAnimation{
+  background-color:#333333;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}  
+
+.cls_DarkButtonAnimation:hover{
+  background-color: #DD4814;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
 
 .cls_LeftBar_divArrow{
   background-repeat: no-repeat;

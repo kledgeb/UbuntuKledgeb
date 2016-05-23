@@ -5,7 +5,7 @@ Right Bar
   margin-left:816px;
   max-width:664px;
   background-color:white;
-  }
+}
   
 .cls_divWidgetTitle{  
   font-size:inherit;
@@ -24,241 +24,23 @@ Right Bar
 .cls_RightBar a{
   font-weight:bold;
 }
-
-.cls_RightBarAdsence_divAdsence{
-}
   
 .adsbygoogle_res_3{
   width:300px;
   height:600px;
 }
 
-#Translate1 .goog-te-gadget{
-  font: inherit;
-}
-
-#section_RightBar1,
-#section_RightBar2,
-#section_RightBar3,
-#section_RightBar4{
+#section_RightBar1{
   float:left;
   margin-bottom:24px;
 }
 
-#section_RightBar4{
-  min-width: 300px;  
+#section_RightBar3{
+  display:none;    
 }
 
-#HTML6,
-#Translate1,
-#HTML2,
-#HTML1,
-#Text2,
-#Text3{
+#HTML6{
   float: left;
   width: 300px;
   margin-right: 32px;  
 }
-
-/* --------------------------------------------------------------------------------
-Release Schedule
--------------------------------------------------------------------------------- */
-.cls_ReleaseSchedule_divUbuntu{
-}
-
-.cls_ReleaseSchedule_spanIcon{
-  width:32px;
-  height:32px;
-  vertical-align:middle;
-
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  display:inline-block;
-
-  background-image: url("//lh3.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/18NoESuL9Hw/s800-Ic42/Dash_Category_Ubuntu_Item.png");  
-}
-
-.cls_ReleaseSchedule_spanIconBeta{
-  background-image: url("//lh3.googleusercontent.com/-0pUHT0N6zKk/VP6GIR5KhsI/AAAAAAAA_jo/x9sng3GrAWk/s800-Ic42/Dash_Category_Ubuntu_Item_Beta.png");    
-}
-
-.cls_ReleaseSchedule_spanVersion{
-  vertical-align:middle;
-  font-weight: bold;
-}
-
-.cls_ReleaseSchedule_pDate{
-  margin-top: 4px;
-  margin-bottom: 32px;
-  margin-left: 38px;
-}
-
-/* --------------------------------------------------------------------------------
-Supported Version
--------------------------------------------------------------------------------- */
-.cls_SupportedVersion_divUbuntu{
-}
-
-.cls_SupportedVersion_spanIcon{
-  width:32px;
-  height:32px;
-  vertical-align:middle;
-
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-  display:inline-block;
-
-  background-image: url("//lh3.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/18NoESuL9Hw/s800-Ic42/Dash_Category_Ubuntu_Item.png");    
-}
-
-.cls_SupportedVersion_spanVersion{
-  vertical-align:middle;
-  font-weight: bold;
-}
-
-.cls_SupportedVersion_pDate{
-  margin-top: 4px;
-  margin-bottom: 32px;
-}
-
-/* --------------------------------------------------------------------------------
-Popular Post 
--------------------------------------------------------------------------------- */
-.cls_PopularPost_divPost{
-  padding:8px;
-  height:140px;
-  overflow: hidden;
-}
-
-.cls_PopularPost_divRanking {
-  position: relative;
-	background: #333333;
-	border: 2px solid #9D9C9C;
-  width:32px;
-  height:24px;
-  color:white;
-  text-align:center;
- 
-	z-index: 1;
-}
-/*
-.cls_PopularPost_divRanking:after, .cls_PopularPost_divRanking:before {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-
-.cls_PopularPost_divRanking:after {
-	border-color: rgba(51, 51, 51, 0);
-	border-top-color: #333333;
-	border-width: 8px;
-	margin-left: -8px;
-}
-.cls_PopularPost_divRanking:before {
-	border-color: rgba(107, 107, 107, 0);
-	border-top-color: #6B6B6B;
-	border-width: 11px;
-	margin-left: -11px;
-}
-*/
-.cls_PopularPost_anchorPost{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
-.cls_PopularPost_divThumbnail{
-  width:96px;
-  height:96px;
-
-  float:left;
-  margin-right:16px;
-  
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-}
-
-.cls_PopularPost_imgThumbnail{
-  width:72px;
-  height:72px;
-
-  float:left;
-  margin-right:16px;
-  
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
-}
-
-.cls_divPopularPost ul{
-  padding-left:0;
-}
-  
-.cls_divPopularPost li{
-  list-style:none;
-  float: left;
-  width: 300px;
-  margin-right: 32px;
-}
-  
-.cls_PopularPost_Separate{
-  margin-top:8px;
-  margin-bottom:8px;
-
-  border-top:1px solid #ddd;
-}
-
-/* --------------------------------------------------------------------------------
-Pickup Post 
--------------------------------------------------------------------------------- */
-.cls_PickupPosts_divLoading{
-  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");    
-  background-repeat:no-repeat;
-  background-size:auto;
-  background-position:center;
-
-  width:300px;
-  height:128px;
-}
-
-.cls_divPickupPosts{
-  display:none;
-}
-
-.cls_PickupPost_divPickupPost {
-  float: left;
-  width: 300px;
-  margin-right: 32px;
-}
-
-.cls_PickupPost_anchorPickupPost {
-  display: block;
-  height: 160px;
-  padding:8px;
-  overflow: hidden;
-}
-
-.cls_PickupPost_divPickupPostThumbnail {
-  width: 96px;
-  height: 96px;
-  float: left;
-  margin-right: 16px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.cls_PickupPost_Separate {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  border-top: 1px solid #ddd;
-}
-

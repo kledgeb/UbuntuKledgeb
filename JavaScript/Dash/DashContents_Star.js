@@ -7,7 +7,6 @@ function setupStarLensContents(showParams){
 
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
   setupStarLens_Bookmark();
-  //setupStarLens_PageHistory();
   setupStarLens_PopularPostPost();
 
   //Option
@@ -63,40 +62,6 @@ function setupStarLens_PopularPostPost(){
   divCategoryContents.append("<div class='clear'></div>");
   layoutCategoryHead(categoryName);
   
-}
-
-function setupStarLens_PageHistory(){
-  var categoryName = 'PageHistory';
-  
-  addCategory(categoryName,'記事の履歴');
-
-  var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
-  var i;
-  var categoryItemInfo;
-  var myLocalStorage = $.localStorage;
-  var pageHistory = myLocalStorage.get('pageHistory');
-  
-  if(pageHistory){
-    
-    for(i = 0 ; i < pageHistory.length ; i ++){
-      categoryItemInfo = {
-        itemIndex:i,
-        itemTotalCount:pageHistory.length,
-        categoryName:categoryName,
-        itemLink:pageHistory[i].canonicalUrl,
-        itemIconURL:adjustURLProtocol(pageHistory[i].thumbnailUrl),
-        itemTitleHTML:pageHistory[i].title,
-        hasDetail:true,
-        itemData:{pageHistory:pageHistory[i]},
-        autoEllipsis:true,
-      };
-      
-      addCategoryItem(categoryItemInfo);
-    }
-  }
-  
-  divCategoryContents.append("<div class='clear'></div>");
-  layoutCategoryHead(categoryName);  
 }
 
 function setupStarLens_Bookmark(){

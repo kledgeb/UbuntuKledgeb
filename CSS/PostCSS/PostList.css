@@ -90,7 +90,6 @@ Post List Navi
 .cls_PostList_anchorPageBox{
   background-repeat:no-repeat;
   background-size:auto;
-  background-color:#333333;
   background-position:center;
 
   display:block;
@@ -110,6 +109,8 @@ Post List Navi
 
 .cls_PostList_anchorPageBox_Current{
   background-color:#E36C43;  
+  transition-property: background-color;
+  transition-duration: 0.25s;
 }
 
 .cls_PostList_PageBox_anchorPrev{

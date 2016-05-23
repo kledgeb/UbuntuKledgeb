@@ -107,7 +107,6 @@ function initializeDash(){
     
     $('#id_divDashClickBackground').on('click',onDashClickBackgroundClick); 
 
-    $(".cls_DashButtonAnimation").hover(onDash_HoverIn_Animate,onDash_HoverOut_Animate);     
     $('#id_Dash_divWindowSizeOption').on('click',onDashWindowSizeClick);     
     $('#id_Dash_divSearchOption').on('click',onDashSearchOptionClick);     
     $('#id_Dash_divContentsContainer').on('contextmenu',onEventPrevent);
@@ -233,10 +232,6 @@ function layoutDash(){
   }
   
   divRightBar.outerHeight(barHeight);
-  
-  if(gOpenRightBar){
-    layoutDashOptions();
-  }
 
   var divContents = $('#id_Dash_divContents');
 
