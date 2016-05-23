@@ -65,6 +65,7 @@ Dash Contents Category
   height:64px;
   width:100%;
   padding-left:72px;
+  word-break: break-all;
 }
 
 .cls_Dash_Category_Contents_anchorItem:link,

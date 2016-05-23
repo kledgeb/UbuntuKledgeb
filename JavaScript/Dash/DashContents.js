@@ -299,7 +299,7 @@ function addCategoryItem(categoryItemInfo){
   divCategoryContents.append(divItem);  
 
   if(categoryItemInfo.autoEllipsis){
-    var maxLength = 80;
+    var maxLength = 60;
      
     if(anchorItem.text().length > maxLength){
       anchorItem.text(anchorItem.text().substr(0,maxLength) + '...');

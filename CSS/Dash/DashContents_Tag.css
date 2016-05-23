@@ -13,9 +13,13 @@ Dash Contents Tag
 
 .cls_Dash_Category_Contents_TagList_divItem{
   background-size:auto;  
+  height: 48px;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .cls_Dash_Category_Contents_TagList_anchorItem{
+  height: 48px;
 }
 
 .cls_Dash_Category_Contents_divSearchResultPostContainer{
