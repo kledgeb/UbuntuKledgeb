@@ -309,6 +309,9 @@ Install application button
   font-size: larger;
   line-height:48px;
   color:white;
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
 }
 
 .clsInstallAppButton:link{
@@ -318,6 +321,9 @@ Install application button
 .clsInstallAppButton:hover{
   background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
 	background-image: linear-gradient(to bottom, #E95420, #F08763);  
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
 }
 
 .clsInstallAppButton:before{
