@@ -32,24 +32,6 @@ google.setOnLoadCallback(function() {
   }
 }, true);
 
-function onSearchResultItemClick(event){
-  var tagName = event.target.tagName.toUpperCase();
-
-  if(tagName != 'A' && tagName != 'IMG'){
-    var rootDiv = $(event.target).closest( "[class='gsc-webResult gsc-result']");
-
-    if(rootDiv.length){
-      var anchor = rootDiv.find("a[class='gs-title']");
-
-      if(anchor.length){
-        var href = anchor.attr('href');
-        
-        window.location = href;
-      }
-    }
-  }
-}
-
 function onGoogleCustomSearchResult(object){
   var searchQuery = getGoogleCustomSearchQuery();
 
@@ -60,6 +42,4 @@ function onGoogleCustomSearchResult(object){
   }
 }
 
-(function(){
-  $('#cse').on('click',onSearchResultItemClick);
-}());
+

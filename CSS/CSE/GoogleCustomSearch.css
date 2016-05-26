@@ -68,11 +68,6 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .gsc-webResult.gsc-result:hover{
   padding:16px 0;
   border-bottom:1px solid #ddd;
-  cursor:pointer;
-}
-
-.gsc-webResult.gsc-result:hover{
-  background-color:#F4F8FE;
 }
 
 .gsc-imageResult:hover {
@@ -82,18 +77,26 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 .gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b  {
   color: #19529E;
+  transition-property: color;
+  transition-duration: 0.25s;
 }
 
 .gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
   color: #551A8B;
+  transition-property: color;
+  transition-duration: 0.25s;
 }
 
 .gs-webResult.gs-result a.gs-title:hover, .gs-webResult.gs-result a.gs-title:hover b, .gs-imageResult a.gs-title:hover, .gs-imageResult a.gs-title:hover b {
   color: #FF8E00;
+  transition-property: color;
+  transition-duration: 0.25s;
 }
 
 .gs-webResult.gs-result a.gs-title:active, .gs-webResult.gs-result a.gs-title:active b, .gs-imageResult a.gs-title:active, .gs-imageResult a.gs-title:active b {
   color: #FF8E00;
+  transition-property: color;
+  transition-duration: 0.25s;
 }
 .gsc-cursor-page {
   color: #19529E;
