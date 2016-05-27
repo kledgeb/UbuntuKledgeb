@@ -135,7 +135,7 @@ function setupSNSLens_SharePost(){
       {
         title:'kledgebのツイート',
         link:'//twitter.com/kledgeb',
-        iconURL:'//lh3.googleusercontent.com/-Lgg9NVL_5VE/V0gk7EDruaI/AAAAAAABbK8/6YwX7hT8Lxs_GA1PedODbaj2gFjq_WMMwCCo/s800/kledgeb_Twitter_Button.png',
+        iconURL:'//lh3.googleusercontent.com/-AHbkNIVeLcE/V0grkhj-NPI/AAAAAAABbLU/pztSxo1D2YkhwZULf9y0Mp3QL0HFZ8LbwCCo/s800/Twitter_kledgeb_Buttom_64.png',
       }
     );
   }
