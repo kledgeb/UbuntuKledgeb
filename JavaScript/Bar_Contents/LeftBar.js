@@ -69,7 +69,7 @@ function onLeftBarBookmarkClick(event){
   var divSNS = $('#id_LeftBar_divSNS');
   var divBookmark = $('#id_LeftBar_divBookmark');
 
-  if((gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
+  if((gCurrentPageType == 'index') || (gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
     divSNS.click(onLeftBarSNSClick);
     divSNS.css('display','block');    
   }else{
