@@ -11,7 +11,6 @@ function setupSNSLensContents(showParams){
 }
 
 function setupSNSLens_SharePost(){
-  var postTitle = $('<p>' + gPostInfo.title + '</p>').text();
   var sharePost;
   
   if(gCurrentPageType == 'index'){
@@ -65,6 +64,8 @@ function setupSNSLens_SharePost(){
       },
     ];    
   }else{
+    var postTitle = $('<p>' + gPostInfo.title + '</p>').text();
+    
     sharePost = [
       {
         title:'メールでサイトの更新通知を受け取る',
