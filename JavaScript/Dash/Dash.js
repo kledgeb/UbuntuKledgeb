@@ -124,7 +124,7 @@ function initializeDash(){
       $('#id_Dash_divHelpLensContainer').on('click',onDashHelpLensClick);
     }
     
-    if((gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
+    if((gCurrentPageType == 'index') || (gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
       $('#id_Dash_divSNSLensContainer').css('display','block');
     }else{
       $('#id_Dash_divSNSLensContainer').css('display','none');
