@@ -113,39 +113,21 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 14.04.4 LTS',
-      date:'2016年2月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-22-ubuntu-14044.html'),
-    },
-
-    {
       title:'Ubutntu 14.04.5 LTS',
       date:'2016年8月4日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/05/ubuntu-1404-23-ubuntu-1604linux.html'),
-    },
-
-    {
-      title:'Ubutntu 15.10',
-      date:'2015年10月22日',
-      link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
-    },
-
-    {
-      title:'Ubutntu 16.04 LTS',
-      date:'2016年4月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1604-40-ubuntu-1604.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1404-25-ubuntu-14045.html'),
     },
 
     {
       title:'Ubutntu 16.04.1 LTS',
       date:'2016年7月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/05/ubuntu-1604-54-ubuntu-16041ubuntu.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1604-79-ubuntu-16041.html'),
     },
 
     {
       title:'Ubutntu 16.10',
       date:'2016年10月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1610-11-yakkety-yak-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1610-12-yakkety-yak-2.html'),
     },
 ];
 
@@ -193,21 +175,15 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 14.04.4 LTS',
+      title:'Ubutntu 14.04.5 LTS',
       date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2016/02/ubuntu-1404-22-ubuntu-14044.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1404-25-ubuntu-14045.html'),
     },
     
     {
-      title:'Ubutntu 15.10',
-      date:'2016年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2015/10/ubuntu-1510-7-ubuntu-1510.html'),
-    },
-
-    {
-      title:'Ubutntu 16.04 LTS',
+      title:'Ubutntu 16.04.1 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2016/04/ubuntu-1604-40-ubuntu-1604.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1604-79-ubuntu-16041.html'),
     },
   ];
 
