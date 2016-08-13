@@ -30,17 +30,116 @@ Right Bar
   height:600px;
 }
 
-#section_RightBar1{
+#section_RightBar1,
+#section_RightBar3{
   float:left;
   margin-bottom:24px;
 }
 
-#section_RightBar3{
-  display:none;    
-}
-
+#HTML1,
+#HTML2,
 #HTML6{
   float: left;
   width: 300px;
   margin-right: 32px;  
+}
+
+/* --------------------------------------------------------------------------------
+Translate
+-------------------------------------------------------------------------------- */
+#Translate1 .goog-te-gadget{
+  font: inherit;
+}
+
+/* --------------------------------------------------------------------------------
+Popular Post 
+-------------------------------------------------------------------------------- */
+.cls_PopularPost_divPost{
+  padding:8px;
+  height:140px;
+  overflow: hidden;
+}
+
+.cls_PopularPost_divRanking {
+  position: relative;
+	background: #333333;
+	border: 2px solid #9D9C9C;
+  width:32px;
+  height:24px;
+  color:white;
+  text-align:center;
+ 
+	z-index: 1;
+}
+
+.cls_PopularPost_divRanking:after, .cls_PopularPost_divRanking:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cls_PopularPost_divRanking:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333333;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.cls_PopularPost_divRanking:before {
+	border-color: rgba(107, 107, 107, 0);
+	border-top-color: #6B6B6B;
+	border-width: 11px;
+	margin-left: -11px;
+}
+
+.cls_PopularPost_anchorPost{
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+.cls_PopularPost_divThumbnail{
+  width:96px;
+  height:96px;
+
+  float:left;
+  margin-right:16px;
+  
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.cls_PopularPost_imgThumbnail{
+  width:72px;
+  height:72px;
+
+  float:left;
+  margin-right:16px;
+  
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.cls_divPopularPost ul{
+  padding-left:0;
+}
+  
+.cls_divPopularPost li{
+  list-style:none;
+  float: left;
+  width: 300px;
+  margin-right: 32px;
+}
+  
+.cls_PopularPost_Separate{
+  margin-top:8px;
+  margin-bottom:8px;
+
+  border-top:1px solid #ddd;
 }
