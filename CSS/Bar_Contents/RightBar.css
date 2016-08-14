@@ -31,9 +31,14 @@ Right Bar
 }
 
 #section_RightBar1,
-#section_RightBar3{
+#section_RightBar3,
+#section_RightBar4{
   float:left;
   margin-bottom:24px;
+}
+
+#section_RightBar4{
+  min-width: 300px;  
 }
 
 #Translate1,
@@ -147,4 +152,50 @@ Popular Post
   margin-bottom:8px;
 
   border-top:1px solid #ddd;
+}
+
+/* --------------------------------------------------------------------------------
+Pickup Post 
+-------------------------------------------------------------------------------- */
+.cls_PickupPosts_divLoading{
+  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");    
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;
+
+  width:300px;
+  height:128px;
+}
+
+.cls_divPickupPosts{
+  display:none;
+}
+
+.cls_PickupPost_divPickupPost {
+  float: left;
+  width: 300px;
+  margin-right: 32px;
+}
+
+.cls_PickupPost_anchorPickupPost {
+  display: block;
+  height: 160px;
+  padding:8px;
+  overflow: hidden;
+}
+
+.cls_PickupPost_divPickupPostThumbnail {
+  width: 96px;
+  height: 96px;
+  float: left;
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.cls_PickupPost_Separate {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-top: 1px solid #ddd;
 }
