@@ -17,7 +17,14 @@ $(function() {
     appearElem = $('#id_divPostNaviWithInfoOuter');
     appearElem.appear();
     appearElem.one('appear', onPostNaviWithInfoOuterAppear);
-  
+
+    /*-- --------------------------------------------------------------------------------
+    Pickup Post   
+    -------------------------------------------------------------------------------- --*/
+    appearElem = $('#id_PickupPosts_divLoading');
+    appearElem.appear();
+    appearElem.one('appear', onPickupPostsAppear);
+    
     /*-- --------------------------------------------------------------------------------
     Page Navi   
     -------------------------------------------------------------------------------- --*/

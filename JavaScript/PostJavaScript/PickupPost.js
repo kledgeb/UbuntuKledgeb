@@ -11,7 +11,7 @@ function createPickupPostElements(totalPostCount){
     var i;
 
     for(i = 1 ; i <= 10 ; i ++){
-      getLatestPostByIndex(getRandomInt(1,totalPostCount),1,createPickupPostElement);
+      getLatestPostByIndex(getRandomInt(1,100),1,createPickupPostElement);
     }    
   }
 
