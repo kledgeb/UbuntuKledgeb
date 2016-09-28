@@ -104,7 +104,7 @@ function onDashCategoryContentsQuickSearchClick(){
   doDashCategoryContentsQuickSearchClick();
 }
 
-function doDashCategoryContentsGoogleCustomSearchClick(){
+function onDashCategoryContentsGoogleCustomSearchClick(){
   doDashCategoryContentsGoogleCustomSearchClick();
 }
     
