@@ -47,6 +47,11 @@ function onDashContentsDetail_PrevButtonClick(event){
   else{  
     showPrevNextItem(itemInfo,-1);
   }
+
+  var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
+  
+  divCenterSection.mCustomScrollbar("scrollTo","top");
+
 }
 
 function onDashContentsDetail_NextButtonClick(event){
