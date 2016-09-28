@@ -127,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 16.10',
       date:'2016年10月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1610-15-yakkety-yak-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2016/09/ubuntu-1610-18-yakkety-yak.html'),
     },
 ];
 
