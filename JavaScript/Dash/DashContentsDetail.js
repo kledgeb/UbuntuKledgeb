@@ -304,7 +304,6 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
 
 }
 
-
 function showPrevNextItem(itemInfo,offset){
   var i;
   var index = itemInfo.itemIndex;

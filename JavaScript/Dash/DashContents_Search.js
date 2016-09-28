@@ -174,7 +174,9 @@ function createSearchItemInfo(searchType){
   var itemTitle;
   var errorMessage = null;
   var inputSearchBox = $('#id_Dash_inputSearchBox');
-    
+  var divSearchCategory = $('#id_Dash_Category_divSearch');
+  var categoryName = divSearchCategory.data('categoryName');
+      
   itemTitle = inputSearchBox.val().trim();
     
   if(!errorMessage){
@@ -185,9 +187,18 @@ function createSearchItemInfo(searchType){
   }
   
   return {
+        itemIndex:0,
+        itemTotalCount:1,
+        categoryName:categoryName,
+        itemLink:null,
+        itemIconURL:null,
         itemTitle:itemTitle,
         itemData:{
-          errorMessage:errorMessage},
+          postIndex:1,
+          pageIndex:1,
+          postCountPerPage:20,
+          errorMessage:errorMessage
+          },
       };
 }
 
