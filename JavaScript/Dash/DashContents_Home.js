@@ -129,6 +129,12 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2016年10月13日',
       link:adjustURLForMobile(getHomepageURL() + '2016/10/ubuntu-1610-22-ubuntu-1610.html'),
     },
+
+    {
+      title:'Ubutntu 17.04',
+      date:'2017年4月13日',
+      link:adjustURLForMobile(getHomepageURL() + '2017/01/ubuntu-1704-12-zesty-zapus-2.html'),
+    },
 ];
 
   var categoryName = 'ReleaseSchedule';
