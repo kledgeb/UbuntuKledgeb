@@ -119,9 +119,9 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 16.04.1 LTS',
-      date:'2016年7月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1604-79-ubuntu-16041.html'),
+      title:'Ubutntu 16.04.2 LTS',
+      date:'2017年2月16日',
+      link:adjustURLForMobile(getHomepageURL() + '2017/02/ubuntu-1604-130-ubuntu-16042.html'),
     },
 
     {
@@ -187,9 +187,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 16.04.1 LTS',
+      title:'Ubutntu 16.04.2 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2016/07/ubuntu-1604-79-ubuntu-16041.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/02/ubuntu-1604-130-ubuntu-16042.html'),
     },
 
     {
