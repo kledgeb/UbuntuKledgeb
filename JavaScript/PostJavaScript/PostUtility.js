@@ -9,7 +9,7 @@ function setPostDate (spanID, postDate) {
 }  
 
 function getSizedThumbnailURL(thumbnailURL,thumbnailSize){
-  return adjustURLProtocol(thumbnailURL.replace('/s72-c/','/s' + thumbnailSize + '-a/'));
+  return adjustURLProtocol(thumbnailURL.replace('/s72-c','/s' + thumbnailSize + '-a'));
 }
 
 function adjustPostDate(postDate){
