@@ -133,7 +133,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 17.04',
       date:'2017年4月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/02/ubuntu-1704-18-zesty-zapus-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/03/ubuntu-1704-24-ubuntu-1704.html'),
     },
 ];
 
