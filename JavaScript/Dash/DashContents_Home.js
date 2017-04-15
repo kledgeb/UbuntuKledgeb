@@ -133,7 +133,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 17.04',
       date:'2017年4月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/03/ubuntu-1704-24-ubuntu-1704.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1704-30-ubuntu-1704.html'),
     },
 ];
 
@@ -176,7 +176,7 @@ function setupHomeLens_SupportedVersion(){
   var supportedVersions = [
     {
       title:'Ubuntu 12.04.5 LTS',
-      date:'2017年4月までサポート（5年）',
+      date:'2017年4月28日までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
     },
     
@@ -196,6 +196,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 16.10',
       date:'2017年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2016/10/ubuntu-1610-22-ubuntu-1610.html'),
+    },
+
+    {
+      title:'Ubutntu 17.04',
+      date:'2018年1月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1704-30-ubuntu-1704.html'),
     },
   ];
 
