@@ -84,7 +84,9 @@ Related Post
   margin-right:16px;
 }
 
-.cls_divRelatedPostWidgetTitle{
+.cls_divRelatedPostWidgetTitle,
+.cls_divDisqusCommentTitle,
+.cls_divMatchedContentAdsenceTitle{
   font-size:medium;
   font-weight:bold;
 

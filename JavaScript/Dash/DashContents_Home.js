@@ -107,12 +107,6 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
 function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
     {
-      title:'Ubutntu 12.04.5 LTS',
-      date:'2014年8月7日',
-      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
-    },
-
-    {
       title:'Ubutntu 14.04.5 LTS',
       date:'2016年8月4日',
       link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1404-25-ubuntu-14045.html'),
@@ -125,12 +119,6 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 16.10',
-      date:'2016年10月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/10/ubuntu-1610-22-ubuntu-1610.html'),
-    },
-
-    {
       title:'Ubutntu 17.04',
       date:'2017年4月13日',
       link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1704-30-ubuntu-1704.html'),
@@ -139,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 17.10',
       date:'2017年10月19日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1710-5-ubuntu-1710.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/07/ubuntu-1710-43-artful-aardvark-2.html'),
     },
 ];
 
@@ -179,13 +167,7 @@ function setupHomeLens_ReleaseSchedule(){
 }
 
 function setupHomeLens_SupportedVersion(){
-  var supportedVersions = [
-    {
-      title:'Ubuntu 12.04.5 LTS',
-      date:'2017年4月28日までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2014/08/ubuntu-1204-4-ubuntu-12045ubuntu-12045.html'),
-    },
-    
+  var supportedVersions = [    
     {
       title:'Ubutntu 14.04.5 LTS',
       date:'2019年4月までサポート（5年）',
@@ -196,12 +178,6 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 16.04.2 LTS',
       date:'2021年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2017/02/ubuntu-1604-130-ubuntu-16042.html'),
-    },
-
-    {
-      title:'Ubutntu 16.10',
-      date:'2017年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2016/10/ubuntu-1610-22-ubuntu-1610.html'),
     },
 
     {
