@@ -119,6 +119,12 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
+      title:'Ubutntu 16.04.3 LTS',
+      date:'2017年8月3日',
+      link:adjustURLForMobile(getHomepageURL() + '2017/05/ubuntu-1604-156-ubuntu-16043.html'),
+    },
+
+    {
       title:'Ubutntu 17.04',
       date:'2017年4月13日',
       link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1704-30-ubuntu-1704.html'),
