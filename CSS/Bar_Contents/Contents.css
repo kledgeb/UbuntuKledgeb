@@ -241,13 +241,21 @@ Post Footer Adsence
 .cls_PostFooterAdsence_divContents{
   margin-bottom: 24px;
   padding-top: 24px;
-  }
+  border-top: 1px solid #ddd;
+  margin-top: 24px;
+}
 
 .cls_PostBottomAdsence_divContents{
   margin-top:24px;
   padding-top:24px;
 
   border-top:1px solid #ddd;  
+}
+
+.cls_PostBottomInArticleAdsence_divContents{
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
 }
 
 .cls_PostFooterAdsence_divAdsence_1,
@@ -288,6 +296,12 @@ Post Footer Adsence
 .adsbygoogle_LinkUnit_1,
 .adsbygoogle_LinkUnit_2{
   margin:0 auto;  
+}
+
+.cls_divInArticleAdsenceContents{
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 24px;
 }
 
 /* --------------------------------------------------------------------------------

@@ -42,7 +42,7 @@ Post Navi Button with Info
 -------------------------------------------------------------------------------- */
 .cls_divPostNaviWithInfoOuter{
   height:144px;
-  
+  margin-top: 24px;
 }  
   
 .cls_PostNaviWithInfo_divLoading{
