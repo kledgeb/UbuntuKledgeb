@@ -42,6 +42,21 @@ $(function() {
     -------------------------------------------------------------------------------- --*/      
     $.force_appear();
     showStatusMessage();
+
+    if(gIsMobile == false)
+    {
+      var targetTag = $("#id_divPostBody > h2:eq(1)");
+
+      if(targetTag.length == 0){
+          targetTag = $("#id_divPostBody > h3:eq(0)");
+      }
+
+      if(targetTag.length != 0){
+          var ads = $("#id_divInArticleAdsenceContents");
+
+          ads.insertBefore(targetTag);
+      }
+    }
   }catch(e){
 
   }
