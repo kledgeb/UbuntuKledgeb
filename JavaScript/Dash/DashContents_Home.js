@@ -127,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 17.10',
       date:'2017年10月19日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/07/ubuntu-1710-43-artful-aardvark-2.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/09/ubuntu-1710-86-ubuntu-1710.html'),
     },
 ];
 
