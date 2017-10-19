@@ -127,8 +127,9 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 17.10',
       date:'2017年10月19日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/09/ubuntu-1710-86-ubuntu-1710.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2017/10/ubuntu-1710-96-ubuntu-1710.html'),
     },
+
 ];
 
   var categoryName = 'ReleaseSchedule';
@@ -185,6 +186,13 @@ function setupHomeLens_SupportedVersion(){
       date:'2018年1月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2017/04/ubuntu-1704-30-ubuntu-1704.html'),
     },
+
+    {
+      title:'Ubutntu 17.10',
+      date:'2018年7月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2017/10/ubuntu-1710-96-ubuntu-1710.html'),
+    },
+
   ];
 
   var categoryName = 'SupportedVersion';
