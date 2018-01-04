@@ -130,6 +130,12 @@ function setupHomeLens_ReleaseSchedule(){
       link:adjustURLForMobile(getHomepageURL() + '2017/10/ubuntu-1710-96-ubuntu-1710.html'),
     },
 
+    {
+      title:'Ubutntu 18.04 LTS',
+      date:'2018年4月26日',
+      link:adjustURLForMobile(getHomepageURL() + '2018/01/ubuntu-1804-29-bionic-beaver-11.html'),
+    },
+
 ];
 
   var categoryName = 'ReleaseSchedule';
