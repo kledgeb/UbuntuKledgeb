@@ -113,9 +113,9 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 16.04.3 LTS',
-      date:'2017年8月3日',
-      link:adjustURLForMobile(getHomepageURL() + '2017/08/ubuntu-1604-173-ubuntu-16043.html'),
+      title:'Ubutntu 16.04.4 LTS',
+      date:'2018年3月1日',
+      link:adjustURLForMobile(getHomepageURL() + '2018/03/ubuntu-1604-210-ubuntu-16044.html'),
     },
 
     {
@@ -176,9 +176,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 16.04.3 LTS',
+      title:'Ubutntu 16.04.4 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2017/08/ubuntu-1604-173-ubuntu-16043.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/03/ubuntu-1604-210-ubuntu-16044.html'),
     },
 
     {
