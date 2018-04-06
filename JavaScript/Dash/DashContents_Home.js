@@ -127,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 18.04 LTS',
       date:'2018年4月26日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/03/ubuntu-1804-56-bionic-beaver-1.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/04/ubuntu-1804-66-ubuntu-1804.html'),
     },
 
 ];
