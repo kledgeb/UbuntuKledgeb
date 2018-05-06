@@ -127,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 18.04 LTS',
       date:'2018年4月26日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/04/ubuntu-1804-66-ubuntu-1804.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/04/ubuntu-1804-81-ubuntu-1804-lts.html'),
     },
 
 ];
@@ -185,6 +185,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubutntu 17.10.1',
       date:'2018年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2018/01/ubuntu-1710-181-ubuntu-17101.html'),
+    },
+
+    {
+      title:'Ubutntu 18.04 LTS',
+      date:'2023年4月までサポート（5年）',
+      link:adjustURLForMobile(getHomepageURL() + '2018/04/ubuntu-1804-81-ubuntu-1804-lts.html'),
     },
 
   ];
