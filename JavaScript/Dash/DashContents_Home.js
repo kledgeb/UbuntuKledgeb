@@ -183,7 +183,7 @@ function setupHomeLens_SupportedVersion(){
 
     {
       title:'Ubutntu 17.10.1',
-      date:'2018年7月までサポート（9ヶ月）',
+      date:'2018年7月19日までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2018/01/ubuntu-1710-181-ubuntu-17101.html'),
     },
 

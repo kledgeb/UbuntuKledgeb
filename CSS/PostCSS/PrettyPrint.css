@@ -98,8 +98,9 @@ pre.prettyprint .pln {
   }
 }
 
+/*   font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif; */
+
 pre.prettyprint {
-  font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif;
   font-size: inherit;
   padding: 4px;
   margin-left:16px;

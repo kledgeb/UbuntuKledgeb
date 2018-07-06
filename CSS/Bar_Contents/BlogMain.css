@@ -26,8 +26,9 @@ a:active{
   transition-duration: 0.25s;
 }
 
+/*  font-family: 'Ubuntu','TakaoPGothic','SegoeUI','Yu Gothic UI','Meiryo UI','ヒラギノ角ゴ Pro W3','VL PGothic',sans-serif; */
+
 body{
-  font-family: 'Ubuntu','TakaoPGothic','SegoeUI','Yu Gothic UI','Meiryo UI','ヒラギノ角ゴ Pro W3','VL PGothic',sans-serif;
   color:#434a54;
   background-color:white;
   letter-spacing:1px;
@@ -41,8 +42,9 @@ body{
   min-width: 100%;
 }
 
+/*  font-family: 'Ubuntu Mono','VL ゴシック','Takaoゴシック','ＭＳ ゴシック','ヒラギノ角ゴ Pro W3',sans-serif; */
+
 pre {
-  font-family: 'Ubuntu Mono','VL ゴシック','Takaoゴシック','ＭＳ ゴシック','ヒラギノ角ゴ Pro W3',sans-serif;
   font-size: inherit;
   margin:0;
 }

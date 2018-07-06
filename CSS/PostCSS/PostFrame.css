@@ -2,8 +2,9 @@
 Post Item/Archive/Static clPostFrame
 -------------------------------------------------------------------------------- */
 
+/*   font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif; */
 div.clPostFrame{
-  font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif;
+  font-family: 'monospace';
   padding: 4px;
   margin-left:16px;
   margin-right:24px;
