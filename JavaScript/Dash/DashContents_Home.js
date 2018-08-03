@@ -115,7 +115,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 16.04.5 LTS',
       date:'2018年8月2日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/04/ubuntu-1604-221-ubuntu-16045.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/08/ubuntu-1604-234-ubuntu-16045-lts.html'),
     },
 
     {
@@ -175,9 +175,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 16.04.4 LTS',
+      title:'Ubutntu 16.04.5 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2018/03/ubuntu-1604-210-ubuntu-16044.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/08/ubuntu-1604-234-ubuntu-16045-lts.html'),
     },
 
     {
