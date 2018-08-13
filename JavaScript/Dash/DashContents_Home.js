@@ -127,7 +127,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 18.10',
       date:'2018年10月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/05/ubuntu-1810-7.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/08/ubuntu-1810-11.html'),
     },
 ];
 
