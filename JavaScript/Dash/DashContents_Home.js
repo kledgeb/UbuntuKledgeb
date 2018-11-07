@@ -125,9 +125,21 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
+      title:'Ubutntu 18.04.2 LTS',
+      date:'2019年2月7日',
+      link:adjustURLForMobile(getHomepageURL() + '2018/11/ubuntu-1804-297-ubuntu-18042linux.html'),
+    },
+
+    {
       title:'Ubutntu 18.10',
       date:'2018年10月18日',
       link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1810-24-ubuntu-1810.html'),
+    },
+
+    {
+      title:'Ubutntu 19.04',
+      date:'2019年4月18日',
+      link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1904-1-ubuntu-1904.html'),
     },
 ];
 
