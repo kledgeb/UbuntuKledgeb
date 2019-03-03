@@ -113,9 +113,9 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubutntu 16.04.5 LTS',
-      date:'2018年8月2日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/08/ubuntu-1604-234-ubuntu-16045-lts.html'),
+      title:'Ubutntu 16.04.6 LTS',
+      date:'2019年3月1日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
     },
 
     {
@@ -139,7 +139,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubutntu 19.04',
       date:'2019年4月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1904-1-ubuntu-1904.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2018/11/ubuntu-1904-3.html'),
     },
 ];
 
@@ -187,9 +187,9 @@ function setupHomeLens_SupportedVersion(){
     },
     
     {
-      title:'Ubutntu 16.04.5 LTS',
+      title:'Ubutntu 16.04.6 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2018/08/ubuntu-1604-234-ubuntu-16045-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
     },
 
     {
@@ -197,7 +197,6 @@ function setupHomeLens_SupportedVersion(){
       date:'2023年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2018/07/ubuntu-1804-205-ubuntu-18041-lts.html'),
     },
-
 
     {
       title:'Ubutntu 18.10',
