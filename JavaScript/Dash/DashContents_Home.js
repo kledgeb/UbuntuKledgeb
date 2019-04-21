@@ -107,39 +107,51 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
 function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
     {
-      title:'Ubutntu 14.04.5 LTS',
-      date:'2016年8月4日',
-      link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1404-25-ubuntu-14045.html'),
+      title:'Ubuntu 14.04.6 LTS',
+      date:'2019年3月7日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1404-92-ubuntu-14046-lts.html'),
     },
 
     {
-      title:'Ubutntu 16.04.6 LTS',
+      title:'Ubuntu 16.04.6 LTS',
       date:'2019年3月1日',
       link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
     },
 
     {
-      title:'Ubutntu 18.04.1 LTS',
-      date:'2018年7月26日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/07/ubuntu-1804-205-ubuntu-18041-lts.html'),
-    },
-
-    {
-      title:'Ubutntu 18.04.2 LTS',
+      title:'Ubuntu 18.04.2 LTS',
       date:'2019年2月7日',
       link:adjustURLForMobile(getHomepageURL() + '2018/11/ubuntu-1804-297-ubuntu-18042linux.html'),
     },
 
     {
-      title:'Ubutntu 18.10',
+      title:'Ubuntu 18.04.3 LTS',
+      date:'2019年8月1日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1804-325-ubuntu-18043linux.html'),
+    },
+
+    {
+      title:'Ubuntu 18.04.4 LTS',
+      date:'2020年2月6日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1804-325-ubuntu-18043linux.html'),
+    },
+
+    {
+      title:'Ubuntu 18.04.5 LTS',
+      date:'2020年8月6日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1804-325-ubuntu-18043linux.html'),
+    },
+
+    {
+      title:'Ubuntu 18.10',
       date:'2018年10月18日',
       link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1810-24-ubuntu-1810.html'),
     },
 
     {
-      title:'Ubutntu 19.04',
+      title:'Ubuntu 19.04',
       date:'2019年4月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/11/ubuntu-1904-3.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
     },
 ];
 
@@ -181,27 +193,33 @@ function setupHomeLens_ReleaseSchedule(){
 function setupHomeLens_SupportedVersion(){
   var supportedVersions = [    
     {
-      title:'Ubutntu 14.04.5 LTS',
+      title:'Ubuntu 14.04.6 LTS',
       date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2016/08/ubuntu-1404-25-ubuntu-14045.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1404-92-ubuntu-14046-lts.html'),
     },
     
     {
-      title:'Ubutntu 16.04.6 LTS',
+      title:'Ubuntu 16.04.6 LTS',
       date:'2021年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
     },
 
     {
-      title:'Ubutntu 18.04.1 LTS',
+      title:'Ubuntu 18.04.2 LTS',
       date:'2023年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2018/07/ubuntu-1804-205-ubuntu-18041-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/02/ubuntu-1804-322-ubuntu-18042-lts.html'),
     },
 
     {
-      title:'Ubutntu 18.10',
+      title:'Ubuntu 18.10',
       date:'2019年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1810-24-ubuntu-1810.html'),
+    },
+
+    {
+      title:'Ubuntu 19.04',
+      date:'2020年1月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
     },
 
   ];
