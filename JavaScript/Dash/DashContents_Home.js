@@ -106,11 +106,6 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
 
 function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
-    {
-      title:'Ubuntu 14.04.6 LTS',
-      date:'2019年3月7日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1404-92-ubuntu-14046-lts.html'),
-    },
 
     {
       title:'Ubuntu 16.04.6 LTS',
@@ -153,6 +148,12 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2019年4月18日',
       link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
     },
+
+    {
+      title:'Ubuntu 19.10',
+      date:'2019年10月17日',
+      link:adjustURLForMobile(getHomepageURL() + '2019/05/ubuntu-1910-5.html'),
+    },
 ];
 
   var categoryName = 'ReleaseSchedule';
@@ -192,11 +193,6 @@ function setupHomeLens_ReleaseSchedule(){
 
 function setupHomeLens_SupportedVersion(){
   var supportedVersions = [    
-    {
-      title:'Ubuntu 14.04.6 LTS',
-      date:'2019年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1404-92-ubuntu-14046-lts.html'),
-    },
     
     {
       title:'Ubuntu 16.04.6 LTS',
