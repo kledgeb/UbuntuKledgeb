@@ -138,12 +138,6 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubuntu 18.10',
-      date:'2018年10月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1810-24-ubuntu-1810.html'),
-    },
-
-    {
       title:'Ubuntu 19.04',
       date:'2019年4月18日',
       link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
@@ -152,7 +146,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubuntu 19.10',
       date:'2019年10月17日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/05/ubuntu-1910-5.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/05/ubuntu-1910-6.html'),
     },
 ];
 
@@ -204,12 +198,6 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubuntu 18.04.2 LTS',
       date:'2023年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2019/02/ubuntu-1804-322-ubuntu-18042-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 18.10',
-      date:'2019年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2018/10/ubuntu-1810-24-ubuntu-1810.html'),
     },
 
     {
