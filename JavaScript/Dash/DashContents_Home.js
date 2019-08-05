@@ -116,7 +116,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubuntu 18.04.2 LTS',
       date:'2019年2月7日',
-      link:adjustURLForMobile(getHomepageURL() + '2018/11/ubuntu-1804-297-ubuntu-18042linux.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2019/02/ubuntu-1804-322-ubuntu-18042-lts.html'),
     },
 
     {
