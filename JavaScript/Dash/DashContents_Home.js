@@ -132,12 +132,6 @@ function setupHomeLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubuntu 19.04',
-      date:'2019年4月18日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
-    },
-
-    {
       title:'Ubuntu 19.10',
       date:'2019年10月17日',
       link:adjustURLForMobile(getHomepageURL() + '2019/10/ubuntu-1910-27-ubuntu-1910.html'),
@@ -198,12 +192,6 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubuntu 18.04.3 LTS',
       date:'2023年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2019/08/ubuntu-1804-347-ubuntu-18043-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 19.04',
-      date:'2020年1月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1904-15-ubuntu-1904.html'),
     },
 
     {
