@@ -134,7 +134,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubuntu 20.04 LTS',
       date:'2020年4月23日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/10/ubuntu-2004-3-ubuntu-2004-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2004-20-ubuntu-2004-lts.html'),
     },
 ];
 
