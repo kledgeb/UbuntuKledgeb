@@ -121,8 +121,8 @@ function setupHomeLens_ReleaseSchedule(){
 
     {
       title:'Ubuntu 18.04.5 LTS',
-      date:'2020年8月6日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/04/ubuntu-1804-325-ubuntu-18043linux.html'),
+      date:'2020年8月13日',
+      link:adjustURLForMobile(getHomepageURL() + '2020/06/ubuntu-1804-399-ubuntu-18045-lts.html'),
     },
 
     {
@@ -135,6 +135,12 @@ function setupHomeLens_ReleaseSchedule(){
       title:'Ubuntu 20.04 LTS',
       date:'2020年4月23日',
       link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2004-23-ubuntu-2004-lts.html'),
+    },
+
+    {
+      title:'Ubuntu 20.04.1 LTS',
+      date:'2020年8月6日',
+      link:adjustURLForMobile(getHomepageURL() + '2020/06/ubuntu-2004-86-ubuntu-20041-lts.html'),
     },
 
     {
