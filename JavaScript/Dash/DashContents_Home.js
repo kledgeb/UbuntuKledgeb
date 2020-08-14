@@ -108,42 +108,6 @@ function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 16.04.6 LTS',
-      date:'2019年3月1日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 18.04.4 LTS',
-      date:'2020年2月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2020/02/ubuntu-1804-378-ubuntu-18044-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 18.04.5 LTS',
-      date:'2020年8月13日',
-      link:adjustURLForMobile(getHomepageURL() + '2020/06/ubuntu-1804-399-ubuntu-18045-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 19.10',
-      date:'2019年10月17日',
-      link:adjustURLForMobile(getHomepageURL() + '2019/10/ubuntu-1910-27-ubuntu-1910.html'),
-    },
-
-    {
-      title:'Ubuntu 20.04 LTS',
-      date:'2020年4月23日',
-      link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2004-23-ubuntu-2004-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 20.04.1 LTS',
-      date:'2020年8月6日',
-      link:adjustURLForMobile(getHomepageURL() + '2020/06/ubuntu-2004-86-ubuntu-20041-lts.html'),
-    },
-
-    {
       title:'Ubuntu 20.10',
       date:'2020年10月22日',
       link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2010-1-ubuntu-2010.html'),
@@ -189,27 +153,21 @@ function setupHomeLens_SupportedVersion(){
   var supportedVersions = [    
     
     {
-      title:'Ubuntu 16.04.6 LTS',
+      title:'Ubuntu 16.04.7 LTS',
       date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2019/03/ubuntu-1604-251-ubuntu-16046-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1604-286-ubuntu-16047-lts.html'),
     },
 
     {
-      title:'Ubuntu 18.04.4 LTS',
+      title:'Ubuntu 18.04.5 LTS',
       date:'2023年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/02/ubuntu-1804-378-ubuntu-18044-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1804-406-ubuntu-18045-lts.html'),
     },
 
     {
-      title:'Ubuntu 19.10',
-      date:'2020年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2019/10/ubuntu-1910-27-ubuntu-1910.html'),
-    },
-
-    {
-      title:'Ubuntu 20.04 LTS',
+      title:'Ubuntu 20.04.1 LTS',
       date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2004-23-ubuntu-2004-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-2004-139-ubuntu-20041-lts.html'),
     },
 
   ];
