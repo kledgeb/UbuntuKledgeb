@@ -108,9 +108,9 @@ function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 20.10',
-      date:'2020年10月22日',
-      link:adjustURLForMobile(getHomepageURL() + '2020/04/ubuntu-2010-1-ubuntu-2010.html'),
+      title:'Ubuntu 21.04',
+      date:'2021年4月22日',
+      link:adjustURLForMobile(getHomepageURL() + '2020/10/ubuntu-2104-5-ubuntu-2104h.html'),
     },
 ];
 
@@ -168,6 +168,12 @@ function setupHomeLens_SupportedVersion(){
       title:'Ubuntu 20.04.1 LTS',
       date:'2025年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-2004-139-ubuntu-20041-lts.html'),
+    },
+
+    {
+      title:'Ubuntu 20.10',
+      date:'2021年7月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2020/10/ubuntu-2010-12-ubuntu-2010.html'),
     },
 
   ];
