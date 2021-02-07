@@ -112,6 +112,12 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2021年4月22日',
       link:adjustURLForMobile(getHomepageURL() + '2020/10/ubuntu-2104-5-ubuntu-2104h.html'),
     },
+
+    {
+      title:'Ubuntu 20.04.2 LTS',
+      date:'2021年2月4日',
+      link:adjustURLForMobile(getHomepageURL() + '2021/02/ubuntu-2004-218-ubuntu-20042-lts.html'),
+    },
 ];
 
   var categoryName = 'ReleaseSchedule';
@@ -165,9 +171,9 @@ function setupHomeLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 20.04.1 LTS',
+      title:'Ubuntu 20.04.2 LTS',
       date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-2004-139-ubuntu-20041-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2021/02/ubuntu-2004-218-ubuntu-20042-lts.html'),
     },
 
     {
