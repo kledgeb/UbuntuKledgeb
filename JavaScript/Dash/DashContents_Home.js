@@ -112,6 +112,7 @@ function setupHomeLens_ReleaseSchedule(){
       date:'2021年10月14日',
       link:adjustURLForMobile(getHomepageURL() + '2021/04/ubuntu-2110-3-ubuntu-2110.html'),
     },
+    
 ];
 
   var categoryName = 'ReleaseSchedule';
