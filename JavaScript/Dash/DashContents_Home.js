@@ -108,15 +108,15 @@ function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 21.10',
-      date:'2021年10月14日',
-      link:adjustURLForMobile(getHomepageURL() + '2021/04/ubuntu-2110-3-ubuntu-2110.html'),
+      title:'Ubuntu 22.04 LTS',
+      date:'2022年4月21日',
+      link:adjustURLForMobile(getHomepageURL() + '2021/10/ubuntu-2204-2-ubuntu-2204-ltsubuntu.html'),
     },
     
     {
-      title:'Ubuntu 20.04.3 LTS',
-      date:'2021年8月26日',
-      link:adjustURLForMobile(getHomepageURL() + '2021/08/ubuntu-2004-224-ubuntu-20043-lts.html'),
+      title:'Ubuntu 20.04.4 LTS',
+      date:'2022年2月24日',
+      link:adjustURLForMobile(getHomepageURL() + '2021/12/ubuntu-2004-232-ubuntu-20044-lts2.html'),
     },
 ];
 
@@ -159,21 +159,15 @@ function setupHomeLens_SupportedVersion(){
   var supportedVersions = [    
     
     {
-      title:'Ubuntu 16.04.7 LTS',
-      date:'2021年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1604-286-ubuntu-16047-lts.html'),
-    },
-
-    {
       title:'Ubuntu 18.04.5 LTS',
       date:'2023年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1804-406-ubuntu-18045-lts.html'),
     },
 
     {
-      title:'Ubuntu 20.04.2.0 LTS',
+      title:'Ubuntu 20.04.3 LTS',
       date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2021/02/ubuntu-2004-220-ubuntu-200420-ltslinux.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2021/08/ubuntu-2004-225-ubuntu-20043-lts.html'),
     },
 
     {
@@ -182,6 +176,11 @@ function setupHomeLens_SupportedVersion(){
       link:adjustURLForMobile(getHomepageURL() + '2021/04/ubuntu-2104-19-ubuntu-2104.html'),
     },
 
+    {
+      title:'Ubuntu 21.10',
+      date:'2022年7月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2021/10/ubuntu-2110-22-ubuntu-2110.html'),
+    },
   ];
 
   var categoryName = 'SupportedVersion';
