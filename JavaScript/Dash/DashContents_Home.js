@@ -108,16 +108,30 @@ function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 22.04 LTS',
-      date:'2022年4月21日',
-      link:adjustURLForMobile(getHomepageURL() + '2021/10/ubuntu-2204-2-ubuntu-2204-ltsubuntu.html'),
+      title:'Ubuntu 22.04.1 LTS',
+      date:'2022年8月4日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-48-ubuntu-22041-lts.html'),
     },
     
     {
-      title:'Ubuntu 20.04.4 LTS',
-      date:'2022年2月24日',
-      link:adjustURLForMobile(getHomepageURL() + '2021/12/ubuntu-2004-232-ubuntu-20044-lts2.html'),
+      title:'Ubuntu 22.04.2 LTS',
+      date:'2023年2月9日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-49-ubuntu-22042-lts.html'),
     },
+    
+    {
+      title:'Ubuntu 22.10',
+      date:'2022年10月20日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2210-1-ubuntu-2210.html'),
+    },
+   
+    {
+      title:'Ubuntu 23.04',
+      date:'2023年4月27日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2304-1-ubuntu-2304.html'),
+    },
+    
+
 ];
 
   var categoryName = 'ReleaseSchedule';
@@ -165,21 +179,21 @@ function setupHomeLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 20.04.3 LTS',
+      title:'Ubuntu 20.04.4 LTS',
       date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2021/08/ubuntu-2004-225-ubuntu-20043-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 21.04',
-      date:'2022年1月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2021/04/ubuntu-2104-19-ubuntu-2104.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2022/02/ubuntu-2004-237-ubuntu-20044-lts.html'),
     },
 
     {
       title:'Ubuntu 21.10',
       date:'2022年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2021/10/ubuntu-2110-22-ubuntu-2110.html'),
+    },
+
+    {
+      title:'Ubuntu 22.04 LTS',
+      date:'2027年4月までサポート（5年）',
+      link:adjustURLForMobile(getHomepageURL() + '2022/04/ubuntu-2204-58-ubuntu-2204-lts.html'),
     },
   ];
 
