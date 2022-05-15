@@ -108,6 +108,12 @@ function setupHomeLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
+      title:'Ubuntu 20.04.5 LTS',
+      date:'2022年9月1日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2004-241-ubuntu-20045-ltslinux.html'),
+    },
+
+    {
       title:'Ubuntu 22.04.1 LTS',
       date:'2022年8月4日',
       link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-48-ubuntu-22041-lts.html'),
@@ -122,7 +128,7 @@ function setupHomeLens_ReleaseSchedule(){
     {
       title:'Ubuntu 22.10',
       date:'2022年10月20日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2210-1-ubuntu-2210.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2210-8.html'),
     },
    
     {
