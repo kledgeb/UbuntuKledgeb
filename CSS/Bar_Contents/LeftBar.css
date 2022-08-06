@@ -4,7 +4,7 @@ Left Bar
 
 .cls_LeftBar{
   background-color:#333333;
-  width:48px;
+  width:52px;
   height:100%;
   position:fixed;
   z-index:1;
@@ -42,13 +42,13 @@ Left Bar
 .cls_LeftBar_divArrow{
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 5px 5px;
+  background-size: 8px 8px;
 
   float:left;
   
   margin-right:3px;
   
-  width:5px;
+  width:8px;
   height:48px;  
 }
 
