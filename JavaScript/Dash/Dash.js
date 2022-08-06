@@ -201,14 +201,14 @@ function layoutDash(){
 
   //Contents
   var divContentsContainer = $('#id_Dash_divContentsContainer');
-  var divSearchOption = $('#id_Dash_divSearchOption:before');
+  var divSearchOption = $('#id_Dash_divSearchOption');
 
   if(gOpenRightBar){
     divContentsContainer.outerWidth(barWidth);
-    divSearchOption.css('transform','rotate(0deg)');
+    divSearchOption.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_DownArrow.svg")');
   }else{
     divContentsContainer.outerWidth(dashWidth);
-    divSearchOption.css('transform','rotate(90deg)');
+    divSearchOption.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg")');
   }
 
   barHeight = dashHeight - divTopBar.outerHeight(true) - divBottomBar.outerHeight(true);

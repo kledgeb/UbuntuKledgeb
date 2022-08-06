@@ -101,17 +101,6 @@ Window
   background-size:75%;
 }
 
-#id_Dash_divSearchOption::before {
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 48px;
-  left: 228px;
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
 .cls_Dash_divSearchOption{
   float:right;
   width:128px;
@@ -162,11 +151,10 @@ Window
 }
 
 .cls_Dash_Lens_divArrow{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_DownArrow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px;
-  transform: rotate(90deg);
 
   float:left;
   height:16px;
