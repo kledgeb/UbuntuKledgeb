@@ -288,7 +288,7 @@ function setupContentsDetail_createSearchResultPostElement(entry,feed,itemInfo){
       divSearchResultPostContainer.append(divSearchResultPost);
 
        if(entry[i].media$thumbnail){
-        divSearchResultPost.css('background-image','url("' + parsePostThumbnail(entry[i].media$thumbnail,entry[i].media$thumbnail.width * 2) + '")');
+        divSearchResultPost.css('background-image','url("' + parsePostThumbnail(entry[i].media$thumbnail) + '")');
       }
     }
 
