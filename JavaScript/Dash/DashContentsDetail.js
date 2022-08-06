@@ -24,9 +24,6 @@ function setupDashContentsDetail(divItem){
   case 'Search':
     setupSearchContentsDetail(divItem);
     break;
-  case 'Message':
-    setupMessageContentsDetail(divItem);
-    break;
   }
   
   var divCenterSection = $('#id_DashContentsDetail_divCenterSection');

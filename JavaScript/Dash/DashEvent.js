@@ -93,10 +93,6 @@ function onDashTagLensClick(event){
   switchLens('Tag');
 }
 
-function onDashMessageLensClick(event){
-  switchLens('Message');
-}
-
 function onDashSearchLensClick(event){
   switchLens('Search');
 }

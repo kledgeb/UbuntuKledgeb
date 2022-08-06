@@ -1,87 +1,14 @@
 /*-- --------------------------------------------------------------------------------
-Bookmark 
--------------------------------------------------------------------------------- --*/
-function getAllBookmarks(){
-  var bookmark = $.localStorage.get('bookmark');
-  
-  if(!bookmark){
-    bookmark = [];
-  }
-  
-  return bookmark;
-}
-
-function removeBookmarkByIndex(index){
-  var myLocalStorage = $.localStorage;
-  var bookmark = myLocalStorage.get('bookmark');
-  
-  bookmark.splice(index,1);
-  myLocalStorage.set('bookmark',bookmark);
-}
-
-function removeAllBookmark(){
-  $.localStorage.remove('bookmark');
-}
-
-function addPostToBookmark(postInfo){
-  var bookmark = getAllBookmarks();    
-  var i;
-    
-  for(i = 0 ; i < bookmark.length ; i ++){
-    if(bookmark[i].canonicalUrl == postInfo.canonicalUrl){
-      bookmark.splice(i,1);
-      break;
-    }
-  }
-  
-  bookmark.unshift(postInfo);
-
-  if(bookmark.length > 100){
-    bookmark = bookmark.slice(0,100);
-  }
-
-  {
-    var myLocalStorage = $.localStorage;
-  
-    myLocalStorage.set('bookmark',bookmark);
-  }
-}
-
-function addCurrentPageToBookmarkWithNotify(target){
-  if(gCurrentPageType == 'item'){
-    addPostToBookmark(gPostInfo);
-    
-    target.tooltipster('hide');
-    target.tooltipster('content', 'この記事をブックマークに追加しました。');
-    target.tooltipster('show');
-  }    
-}
-
-function isValidPostID(postID){
-  var isValid = false;
-  
-  if((postID.length == 19) && (postID.match(/^[0-9]+$/))){
-    isValid = true;
-  }
-  
-  return isValid;
-}
-
-/*-- --------------------------------------------------------------------------------
 User Settings 
 -------------------------------------------------------------------------------- --*/
 var gUserSettings = $.localStorage.get('userSettings');
 
 function getAllUserSettings(){
-  if((gUserSettings) && (gUserSettings.version === '1')){
-    gUserSettings.version = '1.1';
-    gUserSettings.dashTheme = 'BlurGlass';
-  }
-  else if((!gUserSettings) || (gUserSettings.version === undefined)){
+  if((!gUserSettings) || (gUserSettings.version !== '2')){
     //set default settings
     gUserSettings = {
       //Version
-      version:'1.1',
+      version:'2',
 
       //Font Size
       siteFontSize:'Normal',
@@ -105,8 +32,6 @@ function getAllUserSettings(){
       dash_LinkPage_CategoryHeadState:'close',
 
       //Dash Star
-      dash_Bookmark_CategoryHeadState:'close',
-      dash_PageHistory_CategoryHeadState:'close',
       dash_PopularPost_CategoryHeadState:'close',
 
       //Dash SNS
@@ -114,10 +39,6 @@ function getAllUserSettings(){
 
       //Dash Tag
       dash_TagList_CategoryHeadState:'open',
-
-      //Dash Message
-      dash_PostCommnetList_CategoryHeadState:'close',
-      dash_ForumCommnetList_CategoryHeadState:'close',
 
       //Dash Help
       dash_UpdateNotifyPage_CategoryHeadState:'close',

@@ -123,8 +123,7 @@ Dash Contents Detail
 
 .cls_DashContentsDetail_divBackButton,
 .cls_DashContentsDetail_divRemoveButton,
-.cls_DashContentsDetail_divAllRemoveButton,
-.cls_DashContentsDetail_divAddBookmarkButton{
+.cls_DashContentsDetail_divAllRemoveButton{
   float:right;
   border-radius:4px;  
   border:1px solid #9D9C9C;
@@ -135,8 +134,7 @@ Dash Contents Detail
 
 .cls_DashContentsDetail_anchorShowPostButton,
 .cls_DashContentsDetail_divRemoveButton,
-.cls_DashContentsDetail_divAllRemoveButton,
-.cls_DashContentsDetail_divAddBookmarkButton{
+.cls_DashContentsDetail_divAllRemoveButton{
   margin-right:16px;  
   margin-top:16px;
 }

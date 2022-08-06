@@ -27,9 +27,6 @@ function setupDashContents(showParams){
   case 'Tag':
     setupTagLensContents(showParams);    
     break;
-  case 'Message':
-    setupMessageLensContents(showParams);    
-    break;
   case 'Search':
     setupSearchLensContents(showParams);    
     break;

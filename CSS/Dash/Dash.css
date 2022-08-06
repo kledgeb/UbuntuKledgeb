@@ -181,12 +181,12 @@ Window
   background-image: url("//lh3.googleusercontent.com/-V4ulJ1l9zFo/VPu7_IiDeNI/AAAAAAAA_fo/WbUpmPHUhGc/s800/Dash_BottomBar_Lens_Home.png"); 
 }
 
-.cls_Dash_PageLens_divIcon{
-  background-image: url("//lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
-}
-
 .cls_Dash_StarLens_divIcon{
   background-image: url("//lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+}
+
+.cls_Dash_PageLens_divIcon{
+  background-image: url("//lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
 }
 
 .cls_Dash_SNSLens_divIcon{
@@ -199,10 +199,6 @@ Window
 
 .cls_Dash_SearchLens_divIcon{
   background-image: url("//lh6.googleusercontent.com/-PTCB0-GVhcQ/VPu7_01jziI/AAAAAAAA_fQ/h0mm53c59gc/s800/Dash_BottomBar_Lens_Search.png");   
-}
-
-.cls_Dash_MessageLens_divIcon{
-  background-image: url("//lh3.googleusercontent.com/-RFTCn8w83kc/VPu7--j0lrI/AAAAAAAA_e8/3ot0GXh7B_k/s800/Dash_BottomBar_Lens_Messages.png");   
 }
 
 .cls_Dash_HelpLens_divIcon{

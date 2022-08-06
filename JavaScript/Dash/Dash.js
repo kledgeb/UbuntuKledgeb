@@ -119,7 +119,6 @@ function initializeDash(){
       $('#id_Dash_divStarLensContainer').on('click',onDashStarLensClick);
       $('#id_Dash_divSNSLensContainer').on('click',onDashSNSLensClick);
       $('#id_Dash_divTagLensContainer').on('click',onDashTagLensClick);
-      $('#id_Dash_divMessageLensContainer').on('click',onDashMessageLensClick);
       $('#id_Dash_divSearchLensContainer').on('click',onDashSearchLensClick);
       $('#id_Dash_divHelpLensContainer').on('click',onDashHelpLensClick);
     }

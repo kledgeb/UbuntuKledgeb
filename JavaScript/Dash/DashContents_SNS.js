@@ -38,30 +38,6 @@ function setupSNSLens_SharePost(){
         link:"//twitter.com/share?url=" + gHomepageURL + "&text="  + gPageTitle + "&hashtags=kledgeb",
         iconURL:'//lh5.googleusercontent.com/-NpqimLJuM8k/VRolBlZAFsI/AAAAAAABAQI/3lH9wOOFmR4/s800/TweetButton_48.jpg',
       },
-
-      {
-        title:'サイトをfacebookで共有',
-        link:"//www.facebook.com/sharer.php?u=" + gHomepageURL + "&t="  + gPageTitle,
-        iconURL:'//lh6.googleusercontent.com/-H3rMXXmz3hY/VRoo2JTbh-I/AAAAAAABAQo/MVRvaVya3Ds/s800/facebookButton_48.jpg',
-      },
-
-      {
-        title:'サイトをGoogle+で共有',
-        link:"//plus.google.com/share?url=" + gHomepageURL,
-        iconURL:'//lh6.googleusercontent.com/-qU0vsgkUrig/VRok_u29a9I/AAAAAAABAPc/ptVAk184T9I/s800/GooglePlusButton_48.jpg',
-      },
-
-      {
-        title:'サイトをTumblrで共有',
-        link:"//www.tumblr.com/share/link?url=" + gHomepageURL + "&name="  + gPageTitle,
-        iconURL:'//lh5.googleusercontent.com/-OiKGTQgqiJ8/VRolBLL6FlI/AAAAAAABAP0/o-fxjbZrdts/s800/TumblrButton_48.jpg',
-      },
-      
-      {
-        title:'サイトをLinkedinで共有',
-        link:"//www.linkedin.com/shareArticle?mini=true&url=" + gHomepageURL + "&title="  + gPageTitle,
-        iconURL:'//lh4.googleusercontent.com/-4W5qWmMr9Pg/VRolAne3NxI/AAAAAAABAQE/rMOr8CJ4f9E/s800/LinkedinButton_48.jpg',
-      },
     ];    
   }else{
     var postTitle = $('<p>' + gPostInfo.title + '</p>').text();
