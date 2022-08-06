@@ -28,7 +28,7 @@ Dash Contents Home
 .cls_Dash_Category_Title_divLatestPost{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_LatestPost.svg");
   background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
+  background-position:center left;
+  background-size:16px;
 }
 
