@@ -3,16 +3,15 @@ Dash Contents Tag
 -------------------------------------------------------------------------------- */
 /* Dash Tag Category */
 .cls_Dash_Category_Contents_divTagList{
-  background-image: url("//lh3.googleusercontent.com/-hPWrU_AGWVI/VPwhJbct0MI/AAAAAAAA_gM/N606_BjDiMQ/s800/Loading_Back333333_48.GIF"); 
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
 }
 
 .cls_Dash_Category_Title_divTagList{
-  background-image: url("//lh5.googleusercontent.com/-CEIiZ978Gmw/VQPFW9T-BhI/AAAAAAAA_pQ/mxxOCigdQqM/s800/Dash_Category_Tag.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MultiTag.svg");
 }
 
-
 .cls_Dash_Category_Contents_TagList_divItem{
-  background-size:auto;  
+  background-size:auto;
   height: 48px;
   margin-right: 8px;
   margin-bottom: 8px;
@@ -53,6 +52,6 @@ Dash Contents Tag
 }
 
 .cls_Dash_Category_Contents_anchorSearchResultPostLink:link{
-  color:white;  
+  color:white;
 }
 
