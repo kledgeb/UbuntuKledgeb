@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 10 10"
+   version="1.1"
+   id="svg788"
+   sodipodi:docname="Dash.svg"
+   width="10"
+   height="10"
+   inkscape:version="1.2 (1:1.2.1+202207142221+cd75a1ee6d)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs792" />
+  <sodipodi:namedview
+     id="namedview790"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="53.125"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1053"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg788" />
+  <path
+     d="M 0.805,0 C 0.268,0 0,0 0,0.625 v 0.75 C 0,2 0.268,2 0.805,2 h 0.39 C 1.732,2 2,2 2,1.375 V 0.625 C 2,0.022 1.732,0 1.195,0 Z m 4,0 C 4.268,0 4,0 4,0.625 v 0.75 C 4,2 4.268,2 4.805,2 h 0.39 C 5.732,2 6,2 6,1.375 V 0.625 C 6,0.022 5.732,0 5.195,0 Z m 4,0 C 8.268,0 8,0 8,0.625 v 0.75 C 8,2 8.268,2 8.805,2 h 0.39 C 9.732,2 10,2 10,1.375 V 0.625 C 10,0.022 9.732,0 9.195,0 Z m -8,4 C 0.268,4 0,4 0,4.625 v 0.75 C 0,6 0.268,6 0.805,6 h 0.39 C 1.732,6 2,6 2,5.375 V 4.625 C 2,4.022 1.732,4 1.195,4 Z m 4,0 C 4.268,4 4,4 4,4.625 v 0.75 C 4,6 4.268,6 4.805,6 h 0.39 C 5.732,6 6,6 6,5.375 V 4.625 C 6,4.022 5.732,4 5.195,4 Z m 4,0 C 8.268,4 8,4 8,4.625 v 0.75 C 8,6 8.268,6 8.805,6 h 0.39 C 9.732,6 10,6 10,5.375 V 4.625 C 10,4.022 9.732,4 9.195,4 Z m -8,4 C 0.268,8 0,8 0,8.625 v 0.75 c 0,0.6249998 0.268,0.6249998 0.805,0.6249998 h 0.39 c 0.537,0 0.805,0 0.805,-0.6249998 V 8.625 C 2,8.022 1.732,8 1.195,8 Z m 4,0 C 4.268,8 4,8 4,8.625 v 0.75 c 0,0.6249998 0.268,0.6249998 0.805,0.6249998 h 0.39 c 0.537,0 0.805,0 0.805,-0.6249998 V 8.625 C 6,8.022 5.732,8 5.195,8 Z m 4,0 C 8.268,8 8,8 8,8.625 v 0.75 c 0,0.6249998 0.268,0.6249998 0.805,0.6249998 h 0.39 c 0.537,0 0.805,0 0.805,-0.6249998 V 8.625 C 10,8.022 9.732,8 9.195,8 Z"
+     fill="#808080"
+     overflow="visible"
+     id="path786"
+     style="fill:#ffffff" />
+</svg>

@@ -18,7 +18,7 @@ Left Bar
 .cls_LeftBar_divIcon{
   background-repeat: no-repeat;
   background-position: center;
-  
+  background-size: 24px 24px;
   float:left;
   
   width:40px;
@@ -56,7 +56,7 @@ Left Bar
 }
 
 .cls_LeftBar_divIcon_Dash{
-  background-image: url("//lh5.googleusercontent.com/-9ej-NyTRftQ/VPfWQKfNqZI/AAAAAAAA_cg/QxnsotH4GvU/s800/LeftBar_Board.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash.svg");
 }
 
 .cls_LeftBar_divArrow_Dash{
