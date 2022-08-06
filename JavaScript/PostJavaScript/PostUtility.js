@@ -1,32 +1,32 @@
 //  https://googledrive.com/host/0B0PaLJkr8DuFR3BVdkZ6ekhpUUk
 /*-- --------------------------------------------------------------------------------
-Post Utility 
+Post Utility
 -------------------------------------------------------------------------------- --*/
 
 function setPostDate (spanID, postDate) {
   var spanSelector = "#" + spanID;
   $(spanSelector).append(adjustPostDate(postDate));
-}  
+}
 
 function getSizedThumbnailURL(thumbnailURL,thumbnailSize){
-  return adjustURLProtocol(thumbnailURL.replace('/s72-c','/s' + thumbnailSize + '-a'));
+  return adjustURLProtocol(thumbnailURL.replace('/s72-','/s' + thumbnailSize + '-'));
 }
 
 function adjustPostDate(postDate){
   var tempDate = postDate.split("/");
-  
+
   return tempDate[2] + "/" + tempDate[0] + "/" + tempDate[1];
 }
 
-function adjustURLProtocol(url){  
-  if("https:"==document.location.protocol){
+function adjustURLProtocol(url){
+  if("https:"== document.location.protocol){
     if(url.startsWith('http:')){
       url = 'https:' + url.substr(5);
-    }    
+    }
   }else{
     if(url.startsWith('https:')){
       url = 'http:' + url.substr(6);
-    }    
+    }
   }
 
   return url;
@@ -34,11 +34,11 @@ function adjustURLProtocol(url){
 
 function isTestSite(){
   var testSite = false;
-  
+
   if(getHomepageURL().indexOf('kledgeb2') != -1){
     testSite = true;
   }
-  
+
   return testSite;
 }
 
@@ -47,7 +47,7 @@ function getRandomInt(min, max) {
 }
 
 /*-- --------------------------------------------------------------------------------
-URL Utility 
+URL Utility
 -------------------------------------------------------------------------------- --*/
 
 function isLabel(){
@@ -56,63 +56,63 @@ function isLabel(){
 
 function isSearch(){
   var isSearchURL = false;
-  
+
   if((!isLabel()) && ($(location).attr('pathname').indexOf('/search') != -1)){
     isSearchURL = !hasURLQueryString('pageNum');
     //isSearchURL = true;
   }
-  
+
   return isSearchURL;
 }
 
 function getLabelName(){
   var labelName = null;
-  
-  if(isLabel()){    
+
+  if(isLabel()){
     var pathComponent = $(location).attr('pathname').split('/');
-    
+
     labelName = pathComponent[pathComponent.length - 1];
   }
-  
+
   return labelName;
 }
 
 function getSearchQuery(){
   var searchQuery = null;
-  
-  if(isSearch()){    
+
+  if(isSearch()){
     searchQuery = getURLQueryString('q');
   }
-  
+
   return searchQuery;
 }
 
 function getGoogleCustomSearchQuery(){
   var searchQuery = null;
-  
+
   searchQuery = getURLQueryString('cseq');
-  
+
   return searchQuery;
 }
 
 function getURLQueryStrings(){
   var queryStrings = {};
   var urlSplit = $(location).attr('href').split('?');
-  
+
   if((urlSplit.length == 2) && (urlSplit[1].length > 0)){
     var i;
     var queryStringSet;
     var queryStringSplit = urlSplit[1].split('&');
-    
+
     for(i = 0 ; i < queryStringSplit.length ; i ++){
       queryStringSet = queryStringSplit[i].split('=');
-      
+
       if(queryStringSet.length == 2){
         queryStrings[queryStringSet[0]] = queryStringSet[1];
       }
     }
   }
-  
+
   return queryStrings;
 }
 
@@ -123,7 +123,7 @@ function hasURLQueryString(key){
 function getURLQueryString(key){
   var queryStrings = getURLQueryStrings();
   var queryString = null;
-  
+
   if(key in queryStrings){
     queryString = queryStrings[key];
   }
@@ -138,32 +138,32 @@ function getURLQueryString(key){
 function getMaxResults(){
   var maxResults = gPostCountPerPage;
   var queryString = getURLQueryString('max-results');
-  
+
   if(queryString){
     maxResults = parseInt(queryString,10);
   }else if(isLabel() || isSearch()){
     maxResults = 20;
   }
-  
+
   return maxResults;
 }
 
 function createParameterizeURL(params){
   var href = getHomepageURL();
-  
+
   if((params) && (Object.keys(params).length)){
     var paramURL = '';
-    
+
     href += 'search?';
-    
+
     if(params.searchQuery){
       paramURL += '&q=' + params.searchQuery;
     }
-    
+
     if(params.startIndex !== undefined){
       paramURL += '&start=' + params.startIndex;
     }
-    
+
     if(params.maxResults){
       paramURL += '&max-results=' + params.maxResults;
     }
@@ -171,18 +171,18 @@ function createParameterizeURL(params){
     if(params.updatedMax){
       paramURL += '&updated-max=' + params.updatedMax;
     }
-  
+
     if(params.updatedMin){
       paramURL += '&updated-min=' + params.updatedMin;
     }
-  
+
     if(params.byDate){
       paramURL += '&by-date=' + params.byDate;
     }
-        
+
     href += paramURL.slice(1);
   }
-  
+
   return href;
 }
 
@@ -190,7 +190,7 @@ var gRealHomepageURL = null;
 
 function getHomepageURL(){
   /*var homepageURL = null;
-  
+
   if(!gRealHomepageURL){
     if(gHomepageURL.indexOf('?') != -1){
       gRealHomepageURL = gHomepageURL.slice(0,gHomepageURL.indexOf('?'));
@@ -198,15 +198,15 @@ function getHomepageURL(){
       gRealHomepageURL = gHomepageURL;
     }
   }
-  
+
   return gRealHomepageURL;*/
-  
+
   return gHomepageURL;
 }
 
 function adjustURLForMobile(url){
   /*var adjustedURL = url;
-  
+
   if(gIsMobile){
     if(adjustedURL.indexOf('?') != -1){
       adjustedURL += '&m=1';
@@ -214,25 +214,25 @@ function adjustURLForMobile(url){
       adjustedURL += '?m=1';
     }
   }
-  
+
   return adjustedURL;*/
-  
+
   return url;
 }
 
 /*-- --------------------------------------------------------------------------------
-Feed Utility 
+Feed Utility
 -------------------------------------------------------------------------------- --*/
 /*-------- Feed parse --------*/
 
 function parsePostID(tag){
   var index = tag.indexOf('post-');
   var postID = null;
-  
+
   if(index != -1){
     postID = tag.substring(index + 'post-'.length);
   }
-  
+
   return postID;
 }
 
@@ -243,7 +243,7 @@ function parsePostLink(link){
 function parseFeedLink(link,key){
   var i;
   var feedLink = null;
-  
+
   for (i = (link.length - 1) ; i >= 0 ; i --) {
     if(link[i].rel == key){
       feedLink = adjustURLProtocol(link[i].href);
@@ -258,27 +258,27 @@ function parsePostThumbnail(mediathumbnail,thumbnailSize){
   var postThumbnail = null;
 
   if(mediathumbnail){
-    var size = 300;
-    
+    var size = 960;
+
     if(thumbnailSize){
       size = thumbnailSize;
     }
-    
+
     postThumbnail = getSizedThumbnailURL(mediathumbnail.url,size);
   }
-  
+
   return postThumbnail;
 }
 
 function relatedPostsCompare(post1,post2){
   var result = 0;
-  
+
   if(post1.published.$t > post2.published.$t){
     result = -1;
   }else if(post1.published.$t < post2.published.$t){
     result = 1;
   }
-  
+
   return result;
 }
 
@@ -293,22 +293,22 @@ function adjustPostSummary(summary){
       summary = summary.replace(strBR,'','');
     }
   }
-  
+
   return summary;
 }
-  
+
 function parsePostDay(date){
   return date.substring(0,10);
 }
 
 /*-------- Post Count --------*/
 function getCurrentTotalPostCount(label,successCallback){
-  
+
   if(isLabel()){
     if((label === null) || (label === undefined)){
       label = getLabelName();
     }
-    
+
     getTotalLabelPostCount(label,successCallback);
   }else if(isSearch()){
     successCallback(0);
@@ -345,7 +345,7 @@ var totalLabelPostCountCallback = function(callbackData) {
 function getTotalLabelPostCount(label,successCallback,userData){
   var feedURL;
   var callbackData = {successCallback:successCallback,userData:userData};
- 
+
   feedURL = getHomepageURL() + 'feeds/posts/summary/-/' + label + '?alt=json&max-results=1';
 
   $.ajax(feedURL, {
@@ -356,10 +356,10 @@ function getTotalLabelPostCount(label,successCallback,userData){
 /*-------- Post Time --------*/
 function adjustPostTimeForURL(postTime){
   var postTimeForURL;
-  
+
   postTimeParts = postTime.split('.');
   postTimeForURL = postTimeParts[0] + postTimeParts[1].substring(3);
-  
+
   return postTimeForURL.replace('+','%2B');
 }
 
@@ -367,13 +367,13 @@ function adjustPostTimeForURL(postTime){
 var postPublishedTimeCallback = function(callbackData) {
   return function(jsonData) {
     var publishedTime = null;
-    
+
     if((jsonData.feed.entry) && (jsonData.feed.entry.length > 0)){
       var entry = jsonData.feed.entry[0];
-      
+
       publishedTime = entry.published.$t;
     }
-    
+
     callbackData['successCallback'](publishedTime,callbackData['userData1'],callbackData['userData2']);
   };
 };
@@ -392,13 +392,13 @@ function getPostPublishedTime(index,successCallback,userData1,userData2){
 var labelPostPublishedTimeCallback = function(callbackData) {
   return function(jsonData) {
     var publishedTime = null;
-    
+
     if((jsonData.feed.entry) && (jsonData.feed.entry.length > 0)){
       var entry = jsonData.feed.entry[0];
-      
+
       publishedTime = entry.published.$t;
     }
-    
+
     callbackData['successCallback'](publishedTime,callbackData['userData1'],callbackData['userData2']);
   };
 };
@@ -417,13 +417,13 @@ function getLabelPostPublishedTime(index,label,successCallback,userData1,userDat
 var searchPostPublishedTimeCallback = function(callbackData) {
   return function(jsonData) {
     var publishedTime = null;
-    
+
     if((jsonData.feed.entry) && (jsonData.feed.entry.length > 0)){
       var entry = jsonData.feed.entry[0];
-      
+
       publishedTime = entry.published.$t;
     }
-    
+
     callbackData['successCallback'](publishedTime,callbackData['userData1'],callbackData['userData2']);
   };
 };
@@ -433,7 +433,7 @@ function getSearchPostPublishedTime(index,query,updatedMax,updatedMin,byDate,suc
   var callbackData = {successCallback:successCallback,userData1:userData1,userData2:userData2};
 
   feedURL = getHomepageURL() + 'feeds/posts/summary?alt=json&q=' + query + '&max-results=1&start-index=' + index;
-  
+
   if(updatedMax){
     feedURL += '&updated-max=' + updatedMax;
   }
@@ -441,11 +441,11 @@ function getSearchPostPublishedTime(index,query,updatedMax,updatedMin,byDate,suc
   if(updatedMin){
     feedURL += '&updated-min=' + updatedMin;
   }
-  
+
   if(byDate){
     feedURL += '&byDate=' + byDate;
   }
-  
+
   $.ajax(feedURL,{
     success: searchPostPublishedTimeCallback(callbackData)
   });
@@ -464,8 +464,8 @@ function getPostUpdatedTime(index){
       postUpdatedTime = jsonData.feed.entry[0].updated.$t;
     }
   });
-  
-  return postUpdatedTime;  
+
+  return postUpdatedTime;
 }
 
 function getLabelPostUpdatedTime(index,label){
@@ -481,12 +481,12 @@ function getLabelPostUpdatedTime(index,label){
       labelPostUpdatedTime = jsonData.feed.entry[0].updated.$t;
     }
   });
-  
+
   return labelPostUpdatedTime;
 }
 
 /*-- --------------------------------------------------------------------------------
-Feed Latest Post Utility 
+Feed Latest Post Utility
 -------------------------------------------------------------------------------- --*/
 
 var latestPostByIndexCallback = function(callbackData) {
@@ -507,17 +507,17 @@ function getLatestPostByIndex(index,maxResults,successCallback,userData){
 }
 
 /*-- --------------------------------------------------------------------------------
-Feed Label Post Utility 
+Feed Label Post Utility
 -------------------------------------------------------------------------------- --*/
 
 var labelPostByIndexCallback = function(callbackData) {
   return function(jsonData) {
     var entry = jsonData.feed.entry;
-    
+
     if(!entry){
       entry = [];
     }
-    
+
     callbackData['successCallback'](entry,jsonData.feed,callbackData['userData']);
   };
 };
@@ -535,7 +535,7 @@ function getLabelPostByIndex(index,label,maxResults,successCallback,userData){
 
 
 /*-- --------------------------------------------------------------------------------
-Feed Category Utility 
+Feed Category Utility
 -------------------------------------------------------------------------------- --*/
 var allCategoryCallback = function(callbackData) {
   return function(jsonData) {
@@ -555,17 +555,17 @@ function getAllCategory(successCallback,userData){
 }
 
 /*-- --------------------------------------------------------------------------------
-Feed Search Post Utility 
+Feed Search Post Utility
 -------------------------------------------------------------------------------- --*/
 
 var searchPostCallback = function(callbackData) {
   return function(jsonData) {
     var entry = jsonData.feed.entry;
-    
+
     if(!entry){
       entry = [];
     }
-    
+
     callbackData['successCallback'](entry,jsonData.feed,callbackData['userData']);
   };
 };
@@ -575,15 +575,15 @@ function getSearchPost(params,successCallback,userData){
   var callbackData = {successCallback:successCallback,userData:userData};
 
   feedURL = getHomepageURL() + 'feeds/posts/summary?alt=json';
-  
+
   if(params.searchQuery){
     feedURL += '&q=' + params.searchQuery;
   }
-  
+
   if(params.startIndex !== undefined){
     feedURL += '&start-index=' + params.startIndex;
   }
-  
+
   if(params.maxResults){
     feedURL += '&max-results=' + params.maxResults;
   }
