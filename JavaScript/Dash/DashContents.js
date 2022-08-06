@@ -176,7 +176,7 @@ function layoutCategoryHead(categoryName){
         divCategoryArrow.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_DownArrow.svg")');
         divCategoryArrow.text('一部のアイテムを表示');
         divCategoryContents.css('max-height','');
-      }else(arrowState == 'close'){
+      }else{
         divCategoryArrow.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg")');
         divCategoryArrow.text('すべてのアイテムを表示');
         divCategoryContents.css('max-height',divFirstItem.outerHeight() + 'px');
