@@ -95,14 +95,14 @@ function setupSNSLens_DeliveryPost(){
   var i;
   var categoryItemInfo;
 
-  for(i = 0 ; i < sharePost.length ; i ++){
+  for(i = 0 ; i < deliveryPost.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
-      itemTotalCount:sharePost.length,
+      itemTotalCount:deliveryPost.length,
       categoryName:categoryName,
-      itemLink:sharePost[i].link,
-      itemIconURL:sharePost[i].iconURL,
-      itemTitle:sharePost[i].title,
+      itemLink:deliveryPost[i].link,
+      itemIconURL:deliveryPost[i].iconURL,
+      itemTitle:deliveryPost[i].title,
       openLinkAtNewWindow:true
     };
 
