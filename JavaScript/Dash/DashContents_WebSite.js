@@ -96,14 +96,14 @@ function setupWebSiteLens_LinuxDistribution(){
   var i;
   var categoryItemInfo;
 
-  for(i = 0 ; i < generalPages.length ; i ++){
+  for(i = 0 ; i < linuxDistributionWebSite.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
-      itemTotalCount:generalPages.length,
+      itemTotalCount:linuxDistributionWebSite.length,
       categoryName:categoryName,
-      itemLink:generalPages[i].link,
-      itemIconURL:generalPages[i].iconURL,
-      itemTitle:generalPages[i].title,
+      itemLink:linuxDistributionWebSite[i].link,
+      itemIconURL:linuxDistributionWebSite[i].iconURL,
+      itemTitle:linuxDistributionWebSite[i].title,
     };
 
     addCategoryItem(categoryItemInfo);
