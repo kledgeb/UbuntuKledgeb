@@ -6,29 +6,32 @@ function setupDashContents(showParams){
     $('#' + gCurrentLensArrowID).css('visibility','hidden');
     gCurrentLensArrowID = null;
   }
-  
+
   clearDashContentsDetail();
   clearDashContents();
   clearDashOptions();
 
   switch(gCurrentLens){
   case 'Home':
-    setupHomeLensContents(showParams);    
+    setupHomeLensContents(showParams);
     break;
-  case 'Page':
-    setupPageLensContents(showParams);    
+  case 'Ubuntu':
+    setupUbuntuLensContents(showParams);
+    break;
+  case 'WebSite':
+    setupWebSiteLensContents(showParams);
     break;
   case 'Star':
-    setupStarLensContents(showParams);    
+    setupStarLensContents(showParams);
     break;
   case 'SNS':
-    setupSNSLensContents(showParams);    
+    setupSNSLensContents(showParams);
     break;
   case 'Tag':
-    setupTagLensContents(showParams);    
+    setupTagLensContents(showParams);
     break;
   case 'Search':
-    setupSearchLensContents(showParams);    
+    setupSearchLensContents(showParams);
     break;
   case 'Help':
     setupHelpLensContents(showParams);
@@ -45,7 +48,7 @@ function setupDashContents(showParams){
       for(i = 0 ; i < divOptionItems.length ; i ++){
         divOptionItem = $(divOptionItems[i]);
         optionInfo = divOptionItem.data('optionInfo');
-        
+
         if(showParams.showCategory[optionInfo.categoryName]){
           changeStateDashOption('on',optionInfo);
           toggleCategory(optionInfo.categoryName,'open',false);
@@ -55,11 +58,11 @@ function setupDashContents(showParams){
       }
     }
   }
-  
+
   {
     var divSearchOption = $('#id_Dash_divSearchOption');
     var divSearchOptionItems = $('#id_Dash_divRightBar').children(':first');
-    
+
     if(divSearchOptionItems.length){
       divSearchOption.css('visibility','visible');
     }else{
@@ -70,7 +73,7 @@ function setupDashContents(showParams){
 
   {
     var divContents = $('#id_Dash_divContents');
-  
+
     divContents.mCustomScrollbar({
       theme:'light-3',
       autoHideScrollbar:true,
@@ -78,23 +81,23 @@ function setupDashContents(showParams){
       mouseWheel:{ preventDefault: true }
     });
   }
-  
+
   {
     var divRightBar = $('#id_Dash_divRightBar');
-    
+
     divRightBar.mCustomScrollbar({
       theme:'light-3',
       autoHideScrollbar:true,
       scrollInertia:1000,
       mouseWheel:{ preventDefault: true }
-    });  
+    });
   }
 }
 
 function toggleCategory(categoryName,forceArrowState,isSaveState){
   var divCategoryArrow = $('#id_Dash_Category_Arrow_div' + categoryName);
   var arrowState = divCategoryArrow.data('arrowState');
-  
+
   if(forceArrowState){
     divCategoryArrow.data('arrowState',forceArrowState);
   }else if(arrowState == 'close'){
@@ -103,21 +106,21 @@ function toggleCategory(categoryName,forceArrowState,isSaveState){
     divCategoryArrow.data('arrowState','close');
   }
 
-  if(isSaveState){    
+  if(isSaveState){
     arrowState = divCategoryArrow.data('arrowState');
     setDashCategoryHeadState(categoryName,arrowState);
   }
-  
-  layoutCategoryHead(categoryName);  
+
+  layoutCategoryHead(categoryName);
 }
 
 function clearDashContents(){
   var divContents = $('#id_Dash_divContents');
-  
+
   divContents.mCustomScrollbar('destroy');
   divContents.empty();
   divContents.show();
-  
+
   $('#id_Dash_inputSearchBox').val('');
 }
 
@@ -127,14 +130,14 @@ function layoutContents(){
 
   divContents.outerWidth(divContentsContainer.width());
   divContents.outerHeight(divContentsContainer.height());
-  layoutAllCategoryHead();  
+  layoutAllCategoryHead();
 }
 
 function layoutAllCategoryHead(){
   var categorys = $('#id_Dash_divContents').find('div[data-categoryName]');
   var categoryName;
   var i;
-  
+
   for(i= 0 ; i < categorys.length ; i ++){
     categoryName = $(categorys[i]).attr('data-categoryName');
     layoutCategoryHead(categoryName);
@@ -148,7 +151,7 @@ function layoutCategoryHead(categoryName){
   var divCategoryHead = $('#id_Dash_Category_Head_div' + categoryName);
   var divCategoryArrow = $('#id_Dash_Category_Arrow_div' + categoryName);
   var divItem = divCategoryContents.find(selectorPrefix + ':first');
-  
+
   if(divItem.length){
     var firstItemPos;
     var lastItemPos;
@@ -160,17 +163,17 @@ function layoutCategoryHead(categoryName){
     divFirstItem = divItem;
     firstItemPos = divFirstItem.position();
 
-    divLastItem = $('#id_Dash_Category_Contents_div' + categoryName).find(selectorPrefix + ':last');  
+    divLastItem = $('#id_Dash_Category_Contents_div' + categoryName).find(selectorPrefix + ':last');
     lastItemPos = divLastItem.position();
 
     if(firstItemPos.top < lastItemPos.top){
       var arrowState = divCategoryArrow.data('arrowState');
 
-      divCategoryHead.css('cursor','pointer');  
+      divCategoryHead.css('cursor','pointer');
       divCategoryArrow.css('visibility','visible');
 
       if(arrowState == 'close'){
-        divCategoryArrow.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');        
+        divCategoryArrow.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');
         divCategoryArrow.text('すべてのアイテムを表示');
         divCategoryContents.css('max-height',divFirstItem.outerHeight() + 'px');
       }else if(arrowState == 'open'){
@@ -181,53 +184,53 @@ function layoutCategoryHead(categoryName){
 
     }else{
       divCategoryContents.css('max-height','');
-      divCategoryHead.css('cursor','default');  
-      divCategoryArrow.css('visibility','hidden');  
+      divCategoryHead.css('cursor','default');
+      divCategoryArrow.css('visibility','hidden');
     }
   }else{
     divCategoryContents.css('max-height','');
-    divCategoryHead.css('cursor','default');  
-    divCategoryArrow.css('visibility','hidden');  
+    divCategoryHead.css('cursor','default');
+    divCategoryArrow.css('visibility','hidden');
   }
-  
+
   {
     var displayValue = 'block';
     var loading = divCategoryContents.data('loading');
     var divOptionItem = $('#id_OptionItem_div' + categoryName);
     var optionInfo = null;
-    
-    if(divOptionItem.length){   
+
+    if(divOptionItem.length){
       optionInfo = divOptionItem.data('optionInfo');
     }
-    
+
     if((!loading) && (!divItem.length)){
       displayValue = 'none';
-      
+
       /*if(optionInfo){
-        changeStateDashOption('off',optionInfo);   
+        changeStateDashOption('off',optionInfo);
       }*/
     }else{
-            
-      if(divOptionItem.length){        
+
+      if(divOptionItem.length){
         if(optionInfo.currentState === 'off'){
           displayValue = 'none';
         }else{
-          
+
           if(!loading){
             var divItems = $(selectorPrefix);
             var i;
-      
+
             displayValue = 'none';
-      
+
             for(i= 0 ; i < divItems.length ; i ++){
               divItem = $(divItems[i]);
-              
+
               if(divItem.css('display') !== 'none'){
                 displayValue = 'block';
                 break;
               }
             }
-            
+
             /*if(displayValue == 'none'){
               changeStateDashOption('off',optionInfo);
             }*/
@@ -244,38 +247,38 @@ function addCategoryItem(categoryItemInfo){
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryItemInfo.categoryName);
   var divItem = $('<div/>');
   var anchorItem = $('<a/>');
-  
+
   var idPrefix = 'id_Dash_Category_Contents_' + categoryItemInfo.categoryName + '_divItem_';
   var clsPrefix = 'cls_Dash_Category_Contents_' + categoryItemInfo.categoryName +'_';
-  
+
   {
     divItem.attr('id',idPrefix + categoryItemInfo.itemIndex);
     divItem.attr('class','cls_Dash_Category_Contents_divItem ' + clsPrefix + 'divItem');
-    
+
     if(categoryItemInfo.itemIconURL){
       divItem.css('background-image','url(' + categoryItemInfo.itemIconURL + ')');
     }
   }
-  
+
   if(categoryItemInfo.itemLink){
     divItem.addClass("cls_Dash_ButtonAnimation");
   }
-  
+
   //itemInfo
-  { 
+  {
     categoryItemInfo['itemIDFormat'] = idPrefix;
     divItem.data('itemInfo',categoryItemInfo);
   }
-  
+
   divItem.on('mousedown',onCategoryContents_divItem_MouseDown);
 
   //item anchor
   {
     anchorItem.attr('class','cls_Dash_Category_Contents_anchorItem ' + clsPrefix + 'anchorItem');
-    
+
     if(categoryItemInfo.itemLink){
       anchorItem.attr('href',categoryItemInfo.itemLink);
-      
+
       if(categoryItemInfo.openLinkAtNewWindow){
         anchorItem.attr('target','_blank');
       }
@@ -289,15 +292,15 @@ function addCategoryItem(categoryItemInfo){
     }else if(categoryItemInfo.itemTitleHTML){
       anchorItem.html(categoryItemInfo.itemTitleHTML);
     }
-            
+
     anchorItem.appendTo(divItem);
   }
-    
-  divCategoryContents.append(divItem);  
+
+  divCategoryContents.append(divItem);
 
   if(categoryItemInfo.autoEllipsis){
     var maxLength = 50;
-     
+
     if(anchorItem.text().length > maxLength){
       anchorItem.text(anchorItem.text().substr(0,maxLength) + '...');
     }
@@ -320,20 +323,20 @@ function addCategory(categoryName,categoryTitle){
   }
 
   //CategoryHead
-  {    
+  {
     divCategoryHead.attr('id','id_Dash_Category_Head_div' + categoryName);
     divCategoryHead.attr('class','cls_Dash_Category_divHead cls_Dash_ButtonAnimation cls_Dash_Category_Head_div' + categoryName);
     divCategoryHead.on('click',onCategoryHeadClick(categoryName));
-    
+
     divCategory.append(divCategoryHead);
   }
-  
+
   //divCategoryTitle
   {
     var divCategoryTitle = $('<div/>');
     divCategoryTitle.attr('class','userNoSelect cls_Dash_Category_divTitle cls_Dash_Category_Title_div' + categoryName);
     divCategoryTitle.text(categoryTitle);
-    
+
     divCategoryHead.append(divCategoryTitle);
   }
 
@@ -345,23 +348,23 @@ function addCategory(categoryName,categoryTitle){
     divCategoryArrow.text('すべてのアイテムを表示');
 
     divCategoryArrow.data('arrowState',getDashCategoryHeadState(categoryName));
-    
+
     divCategoryHead.append(divCategoryArrow);
     divCategoryHead.append($("<div class='clear'></div>"));
   }
-  
+
   //CategoryContents
   {
     var divCategoryContents = $('<div/>');
-   
+
     divCategoryContents.attr('id','id_Dash_Category_Contents_div' + categoryName);
     divCategoryContents.attr('class','cls_Dash_Category_divContents cls_Dash_Category_Contents_div' + categoryName);
-  
+
     divCategory.append(divCategoryContents);
   }
-  
+
   $('#id_Dash_divContents').append(divCategory);
-  
+
   //Option
   {
     var optionInfo = {
@@ -369,7 +372,7 @@ function addCategory(categoryName,categoryTitle){
       categoryName:categoryName,
       currentState:'on'
     };
-    
+
     addDashOption(optionInfo);
   }
 }
@@ -379,18 +382,18 @@ function searchDashContents(searchText,byTimer){
   var divCategorys;
   var categoryName;
   var i;
-  
+
   if((searchText === null) || (searchText === undefined)){
     searchText = '';
   }
-  
+
   if(gCurrentLens == 'Search'){
     searchDashContents_Search(searchText,byTimer);
   }else{
     closeDashContentsDetail();
     divCategorys = divContents.find('[id^="id_Dash_Category_div"]');
-    
-    for(i = 0 ; i < divCategorys.length ; i ++){    
+
+    for(i = 0 ; i < divCategorys.length ; i ++){
       searchCategory(searchText,$(divCategorys[i]));
     }
   }
@@ -398,38 +401,38 @@ function searchDashContents(searchText,byTimer){
 
 function searchCategory(searchText,divCategory){
   categoryName = divCategory.attr('data-categoryName');
-  
+
   var divItems = divCategory.find('[id^="id_Dash_Category_Contents_' + categoryName + '_divItem_"]');
   var i;
   var itemInfo;
   var isShow;
   var checkText;
   var divItem;
-  
+
   searchText = searchText.toLocaleLowerCase();
 
   for(i = 0 ; i < divItems.length ; i ++){
     divItem = $(divItems[i]);
     itemInfo = divItem.data('itemInfo');
     checkText = itemInfo.itemTitle;
-    
-    if((!checkText) && (itemInfo.itemTitleHTML)){  
+
+    if((!checkText) && (itemInfo.itemTitleHTML)){
       checkText = $('<p>' + itemInfo.itemTitleHTML + '</p>').text();
     }
-    
+
     if(!checkText){
       checkText = '';
     }
-    
+
     checkText = checkText.toLocaleLowerCase();
     isShow = (searchText.length === 0) || (checkText.indexOf(searchText) !== -1);
-    
+
     if(isShow){
       divItem.show();
     }else{
       divItem.hide();
     }
   }
-  
+
   layoutAllCategoryHead();
 }

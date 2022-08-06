@@ -2,7 +2,7 @@
 Contents
 -------------------------------------------------------------------------------- */
 .cls_ContentsAndRightBar{
-  
+
 }
 
 .cls_Contents{
@@ -18,7 +18,7 @@ Contents
 
 .cls_Contents_divPost{
   background-color:white;
-}  
+}
 
 .cls_divPostBody{
 
@@ -31,7 +31,7 @@ Contents
 }
 
 .cls_divPostInfo{
-  display:none;  
+  display:none;
 }
 
 /*-- --------------------------------------------------------------------------------
@@ -57,24 +57,24 @@ Post Index
 
   width:180px;
   height:180px;
-  
+
   float:left;
-  
+
   margin-right:24px;
 }
 
 .cls_PostBody_Index_divSummary{
   min-height:140px;
-  
+
   overflow:hidden;
   visibility:hidden;
-  
+
   margin-bottom:32px;
   max-height:240px;
 }
 
 .cls_PostBody_Index_divContinueToRead{
-  float:right;        
+  float:right;
   background-color:#333333;
 
 }
@@ -82,7 +82,7 @@ Post Index
 .cls_PostBody_Index_divContinueToRead a{
   color:#FFFFFF;
   font-weight:bold;
-  
+
   display:block;
   height:38px;
   line-height:38px;
@@ -105,7 +105,7 @@ Post Header Adsence
 
 .adsbygoogle_res_4{
   width:728px;
-  height:90px;  
+  height:90px;
 }
 
 /*-- --------------------------------------------------------------------------------
@@ -113,7 +113,7 @@ Post Item/Archive/Static
 -------------------------------------------------------------------------------- */
 .cls_divPostBody h2{
   padding: 8px;
-  margin:8px 0px;  
+  margin:8px 0px;
 
   background-color:#333333;
   color:white;
@@ -164,7 +164,7 @@ Post Item/Archive/Static
   border-bottom-color:#434a54;
   border-bottom-style:solid;
   border-bottom-width:2px;
-      
+
   margin: 4px 16px 4px 0px;
 
   font-size:inherit;
@@ -180,6 +180,7 @@ Post Item/Archive/Static
 .cls_divPostBody h4:before{
   content: "📌";
   letter-spacing: 0px;
+  margin-right: 8px;
 }
 
 .cls_divPostBody ul,
@@ -210,10 +211,10 @@ Post Footer
 
 .cls_PostFooter_divPostDate{
   float:left;
-  
+
   margin-right:16px;
   padding-right:16px;
-  border-right:1px solid #ddd;  
+  border-right:1px solid #ddd;
 }
 
 .cls_PostFooter_PostCommentCount{
@@ -221,7 +222,7 @@ Post Footer
 
   margin-right:16px;
   padding-right:16px;
-  border-right:1px solid #ddd;  
+  border-right:1px solid #ddd;
 }
 
 .cls_PostFooter_divPostLabel{
@@ -267,7 +268,7 @@ Post Footer Adsence
 
   margin-bottom: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ddd;  
+  border-bottom: 1px solid #ddd;
 }
 
 /* --------------------------------------------------------------------------------
@@ -277,8 +278,8 @@ Install application button for deb
 .clsInstallAppButton{
   display: inline-block;
   background-image: -webkit-linear-gradient(top,  #F08763, #E95420);
-	background-image: linear-gradient(to bottom, #F08763, #E95420);  
-		
+	background-image: linear-gradient(to bottom, #F08763, #E95420);
+
 	color: white;
 	font-weight: bold;
 	margin: 16px;
@@ -300,7 +301,7 @@ Install application button for deb
 
 .clsInstallAppButton:hover{
   background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
-	background-image: linear-gradient(to bottom, #E95420, #F08763);  
+	background-image: linear-gradient(to bottom, #E95420, #F08763);
 
   transition-property: background-image;
   transition-duration: 0.25s;
@@ -325,8 +326,8 @@ Install application button for snap
 .clsInstallAppButtonSnap{
   display: inline-block;
   background-image: -webkit-linear-gradient(top,  #F08763, #E95420);
-	background-image: linear-gradient(to bottom, #F08763, #E95420);  
-		
+	background-image: linear-gradient(to bottom, #F08763, #E95420);
+
 	color: white;
 	font-weight: bold;
 	margin: 16px;
@@ -348,7 +349,7 @@ Install application button for snap
 
 .clsInstallAppButtonSnap:hover{
   background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
-	background-image: linear-gradient(to bottom, #E95420, #F08763);  
+	background-image: linear-gradient(to bottom, #E95420, #F08763);
 
   transition-property: background-image;
   transition-duration: 0.25s;

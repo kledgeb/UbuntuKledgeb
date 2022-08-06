@@ -5,14 +5,12 @@ function setupHomeLensContents(showParams){
   gCurrentLensArrowID = 'id_Dash_HomeLens_divArrow';
   $('#' + gCurrentLensArrowID).css('visibility','visible');
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
-  
+
   if(gCurrentPageType == 'item'){
     setupHomeLens_RelatedPost();
   }
 
   setupHomeLens_LatestPost();
-  setupHomeLens_ReleaseSchedule();
-  setupHomeLens_SupportedVersion();
 
   //Option
   addShowHideAllOption();
@@ -24,21 +22,21 @@ function setupHomeLens_LatestPost(){
 
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   divCategoryContents.data('loading',true);
-  
-  getLatestPostByIndex(1,20,setupHomeLens_CreateLatestPostElement);  
+
+  getLatestPostByIndex(1,20,setupHomeLens_CreateLatestPostElement);
 }
 
 function setupHomeLens_CreateLatestPostElement(latestPosts) {
   var categoryName = 'LatestPost';
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
-  
-  divCategoryContents.css('background-image','none');    
+
+  divCategoryContents.css('background-image','none');
   divCategoryContents.data('loading',false);
-  
+
   if(latestPosts){
     var i;
-    var categoryItemInfo;  
-    
+    var categoryItemInfo;
+
     for (i = 0 ; i < latestPosts.length ; i ++) {
       categoryItemInfo = {
         itemIndex:i,
@@ -51,10 +49,10 @@ function setupHomeLens_CreateLatestPostElement(latestPosts) {
         itemData:{feedEntry:latestPosts[i]},
         autoEllipsis:true,
      };
-      
+
       addCategoryItem(categoryItemInfo);
     }
-    
+
     divCategoryContents.append("<div class='clear'></div>");
   }
 
@@ -64,10 +62,10 @@ function setupHomeLens_CreateLatestPostElement(latestPosts) {
 function setupHomeLens_RelatedPost() {
   var categoryName = 'RelatedPost';
   addCategory(categoryName,'関連記事');
-  
+
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   divCategoryContents.data('loading',true);
-  
+
   getRelatedPost(gRelatedPostLabels,setupHomeLens_CreateRelatedPostElement,{maxResults:'20'});
 }
 
@@ -81,7 +79,7 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
   if(relatedPosts){
     var i;
     var categoryItemInfo;
-        
+
     for (i = 0 ; i < relatedPosts.length ; i ++) {
       categoryItemInfo = {
         itemIndex:i,
@@ -97,139 +95,10 @@ function setupHomeLens_CreateRelatedPostElement(relatedPosts) {
 
       addCategoryItem(categoryItemInfo);
     }
-  
+
     divCategoryContents.append("<div class='clear'></div>");
   }
-  
-  layoutCategoryHead(categoryName);
-}
 
-function setupHomeLens_ReleaseSchedule(){
-  var releaseSchedules = [
-
-    {
-      title:'Ubuntu 20.04.5 LTS',
-      date:'2022年9月1日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2004-241-ubuntu-20045-ltslinux.html'),
-    },
-
-    {
-      title:'Ubuntu 22.04.1 LTS',
-      date:'2022年8月4日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-48-ubuntu-22041-lts.html'),
-    },
-    
-    {
-      title:'Ubuntu 22.04.2 LTS',
-      date:'2023年2月9日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-49-ubuntu-22042-lts.html'),
-    },
-    
-    {
-      title:'Ubuntu 22.10',
-      date:'2022年10月20日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2210-8.html'),
-    },
-   
-    {
-      title:'Ubuntu 23.04',
-      date:'2023年4月27日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2304-1-ubuntu-2304.html'),
-    },
-    
-
-];
-
-  var categoryName = 'ReleaseSchedule';
-  
-  addCategory(categoryName,'リリーススケジュール');
-
-  var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
-  var i;
-  var itemTitle;
-  var itemIconURL;
-  var categoryItemInfo;
-  
-  for(i = 0 ; i < releaseSchedules.length ; i ++){
-    itemTitle = releaseSchedules[i].title + '<br>' + releaseSchedules[i].date;
-      
-    if(releaseSchedules[i].stage){
-      itemIconURL = '//lh6.googleusercontent.com/-0pUHT0N6zKk/VP6GIR5KhsI/AAAAAAAA_jo/9zgoMPszvBc/s800/Dash_Category_Ubuntu_Item_Beta.png';
-    }else{
-      itemIconURL = '//lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
-    }
-
-    categoryItemInfo = {
-      itemIndex:i,
-      itemTotalCount:releaseSchedules.length,
-      categoryName:categoryName,
-      itemLink:releaseSchedules[i].link,
-      itemIconURL:itemIconURL,
-      itemTitleHTML:itemTitle,
-    };
-    
-    addCategoryItem(categoryItemInfo);
-  }
-  
-  divCategoryContents.append("<div class='clear'></div>");
-  layoutCategoryHead(categoryName);
-}
-
-function setupHomeLens_SupportedVersion(){
-  var supportedVersions = [    
-    
-    {
-      title:'Ubuntu 18.04.5 LTS',
-      date:'2023年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1804-406-ubuntu-18045-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 20.04.4 LTS',
-      date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/02/ubuntu-2004-237-ubuntu-20044-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 21.10',
-      date:'2022年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2021/10/ubuntu-2110-22-ubuntu-2110.html'),
-    },
-
-    {
-      title:'Ubuntu 22.04 LTS',
-      date:'2027年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/04/ubuntu-2204-58-ubuntu-2204-lts.html'),
-    },
-  ];
-
-  var categoryName = 'SupportedVersion';
-
-  addCategory(categoryName,'サポート中のバージョン');
-
-  var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
-  var i;
-  var itemTitle;
-  var itemIconURL;
-  var categoryItemInfo;
-  
-  for(i = 0 ; i < supportedVersions.length ; i ++){
-    itemTitle = supportedVersions[i].title + '<br>' + supportedVersions[i].date;    
-    itemIconURL = '//lh4.googleusercontent.com/-YNBhifiIM6U/VP6GIS5omXI/AAAAAAAA_js/VKKXmmbCYdA/s800/Dash_Category_Ubuntu_Item.png';
-
-    categoryItemInfo = {
-      itemIndex:i,
-      itemTotalCount:supportedVersions.length,
-      categoryName:categoryName,
-      itemLink:supportedVersions[i].link,
-      itemIconURL:itemIconURL,
-      itemTitleHTML:itemTitle,
-    };
-    
-    addCategoryItem(categoryItemInfo);
-  }
-
-  divCategoryContents.append("<div class='clear'></div>");
   layoutCategoryHead(categoryName);
 }
 
@@ -243,47 +112,47 @@ function setupHomeContentsDetail(divItem){
     var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
     var divPostInfoContainer = $('<div/>');
     var divPostInfoData = $('<div/>');
-    
+
     //PostInfoContainer
     {
       divPostInfoContainer.attr('class','cls_DashContentsDetail_divPostInfoContainer cls_DashContentsDetail_' + itemInfo.categoryName + '_divPostInfoContainer');
       divCenterSection.append(divPostInfoContainer);
     }
-   
+
     //Post Tag
     {
       var anchorTag;
-      
+
       divPostInfoData.attr('class','cls_DashContentsDetail_divPostTag cls_DashContentsDetail_' + itemInfo.categoryName + '_divPostTag');
-      
+
       for(i = 0 ; i < itemInfo.itemData.feedEntry.category.length ; i ++){
         anchorTag = $('<a>');
         anchorTag.text(itemInfo.itemData.feedEntry.category[i].term);
         anchorTag.attr('href',adjustURLForMobile(getHomepageURL() + 'search/label/' + encodeURIComponent(itemInfo.itemData.feedEntry.category[i].term) + '?&max-results=' + gPostCountPerPage));
         //anchorTag.attr('target','_blank');
-        
+
         if(i > 0){
           divPostInfoData.append(' , ');
         }
-        
+
         divPostInfoData.append(anchorTag);
       }
-      
+
       divPostInfoContainer.append(divPostInfoData);
     }
 
     //Post Date
     {
       divPostInfoData = $('<div/>');
-      
+
       divPostInfoData.attr('class','cls_DashContentsDetail_divPostDate cls_DashContentsDetail_' + itemInfo.categoryName + '_divPostDate');
       divPostInfoData.text(parsePostDay(itemInfo.itemData.feedEntry.published.$t));
       divPostInfoContainer.append(divPostInfoData);
-      
+
       divPostInfoContainer.append("<div class='clear'></div>");
     }
   }
-  
+
   setupContentsDetail_createThumbnailAndSummary(itemInfo,parsePostThumbnail(itemInfo.itemData.feedEntry.media$thumbnail,320),adjustPostSummary(itemInfo.itemData.feedEntry.summary.$t));
   setupContentsDetail_createButtons(itemInfo,null);
 }
