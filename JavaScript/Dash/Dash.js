@@ -30,7 +30,7 @@ function toggleDash(showType,showParams){
         showType = gCurrentLens;
       }
     }
-    
+
     if(gIsShowingDash === false){
       showDash(showType,showParams);
     }else{
@@ -44,17 +44,23 @@ function showDash(showType,showParams){
 
   divDash.css('visibility','hidden');
   divDash.show();
-  
+
   //initialize
   initializeDash();
   switchLens(showType,showParams);
 
-  //show  
+  //show
   $('#id_divDashClickBackground').show();
-  
+
+  {
+    var divDashBackground = $('#id_divDashBackground');
+
+    divDashBackground.css('filter','blur(4px)');
+  }
+
   divDash.hide();
   divDash.css('visibility','visible');
-  
+
   if(gCurrentLensArrowID){
     $('#' + gCurrentLensArrowID).css('visibility','visible');
   }
@@ -71,30 +77,36 @@ function hideDash(){
   if(gCurrentLensArrowID){
     $('#' + gCurrentLensArrowID).css('visibility','hidden');
   }
-  
+
   divDash.hide();
 
+  {
+    var divDashBackground = $('#id_divDashBackground');
+
+    divDashBackground.css('filter','none');
+  }
+
   $('#id_divDashClickBackground').hide();
-  
+
   gIsShowingDash = false;
 }
 
 function initializeDash(){
   var divDash = $('#id_divDash');
   var loaded = divDash.attr('loaded');
-  
-  if(loaded !== '1'){
-    $(window).on('resize',onBodyResized); 
-    $('#id_divDash').on('wheel',onEventPrevent_StopPropagation);
-    
-    $('#id_divDashClickBackground').on('click',onDashClickBackgroundClick); 
 
-    $('#id_Dash_divWindowSizeOption').on('click',onDashWindowSizeClick);     
-    $('#id_Dash_divSearchOption').on('click',onDashSearchOptionClick);     
+  if(loaded !== '1'){
+    $(window).on('resize',onBodyResized);
+    $('#id_divDash').on('wheel',onEventPrevent_StopPropagation);
+
+    $('#id_divDashClickBackground').on('click',onDashClickBackgroundClick);
+
+    $('#id_Dash_divWindowSizeOption').on('click',onDashWindowSizeClick);
+    $('#id_Dash_divSearchOption').on('click',onDashSearchOptionClick);
     $('#id_Dash_divContentsContainer').on('contextmenu',onEventPrevent);
     $('#id_Dash_inputSearchBox').on('input',onInputSearchBoxInput);
     $('#id_Dash_inputSearchBox').on('keydown',onInputSearchBoxKeydown);
-    
+
     {
       $('#id_Dash_divHomeLensContainer').on('click',onDashHomeLensClick);
       $('#id_Dash_divStarLensContainer').on('click',onDashStarLensClick);
@@ -104,7 +116,7 @@ function initializeDash(){
       $('#id_Dash_divSearchLensContainer').on('click',onDashSearchLensClick);
       $('#id_Dash_divHelpLensContainer').on('click',onDashHelpLensClick);
     }
-    
+
     if((gCurrentPageType == 'index') || (gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
       $('#id_Dash_divSNSLensContainer').css('display','block');
     }else{
@@ -125,17 +137,17 @@ function layoutDash(){
   divDash.css('top',0);
   divDashClickBackground.css('left',divLeftBar.width());
   divDashClickBackground.css('top',0);
-  
+
   var windowWidth = $(window).width() - divLeftBar.width();
   var windowHeight = $(window).height();
   var dashWidth;
   var barWidth;
   var dashHeight;
   var barHeight;
-  
+
   windowWidth -= parseInt(divDash.css('margin-right'),10);
   windowHeight -= parseInt(divDash.css('margin-bottom'),10);
-  
+
   if(gDashSize == 'Normal'){
     dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
@@ -145,27 +157,27 @@ function layoutDash(){
     dashWidth = windowWidth;
     divWindowSize.css('background-image','url("//lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
   }
-  
+
   if(dashWidth > windowWidth){
     dashWidth = windowWidth;
-  } 
-  
+  }
+
   if(dashHeight > windowHeight){
     dashHeight = windowHeight;
-  } 
-  
+  }
+
   divDash.outerWidth(dashWidth);
   divDash.outerHeight(dashHeight);
-  
+
   dashWidth = divDash.width();
   dashHeight = divDash.height();
-  
+
   //top bar
   var divTopBar = $('#id_Dash_divTopBar');
   var divSearchBox = $('#id_Dash_divSearchBox');
   var divTopBarOption = $('#id_Dash_divTopBarOption');
-  
-  divTopBar.outerWidth(dashWidth);  
+
+  divTopBar.outerWidth(dashWidth);
   barWidth = divTopBar.width() - divTopBarOption.outerWidth(true);
 
   divSearchBox.outerWidth(barWidth);
@@ -197,10 +209,10 @@ function layoutDash(){
     divContentsContainer.outerWidth(dashWidth);
     divSearchOption.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');
   }
-  
+
   barHeight = dashHeight - divTopBar.outerHeight(true) - divBottomBar.outerHeight(true);
   divContentsContainer.outerHeight(barHeight);
-  
+
   //RightBar
   var divRightBar = $('#id_Dash_divRightBar');
 
@@ -211,7 +223,7 @@ function layoutDash(){
   }else{
     divRightBar.css('display','none');
   }
-  
+
   divRightBar.outerHeight(barHeight);
 
   var divContents = $('#id_Dash_divContents');
@@ -229,7 +241,7 @@ function switchLens(showType,showParams,forceSwitch){
   if((showType != gCurrentLens) || (showParams) || (forceSwitch)){
     gCurrentLens = showType;
     setupDashContents(showParams);
-  }  
+  }
 
   //Always layouting
   layoutDash();
