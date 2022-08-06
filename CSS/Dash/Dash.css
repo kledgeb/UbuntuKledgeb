@@ -157,14 +157,14 @@ Window
 .cls_Dash_divLensContainer{
   float:left;
   width:48px;
-  height:48px;
+  height: 52px;
   cursor: pointer;
 }
 
 .cls_Dash_Lens_divArrow{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   transform: rotate(90deg);
 
   float:left;

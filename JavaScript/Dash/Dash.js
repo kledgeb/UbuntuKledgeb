@@ -201,7 +201,7 @@ function layoutDash(){
 
   //Contents
   var divContentsContainer = $('#id_Dash_divContentsContainer');
-  var divSearchOption = $('#id_Dash_divSearchOption');
+  var divSearchOption = $('#id_Dash_divSearchOption::before');
 
   if(gOpenRightBar){
     divContentsContainer.outerWidth(barWidth);
