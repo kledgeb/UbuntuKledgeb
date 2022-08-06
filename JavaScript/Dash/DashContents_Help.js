@@ -94,7 +94,7 @@ function setupPageLens_PrivacyPage(){
     {
       title:'プライバシーポリシー',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_30.html'),
-      iconURL:'//lh4.googleusercontent.com/-fxIWmidZrn0/VQV_KTpNsPI/AAAAAAAA_r4/aEdZKf9O51I/s800/Dash_PrivacyPage_PrivacyPolicy.png',
+      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Privacy.svg',
     },
   ];
 

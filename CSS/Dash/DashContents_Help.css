@@ -2,23 +2,23 @@
 Dash Contents Help
 -------------------------------------------------------------------------------- */
 
-/* Dash GeneralPage Category */
+/* Dash UpdateNotify Category */
 .cls_Dash_Category_Title_divUpdateNotifyPage{
-  background-image: url("//lh4.googleusercontent.com/-I5tTXaxsX1g/VQV_JETSoYI/AAAAAAAA_rE/tcAB_vAf4M8/s800/Dash_Category_UpdateNotifyPage.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Delivery.svg");
 }
 
-/* Dash GeneralPage Category */
+/* Dash HowToCommentPage Category */
 .cls_Dash_Category_Title_divHowToCommentPage{
-  background-image: url("//lh6.googleusercontent.com/-eJ7t4RxwV4o/VQV_JMCc34I/AAAAAAAA_rk/wwXXlS1wQwA/s800/Dash_Category_HowToCommentPage.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Forum.svg");
 }
 
-/* Dash GeneralPage Category */
+/* Dash PrivacyPage Category */
 .cls_Dash_Category_Title_divPrivacyPage{
-  background-image: url("//lh5.googleusercontent.com/-TkHJ5TqHS3k/VQV_JeFCmKI/AAAAAAAA_r8/S1z_fSjOq9Q/s800/Dash_Category_PrivacyPage.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Privacy.svg");
 }
 
 .cls_Dash_Category_Contents_UpdateNotifyPage_divIcon,
 .cls_Dash_Category_Contents_HowToCommentPage_divIcon,
 .cls_Dash_Category_Contents_PrivacyPage_divIcon{
-  background-size:auto;  
+  background-size:auto;
 }
