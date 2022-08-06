@@ -43,13 +43,12 @@ Right Bar
 
 #HTML6{
   float: left;
-  width: 300px;
-  margin-right: 32px;  
-}
 
-#HTML6{
-    margin-top: 16px;
-    height:600px;
+  width: 300px;
+  height:600px;
+
+  margin-top: 16px;
+  margin-right: 32px;  
 }
 
 /* --------------------------------------------------------------------------------
@@ -149,7 +148,7 @@ Popular Post
 Pickup Post 
 -------------------------------------------------------------------------------- */
 .cls_PickupPosts_divLoading{
-  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");    
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
   background-repeat:no-repeat;
   background-size:auto;
   background-position:center;

@@ -178,7 +178,7 @@ Post Item/Archive/Static
 }
 
 .cls_divPostBody h4:before{
-  content: "▶";
+  content: "📌";
   letter-spacing: 0px;
 }
 
