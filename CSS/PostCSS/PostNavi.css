@@ -18,13 +18,13 @@ Post Navi Button
   background-size:auto;
   background-position:center;
   display:block;
-  
+
   width:48px;
   height:48px;
 }
 
 .cls_PostNavi_anchorNext{
-  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
+  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
   visibility:hidden;
 }
 
@@ -43,14 +43,14 @@ Post Navi Button with Info
 .cls_divPostNaviWithInfoOuter{
   height:144px;
   margin-top: 24px;
-}  
-  
+}
+
 .cls_PostNaviWithInfo_divLoading{
   height:144px;
-  
-  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
   background-repeat:no-repeat;
-  background-size:auto;
+  background-size:contain;
   background-position:center;
 }
 
@@ -63,7 +63,7 @@ Post Navi Button with Info
 .cls_divPostNaviWithInfoContainer a:visited{
   color:white;
 }
-  
+
 .cls_PostNaviWithInfo_anchorNext,
 .cls_PostNaviWithInfo_anchorTop,
 .cls_PostNaviWithInfo_anchorPrev{
@@ -71,12 +71,12 @@ Post Navi Button with Info
   background-size:auto;
   display:block;
   overflow:hidden;
-  
+
   height:144px;
 }
 
 .cls_PostNaviWithInfo_anchorNext{
-  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");  
+  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
   background-position:left;
 }
 
@@ -105,7 +105,7 @@ Post Navi Button with Info
 }
 
 .cls_PostNaviWithInfo_divPrev{
-  float:right;  
+  float:right;
   visibility:hidden;
   background-color:#333333;
 }

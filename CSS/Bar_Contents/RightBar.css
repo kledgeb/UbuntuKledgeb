@@ -1,13 +1,13 @@
 /* --------------------------------------------------------------------------------
-Right Bar  
+Right Bar
 -------------------------------------------------------------------------------- */
 .cls_RightBar{
   margin-left:870px;
   max-width:664px;
   background-color:white;
 }
-  
-.cls_divWidgetTitle{  
+
+.cls_divWidgetTitle{
   font-size:inherit;
   font-weight:bold;
 
@@ -24,7 +24,7 @@ Right Bar
 .cls_RightBar a{
   font-weight:bold;
 }
-  
+
 .adsbygoogle_res_3{
   width:300px;
   height:600px;
@@ -38,7 +38,7 @@ Right Bar
 }
 
 #section_RightBar4{
-  min-width: 300px;  
+  min-width: 300px;
 }
 
 #HTML6{
@@ -48,11 +48,11 @@ Right Bar
   height:600px;
 
   margin-top: 16px;
-  margin-right: 32px;  
+  margin-right: 32px;
 }
 
 /* --------------------------------------------------------------------------------
-Popular Post 
+Popular Post
 -------------------------------------------------------------------------------- */
 .cls_PopularPost_divPost{
   padding:8px;
@@ -68,7 +68,7 @@ Popular Post
   height:24px;
   color:white;
   text-align:center;
- 
+
 	z-index: 1;
 }
 
@@ -108,7 +108,7 @@ Popular Post
 
   float:left;
   margin-right:16px;
-  
+
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
@@ -120,7 +120,7 @@ Popular Post
 
   float:left;
   margin-right:16px;
-  
+
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;
@@ -129,14 +129,14 @@ Popular Post
 .cls_divPopularPost ul{
   padding-left:0;
 }
-  
+
 .cls_divPopularPost li{
   list-style:none;
   float: left;
   width: 300px;
   margin-right: 32px;
 }
-  
+
 .cls_PopularPost_Separate{
   margin-top:8px;
   margin-bottom:8px;
@@ -145,13 +145,13 @@ Popular Post
 }
 
 /* --------------------------------------------------------------------------------
-Pickup Post 
+Pickup Post
 -------------------------------------------------------------------------------- */
 .cls_PickupPosts_divLoading{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
   background-repeat:no-repeat;
-  background-size:auto;
   background-position:center;
+  background-size:contain;
 
   width:300px;
   height:128px;

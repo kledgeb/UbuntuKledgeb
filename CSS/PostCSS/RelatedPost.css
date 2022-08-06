@@ -4,12 +4,12 @@ Related Post
 .cls_RelatedPost_divPost{
   height:96px;
   overflow:hidden;
-  padding:8px;  
+  padding:8px;
   border-bottom:1px solid #ddd;
 }
 
 .cls_RelatedPost_anchorPost{
-  display:block;  
+  display:block;
   position:relative;
   top:-28px;
 }
@@ -22,7 +22,7 @@ Related Post
   height:24px;
   color:white;
   text-align:center;
- 
+
 	z-index: 1;
 }
 
@@ -51,12 +51,12 @@ Related Post
 }
 
 .cls_RelatedPost_divLoading{
-  background-image: url("//lh5.googleusercontent.com/-pzu7YodLIT0/VPwhJT9fTjI/AAAAAAAA_gQ/wF8WyQqGNpU/s800/Loading_BackWhite_48.GIF");  
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
   background-repeat:no-repeat;
-  background-size:auto;
-  background-position:center;    
+  background-size:contain;
+  background-position:center;
 
-  height:96px;  
+  height:96px;
 }
 
 .cls_divRelatedPostContainer{
@@ -79,8 +79,8 @@ Related Post
 
   width:96px;
   height:96px;
-  float:left; 
-  
+  float:left;
+
   margin-right:16px;
 }
 
