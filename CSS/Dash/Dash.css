@@ -98,7 +98,18 @@ Window
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Maximum.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size:contain;
+  background-size:75%;
+}
+
+#id_Dash_divSearchOption::before {
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 48px;
+  left: 228px;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .cls_Dash_divSearchOption{
@@ -113,12 +124,6 @@ Window
 
   line-height:48px;
   text-align:right;
-
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 4px center;
-  background-size:contain;
-
   cursor: pointer;
 }
 
@@ -141,7 +146,7 @@ Window
 .cls_Dash_divBottomBar{
   background-color:rgba(0,0, 0, 0.5);
   border-bottom-right-radius:4px;
-  height:48px;
+  height:52px;
 }
 
 .cls_Dash_divLensOuter{
@@ -176,6 +181,7 @@ Window
 
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 28px;
 }
 
 .cls_Dash_HomeLens_divIcon{
