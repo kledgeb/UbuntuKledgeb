@@ -114,6 +114,10 @@ Window
   line-height:48px;
   text-align:right;
   cursor: pointer;
+
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 8px;
 }
 
 
