@@ -18,10 +18,10 @@ Dash Contents Search
 .cls_Dash_Category_Contents_Search_divTermSearch,
 .cls_Dash_Category_Contents_Search_divGoogleCustomSearch{
   float:left;
-  border-radius:4px;  
+  border-radius:4px;
   border:1px solid #9D9C9C;
   padding:8px;
-  cursor:pointer;  
+  cursor:pointer;
   margin-right:16px;
   margin-bottom:16px;
   min-width:128px;
@@ -34,13 +34,13 @@ Dash Contents Search
 
 .cls_Dash_Category_Contents_Search_divStartSearchDateContainer,
 .cls_Dash_Category_Contents_Search_divStartEndDateContainer{
-  float:left;  
+  float:left;
   margin-bottom:16px;
 }
 
 .cls_Dash_Category_Contents_Search_inputStartSearchDate,
 .cls_Dash_Category_Contents_Search_inputEndSearchDate{
-  margin-right:16px;  
+  margin-right:16px;
   background-color:rgba(17,17,17,0.5);
   border:1px solid #9D9C9C;
   border-radius:4px;
@@ -63,136 +63,10 @@ Dash Contents Search
   float:left;
 
   background-repeat: no-repeat;
-  background-position: center top; 
+  background-position: center top;
 }
 
 .cls_Dash_Category_Contents_Search_divMessageText{
-  float:left;  
-  padding-left:8px;
-}
-
-/*-- --------------------------------------------------------------------------------
-Dash Contents Search Calendar
--------------------------------------------------------------------------------- */
-
-#ui-datepicker-div.cls_Dash_Carendar.ui-datepicker{
-  width:300px;
-  padding:8px;
-  background-color:#333333;
-  border:1px solid #9D9C9C;
-  color:white;
-  border-radius:4px;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-header{
-  border-bottom:1px solid #9D9C9C;
-  font-weight:bold;
-  padding-bottom:8px;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-prev{
-  display:block;
   float:left;
-} 
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-next{
-  display:block;
-  float:right;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-icon-circle-triangle-w,
-#ui-datepicker-div.cls_Dash_Carendar .ui-icon-circle-triangle-e{
-  display:block;
-  width:32px;
-  height:32px;
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size:auto;
-  cursor:pointer;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-icon-circle-triangle-w{
-  background-image: url("//lh4.googleusercontent.com/-fb45FQXpXEU/VQa6RWGMwwI/AAAAAAAA_sg/v9Ryzo9bf7c/s800/Dash_Calendar_PrevButton.png"); 
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-icon-circle-triangle-e{
-  background-image: url("//lh4.googleusercontent.com/-Gw3lgo9ohbs/VQa6RjtXqoI/AAAAAAAA_sc/2bRfvHcLTRk/s800/Dash_Calendar_NextButton.png"); 
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-title{
-  text-align:center;
-  padding-top:4px;
-}
-
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-year,
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-month{
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;  
-  
-  background-color:inherit;
-  color:inherit;
-  font:inherit;
-  width:96px;
-  border:1px solid #9D9C9C;
-  border-radius:4px;
-  cursor:pointer;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-year option,
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-month option{
-  background-color:#333333;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar{
-  padding-top:8px;
-  padding-bottom:8px;
-  width:300px;
-  border-spacing:0;
-  border-bottom:1px solid #9D9C9C;  
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar a.ui-state-default{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color:inherit;
-  display:block;
-  line-height:32px;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar td:nth-child(7) a.ui-state-default,
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar th:nth-child(7) span{
-  color:DodgerBlue;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar a.ui-state-highlight{
-  color:greenyellow;
-  border:1px solid greenyellow;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar td:nth-child(1) a.ui-state-default,
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-calendar th:nth-child(1) span{
-  color:red;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-buttonpane{
-  padding-top:8px;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-current,
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-close{
-  color:inherit;
-  font:inherit;
-  background-color:#333333;
-  border:1px solid #9D9C9C;
-  border-radius:4px;
-  width:96px;
-  padding:4px;
-  cursor:pointer;
-}
-
-#ui-datepicker-div.cls_Dash_Carendar .ui-datepicker-close{
-  float:right;
+  padding-left:8px;
 }

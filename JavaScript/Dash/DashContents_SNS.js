@@ -24,16 +24,18 @@ function setupSNSLens_SharePost(){
     postText = gPostInfo.title;
   }
 
+  postText = encodeURIComponent(postText);
+
   sharePost = [
     {
       title:'Twitterで共有',
-      link:"//twitter.com/share?url=" + gHomepageURL + "&text="  + encodeURIComponent(gPageTitle) + "&hashtags=kledgeb",
+      link:"//twitter.com/share?url=" + gHomepageURL + "&text="  + postText + "&hashtags=kledgeb",
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg',
     },
 
     {
       title:'はてなブックマークに追加',
-      link:"//b.hatena.ne.jp/add?mode=confirm&url=" + gHomepageURL + "&title=" + encodeURIComponent(gPageTitle),
+      link:"//b.hatena.ne.jp/add?mode=confirm&url=" + gHomepageURL + "&title=" + postText,
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/HatenaBookmark_Logo.png',
     },
   ];
@@ -68,11 +70,6 @@ function setupSNSLens_DeliveryPost(){
   var deliveryPost;
 
   deliveryPost = [
-    {
-      title:'メール',
-      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
-      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MailDelivery.svg',
-    },
 
     {
       title:'RSS',
@@ -85,6 +82,13 @@ function setupSNSLens_DeliveryPost(){
       link:'//twitter.com/intent/user?screen_name=kledgeb',
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg',
     },
+
+    {
+      title:'メール配信',
+      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
+      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MailDelivery.svg',
+    },
+
   ];
 
   var categoryName = 'DeliveryPost';

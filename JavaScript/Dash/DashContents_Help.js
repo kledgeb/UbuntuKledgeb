@@ -6,9 +6,9 @@ function setupHelpLensContents(showParams){
   gCurrentLensArrowID = 'id_Dash_HelpLens_divArrow';
   $('#' + gCurrentLensArrowID).css('visibility','visible');
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
-  
+
   setupPageLens_UpdateNotifyPage();
-  setupPageLens_HowToCommentPage();
+  //setupPageLens_HowToCommentPage();
   setupPageLens_PrivacyPage();
 
   //Option
@@ -18,38 +18,26 @@ function setupHelpLensContents(showParams){
 function setupPageLens_UpdateNotifyPage(){
   var updateNotifyPages = [
     {
-      title:'RSSで更新通知を受け取る',
-      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_9.html'),
-      iconURL:'//lh3.googleusercontent.com/-rmNE3mrkPNU/VQV_LItltzI/AAAAAAAA_ro/bBQBkx8eyRc/s800/Dash_UpdateNotifyPage_AddRSS.png',
-    },
-    
-    {
-      title:'RSSの更新通知を停止する',
+      title:'RSSの停止',
       link:adjustURLForMobile(getHomepageURL() + 'p/rss.html'),
-      iconURL:'//lh4.googleusercontent.com/-T90Sixm35tI/VQV_MQstR1I/AAAAAAAA_r0/Jyb-hAs0JWU/s800/Dash_UpdateNotifyPage_RemoveRSS.png',
-    },
-    
-    {
-      title:'メールで更新通知を受け取る',
-      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
-      iconURL:'//lh4.googleusercontent.com/-vyjh1pvHOuY/VQV_KuwoBgI/AAAAAAAA_rU/kqJMSuNzAXc/s800/Dash_UpdateNotifyPage_AddMail.png',
+      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_RSS.svg',
     },
 
     {
-      title:'メールの更新通知を停止する',
+      title:'メールの配信の停止',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_15.html'),
-      iconURL:'//lh5.googleusercontent.com/-fuqWXdqco8w/VQV_Lo7h-iI/AAAAAAAA_rg/5KmGKJrMBOY/s800/Dash_UpdateNotifyPage_RemoveMail.png',
+      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MailDelivery.svg',
     },
   ];
 
   var categoryName = 'UpdateNotifyPage';
-  
-  addCategory(categoryName,'サイトの更新通知');
+
+  addCategory(categoryName,'記事の更新通知');
 
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   var i;
   var categoryItemInfo;
-  
+
   for(i = 0 ; i < updateNotifyPages.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
@@ -59,12 +47,12 @@ function setupPageLens_UpdateNotifyPage(){
       itemIconURL:updateNotifyPages[i].iconURL,
       itemTitle:updateNotifyPages[i].title,
     };
-    
+
     addCategoryItem(categoryItemInfo);
   }
-  
+
   divCategoryContents.append("<div class='clear'></div>");
-  layoutCategoryHead(categoryName);  
+  layoutCategoryHead(categoryName);
 }
 
 function setupPageLens_HowToCommentPage(){
@@ -72,18 +60,18 @@ function setupPageLens_HowToCommentPage(){
     {
       title:'コメントと掲示板の使い方',
       link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_8387.html'),
-      iconURL:'//lh3.googleusercontent.com/-64pzFLfdrsg/VQV_KE2Z3iI/AAAAAAAA_rQ/HpSi6XqNQXc/s800/Dash_HowToCommentPage_Comment.png',
+      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Forum.svg',
     },
   ];
 
   var categoryName = 'HowToCommentPage';
-  
+
   addCategory(categoryName,'コメントと掲示板');
 
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   var i;
   var categoryItemInfo;
-  
+
   for(i = 0 ; i < howToCommentPages.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
@@ -93,12 +81,12 @@ function setupPageLens_HowToCommentPage(){
       itemIconURL:howToCommentPages[i].iconURL,
       itemTitle:howToCommentPages[i].title,
     };
-    
+
     addCategoryItem(categoryItemInfo);
   }
-  
+
   divCategoryContents.append("<div class='clear'></div>");
-  layoutCategoryHead(categoryName);    
+  layoutCategoryHead(categoryName);
 }
 
 function setupPageLens_PrivacyPage(){
@@ -111,13 +99,13 @@ function setupPageLens_PrivacyPage(){
   ];
 
   var categoryName = 'PrivacyPage';
-  
+
   addCategory(categoryName,'プライバシー');
 
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   var i;
   var categoryItemInfo;
-  
+
   for(i = 0 ; i < privacyPages.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
@@ -127,10 +115,10 @@ function setupPageLens_PrivacyPage(){
       itemIconURL:privacyPages[i].iconURL,
       itemTitle:privacyPages[i].title,
     };
-    
+
     addCategoryItem(categoryItemInfo);
   }
-  
+
   divCategoryContents.append("<div class='clear'></div>");
-  layoutCategoryHead(categoryName);    
+  layoutCategoryHead(categoryName);
 }
