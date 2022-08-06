@@ -1,5 +1,5 @@
 /*-- --------------------------------------------------------------------------------
-User Settings 
+User Settings
 -------------------------------------------------------------------------------- --*/
 var gUserSettings = $.localStorage.get('userSettings');
 
@@ -12,20 +12,20 @@ function getAllUserSettings(){
 
       //Dash
       dash_Size:'Normal',
-      
+
       //Dash Home
       dash_RelatedPost_CategoryHeadState:'close',
       dash_LatestPost_CategoryHeadState:'close',
-      dash_ReleaseSchedule_CategoryHeadState:'close',
-      dash_SupportedVersion_CategoryHeadState:'close',
-
-      //Dash Page
-      dash_GeneralPage_CategoryHeadState:'close',
-      dash_LinuxDistributionPage_CategoryHeadState:'close',
-      dash_LinkPage_CategoryHeadState:'close',
 
       //Dash Star
       dash_PopularPost_CategoryHeadState:'close',
+
+      //Dash Ubuntu
+      dash_ReleaseSchedule_CategoryHeadState:'close',
+      dash_SupportedVersion_CategoryHeadState:'close',
+
+      //Dash WebSite
+      dash_LinuxDistributionWebSite_CategoryHeadState:'close',
 
       //Dash SNS
       dash_SharePost_CategoryHeadState:'open',
@@ -40,26 +40,26 @@ function getAllUserSettings(){
 
     };
   }
-  
+
   return gUserSettings;
 }
 
 function getUserSetting(key){
   var userSettings = getAllUserSettings();
-  
+
   return userSettings[key];
 }
 
 function setUserSetting(key,value){
   var userSettings = getAllUserSettings();
-  
+
   userSettings[key] = value;
 }
 
 function setDashCategoryHeadState(categoryName,value){
   var key = 'dash_' + categoryName +'_CategoryHeadState';
-  
-  setUserSetting(key,value);  
+
+  setUserSetting(key,value);
 }
 
 function getDashCategoryHeadState(categoryName){

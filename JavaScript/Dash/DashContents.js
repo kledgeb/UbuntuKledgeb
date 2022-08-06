@@ -172,14 +172,14 @@ function layoutCategoryHead(categoryName){
       divCategoryHead.css('cursor','pointer');
       divCategoryArrow.css('visibility','visible');
 
-      if(arrowState == 'close'){
-        divCategoryArrow.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg")');
-        divCategoryArrow.text('すべてのアイテムを表示');
-        divCategoryContents.css('max-height',divFirstItem.outerHeight() + 'px');
-      }else if(arrowState == 'open'){
+      if(arrowState == 'open'){
         divCategoryArrow.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_DownArrow.svg")');
         divCategoryArrow.text('一部のアイテムを表示');
         divCategoryContents.css('max-height','');
+      }else(arrowState == 'close'){
+        divCategoryArrow.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg")');
+        divCategoryArrow.text('すべてのアイテムを表示');
+        divCategoryContents.css('max-height',divFirstItem.outerHeight() + 'px');
       }
 
     }else{
@@ -205,35 +205,24 @@ function layoutCategoryHead(categoryName){
 
     if((!loading) && (!divItem.length)){
       displayValue = 'none';
-
-      /*if(optionInfo){
-        changeStateDashOption('off',optionInfo);
-      }*/
-    }else{
-
-      if(divOptionItem.length){
+    }else if(divOptionItem.length){
         if(optionInfo.currentState === 'off'){
           displayValue = 'none';
         }else{
 
-          if(!loading){
-            var divItems = $(selectorPrefix);
-            var i;
+        if(!loading){
+          var divItems = $(selectorPrefix);
+          var i;
 
-            displayValue = 'none';
+          displayValue = 'none';
 
-            for(i= 0 ; i < divItems.length ; i ++){
-              divItem = $(divItems[i]);
+          for(i= 0 ; i < divItems.length ; i ++){
+            divItem = $(divItems[i]);
 
-              if(divItem.css('display') !== 'none'){
-                displayValue = 'block';
-                break;
-              }
+            if(divItem.css('display') !== 'none'){
+              displayValue = 'block';
+              break;
             }
-
-            /*if(displayValue == 'none'){
-              changeStateDashOption('off',optionInfo);
-            }*/
           }
         }
       }
