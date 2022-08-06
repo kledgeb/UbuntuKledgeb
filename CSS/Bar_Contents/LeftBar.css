@@ -42,7 +42,8 @@ Left Bar
 .cls_LeftBar_divArrow{
   background-repeat: no-repeat;
   background-position: center;
-  
+  background-size: 5px 5px;
+
   float:left;
   
   margin-right:3px;
@@ -60,11 +61,11 @@ Left Bar
 }
 
 .cls_LeftBar_divArrow_Dash{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_Home{
-  background-image: url("//lh4.googleusercontent.com/-2hoHLWBhAzE/VPfQUQjLEUI/AAAAAAAA_bI/BA2FnM0OKcM/s800/LeftBar_Home.png");    
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Home.svg");
 }
 
 .cls_LeftBar_divArrow_Star{
