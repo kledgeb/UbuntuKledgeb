@@ -110,7 +110,8 @@ function initializeDash(){
     {
       $('#id_Dash_divHomeLensContainer').on('click',onDashHomeLensClick);
       $('#id_Dash_divStarLensContainer').on('click',onDashStarLensClick);
-      $('#id_Dash_divPageLensContainer').on('click',onDashPageLensClick);
+      $('#id_Dash_divUbuntuLensContainer').on('click',onDashUbuntuLensClick);
+      $('#id_Dash_divWebSiteLensContainer').on('click',onDashWebSiteLensClick);
       $('#id_Dash_divSNSLensContainer').on('click',onDashSNSLensClick);
       $('#id_Dash_divTagLensContainer').on('click',onDashTagLensClick);
       $('#id_Dash_divSearchLensContainer').on('click',onDashSearchLensClick);
@@ -151,11 +152,11 @@ function layoutDash(){
   if(gDashSize == 'Normal'){
     dashHeight = 550;
     dashWidth = parseInt(dashHeight / 9 * 16,10);
-    divWindowSize.css('background-image','url("//lh5.googleusercontent.com/-INLN-uqoBH4/VPrjf8hfbxI/AAAAAAAA_d8/ipEY5_igWDQ/s800/LeftBar_Dash_LargeSize.png")');
+    divWindowSize.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Maximum.svg")');
   }else{
     dashHeight = windowHeight;
     dashWidth = windowWidth;
-    divWindowSize.css('background-image','url("//lh4.googleusercontent.com/-8LEUy7RIolo/VPrjfwOurMI/AAAAAAAA_eA/NtQQKmGy4GU/s800/LeftBar_Dash_NormalSize.png")');
+    divWindowSize.css('background-image','url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Minimize.svg")');
   }
 
   if(dashWidth > windowWidth){
@@ -204,10 +205,10 @@ function layoutDash(){
 
   if(gOpenRightBar){
     divContentsContainer.outerWidth(barWidth);
-    divSearchOption.css('background-image','url("//lh4.googleusercontent.com/-LvKGjUWTr9s/VPr2KeW05EI/AAAAAAAA_eg/uzK8mZNKnbM/s800/LeftBar_Board_SearchOption_Open.png")');
+    divSearchOption.css('transform','rotate(0deg)');
   }else{
     divContentsContainer.outerWidth(dashWidth);
-    divSearchOption.css('background-image','url("//lh3.googleusercontent.com/-4J832sBuxjI/VPr2KZzLaFI/AAAAAAAA_ec/hPPnjWGMnsU/s800/LeftBar_Board_SearchOption_Close.png")');
+    divSearchOption.css('transform','rotate(90deg)');
   }
 
   barHeight = dashHeight - divTopBar.outerHeight(true) - divBottomBar.outerHeight(true);

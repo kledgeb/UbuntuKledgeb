@@ -95,9 +95,10 @@ Window
   float:left;
   cursor: pointer;
 
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Maximum.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Maximum.svg");
+  background-size:contain;
 }
 
 .cls_Dash_divSearchOption{
@@ -116,6 +117,7 @@ Window
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
   background-repeat: no-repeat;
   background-position: right 4px center;
+  background-size:contain;
 
   cursor: pointer;
 }
