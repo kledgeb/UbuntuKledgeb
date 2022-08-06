@@ -2,8 +2,8 @@
 Window
 -------------------------------------------------------------------------------- */
 .cls_divDashBackground{
-  margin-left:48px;
-
+  margin-left: 48px;
+  filter: blur(4px);
 }
 
 .cls_divDash{
@@ -55,7 +55,7 @@ Window
 .cls_Dash_divSearchIcon{
   background-repeat: no-repeat;
   background-position: center;  
-  background-image: url("//lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Search.svg");
   width:48px;
   height:48px;
     

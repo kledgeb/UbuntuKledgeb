@@ -10,13 +10,6 @@ function getAllUserSettings(){
       //Version
       version:'2',
 
-      //Font Size
-      siteFontSize:'Normal',
-      dashFontSize:'Normal',
-
-      //Dash Theme
-      dashTheme:'BlurGlass',
-
       //Dash
       dash_Size:'Normal',
       

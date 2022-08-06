@@ -1,8 +1,8 @@
 /*-- --------------------------------------------------------------------------------
 Dash
 -------------------------------------------------------------------------------- --*/
-//1 normar
-//2 full
+//1 Normal
+//2 Full
 var gDashSize = getUserSetting('dash_Size');
 var gOpenRightBar = false;
 var gCurrentLens = null;
@@ -22,8 +22,7 @@ function toggleDash(showType,showParams){
     }else{
       showDash(showType,showParams);
     }
-  }
-  else{
+  }else{
     if(showType === null){
       if(!gCurrentLens){
         showType = 'Home';
@@ -50,14 +49,7 @@ function showDash(showType,showParams){
   initializeDash();
   switchLens(showType,showParams);
 
-  //show
-  if(getUserSetting('dashTheme') == 'BlurGlass'){
-    var divDashBackground = $('#id_divDashBackground');
-    
-    divDashBackground.css('-webkit-filter','blur(4px)');
-    divDashBackground.css('filter','blur(4px)');
-  }
-  
+  //show  
   $('#id_divDashClickBackground').show();
   
   divDash.hide();
@@ -67,11 +59,7 @@ function showDash(showType,showParams){
     $('#' + gCurrentLensArrowID).css('visibility','visible');
   }
 
-  if(getUserSetting('dashTheme') == 'BlurGlass'){
-    divDash.fadeIn(150);
-  }else{
-    divDash.show();
-  }
+  divDash.fadeIn(150);
 
   $('#id_Dash_inputSearchBox').focus();
   gIsShowingDash = true;
@@ -79,7 +67,6 @@ function showDash(showType,showParams){
 
 function hideDash(){
   var divDash = $('#id_divDash');
-  var divDashBackground = $('#id_divDashBackground');
 
   if(gCurrentLensArrowID){
     $('#' + gCurrentLensArrowID).css('visibility','hidden');
@@ -88,11 +75,6 @@ function hideDash(){
   divDash.hide();
 
   $('#id_divDashClickBackground').hide();
-
-  if(getUserSetting('dashTheme') == 'BlurGlass'){
-    divDashBackground.css('-webkit-filter','none');
-    divDashBackground.css('filter','none');
-  }
   
   gIsShowingDash = false;
 }
@@ -115,8 +97,8 @@ function initializeDash(){
     
     {
       $('#id_Dash_divHomeLensContainer').on('click',onDashHomeLensClick);
-      $('#id_Dash_divPageLensContainer').on('click',onDashPageLensClick);
       $('#id_Dash_divStarLensContainer').on('click',onDashStarLensClick);
+      $('#id_Dash_divPageLensContainer').on('click',onDashPageLensClick);
       $('#id_Dash_divSNSLensContainer').on('click',onDashSNSLensClick);
       $('#id_Dash_divTagLensContainer').on('click',onDashTagLensClick);
       $('#id_Dash_divSearchLensContainer').on('click',onDashSearchLensClick);
