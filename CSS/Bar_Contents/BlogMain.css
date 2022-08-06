@@ -26,8 +26,6 @@ a:active{
   transition-duration: 0.25s;
 }
 
-/*  font-family: 'Ubuntu','TakaoPGothic','SegoeUI','Yu Gothic UI','Meiryo UI','ヒラギノ角ゴ Pro W3','VL PGothic',sans-serif; */
-
 body{
   color:#434a54;
   background-color:white;
@@ -41,8 +39,6 @@ body{
   min-height: 100%;
   min-width: 100%;
 }
-
-/*  font-family: 'Ubuntu Mono','VL ゴシック','Takaoゴシック','ＭＳ ゴシック','ヒラギノ角ゴ Pro W3',sans-serif; */
 
 pre {
   font-size: inherit;
@@ -71,16 +67,3 @@ button{
 .blog-admin{
   display:none;
 }
-
-/* --------------------------------------------------------------------------------
-Hide Google Translate Top Bar
--------------------------------------------------------------------------------- */
-
-.goog-te-banner-frame.skiptranslate{
-  display: none !important;
-}
- 
-body{
-  top: 0px !important;
-}
-

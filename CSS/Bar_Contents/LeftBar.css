@@ -68,56 +68,56 @@ Left Bar
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Home.svg");
 }
 
-.cls_LeftBar_divArrow_Star{
+.cls_LeftBar_divIcon_Star{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Star.svg");
 }
 
-.cls_LeftBar_divIcon_Star{
-  background-image: url("//lh4.googleusercontent.com/-YAkBsd1WdH0/VPu8AfMzoqI/AAAAAAAA_fc/qfhlisbqoo4/s800/Dash_BottomBar_Lens_Star.png");   
+.cls_LeftBar_divArrow_Star{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_Ubuntu{
-  background-image: url("//lh6.googleusercontent.com/-KTNsjuW2GrU/VP2kCkIOECI/AAAAAAAA_iY/6P8hFw9mvVY/s800/LeftBar_OS.png");  
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Ubuntu.svg");
 }
 
 .cls_LeftBar_divArrow_Ubuntu{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
-.cls_LeftBar_divIcon_Page{
-  background-image: url("//lh3.googleusercontent.com/-1J6r0Y3InJE/VPu7_tH1uDI/AAAAAAAA_fM/MOqsP2Yhwyk/s800/Dash_BottomBar_Lens_Pages.png");   
+.cls_LeftBar_divIcon_WebSite{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_WebSite.svg");
 }
 
-.cls_LeftBar_divArrow_Page{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+.cls_LeftBar_divArrow_WebSite{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 #id_LeftBar_divSNS{
   display:none;  
 }
 
-.cls_LeftBar_divArrow_SNS{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
-}
-
 .cls_LeftBar_divIcon_SNS{
-  background-image: url("//lh5.googleusercontent.com/-BDE2nP7I0I0/VRpVWY6ZANI/AAAAAAABARs/PYMoLZ1dkco/s800/Dash_BottomBar_Lens_SNS.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_SNS.svg");
 }
 
-.cls_LeftBar_divArrow_Tag{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+.cls_LeftBar_divArrow_SNS{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_Tag{
-  background-image: url("//lh6.googleusercontent.com/-nuFd3BUPQb0/VPu8A2YTLtI/AAAAAAAA_fg/ta3tnXq1dU8/s800/Dash_BottomBar_Lens_Tags.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MultiTag.svg");
 }
 
-.cls_LeftBar_divArrow_Search{
-  background-image: url("//lh3.googleusercontent.com/-F4FT8WPrlUw/VPfQVMQrnaI/AAAAAAAA_aw/31lNRieVR-o/s800/LeftBar_MenuArrow.png");
+.cls_LeftBar_divArrow_Tag{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_Search{
-  background-image: url("//lh3.googleusercontent.com/-187cjNdzVa0/VPfQVtVhruI/AAAAAAAA_bQ/01ZAx8XkbrY/s800/LeftBar_Search.png");    
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Search.svg");
+}
+
+.cls_LeftBar_divArrow_Search{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 

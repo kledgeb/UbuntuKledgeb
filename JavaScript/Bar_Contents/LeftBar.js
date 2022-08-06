@@ -13,12 +13,12 @@ function onLeftBarStarClick(event){
   toggleDash('Star');
 }
 
-function onLeftBarLinuxClick(event){
-  toggleDash('Page',{showCategory:{LinuxDistributionPage:true}});
+function onLeftBarUbuntuClick(event){
+  toggleDash('Ubuntu');
 }
 
-function onLeftBarPageClick(event){
-  toggleDash('Page');
+function onLeftBarWebSiteClick(event){
+  toggleDash('WebSite');
 }
 
 function onLeftBarSNSClick(event){
@@ -38,7 +38,7 @@ function onLeftBarSearchClick(event){
   $('#id_LeftBar_divHome').click(onLeftBarHomeClick);
   $('#id_LeftBar_divStar').click(onLeftBarStarClick);
   $('#id_LeftBar_divUbuntu').click(onLeftBarLinuxClick);
-  $('#id_LeftBar_divPage').click(onLeftBarPageClick);
+  $('#id_LeftBar_divWebSite').click(onLeftBarWebSiteClick);
   $('#id_LeftBar_divTag').click(onLeftBarTagClick);
   $('#id_LeftBar_divSearch').click(onLeftBarSearchClick);
   
