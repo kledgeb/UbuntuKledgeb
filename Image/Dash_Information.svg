@@ -22,7 +22,7 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="53.125"
-     inkscape:cx="8.0094118"
+     inkscape:cx="8.0282353"
      inkscape:cy="8"
      inkscape:window-width="1920"
      inkscape:window-height="1053"
@@ -33,11 +33,11 @@
   <g
      fill="gray"
      id="g6"
-     style="fill:#5c7eae;fill-opacity:1">
+     style="fill:#67a7ff;fill-opacity:1">
     <path
        d="m8 16a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8zm0-1a7 7 0 0 0 7-7 7 7 0 0 0-7-7 7 7 0 0 0-7 7 7 7 0 0 0 7 7z"
        id="path2"
-       style="fill:#5c7eae;fill-opacity:1" />
+       style="fill:#67a7ff;fill-opacity:1" />
     <path
        d="M8 3.75c-.386 0-.69.124-.914.373A1.27 1.27 0 0 0 6.75 5c0 .336.112.628.336.877.224.249.528.373.914.373s.69-.124.914-.373A1.27 1.27 0 0 0 9.25 5a1.27 1.27 0 0 0-.336-.877C8.69 3.874 8.386 3.75 8 3.75zM7 7v5h2V7z"
        font-family="Ubuntu"
@@ -45,6 +45,6 @@
        letter-spacing="0"
        word-spacing="0"
        id="path4"
-       style="fill:#5c7eae;fill-opacity:1" />
+       style="fill:#67a7ff;fill-opacity:1" />
   </g>
 </svg>
