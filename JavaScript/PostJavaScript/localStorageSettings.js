@@ -21,14 +21,15 @@ function getAllUserSettings(){
       dash_PopularPost_CategoryHeadState:'close',
 
       //Dash Ubuntu
+      dash_SupportedVersion_CategoryHeadState:'open',
       dash_ReleaseSchedule_CategoryHeadState:'close',
-      dash_SupportedVersion_CategoryHeadState:'close',
 
       //Dash WebSite
       dash_LinuxDistributionWebSite_CategoryHeadState:'close',
 
       //Dash SNS
       dash_SharePost_CategoryHeadState:'open',
+      dash_DeliveryPost_CategoryHeadState:'open',
 
       //Dash Tag
       dash_TagList_CategoryHeadState:'open',

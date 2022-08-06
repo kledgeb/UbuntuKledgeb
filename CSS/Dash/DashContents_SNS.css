@@ -1,11 +1,26 @@
 /*-- --------------------------------------------------------------------------------
-Dash Option
+Dash SNS
 -------------------------------------------------------------------------------- */
-/* Dash GeneralPage Category */
+/* Dash SharePost Category */
 .cls_Dash_Category_Title_divSharePost{
-  background-image: url("//lh4.googleusercontent.com/-4GHpqXok6bg/VRpVWfusX9I/AAAAAAABARw/Ll5wkeD5z_M/s800/Dash_Category_SharePostSNS.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_SNS.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  background-size: 16px;
 }
 
 .cls_Dash_Category_Contents_SharePost_divIcon{
-  background-size:auto;  
+  background-size:auto;
 }
+
+.cls_Dash_Category_Title_divDeliveryPost{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Delivery.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  background-size: 16px;
+}
+
+.cls_Dash_Category_Contents_DeliveryPost_divIcon{
+  background-size:auto;
+}
+

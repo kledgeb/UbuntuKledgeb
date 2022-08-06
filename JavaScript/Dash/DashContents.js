@@ -100,10 +100,10 @@ function toggleCategory(categoryName,forceArrowState,isSaveState){
 
   if(forceArrowState){
     divCategoryArrow.data('arrowState',forceArrowState);
-  }else if(arrowState == 'close'){
-    divCategoryArrow.data('arrowState','open');
   }else if(arrowState == 'open'){
     divCategoryArrow.data('arrowState','close');
+  }else{
+    divCategoryArrow.data('arrowState','open');
   }
 
   if(isSaveState){
