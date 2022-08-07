@@ -20,7 +20,7 @@ function setupSNSLens_SharePost(){
     postURL = gHomepageURL;
     postText = gPageTitle;
   }else{
-    postURL = gHomepageURL;
+    postURL = gPostInfo.url;
     postText = gPostInfo.title;
   }
 
