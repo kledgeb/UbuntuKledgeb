@@ -51,6 +51,45 @@ Right Bar
   margin-right: 32px;
 }
 
+#HTML1{
+  float: left;
+
+  width: 300px;
+  height:600px;
+
+  margin-top: 16px;
+  margin-right: 32px;
+}
+
+.cls_RightBarSNSItem{
+  margin: 8px 0px;
+  padding: 8px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cls_RightBarYoutube{
+  width: 300px;
+  height: 168px;
+
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.cls_RightBarTwitter{
+  width: 300px;
+  height: 58px;
+
+  border-bottom: none;
+}
+
+.cls_RightBarTwitterAnchor{
+  display: block;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_kledgeb.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* --------------------------------------------------------------------------------
 Popular Post
 -------------------------------------------------------------------------------- */
