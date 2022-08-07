@@ -51,15 +51,15 @@ a.cls_PageNavi_anchorPageBox_Current{
 }
 
 .cls_PageNavi_anchorNext{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
-}
-
-.cls_PageNavi_anchorPrev{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
   background-repeat:no-repeat;
   background-position:center;
-  background-size:contain;
+  background-size:8px;
+}
+
+.cls_PageNavi_anchorPrev{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:8px;
 }
