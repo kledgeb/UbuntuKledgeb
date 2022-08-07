@@ -29,7 +29,9 @@ Post Navi Button with Info
 .cls_PostNaviWithInfo_anchorTop,
 .cls_PostNaviWithInfo_anchorPrev{
   background-repeat:no-repeat;
-  background-size:auto;
+  background-position:center;
+  background-size:contain;
+
   display:block;
   overflow:hidden;
 
@@ -37,27 +39,21 @@ Post Navi Button with Info
 }
 
 .cls_PostNaviWithInfo_anchorNext{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
-  background-repeat:no-repeat;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
   background-position:left;
-  background-size:contain;
+  background-size: 12px;
 }
 
 .cls_PostNaviWithInfo_anchorTop{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Up.svg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
 
   width:72px;
-
 }
 
 .cls_PostNaviWithInfo_anchorPrev{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
-  background-repeat:no-repeat;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
   background-position:right;
-  background-size:contain;
+  background-size: 12px;
 
   float:right;
 }
