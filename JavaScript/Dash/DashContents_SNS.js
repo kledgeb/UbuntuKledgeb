@@ -29,13 +29,13 @@ function setupSNSLens_SharePost(){
   sharePost = [
     {
       title:'Twitterで共有',
-      link:"//twitter.com/share?url=" + gHomepageURL + "&text="  + postText + "&hashtags=kledgeb",
+      link:"//twitter.com/share?url=" + postURL + "&text="  + postText + "&hashtags=kledgeb",
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg',
     },
 
     {
       title:'はてなブックマークに追加',
-      link:"//b.hatena.ne.jp/add?mode=confirm&url=" + gHomepageURL + "&title=" + postText,
+      link:"//b.hatena.ne.jp/add?mode=confirm&url=" + postURL + "&title=" + postText,
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/HatenaBookmark_Logo.png',
     },
   ];
