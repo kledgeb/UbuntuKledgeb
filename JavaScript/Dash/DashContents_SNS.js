@@ -24,6 +24,8 @@ function setupSNSLens_SharePost(){
     postText = gPostInfo.title;
   }
 
+  postText = $('<p>' + postText + '</p>').text();
+
   sharePost = [
     {
       title:'Twitterで共有',
