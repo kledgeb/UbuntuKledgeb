@@ -75,8 +75,11 @@ Right Bar
   padding-top: 0px;
 }
 
-.cls_RightBarYoutubeChannel{
+.cls_RightBarYoutubeAnchor{
+  display: block;
+
   width: 300px;
+  height: 32px;
 
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/kledgebChannelLogo.svg");
   background-size: contain;
