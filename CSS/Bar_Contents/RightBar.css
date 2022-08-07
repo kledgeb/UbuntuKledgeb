@@ -76,9 +76,6 @@ Right Bar
 }
 
 .cls_RightBarTwitter{
-  width: 300px;
-  height: 58px;
-
   border-bottom: none;
 }
 
@@ -88,6 +85,8 @@ Right Bar
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  width: 300px;
+  height: 58px;
 }
 
 /* --------------------------------------------------------------------------------
