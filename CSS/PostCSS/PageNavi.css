@@ -51,9 +51,15 @@ a.cls_PageNavi_anchorPageBox_Current{
 }
 
 .cls_PageNavi_anchorNext{
-  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_cs/elnXbkiaMq8/s800/NextPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
 }
 
 .cls_PageNavi_anchorPrev{
-  background-image: url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_cs/JyKtquolyno/s800/PrevPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
 }

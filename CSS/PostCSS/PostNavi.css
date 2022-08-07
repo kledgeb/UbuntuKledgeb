@@ -1,43 +1,4 @@
 /*-- --------------------------------------------------------------------------------
-Post Navi Button
--------------------------------------------------------------------------------- */
-.cls_divPostNaviContainer{
-  float:right;
-  margin-top:-8px;
-}
-
-.cls_PostNavi_divButton{
-  float:left;
-  background-color:#333333;
-}
-
-.cls_PostNavi_anchorNext,
-.cls_PostNavi_anchorTop,
-.cls_PostNavi_anchorPrev{
-  background-repeat:no-repeat;
-  background-size:auto;
-  background-position:center;
-  display:block;
-
-  width:48px;
-  height:48px;
-}
-
-.cls_PostNavi_anchorNext{
-  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
-  visibility:hidden;
-}
-
-.cls_PostNavi_anchorTop{
-  background-image: url("//lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
-}
-
-.cls_PostNavi_anchorPrev{
-  background-image: url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
-  visibility:hidden;
-}
-
-/*-- --------------------------------------------------------------------------------
 Post Navi Button with Info
 -------------------------------------------------------------------------------- */
 .cls_divPostNaviWithInfoOuter{
@@ -76,20 +37,28 @@ Post Navi Button with Info
 }
 
 .cls_PostNaviWithInfo_anchorNext{
-  background-image: url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-repeat:no-repeat;
   background-position:left;
+  background-size:contain;
 }
 
 .cls_PostNaviWithInfo_anchorTop{
-  background-image: url("//lh4.googleusercontent.com/-9QaArLuCWCg/VPaxVAllx_I/AAAAAAAA_dM/GNIK1zGpbT4/s800/TopPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Up.svg");
+  background-repeat:no-repeat;
   background-position:center;
+  background-size:contain;
+
   width:72px;
 
 }
 
 .cls_PostNaviWithInfo_anchorPrev{
-  background-image: url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+  background-repeat:no-repeat;
   background-position:right;
+  background-size:contain;
+
   float:right;
 }
 

@@ -3,7 +3,10 @@ Dash Contents Star
 -------------------------------------------------------------------------------- */
 /* Dash Star Category */
 .cls_Dash_Category_Title_divPopularPost{
-  background-image: url("//lh3.googleusercontent.com/-r8-PR_MIAmk/VQPEEJGvvWI/AAAAAAAA_o4/gcAkrMvDZtA/s800/Dash_Category_PopularPost.png");   
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Star.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  background-size: 16px;
 }
 
 

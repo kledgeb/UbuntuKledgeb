@@ -120,9 +120,14 @@ Related Post
 }
 
 .cls_divRelatedPostNaviPrev{
-  background-image:url("//lh5.googleusercontent.com/-L8BVPCnaPFo/VPaxVFSy-6I/AAAAAAAA_dM/DxZ5e-Shyko/s800/NextPostButton.png");
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
 }
 
 .cls_divRelatedPostNaviNext{
-  background-image:url("//lh5.googleusercontent.com/-qHtio16fpJI/VPaxVB8-2_I/AAAAAAAA_dM/UOgRv16pA2M/s800/PrevPostButton.png");
-}
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;}
