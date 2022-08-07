@@ -62,8 +62,8 @@ Right Bar
 }
 
 .cls_RightBarSNSItem{
-  margin: 8px 0px;
-  padding: 8px 0px;
+  margin: 16px 0px;
+  padding: 16px 0px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -73,6 +73,15 @@ Right Bar
 
   margin-top: 0px;
   padding-top: 0px;
+}
+
+.cls_RightBarYoutubeChannel{
+  width: 300px;
+
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/kledgebChannelLogo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cls_RightBarTwitter{
