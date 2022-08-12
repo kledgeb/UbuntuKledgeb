@@ -20,6 +20,8 @@ Dash Contents Detail
   margin:auto;
   background-repeat: no-repeat;
   background-position: center;
+  background-size:12px;
+
   left:0;
   right:0;
   top:0;
@@ -28,10 +30,7 @@ Dash Contents Detail
 }
 
 .cls_DashContentsDetail_divLeftArrow{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
 }
 
 .cls_DashContentsDetail_divCenterSectionContainer{
@@ -53,10 +52,7 @@ Dash Contents Detail
 }
 
 .cls_DashContentsDetail_divRightArrow{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
-  background-repeat:no-repeat;
-  background-position:center;
-  background-size:contain;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
 }
 
 .cls_DashContentsDetail_divTitle{
