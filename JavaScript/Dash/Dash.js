@@ -246,5 +246,5 @@ function switchLens(showType,showParams,forceSwitch){
 
   //Always layouting
   layoutDash();
-   $('#id_Dash_inputSearchBox').focus();
+   $('#id_Dash_inputSearchBox').trigger("focus");
 }

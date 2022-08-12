@@ -34,18 +34,18 @@ function onLeftBarSearchClick(event){
 }
 
 (function(){
-  $('#id_LeftBar_divDash').click(onLeftBarDashClick);
-  $('#id_LeftBar_divHome').click(onLeftBarHomeClick);
-  $('#id_LeftBar_divStar').click(onLeftBarStarClick);
-  $('#id_LeftBar_divUbuntu').click(onLeftBarUbuntuClick);
-  $('#id_LeftBar_divWebSite').click(onLeftBarWebSiteClick);
-  $('#id_LeftBar_divTag').click(onLeftBarTagClick);
-  $('#id_LeftBar_divSearch').click(onLeftBarSearchClick);
+  $('#id_LeftBar_divDash').on('click',onLeftBarDashClick);
+  $('#id_LeftBar_divHome').on('click',onLeftBarHomeClick);
+  $('#id_LeftBar_divStar').on('click',onLeftBarStarClick);
+  $('#id_LeftBar_divUbuntu').on('click',onLeftBarUbuntuClick);
+  $('#id_LeftBar_divWebSite').on('click',onLeftBarWebSiteClick);
+  $('#id_LeftBar_divTag').on('click',onLeftBarTagClick);
+  $('#id_LeftBar_divSearch').on('click',onLeftBarSearchClick);
 
   var divSNS = $('#id_LeftBar_divSNS');
 
   if((gCurrentPageType == 'index') || (gCurrentPageType == 'item') || (gCurrentPageType == 'static_page')){
-    divSNS.click(onLeftBarSNSClick);
+    divSNS.on('click',onLeftBarSNSClick);
     divSNS.css('display','block');
   }else{
     divSNS.css('display','none');
