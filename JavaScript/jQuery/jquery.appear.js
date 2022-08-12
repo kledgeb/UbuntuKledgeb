@@ -6,7 +6,7 @@
  *
  * https://github.com/morr/jquery.appear/
  *
- * Version: 0.3.4
+ * Version: 0.4.1
  */
 (function($) {
   var selectors = [];
@@ -16,56 +16,74 @@
   var defaults = {
     interval: 250,
     force_process: false
-  }
+  };
   var $window = $(window);
 
-  var $prior_appeared;
+  var $prior_appeared = [];
+
+  function appeared(selector) {
+    return $(selector).filter(function() {
+      return $(this).is(':appeared');
+    });
+  }
 
   function process() {
     check_lock = false;
     for (var index = 0, selectorsLength = selectors.length; index < selectorsLength; index++) {
-      var $appeared = $(selectors[index]).filter(function() {
-        return $(this).is(':appeared');
-      });
+      var $appeared = appeared(selectors[index]);
 
       $appeared.trigger('appear', [$appeared]);
 
-      if ($prior_appeared) {
-        var $disappeared = $prior_appeared.not($appeared);
+      if ($prior_appeared[index]) {
+        var $disappeared = $prior_appeared[index].not($appeared);
         $disappeared.trigger('disappear', [$disappeared]);
       }
-      $prior_appeared = $appeared;
+      $prior_appeared[index] = $appeared;
     }
   }
 
-  // "appeared" custom filter
-  $.expr[':']['appeared'] = function(element) {
-    var $element = $(element);
-    if (!$element.is(':visible')) {
-      return false;
-    }
-
-    var window_left = $window.scrollLeft();
-    var window_top = $window.scrollTop();
-    var offset = $element.offset();
-    var left = offset.left;
-    var top = offset.top;
-
-    if (top + $element.height() >= window_top &&
-        top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
-        left + $element.width() >= window_left &&
-        left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
-      return true;
-    } else {
-      return false;
-    }
+  function add_selector(selector) {
+    selectors.push(selector);
+    $prior_appeared.push();
   }
+
+  // ":appeared" custom filter
+  $.expr.pseudos.appeared = $.expr.createPseudo(function(arg) {
+    return function(element) {
+      var $element = $(element);
+      if (!$element.is(':visible')) {
+        return false;
+      }
+
+      var window_left = $window.scrollLeft();
+      var window_top = $window.scrollTop();
+      var offset = $element.offset();
+      var left = offset.left;
+      var top = offset.top;
+
+      if (top + $element.height() >= window_top &&
+          top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
+          left + $element.width() >= window_left &&
+          left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+  });
 
   $.fn.extend({
     // watching for element's appearance in browser viewport
-    appear: function(options) {
+    appear: function(selector, options) {
+      $.appear(this, options);
+      return this;
+    }
+  });
+
+  $.extend({
+    appear: function(selector, options) {
       var opts = $.extend({}, defaults, options || {});
-      var selector = this.selector || this;
+
       if (!check_binded) {
         var on_check = function() {
           if (check_lock) {
@@ -83,19 +101,23 @@
       if (opts.force_process) {
         setTimeout(process, opts.interval);
       }
-      selectors.push(selector);
-      return $(selector);
-    }
-  });
 
-  $.extend({
+      add_selector(selector);
+    },
     // force elements's appearance check
     force_appear: function() {
       if (check_binded) {
         process();
         return true;
-      };
+      }
       return false;
     }
   });
-})(jQuery);
+})(function() {
+  if (typeof module !== 'undefined') {
+    // Node
+    return require('jquery');
+  } else {
+    return jQuery;
+  }
+}());
