@@ -67,7 +67,7 @@ function showDash(showType,showParams){
 
   divDash.fadeIn(150);
 
-  $('#id_Dash_inputSearchBox').focus();
+  $('#id_Dash_inputSearchBox').trigger("focus");
   gIsShowingDash = true;
 }
 
