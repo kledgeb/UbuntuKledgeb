@@ -33,6 +33,12 @@ function setupDashContents(showParams){
   case 'Search':
     setupSearchLensContents(showParams);
     break;
+  case 'Twitter':
+    setupTwitterLensContents(showParams);
+    break;
+  case 'YouTube':
+    setupYouTubeLensContents(showParams);
+    break;
   case 'Help':
     setupHelpLensContents(showParams);
     break;

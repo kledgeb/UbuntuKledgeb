@@ -115,6 +115,8 @@ function initializeDash(){
       $('#id_Dash_divSNSLensContainer').on('click',onDashSNSLensClick);
       $('#id_Dash_divTagLensContainer').on('click',onDashTagLensClick);
       $('#id_Dash_divSearchLensContainer').on('click',onDashSearchLensClick);
+      $('#id_Dash_divTwitterLensContainer').on('click',onDashTwitterLensClick);
+      $('#id_Dash_divYouTubeLensContainer').on('click',onDashYouTubeLensClick);
       $('#id_Dash_divHelpLensContainer').on('click',onDashHelpLensClick);
     }
 

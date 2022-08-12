@@ -1,5 +1,5 @@
 /* --------------------------------------------------------------------------------
-Left Bar  
+Left Bar
 -------------------------------------------------------------------------------- */
 
 .cls_LeftBar{
@@ -9,20 +9,20 @@ Left Bar
   position:fixed;
   z-index:1;
 }
-  
+
 .cls_LeftBar_divContainer{
   float:left;
   cursor: pointer;
-}  
+}
 
 .cls_LeftBar_divIcon{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px 24px;
   float:left;
-  
+
   width:40px;
-  height:48px;  
+  height:48px;
 }
 
 .cls_DarkButtonAnimation{
@@ -30,7 +30,7 @@ Left Bar
 
   transition-property: background-color;
   transition-duration: 0.25s;
-}  
+}
 
 .cls_DarkButtonAnimation:hover{
   background-color: #DD4814;
@@ -43,13 +43,14 @@ Left Bar
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px 8px;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 
   float:left;
-  
+
   margin-right:3px;
-  
+
   width:8px;
-  height:48px;  
+  height:48px;
 }
 
 .cls_LeftBar_divContainer_Dash{
@@ -60,65 +61,49 @@ Left Bar
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash.svg");
 }
 
-.cls_LeftBar_divArrow_Dash{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-}
-
 .cls_LeftBar_divIcon_Home{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Home.svg");
+}
+
+.cls_LeftBar_divArrow_Home{
+  background-image: none;
 }
 
 .cls_LeftBar_divIcon_Star{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Star.svg");
 }
 
-.cls_LeftBar_divArrow_Star{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-}
-
 .cls_LeftBar_divIcon_Ubuntu{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Ubuntu.svg");
-}
-
-.cls_LeftBar_divArrow_Ubuntu{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_WebSite{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_WebSite.svg");
 }
 
-.cls_LeftBar_divArrow_WebSite{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-}
-
 #id_LeftBar_divSNS{
-  display:none;  
+  display:none;
 }
 
 .cls_LeftBar_divIcon_SNS{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_SNS.svg");
 }
 
-.cls_LeftBar_divArrow_SNS{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
-}
-
 .cls_LeftBar_divIcon_Tag{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MultiTag.svg");
-}
-
-.cls_LeftBar_divArrow_Tag{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
 }
 
 .cls_LeftBar_divIcon_Search{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Search.svg");
 }
 
-.cls_LeftBar_divArrow_Search{
-  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
+.cls_LeftBar_divIcon_Twitter{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg");
+}
+
+.cls_LeftBar_divIcon_YouTube{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_YouTube.svg");
 }
 
 
-  
+

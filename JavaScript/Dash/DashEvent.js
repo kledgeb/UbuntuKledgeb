@@ -101,6 +101,14 @@ function onDashSearchLensClick(event){
   switchLens('Search');
 }
 
+function onDashTwitterLensClick(event){
+  switchLens('Twitter');
+}
+
+function onDashYouTubeLensClick(event){
+  switchLens('YouTube');
+}
+
 function onDashHelpLensClick(event){
   switchLens('Help');
 }

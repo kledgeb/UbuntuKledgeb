@@ -33,6 +33,14 @@ function onLeftBarSearchClick(event){
   toggleDash('Search');
 }
 
+function onLeftBarTwitterClick(event){
+  toggleDash('Twitter');
+}
+
+function onLeftBarYouTubeClick(event){
+  toggleDash('YouTube');
+}
+
 (function(){
   $('#id_LeftBar_divDash').on('click',onLeftBarDashClick);
   $('#id_LeftBar_divHome').on('click',onLeftBarHomeClick);
@@ -41,6 +49,8 @@ function onLeftBarSearchClick(event){
   $('#id_LeftBar_divWebSite').on('click',onLeftBarWebSiteClick);
   $('#id_LeftBar_divTag').on('click',onLeftBarTagClick);
   $('#id_LeftBar_divSearch').on('click',onLeftBarSearchClick);
+  $('#id_LeftBar_divTwitter').on('click',onLeftBarTwitterClick);
+  $('#id_LeftBar_divYouTube').on('click',onLeftBarYouTubeClick);
 
   var divSNS = $('#id_LeftBar_divSNS');
 

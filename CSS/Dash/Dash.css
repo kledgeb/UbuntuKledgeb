@@ -205,6 +205,14 @@ Window
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Search.svg");
 }
 
+.cls_Dash_TwitterLens_divIcon{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg");
+}
+
+.cls_Dash_YouTubeLens_divIcon{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_YouTube.svg");
+}
+
 .cls_Dash_HelpLens_divIcon{
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Help.svg");
 }

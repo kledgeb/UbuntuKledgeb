@@ -1,5 +1,5 @@
 /*-- --------------------------------------------------------------------------------
-Dash Lens Page
+Dash Lens SNS
 -------------------------------------------------------------------------------- --*/
 function setupSNSLensContents(showParams){
   gCurrentLensArrowID = 'id_Dash_SNSLens_divArrow';
