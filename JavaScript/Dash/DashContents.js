@@ -77,7 +77,7 @@ function setupDashContents(showParams){
     }
   }
 
-  {
+  if(gCurrentLens != 'Search'){
     var divContents = $('#id_Dash_divContents');
 
     divContents.mCustomScrollbar({
