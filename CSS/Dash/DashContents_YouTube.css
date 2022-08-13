@@ -12,10 +12,13 @@
 .cls_DashContentsDetail_VideoList_divYouTubeContainer{
   justify-content: center;
   display: flex;
+  height: 100%;
 }
 
 .cls_DashContentsDetail_VideoList_divYouTubeEmbed{
   aspect-ratio: 16/9;
-  width: 100%;
-  height: 100%;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:48px;
 }

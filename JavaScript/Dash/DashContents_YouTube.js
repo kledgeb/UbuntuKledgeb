@@ -89,7 +89,7 @@ function setupYouTubeContentsDetail(divItem){
                               .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + '_divYouTubeContainer')
                               .appendTo(divCenterSection);
 
-  var divYouTubeContainer = $('<div>')
+  var divYouTubeEmbed = $('<div>')
                               .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + '_divYouTubeEmbed')
                               .appendTo(divYouTubeContainer);
 
@@ -102,6 +102,7 @@ function setupYouTubeContentsDetail(divItem){
     .attr('frameborder','0')
     .attr('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture')
     .attr('allowfullscreen','allowfullscreen')
-    .appendTo(divYouTubeContainer);
+    .appendTo(divYouTubeEmbed);
 
+    divYouTubeEmbed.css('background-image','none');
 }
