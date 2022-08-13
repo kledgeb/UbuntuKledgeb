@@ -7,20 +7,17 @@ function setupStarLensContents(showParams){
 
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
   setupStarLens_PopularPostPost();
-
-  //Option
-  addShowHideAllOption();
 }
 
 function setupStarLens_PopularPostPost(){
   var categoryName = 'PopularPost';
-  
+
   addCategory(categoryName,'人気の記事');
 
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
   var i;
   var categoryItemInfo;
-  
+
   var gPopularPosts = [];
   {
     var anchorPopularPosts = $('#id_divPopularPost .cls_PopularPost_anchorPost');
@@ -28,7 +25,7 @@ function setupStarLens_PopularPostPost(){
 
     if(anchorPopularPosts){
       var anchorPopularPost;
-            
+
       for(i = 0 ; i < anchorPopularPosts.length ; i ++){
         anchorPopularPost = $(anchorPopularPosts[i]);
         popularPost = {};
@@ -41,7 +38,7 @@ function setupStarLens_PopularPostPost(){
       }
     }
   }
-  
+
   for(i = 0 ; i < gPopularPosts.length ; i ++){
     categoryItemInfo = {
       itemIndex:i,
@@ -54,29 +51,29 @@ function setupStarLens_PopularPostPost(){
       hasDetail:true,
       autoEllipsis:true,
    };
-    
+
     addCategoryItem(categoryItemInfo);
   }
-  
+
   divCategoryContents.append("<div class='clear'></div>");
   layoutCategoryHead(categoryName);
-  
+
 }
 
 function setupStarContentsDetail(divItem){
   var itemInfo = divItem.data('itemInfo');
-  
+
   if(itemInfo.categoryName === 'PopularPost'){
     var itemIconURL = null;
 
     setupContentsDetail_createSectionElement(itemInfo);
     setupContentsDetail_createTitleElement(itemInfo,null);
-      
+
     if(itemInfo.itemIconURL){
       itemIconURL = getSizedThumbnailURL(itemInfo.itemIconURL,320);
     }
-      
-    setupContentsDetail_createThumbnailAndSummary(itemInfo,itemIconURL,$('<p>' + itemInfo.itemData.popularPostInfo.itemSummary + '</p>').text());  
+
+    setupContentsDetail_createThumbnailAndSummary(itemInfo,itemIconURL,$('<p>' + itemInfo.itemData.popularPostInfo.itemSummary + '</p>').text());
     setupContentsDetail_createButtons(itemInfo,null);
   }
 }

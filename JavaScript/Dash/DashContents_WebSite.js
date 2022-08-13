@@ -8,9 +8,6 @@ function setupWebSiteLensContents(showParams){
   $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
 
   setupWebSiteLens_LinuxDistribution();
-
-  //Option
-  addShowHideAllOption();
 }
 
 function setupWebSiteLens_LinuxDistribution(){

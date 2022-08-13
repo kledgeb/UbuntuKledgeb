@@ -1,0 +1,86 @@
+/*-- --------------------------------------------------------------------------------
+Dash Lens YouTube
+-------------------------------------------------------------------------------- --*/
+function setupYouTubeLensContents(showParams){
+  gCurrentLensArrowID = 'id_Dash_YouTubeLens_divArrow';
+  $('#' + gCurrentLensArrowID).css('visibility','visible');
+
+  $('#id_Dash_inputSearchBox').attr('placeholder','フィルター');
+
+  setupYouTubeLens_VideoList();
+}
+
+function setupYouTubeLens_VideoList(){
+  var categoryName = 'VideoList';
+  var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
+
+  addCategory(categoryName,'チャンネル動画一覧（最新の10件）');
+
+  $.getJSON(
+    'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://www.youtube.com/feeds/videos.xml?channel_id=UCfgbidxoREqkOpigg5ekMyQ'),
+    function(jsonData){
+      divCategoryContents.css('background-image','none');
+
+      $.each(jsonData.items,function(index,jsonItemData) {
+          var categoryItemInfo;
+
+          categoryItemInfo = {
+              itemIndex:index,
+              itemTotalCount:jsonData.items.length,
+              categoryName:categoryName,
+              itemLink:jsonItemData.link,
+              itemIconURL:jsonItemData.thumbnail,
+              itemTitle:jsonItemData.title,
+              hasDetail:true,
+              itemData:{videoID:jsonItemData.guid.split(":")[2]},
+          };
+
+          addCategoryItem(categoryItemInfo);
+      });
+    }
+  );
+
+  divCategoryContents.append("<div class='clear'></div>");
+  layoutCategoryHead(categoryName);
+}
+
+function setupYouTubeContentsDetail(divItem){
+  var itemInfo = divItem.data('itemInfo');
+
+  setupContentsDetail_createSectionElement(itemInfo);
+
+  var divLeftSection = $('#id_DashContentsDetail_divLeftSection');
+  var divRightSection = $('#id_DashContentsDetail_divRightSection');
+
+  if(itemInfo.totalPostCount === 0){
+    divLeftSection.css('visibility','hidden');
+    divRightSection.css('visibility','hidden');
+  }else{
+    if(itemInfo.itemIndex == 0){
+      divLeftSection.css('visibility','hidden');
+    }else{
+      divLeftSection.css('visibility','visible');
+    }
+
+    if(itemInfo.itemIndex == (itemInfo.totalPostCount - 1)){
+      divRightSection.css('visibility','hidden');
+    }else{
+      divRightSection.css('visibility','visible');
+    }
+
+
+  }
+
+  {
+    setupContentsDetail_createButtonContainer(itemInfo);
+    setupContentsDetail_createBackButton(itemInfo);
+
+    var divButtonContainer = $('#id_DashContentsDetail_' + itemInfo.categoryName + '_divButtonContainer');
+    divButtonContainer.append("<div class='clear'></div>");
+  }
+
+  $('<iframe>')
+    .attr('id','id_TwitterTimelineAnchor')
+
+    <iframe width="95%" height="95%" src="https://www.youtube.com/embed/"+itemInfo.itemData.videoID title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+}

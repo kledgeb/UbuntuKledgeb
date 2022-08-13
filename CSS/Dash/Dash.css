@@ -55,6 +55,8 @@ Window
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Search.svg");
+  background-size: 24px;
+
   width:48px;
   height:48px;
 

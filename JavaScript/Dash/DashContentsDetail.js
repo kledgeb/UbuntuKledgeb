@@ -27,16 +27,21 @@ function setupDashContentsDetail(divItem){
   case 'Search':
     setupSearchContentsDetail(divItem);
     break;
+  case 'YouTube':
+    setupYouTubeContentsDetail(divItem);
+    break;
   }
 
-  var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
+  if(gCurrentLens != 'YouTube'){
+    var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
 
-  divCenterSection.mCustomScrollbar({
-    theme:'light-3',
-    autoHideScrollbar:true,
-    scrollInertia:1000,
-    mouseWheel:{ preventDefault: true }
-  });
+    divCenterSection.mCustomScrollbar({
+      theme:'light-3',
+      autoHideScrollbar:true,
+      scrollInertia:1000,
+      mouseWheel:{ preventDefault: true }
+    });
+  }
 
   divContentsDetail.show();
   layoutContentsDetail();
