@@ -12,15 +12,17 @@ function setupYouTubeLensContents(showParams){
 
 function setupYouTubeLens_VideoList(){
   var categoryName = 'VideoList';
-  var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
-
-  divCategoryContents.data('loading',true);
+  var divCategoryContents;
 
   addCategory(categoryName,'チャンネル動画一覧（最新の10件）');
+  divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
+
+  divCategoryContents.data('loading',true);
 
   $.getJSON(
     'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://www.youtube.com/feeds/videos.xml?channel_id=UCfgbidxoREqkOpigg5ekMyQ'),
     function(jsonData){
+      id_Dash_Category_Contents_divVideoList
       divCategoryContents.css('background-image','none');
       divCategoryContents.data('loading',false);
 
