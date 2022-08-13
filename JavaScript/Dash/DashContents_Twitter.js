@@ -19,6 +19,7 @@ function setupTwitterLensContents(showParams){
         divContents.append(twitterContents);
 
         $('<a>')
+            .attr('id','id_TwitterTimelineAnchor')
             .attr('class','twitter-timeline')
             .attr('data-theme','dark')
             .attr('data-width','50%')
@@ -27,12 +28,8 @@ function setupTwitterLensContents(showParams){
             .attr('href','https://twitter.com/kledgeb?ref_src=twsrc%5Etfw')
             .appendTo(twitterContents);
 
-        $('<script>')
-            .attr('type','text/javascript')
-            .attr('async','async')
-            .attr('charset','utf-8')
-            .attr('src','https://platform.twitter.com/widgets.js')
-            .appendTo(twitterContents);
-    }
+        $.getScript('https://platform.twitter.com/widgets.js',function(data,textStatus,jqxhr){
 
+        });
+    }
   }
