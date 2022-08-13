@@ -5,6 +5,10 @@
     background-size:contain;
   }
 
-  .cls_Dash_Category_Title_divVideoList{
+.cls_Dash_Category_Title_divVideoList{
     background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_YouTube.svg");
-  }
+}
+
+.cls_DashContentsDetail_VideoListdivYouTubeContainer{
+  height: 100%;
+}
