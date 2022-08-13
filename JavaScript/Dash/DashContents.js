@@ -384,6 +384,8 @@ function searchDashContents(searchText,byTimer){
 
   if(gCurrentLens == 'Search'){
     searchDashContents_Search(searchText,byTimer);
+  }else if(gCurrentLens == 'Twitter'){
+    searchDashContents_Twitter(searchText,byTimer);
   }else{
     closeDashContentsDetail();
     divCategorys = divContents.find('[id^="id_Dash_Category_div"]');

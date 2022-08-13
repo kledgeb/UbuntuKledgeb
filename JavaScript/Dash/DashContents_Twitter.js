@@ -33,3 +33,11 @@ function setupTwitterLensContents(showParams){
         });
     }
   }
+
+  function searchDashContents_Twitter(searchText,byTimer){
+    if((byTimer === false) && (searchText)){
+        var param = encodeURIComponent(searchText);
+
+        window.open('https://twitter.com/search?q=' + param, '_blank').focus();
+    }
+  }
