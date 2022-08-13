@@ -16,7 +16,6 @@ function setupTwitterLensContents(showParams){
         twitterContents.attr('id','id_Dash_Category_div' + categoryName);
         twitterContents.attr('class','cls_Dash_Category_div' + categoryName);
 
-        twitterContents.data('categoryName',categoryName);
         divContents.append(twitterContents);
 
         $('<a>')
