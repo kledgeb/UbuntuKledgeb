@@ -240,8 +240,8 @@ function layoutCategoryHead(categoryName){
 
 function addCategoryItem(categoryItemInfo){
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryItemInfo.categoryName);
-  var divItem = $('<div/>');
-  var anchorItem = $('<a/>');
+  var divItem = $('<div>');
+  var anchorItem = $('<a>');
 
   var idPrefix = 'id_Dash_Category_Contents_' + categoryItemInfo.categoryName + '_divItem_';
   var clsPrefix = 'cls_Dash_Category_Contents_' + categoryItemInfo.categoryName +'_';
@@ -307,8 +307,8 @@ function addCategoryItem(categoryItemInfo){
 }
 
 function addCategory(categoryName,categoryTitle){
-  var divCategory = $('<div/>');
-  var divCategoryHead = $('<div/>');
+  var divCategory = $('<div>');
+  var divCategoryHead = $('<div>');
 
   //Category
   {
@@ -328,7 +328,7 @@ function addCategory(categoryName,categoryTitle){
 
   //divCategoryTitle
   {
-    var divCategoryTitle = $('<div/>');
+    var divCategoryTitle = $('<div>');
     divCategoryTitle.attr('class','userNoSelect cls_Dash_Category_divTitle cls_Dash_Category_Title_div' + categoryName);
     divCategoryTitle.text(categoryTitle);
 
@@ -337,7 +337,7 @@ function addCategory(categoryName,categoryTitle){
 
   //divCategoryArrow
   {
-    var divCategoryArrow = $('<div/>');
+    var divCategoryArrow = $('<div>');
     divCategoryArrow.attr('id','id_Dash_Category_Arrow_div' + categoryName);
     divCategoryArrow.attr('class','userNoSelect cls_Dash_Category_divArrow cls_Dash_Category_Arrow_div' + categoryName);
     divCategoryArrow.text('すべてのアイテムを表示');
@@ -350,7 +350,7 @@ function addCategory(categoryName,categoryTitle){
 
   //CategoryContents
   {
-    var divCategoryContents = $('<div/>');
+    var divCategoryContents = $('<div>');
 
     divCategoryContents.attr('id','id_Dash_Category_Contents_div' + categoryName);
     divCategoryContents.attr('class','cls_Dash_Category_divContents cls_Dash_Category_Contents_div' + categoryName);

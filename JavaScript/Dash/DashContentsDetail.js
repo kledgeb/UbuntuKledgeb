@@ -97,18 +97,18 @@ function layoutContentsDetail(){
 
 function setupContentsDetail_createSectionElement(itemInfo){
   var divContentsDetail = $('#id_Dash_divContentsDetail');
-  var divLeftSection = $('<div/>');
-  var divCenterSectionContainer = $('<div/>');
-  var divCenterSection = $('<div/>');
-  var divRightSection = $('<div/>');
-  var divBottomSection = $('<div/>');
+  var divLeftSection = $('<div>');
+  var divCenterSectionContainer = $('<div>');
+  var divCenterSection = $('<div>');
+  var divRightSection = $('<div>');
+  var divBottomSection = $('<div>');
   var divArrow;
 
   //LeftSection
   {
     divLeftSection.attr('id','id_DashContentsDetail_divLeftSection');
     divLeftSection.attr('class','cls_DashContentsDetail_divLeftSection');
-    divArrow = $('<div/>');
+    divArrow = $('<div>');
     divArrow.attr('class','cls_DashContentsDetail_divLeftArrow cls_Dash_ButtonAnimation');
     divArrow.on('click',onDashContentsDetail_PrevButtonClick);
 
@@ -143,7 +143,7 @@ function setupContentsDetail_createSectionElement(itemInfo){
     divRightSection.attr('id','id_DashContentsDetail_divRightSection');
     divRightSection.attr('class','cls_DashContentsDetail_divRightSection');
 
-    divArrow = $('<div/>');
+    divArrow = $('<div>');
     divArrow.attr('class','cls_DashContentsDetail_divRightArrow cls_Dash_ButtonAnimation');
     divArrow.on('click',onDashContentsDetail_NextButtonClick);
 
@@ -155,7 +155,7 @@ function setupContentsDetail_createSectionElement(itemInfo){
 }
 
 function setupContentsDetail_createTitleElement(itemInfo,title){
-  var divTitle = $('<div/>');
+  var divTitle = $('<div>');
   var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
 
   divTitle.attr('class','cls_DashContentsDetail_divTitle cls_DashContentsDetail_' + itemInfo.categoryName + '_divTitle');
@@ -177,10 +177,10 @@ function setupContentsDetail_createThumbnailAndSummary(itemInfo,thumbnail,summar
   var divPostSummary;
   var divThumbnail;
 
-  divPostSummary = $('<div/>');
+  divPostSummary = $('<div>');
 
   if(thumbnail){
-    divThumbnail = $('<div/>');
+    divThumbnail = $('<div>');
 
     divThumbnail.attr('class','cls_DashContentsDetail_divPostThumbnail cls_DashContentsDetail_' + itemInfo.categoryName + '_divPostThumbnail');
     divThumbnail.css('background-image','url("' + thumbnail + '")');
@@ -195,7 +195,7 @@ function setupContentsDetail_createThumbnailAndSummary(itemInfo,thumbnail,summar
 
 function setupContentsDetail_createButtons(itemInfo,additionalButtons){
   var divBottomSection = $('#id_DashContentsDetail_divBottomSection');
-  var anchorShowPostButton = $('<a/>');
+  var anchorShowPostButton = $('<a>');
 
   setupContentsDetail_createButtonContainer(itemInfo);
   setupContentsDetail_createBackButton(itemInfo);
@@ -225,7 +225,7 @@ function setupContentsDetail_createButtons(itemInfo,additionalButtons){
 
 function setupContentsDetail_createButtonContainer(itemInfo){
   var divBottomSection = $('#id_DashContentsDetail_divBottomSection');
-  var divButtonContainer = $('<div/>');
+  var divButtonContainer = $('<div>');
 
   divButtonContainer.attr('id','id_DashContentsDetail_' + itemInfo.categoryName + '_divButtonContainer');
   divButtonContainer.attr('class','cls_DashContentsDetail_divButtonContainer cls_DashContentsDetail_' + itemInfo.categoryName + '_divButtonContainer');
@@ -233,7 +233,7 @@ function setupContentsDetail_createButtonContainer(itemInfo){
 }
 
 function setupContentsDetail_createBackButton(itemInfo,buttonTitle){
-  var divBackButton = $('<div/>');
+  var divBackButton = $('<div>');
   var divButtonContainer = $('#id_DashContentsDetail_' + itemInfo.categoryName + '_divButtonContainer');
 
   divBackButton.attr('class','cls_DashContentsDetail_divBackButton cls_Dash_ButtonAnimation cls_DashContentsDetail_' + itemInfo.categoryName + '_divBackButton userNoSelect');

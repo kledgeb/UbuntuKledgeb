@@ -2,7 +2,7 @@
 Pickup Post
 -------------------------------------------------------------------------------- --*/
 
-function onPickupPostsAppear(){  
+function onPickupPostsAppear(){
   getTotalAllPostCount(createPickupPostElements);
 }
 
@@ -12,7 +12,7 @@ function createPickupPostElements(totalPostCount){
 
     for(i = 1 ; i <= 10 ; i ++){
       getLatestPostByIndex(getRandomInt(1,100),1,createPickupPostElement);
-    }    
+    }
   }
 
    //Show
@@ -28,11 +28,11 @@ function createPickupPostElement(posts){
     var divPickupPostThumbnail;
     var divPickupPostTitle;
 
-    divPickupPost = $('<div/>');
-    divPickupPostAnchor = $('<a/>');
-    divPickupPostThumbnail = $('<div/>');
-    divPickupPostTitle = $('<div/>');
-        
+    divPickupPost = $('<div>');
+    divPickupPostAnchor = $('<a>');
+    divPickupPostThumbnail = $('<div>');
+    divPickupPostTitle = $('<div>');
+
     divPickupPost.attr('class','cls_PickupPost_divPickupPost');
     divPickupPostAnchor.attr('class','cls_PickupPost_anchorPickupPost');
     divPickupPostThumbnail.attr('class','cls_PickupPost_divPickupPostThumbnail');
@@ -40,7 +40,7 @@ function createPickupPostElement(posts){
 
     divPickupPostAnchor.attr('href',parsePostLink(posts[0].link));
     divPickupPostThumbnail.css('background-image','url(' + parsePostThumbnail(posts[0].media$thumbnail) + ')');
-    divPickupPostTitle.text(posts[0].title.$t);    
+    divPickupPostTitle.text(posts[0].title.$t);
 
     divPickupPostAnchor.append(divPickupPostThumbnail);
     divPickupPostAnchor.append(divPickupPostTitle);

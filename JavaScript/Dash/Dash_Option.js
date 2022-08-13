@@ -3,7 +3,7 @@ Dash Option
 -------------------------------------------------------------------------------- --*/
 function addDashOption(optionInfo){
   var divRightBar = $('#id_Dash_divRightBar');
-  var divOptionItem = $('<div/>');
+  var divOptionItem = $('<div>');
 
   divOptionItem.text(optionInfo.title);
   divOptionItem.attr('id','id_OptionItem_div' + optionInfo.categoryName);

@@ -67,8 +67,6 @@ function setupYouTubeContentsDetail(divItem){
     }else{
       divRightSection.css('visibility','visible');
     }
-
-
   }
 
   {
@@ -79,8 +77,20 @@ function setupYouTubeContentsDetail(divItem){
     divButtonContainer.append("<div class='clear'></div>");
   }
 
-  $('<iframe>')
-    .attr('id','id_TwitterTimelineAnchor')
+  var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
+  var divYouTubeContainer = $('<div>')
+                              .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + 'divYouTubeContainer')
+                              .appendTo(divCenterSection);
 
-    <iframe width="95%" height="95%" src="https://www.youtube.com/embed/"+itemInfo.itemData.videoID title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  $('<iframe>')
+    .attr('id','id_YoutubeIFrame')
+    .attr('width','95%')
+    .attr('height','95%')
+    .attr('src','https://www.youtube.com/embed/' + itemInfo.itemData.videoID)
+    .attr('title','YouTube video player')
+    .attr('frameborder','0')
+    .attr('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture')
+    .attr('allowfullscreen','allowfullscreen')
+    .appendTo(divYouTubeContainer);
+
 }

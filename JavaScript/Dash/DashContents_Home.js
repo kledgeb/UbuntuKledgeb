@@ -110,8 +110,8 @@ function setupHomeContentsDetail(divItem){
 
   {
     var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
-    var divPostInfoContainer = $('<div/>');
-    var divPostInfoData = $('<div/>');
+    var divPostInfoContainer = $('<div>');
+    var divPostInfoData = $('<div>');
 
     //PostInfoContainer
     {
@@ -143,7 +143,7 @@ function setupHomeContentsDetail(divItem){
 
     //Post Date
     {
-      divPostInfoData = $('<div/>');
+      divPostInfoData = $('<div>');
 
       divPostInfoData.attr('class','cls_DashContentsDetail_divPostDate cls_DashContentsDetail_' + itemInfo.categoryName + '_divPostDate');
       divPostInfoData.text(parsePostDay(itemInfo.itemData.feedEntry.published.$t));

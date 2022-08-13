@@ -241,10 +241,9 @@ function setupSearchContentsDetail_SearchPostCallback(entry,feed,itemInfo){
   setupSearchContentsDetail_SetSearchResultPostPageTitle(itemInfo);
 
   if(itemInfo.itemData.totalPostCount === 0){
-    divLeftSection.css('visibility','visible');
-    divRightSection.css('visibility','visible');
-  }
-  else{
+    divLeftSection.css('visibility','hidden');
+    divRightSection.css('visibility','hidden');
+  }else{
     var pageIndex = itemInfo.itemData.pageIndex;
 
     if(pageIndex == 1){
