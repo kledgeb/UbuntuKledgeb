@@ -146,7 +146,8 @@ Window
 
 .cls_Dash_divLensOuter{
   margin:0 auto;
-  width:384px;
+  display: flex;
+  justify-content: center;
 }
 
 .cls_Dash_divLensContainer{
