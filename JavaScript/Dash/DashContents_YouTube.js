@@ -86,13 +86,17 @@ function setupYouTubeContentsDetail(divItem){
 
   var divCenterSection = $('#id_DashContentsDetail_divCenterSection');
   var divYouTubeContainer = $('<div>')
-                              .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + 'divYouTubeContainer')
+                              .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + '_divYouTubeContainer')
+                              .appendTo(divCenterSection);
+
+  var divYouTubeContainer = $('<div>')
+                              .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + '_divYouTubeEmbed')
                               .appendTo(divCenterSection);
 
   $('<iframe>')
     .attr('id','id_YoutubeIFrame')
-    .attr('width','95%')
-    .attr('height','95%')
+    .attr('width','100%')
+    .attr('height','100%')
     .attr('src','https://www.youtube.com/embed/' + itemInfo.itemData.videoID)
     .attr('title','YouTube video player')
     .attr('frameborder','0')
