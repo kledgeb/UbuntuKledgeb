@@ -21,9 +21,9 @@ function setupTwitterLensContents(showParams){
         $('<a>')
             .attr('class','twitter-timeline')
             .attr('data-theme','dark')
-            .attr('data-width','400px')
-            .attr('data-height','400px')
-            .attr('data-chrome','transparent noheader nofooter')
+            .attr('data-width','75%')
+            .attr('data-height','100%')
+            .attr('data-chrome','transparent noheader nofooter noborders')
             .attr('href','https://twitter.com/kledgeb?ref_src=twsrc%5Etfw')
             .appendTo(twitterContents);
 
