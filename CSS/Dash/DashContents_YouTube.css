@@ -11,4 +11,8 @@
 
 .cls_DashContentsDetail_VideoListdivYouTubeContainer{
   height: 100%;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:48px;
 }
