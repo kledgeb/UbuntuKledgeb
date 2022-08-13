@@ -14,6 +14,8 @@ function setupYouTubeLens_VideoList(){
   var categoryName = 'VideoList';
   var divCategoryContents = $('#id_Dash_Category_Contents_div' + categoryName);
 
+  divCategoryContents.data('loading',true);
+
   addCategory(categoryName,'チャンネル動画一覧（最新の10件）');
 
   $.getJSON(
@@ -37,6 +39,9 @@ function setupYouTubeLens_VideoList(){
 
           addCategoryItem(categoryItemInfo);
       });
+
+      divCategoryContents.css('background-image','none');
+      divCategoryContents.data('loading',false);
     }
   );
 
