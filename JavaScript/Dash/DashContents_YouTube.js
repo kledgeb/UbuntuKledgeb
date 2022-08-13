@@ -22,6 +22,7 @@ function setupYouTubeLens_VideoList(){
     'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('http://www.youtube.com/feeds/videos.xml?channel_id=UCfgbidxoREqkOpigg5ekMyQ'),
     function(jsonData){
       divCategoryContents.css('background-image','none');
+      divCategoryContents.data('loading',false);
 
       $.each(jsonData.items,function(index,jsonItemData) {
           var categoryItemInfo;
@@ -40,8 +41,7 @@ function setupYouTubeLens_VideoList(){
           addCategoryItem(categoryItemInfo);
       });
 
-      divCategoryContents.css('background-image','none');
-      divCategoryContents.data('loading',false);
+      layoutCategoryHead(categoryName);
     }
   );
 
