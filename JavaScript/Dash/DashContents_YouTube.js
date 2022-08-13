@@ -91,7 +91,7 @@ function setupYouTubeContentsDetail(divItem){
 
   var divYouTubeContainer = $('<div>')
                               .attr('class','cls_DashContentsDetail_'+ itemInfo.categoryName + '_divYouTubeEmbed')
-                              .appendTo(divCenterSection);
+                              .appendTo(divYouTubeContainer);
 
   $('<iframe>')
     .attr('id','id_YoutubeIFrame')
