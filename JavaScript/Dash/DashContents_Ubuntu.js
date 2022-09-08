@@ -18,12 +18,6 @@ function setupUbuntuLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 20.04.5 LTS',
-      date:'2022年9月1日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2004-241-ubuntu-20045-ltslinux.html'),
-    },
-
-    {
       title:'Ubuntu 22.04.2 LTS',
       date:'2023年2月9日',
       link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-49-ubuntu-22042-lts.html'),
@@ -88,9 +82,9 @@ function setupUbuntuLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 20.04.4 LTS',
-      date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/02/ubuntu-2004-237-ubuntu-20044-lts.html'),
+      title:'Ubuntu 20.04.5 LTS',
+      date:'2022年9月1日',
+      link:adjustURLForMobile(getHomepageURL() + '2022/09/ubuntu-2004-247-ubuntu-20045-lts.html'),
     },
 
     {
