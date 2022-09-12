@@ -17,6 +17,6 @@ function setPostSummary(divPostBodySummaryID){
   str = adjustPostSummary(str);
   divElem.html(str);
   
-  divElem.css('visibility','visible');
+  divElem.css('visibility','inherit');
 }
 
