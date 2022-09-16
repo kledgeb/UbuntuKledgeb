@@ -83,7 +83,7 @@ function setupUbuntuLens_SupportedVersion(){
 
     {
       title:'Ubuntu 20.04.5 LTS',
-      date:'2022年9月1日',
+      date:'2025年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2022/09/ubuntu-2004-247-ubuntu-20045-lts.html'),
     },
 
