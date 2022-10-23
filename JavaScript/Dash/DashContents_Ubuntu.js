@@ -24,12 +24,6 @@ function setupUbuntuLens_ReleaseSchedule(){
     },
 
     {
-      title:'Ubuntu 22.10',
-      date:'2022年10月20日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/05/ubuntu-2210-8.html'),
-    },
-
-    {
       title:'Ubuntu 23.04',
       date:'2023年4月27日',
       link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2304-1-ubuntu-2304.html'),
@@ -91,6 +85,12 @@ function setupUbuntuLens_SupportedVersion(){
       title:'Ubuntu 22.04.1 LTS',
       date:'2027年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2022/08/ubuntu-2204-248-ubuntu-22041-lts.html'),
+    },
+
+    {
+      title:'Ubuntu 22.10',
+      date:'2023年7月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2022/10/ubuntu-2210-20-ubuntu-2210.html'),
     },
   ];
 
