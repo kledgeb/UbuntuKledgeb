@@ -83,12 +83,6 @@ function setupSNSLens_DeliveryPost(){
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg',
     },
 
-    {
-      title:'メール配信',
-      link:adjustURLForMobile(getHomepageURL() + 'p/blog-page_10.html'),
-      iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MailDelivery.svg',
-    },
-
   ];
 
   var categoryName = 'DeliveryPost';
