@@ -18,14 +18,8 @@ function setupUbuntuLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 22.04.2 LTS',
-      date:'2023年2月9日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2204-49-ubuntu-22042-lts.html'),
-    },
-
-    {
       title:'Ubuntu 23.04',
-      date:'2023年4月27日',
+      date:'2023年4月20日',
       link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2304-1-ubuntu-2304.html'),
     },
 
@@ -76,15 +70,15 @@ function setupUbuntuLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 20.04.5 LTS',
+      title:'Ubuntu 20.04.6 LTS',
       date:'2025年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/09/ubuntu-2004-247-ubuntu-20045-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2023/03/ubuntu-2004-251-ubuntu-20046-lts.html'),
     },
 
     {
-      title:'Ubuntu 22.04.1 LTS',
+      title:'Ubuntu 22.04.2 LTS',
       date:'2027年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/08/ubuntu-2204-248-ubuntu-22041-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2023/02/ubuntu-2204-357-ubuntu-22042-lts.html'),
     },
 
     {
