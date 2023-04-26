@@ -18,9 +18,15 @@ function setupUbuntuLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 23.04',
-      date:'2023年4月20日',
-      link:adjustURLForMobile(getHomepageURL() + '2022/03/ubuntu-2304-1-ubuntu-2304.html'),
+      title:'Ubuntu 22.04.3 LTS',
+      date:'2023年8月10日',
+      link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2204-360-ubuntu-22043-lts.html'),
+    },
+
+    {
+      title:'Ubuntu 23.10',
+      date:'2023年10月12日',
+      link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2310-1-ubuntu-2310.html'),
     },
 
   ];
@@ -64,9 +70,9 @@ function setupUbuntuLens_SupportedVersion(){
   var supportedVersions = [
 
     {
-      title:'Ubuntu 18.04.5 LTS',
-      date:'2023年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2020/08/ubuntu-1804-406-ubuntu-18045-lts.html'),
+      title:'Ubuntu 18.04.6 LTS',
+      date:'2023年月5までサポート（5年）',
+      link:adjustURLForMobile(getHomepageURL() + '2021/09/ubuntu-1804-465-ubuntu-18046-lts.html'),
     },
 
     {
@@ -85,6 +91,12 @@ function setupUbuntuLens_SupportedVersion(){
       title:'Ubuntu 22.10',
       date:'2023年7月までサポート（9ヶ月）',
       link:adjustURLForMobile(getHomepageURL() + '2022/10/ubuntu-2210-20-ubuntu-2210.html'),
+    },
+
+    {
+      title:'Ubuntu 23.04',
+      date:'2024年1月までサポート（9ヶ月）',
+      link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2304-23-ubuntu-2304.html'),
     },
   ];
 
