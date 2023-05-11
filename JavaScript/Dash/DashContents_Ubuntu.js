@@ -29,6 +29,12 @@ function setupUbuntuLens_ReleaseSchedule(){
       link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2310-1-ubuntu-2310.html'),
     },
 
+    {
+      title:'Ubuntu 24.04 LTS',
+      date:'2024年4月18日',
+      link:adjustURLForMobile(getHomepageURL() + '2023/05/ubuntu-2404-1-ubuntu-2404-lts.html'),
+    },
+
   ];
 
   var categoryName = 'ReleaseSchedule';
