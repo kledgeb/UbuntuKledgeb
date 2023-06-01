@@ -76,12 +76,6 @@ function setupUbuntuLens_SupportedVersion(){
   var supportedVersions = [
 
     {
-      title:'Ubuntu 18.04.6 LTS',
-      date:'2023年月5までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2021/09/ubuntu-1804-465-ubuntu-18046-lts.html'),
-    },
-
-    {
       title:'Ubuntu 20.04.6 LTS',
       date:'2025年4月までサポート（5年）',
       link:adjustURLForMobile(getHomepageURL() + '2023/03/ubuntu-2004-251-ubuntu-20046-lts.html'),
