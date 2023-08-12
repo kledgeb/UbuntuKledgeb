@@ -18,12 +18,6 @@ function setupUbuntuLens_ReleaseSchedule(){
   var releaseSchedules = [
 
     {
-      title:'Ubuntu 22.04.3 LTS',
-      date:'2023年8月10日',
-      link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2204-360-ubuntu-22043-lts.html'),
-    },
-
-    {
       title:'Ubuntu 23.10',
       date:'2023年10月12日',
       link:adjustURLForMobile(getHomepageURL() + '2023/04/ubuntu-2310-1-ubuntu-2310.html'),
@@ -82,15 +76,9 @@ function setupUbuntuLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 22.04.2 LTS',
+      title:'Ubuntu 22.04.3 LTS',
       date:'2027年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2023/02/ubuntu-2204-357-ubuntu-22042-lts.html'),
-    },
-
-    {
-      title:'Ubuntu 22.10',
-      date:'2023年7月までサポート（9ヶ月）',
-      link:adjustURLForMobile(getHomepageURL() + '2022/10/ubuntu-2210-20-ubuntu-2210.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2023/08/ubuntu-2204-366-ubuntu-22043-lts.html'),
     },
 
     {
