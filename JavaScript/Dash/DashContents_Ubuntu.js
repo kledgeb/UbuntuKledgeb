@@ -70,9 +70,9 @@ function setupUbuntuLens_SupportedVersion(){
     },
 
     {
-      title:'Ubuntu 22.04.3 LTS',
+      title:'Ubuntu 22.04.4 LTS',
       date:'2027年4月までサポート（5年）',
-      link:adjustURLForMobile(getHomepageURL() + '2023/08/ubuntu-2204-366-ubuntu-22043-lts.html'),
+      link:adjustURLForMobile(getHomepageURL() + '2024/03/ubuntu-2204-369-ubuntu-22044-lts.html'),
     },
 
     {
