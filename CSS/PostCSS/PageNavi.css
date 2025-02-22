@@ -1,0 +1,65 @@
+/*-- --------------------------------------------------------------------------------
+Page Navi Button
+-------------------------------------------------------------------------------- */
+.cls_PageNav_divLoading{
+  height:48px;
+
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.cls_divPageNaviContainer{
+  margin:0 auto;
+  display:none;
+}
+
+.cls_PageNavi_divNext,
+.cls_PageNavi_divPrev{
+  visibility:hidden;
+}
+
+.cls_PageNavi_divPageBox{
+  float:left;
+}
+
+.cls_PageNavi_anchorPageBox{
+  background-repeat:no-repeat;
+  background-size:auto;
+  background-position:center;
+
+  display:block;
+
+  width:48px;
+  height:48px;
+
+  text-align:center;
+  line-height:48px;
+}
+
+.cls_PageNavi_anchorPageBox:link,
+.cls_PageNavi_anchorPageBox:visited{
+  color:white;
+  font-weight:bold;
+}
+
+a.cls_PageNavi_anchorPageBox_Current{
+  background-color:#E36C43;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.cls_PageNavi_anchorNext{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:8px;
+}
+
+.cls_PageNavi_anchorPrev{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:8px;
+}

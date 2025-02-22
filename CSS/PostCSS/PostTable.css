@@ -1,0 +1,91 @@
+/*-- --------------------------------------------------------------------------------
+Post Item/Archive/Static PostTable
+-------------------------------------------------------------------------------- */
+
+/* Post Table */
+.divpostTable{
+overflow-x:auto;
+}
+
+/*
+  postTable1 - head is grayed
+  postTable2 - first col is grayed
+  postTable3 - all cells are clear
+  postTable4 - head and first col is grayed
+  postTable5 - head is grayed + width 100%
+  postTable6 - all cells are clear and no border and equal space
+  
+*/
+
+table.postTable100Percent{
+  width:100%;  
+}
+
+table.postTable1,
+table.postTable2,
+table.postTable3,
+table.postTable4,
+table.postTable5,
+table.postTable6{
+  border-collapse: collapse;
+  border: 1px solid #BFBFBF;
+  margin: 0px auto;
+}
+
+table.postTable1 th,
+table.postTable4 th,
+table.postTable5 th{
+  text-align:center;
+  font-weight:bold;
+  border: 1px solid #BFBFBF;
+  padding:4px;
+  background-color:#f0f0f0;
+}
+
+table.postTable4 th:first-child{
+  border: 0px none #BFBFBF;
+}
+
+table.postTable1 td,
+table.postTable2 td,
+table.postTable3 td,
+table.postTable4 td,
+table.postTable5 td,
+table.postTable6 td{
+  text-align:left;
+  border: 1px solid #BFBFBF;
+  padding:4px;
+}
+
+table.postTable2 tr td:first-child,
+table.postTable4 tr td:first-child{
+  text-align:center;
+  font-weight:bold;
+  border: 1px solid #BFBFBF;
+  padding:4px;
+  background-color:#f0f0f0;
+}
+
+table.postTable5{
+  width:100%;
+}
+
+table.postTable6{
+  border:none;
+  width: 100%;
+  table-layout: fixed;  
+}
+
+table.postTable6 td{
+  border:none;
+  vertical-align: top;
+}
+  
+/* PostTable List */
+div.divpostTable ul,
+div.divpostTable ol{
+  margin:0;
+  padding:4px;
+  padding-left:8px;
+  list-style-position:inside;
+}

@@ -1,0 +1,133 @@
+.gsc-control-cse, 
+.gsc-control-cse .gsc-table-result{
+  font-size:inherit;
+  font-family:inherit;
+}
+
+.gsc-control-cse .gs-spelling, 
+.gsc-control-cse .gs-result .gs-title,
+.gsc-control-cse .gs-result .gs-title *{
+  font-size: large;
+  text-decoration:none;
+}
+
+.gs-webResult.gs-result a.gs-title:link, 
+.gs-webResult.gs-result a.gs-title:link b, 
+.gs-imageResult a.gs-title:link, 
+.gs-imageResult a.gs-title:link b  {
+  color: #19529E;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.gs-webResult.gs-result a.gs-title:visited, 
+.gs-webResult.gs-result a.gs-title:visited b, 
+.gs-imageResult a.gs-title:visited, 
+.gs-imageResult a.gs-title:visited b {
+  color: #551A8B;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.gs-webResult.gs-result a.gs-title:hover, 
+.gs-webResult.gs-result a.gs-title:hover b, 
+.gs-imageResult a.gs-title:hover, 
+.gs-imageResult a.gs-title:hover b {
+  color: #FF8E00;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.gs-webResult.gs-result a.gs-title:active, 
+.gs-webResult.gs-result a.gs-title:active b, 
+.gs-imageResult a.gs-title:active, 
+.gs-imageResult a.gs-title:active b {
+  color: #FF8E00;
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.gs-webResult .gs-snippet, 
+.gs-imageResult .gs-snippet, 
+.gs-fileFormatType {
+  color: #333333;
+}
+
+.gs-webResult div.gs-visibleUrl, 
+.gs-imageResult div.gs-visibleUrl {
+  color: #6B6B6B;
+  font-size: small;
+}
+
+.gsc-richsnippet-showsnippet-label{
+  display:none;
+}
+
+img.gs-image,
+img.gcsc-branding-img-noclear {
+  background: inherit;
+  box-shadow: none;
+  padding: 0;
+}
+
+.gs-webResult .gs-snippet, 
+.gs-imageResult .gs-snippet{
+  padding-left:160px;
+}
+
+/* override */
+.gsc-results .gsc-cursor-box .gsc-cursor-page:hover{
+  text-decoration:none;  
+  background-color: #DD4814;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page{
+  margin-right:0;
+  display:inline-block;
+  min-width:2em;
+  text-align:center;
+  padding:8px;
+  color:white;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  line-height: 48px;
+
+  background-color:#333333;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page{
+  color:white; 
+  background-color:#E36C43;  
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page:hover{
+  background-color: #DD4814;
+
+  transition-property: background-color;
+  transition-duration: 0.25s;
+}
+
+.gs-web-image-box-landscape img.gs-image,
+.gs-web-image-box-portrait img.gs-image{
+  width:150px;
+  height:auto;
+  max-width:none;
+  max-height:200px;
+}
+
+
+
+
+
+
+

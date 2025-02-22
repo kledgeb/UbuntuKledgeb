@@ -1,0 +1,40 @@
+/*-- --------------------------------------------------------------------------------
+Top Bar
+-------------------------------------------------------------------------------- */
+
+.cls_TopBar{
+  background-color:#184583;
+  border-bottom:8px solid #386099;
+}
+
+#section_Header{
+  padding:8px;
+  color:white;
+  text-shadow:1px 1px 0px black;
+}
+
+.cls_TopBar_anchorTitle{
+  font-size:xx-large;
+  font-weight:bold;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:left;
+  background-image:url("//kledgeb.github.io/UbuntuKledgeb/Image/kledgeb.png");
+  padding-left:50px;
+  display: inline-block;
+  height: 42px;
+}
+
+.cls_TopBar_Title a:link,
+.cls_TopBar_Title a:visited{
+  color:white;
+}
+
+#HTML7 {
+  margin-top: 16px;
+  height: 16px;
+}
+
+.cls_TopBar_spanDescription{
+  margin-left: 16px;
+}

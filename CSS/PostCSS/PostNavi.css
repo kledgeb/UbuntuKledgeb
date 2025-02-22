@@ -1,0 +1,97 @@
+/*-- --------------------------------------------------------------------------------
+Post Navi Button with Info
+-------------------------------------------------------------------------------- */
+.cls_divPostNaviWithInfoOuter{
+  height:144px;
+  margin-top: 24px;
+}
+
+.cls_PostNaviWithInfo_divLoading{
+  height:144px;
+
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.cls_divPostNaviWithInfoContainer{
+  display:none;
+  background-color:#333333;
+}
+
+.cls_divPostNaviWithInfoContainer a:link,
+.cls_divPostNaviWithInfoContainer a:visited{
+  color:white;
+}
+
+.cls_PostNaviWithInfo_anchorNext,
+.cls_PostNaviWithInfo_anchorTop,
+.cls_PostNaviWithInfo_anchorPrev{
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+
+  display:block;
+  overflow:hidden;
+
+  height:144px;
+}
+
+.cls_PostNaviWithInfo_anchorNext{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+  background-position:left;
+  background-size: 12px;
+}
+
+.cls_PostNaviWithInfo_anchorTop{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Up.svg");
+
+  width:72px;
+}
+
+.cls_PostNaviWithInfo_anchorPrev{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+  background-position:right;
+  background-size: 12px;
+
+  float:right;
+}
+
+.cls_PostNaviWithInfo_divNext{
+  float:left;
+  visibility:hidden;
+  background-color:#333333;
+}
+
+.cls_PostNaviWithInfo_divTop{
+  float:left;
+  background-color:#333333;
+}
+
+.cls_PostNaviWithInfo_divPrev{
+  float:right;
+  visibility:hidden;
+  background-color:#333333;
+}
+
+.cls_PostNaviWithInfo_spanNext,
+.cls_PostNaviWithInfo_spanPrev
+{
+  width:298px;/*750(.cls_Contents.width) - (.cls_PostNaviWithInfo_anchorTop.width / 2)*/
+  height:144px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.cls_PostNaviWithInfo_spanNext{
+  padding-left:32px;
+  padding-right:8px;
+  text-align:left;
+}
+
+.cls_PostNaviWithInfo_spanPrev{
+  padding-left:8px;
+  padding-right:32px;
+  text-align:right;
+}

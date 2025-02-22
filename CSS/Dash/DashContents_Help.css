@@ -1,0 +1,24 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Help
+-------------------------------------------------------------------------------- */
+
+/* Dash UpdateNotify Category */
+.cls_Dash_Category_Title_divUpdateNotifyPage{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Delivery.svg");
+}
+
+/* Dash HowToCommentPage Category */
+.cls_Dash_Category_Title_divHowToCommentPage{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Forum.svg");
+}
+
+/* Dash PrivacyPage Category */
+.cls_Dash_Category_Title_divPrivacyPage{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Privacy.svg");
+}
+
+.cls_Dash_Category_Contents_UpdateNotifyPage_divIcon,
+.cls_Dash_Category_Contents_HowToCommentPage_divIcon,
+.cls_Dash_Category_Contents_PrivacyPage_divIcon{
+  background-size:auto;
+}

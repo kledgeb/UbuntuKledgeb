@@ -1,0 +1,94 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Category
+-------------------------------------------------------------------------------- */
+.cls_Dash_divContents{
+  overflow: auto;
+}
+
+/* Dash Category */
+.cls_Dash_Category_divContents{
+  background-repeat: no-repeat;
+  background-position: center;
+  margin:8px;
+  min-height:64px;
+  overflow:hidden;
+}
+
+/* Dash Category Head */
+.cls_Dash_divCategory{
+  padding-bottom:16px;
+}
+
+.cls_Dash_Category_divHead{
+  padding:2px 0px 2px 8px;
+  cursor:default;
+}
+
+.cls_Dash_Category_divTitle{
+  float:left;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left:24px;
+  font-weight:bold;
+}
+
+.cls_Dash_Category_divArrow{
+  float:left;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/LeftBar_MenuArrow.svg");
+  visibility:hidden;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 8px;
+
+  padding-left:16px;
+  padding-right:16px;
+}
+
+/* Dash Category Contents */
+.cls_Dash_Category_Contents_divItem{
+  width:272px;
+  float:left;
+  padding:8px;
+  height:64px;
+  overflow:hidden;
+  margin-right:16px;
+  margin-bottom:16px;
+
+  background-repeat: no-repeat;
+  background-position: 8px center;
+  background-size: 64px;
+}
+
+.cls_Dash_Category_Contents_anchorItem{
+  display:table-cell;
+  vertical-align:middle;
+  height:64px;
+  width:100%;
+  padding-left:72px;
+  word-break: break-all;
+}
+
+.cls_Dash_Category_Contents_anchorItem:link,
+.cls_Dash_Category_Contents_anchorItem:visited{
+  color:#FFFFFF;
+  text-decoration:none;
+  outline: 0;
+}
+
+.cls_Dash_Category_Contents_anchorItem:hover,
+.cls_Dash_Category_Contents_anchorItem:active{
+  color:#FFFFFF;
+  text-decoration:none;
+  outline: 0;
+}
+
+.cls_Dash_Category_Contents_divStringItem{
+  width:392px;
+  height:80px;
+  margin-right:48px;
+}
+
+.cls_Dash_Category_Contents_anchorStringItem{
+  height:80px;
+}

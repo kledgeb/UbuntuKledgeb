@@ -1,0 +1,369 @@
+/*-- --------------------------------------------------------------------------------
+Contents
+-------------------------------------------------------------------------------- */
+.cls_ContentsAndRightBar{
+
+}
+
+.cls_Contents{
+  margin-left:16px;
+  padding-right:24px;
+  margin-right:24px;
+  border-right:1px solid #ddd;
+
+  float:left;
+  width:800px;
+  min-height:24px;
+}
+
+.cls_Contents_divPost{
+  background-color:white;
+}
+
+.cls_divPostBody{
+
+}
+
+.cls_Contents_divStatusMessage{
+  display:none;
+  font-size:large;
+  font-weight:bold;
+}
+
+.cls_divPostInfo{
+  display:none;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Title
+-------------------------------------------------------------------------------- */
+.cls_PostTitle_divPostTitle{
+  margin-bottom:16px;
+  border-left:8px solid #184583;
+  padding-left:12px;
+}
+
+.cls_PostTitle_h1PostTitle{
+  font-size:x-large;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Index
+-------------------------------------------------------------------------------- */
+.cls_PostBody_Index_divThumbnail{
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:top;
+
+  width:180px;
+  height:180px;
+
+  float:left;
+
+  margin-right:24px;
+}
+
+.cls_PostBody_Index_divSummary{
+  min-height:140px;
+
+  overflow:hidden;
+  visibility:hidden;
+
+  margin-bottom:32px;
+  max-height:240px;
+}
+
+.cls_PostBody_Index_divContinueToRead{
+  float:right;
+  background-color:#333333;
+
+}
+
+.cls_PostBody_Index_divContinueToRead a{
+  color:#FFFFFF;
+  font-weight:bold;
+
+  display:block;
+  height:38px;
+  line-height:38px;
+  padding:0 16px;
+  text-align:center;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Header Adsence
+-------------------------------------------------------------------------------- */
+.cls_PostHeadAdsence_divAdsence_1{
+  width:728px;
+  height:90px;
+  overflow: hidden;
+  margin-top:16px;
+  margin-bottom:16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adsbygoogle_res_4{
+  width:728px;
+  height:90px;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Item/Archive/Static
+-------------------------------------------------------------------------------- */
+.cls_divPostBody h2{
+  padding: 8px;
+  margin:8px 0px;
+
+  background-color:#333333;
+  color:white;
+  font-size:larger;
+  position: relative;
+  margin-bottom:16px;
+}
+
+.cls_divPostBody h2:after, .cls_divPostBody h2:before {
+	top: 100%;
+	left: 24px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.cls_divPostBody h2:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.cls_divPostBody h2:before {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333;
+	border-width: 13px;
+	margin-left: -13px;
+}
+
+.cls_divPostBody a{
+  font-weight:bold;
+}
+
+.cls_divPostBody img {
+  background: none repeat scroll 0 0 #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.cls_divPostBody div.separator{
+  overflow:hidden;
+}
+
+.cls_divPostBody h3{
+  border-bottom-color:#434a54;
+  border-bottom-style:solid;
+  border-bottom-width:2px;
+
+  margin: 4px 16px 4px 0px;
+
+  font-size:inherit;
+  font-weight:bold;
+  line-height:175%;
+}
+
+.cls_divPostBody h4{
+  font-weight:bold;
+  margin:4px 0;
+}
+
+.cls_divPostBody h4:before{
+  content: "📌";
+  letter-spacing: 0px;
+  margin-right: 8px;
+}
+
+.cls_divPostBody ul,
+.cls_divPostBody ol{
+  list-style-position:outside;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Footer
+-------------------------------------------------------------------------------- */
+.cls_divPostFooter{
+}
+
+.cls_divPostFooter_PostInfo{
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+}
+
+.cls_divPostFooter_index {
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.cls_divPostFooter a{
+  font-weight:bold;
+}
+
+.cls_PostFooter_divPostDate{
+  float:left;
+
+  margin-right:16px;
+  padding-right:16px;
+  border-right:1px solid #ddd;
+}
+
+.cls_PostFooter_PostCommentCount{
+  float:left;
+
+  margin-right:16px;
+  padding-right:16px;
+  border-right:1px solid #ddd;
+}
+
+.cls_PostFooter_divPostLabel{
+  float:left;
+}
+
+.cls_divRelatedPostContainer{
+  margin-bottom:16px;
+  padding-bottom:16px;
+  border-bottom:1px solid #ddd;
+}
+
+/*-- --------------------------------------------------------------------------------
+Post Footer Adsence
+-------------------------------------------------------------------------------- */
+
+.cls_PostFooterAdsence_divContents{
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+  margin-top: 24px;
+}
+
+.cls_PostBottomInArticleAdsence_divContents{
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 24px;
+}
+
+.cls_PostFooterAdsence_divAdsence_1,
+.cls_PostFooterAdsence_divAdsence_2{
+  width:100%;
+}
+
+.cls_PostFooterAdsence_divAdsence_2{
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+
+.cls_divInArticleAdsenceContents{
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* --------------------------------------------------------------------------------
+Install application button for deb
+-------------------------------------------------------------------------------- */
+
+.clsInstallAppButton{
+  display: inline-block;
+  background-image: -webkit-linear-gradient(top,  #F08763, #E95420);
+	background-image: linear-gradient(to bottom, #F08763, #E95420);
+
+	color: white;
+	font-weight: bold;
+	margin: 16px;
+	padding: 16px;
+	border-radius: 4px;
+	border: 4px solid #F8CCBC;
+  text-shadow: 0px 2px 0px #BB390C;
+  font-size: larger;
+  line-height:48px;
+  color:white;
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
+}
+
+.clsInstallAppButton:link{
+  color:white;
+}
+
+.clsInstallAppButton:hover{
+  background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
+	background-image: linear-gradient(to bottom, #E95420, #F08763);
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
+}
+
+.clsInstallAppButton:before{
+  background: url("//kledgeb.github.io/UbuntuKledgeb/Image/UbuntuLogo_WhiteOrange.svg") 0px 0px/48px 48px no-repeat transparent;
+  width: 48px;
+  height: 48px;
+  content: '';
+  margin-right:16px;
+  float:left;
+}
+
+.clsInstallAppContainer{
+  text-align:center;
+}
+
+/* --------------------------------------------------------------------------------
+Install application button for snap
+-------------------------------------------------------------------------------- */
+.clsInstallAppButtonSnap{
+  display: inline-block;
+  background-image: -webkit-linear-gradient(top,  #F08763, #E95420);
+	background-image: linear-gradient(to bottom, #F08763, #E95420);
+
+	color: white;
+	font-weight: bold;
+	margin: 16px;
+	padding: 16px;
+	border-radius: 4px;
+	border: 4px solid #F8CCBC;
+  text-shadow: 0px 2px 0px #BB390C;
+  font-size: larger;
+  line-height:48px;
+  color:white;
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
+}
+
+.clsInstallAppButtonSnap:link{
+  color:white;
+}
+
+.clsInstallAppButtonSnap:hover{
+  background-image: -webkit-linear-gradient(top,  #E95420, #F08763);
+	background-image: linear-gradient(to bottom, #E95420, #F08763);
+
+  transition-property: background-image;
+  transition-duration: 0.25s;
+}
+
+.clsInstallAppButtonSnap:before{
+  background: url("//kledgeb.github.io/UbuntuKledgeb/Image/SnapStore.png") 0px 0px/48px 48px no-repeat transparent;
+  width: 48px;
+  height: 48px;
+  content: '';
+  margin-right:16px;
+  float:left;
+}
+
+.clsInstallAppContainerSnap{
+  text-align:center;
+}

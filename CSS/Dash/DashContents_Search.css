@@ -1,0 +1,73 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Search
+-------------------------------------------------------------------------------- */
+.cls_Dash_Category_Head_divSearch{
+  font-weight:bold;
+  padding:8px;
+  padding-left:16px;
+}
+.cls_Dash_Category_Contents_divSearch{
+  padding:8px;
+  padding-left:32px;
+}
+
+.cls_Dash_Category_Contents_Search_divSearchOrderByDate,
+.cls_Dash_Category_Contents_Search_divSearchOrderByRelativity,
+.cls_Dash_Category_Contents_Search_divQuickSearch,
+.cls_Dash_Category_Contents_Search_divNormalSearch,
+.cls_Dash_Category_Contents_Search_divTermSearch,
+.cls_Dash_Category_Contents_Search_divGoogleCustomSearch{
+  float:left;
+  border-radius:4px;
+  border:1px solid #9D9C9C;
+  padding:8px;
+  cursor:pointer;
+  margin-right:16px;
+  margin-bottom:16px;
+  min-width:128px;
+  text-align:center;
+}
+
+.cls_Dash_Category_Contents_Search_divGoogleCustomSearch{
+  width:auto;
+}
+
+.cls_Dash_Category_Contents_Search_divStartSearchDateContainer,
+.cls_Dash_Category_Contents_Search_divStartEndDateContainer{
+  float:left;
+  margin-bottom:16px;
+}
+
+.cls_Dash_Category_Contents_Search_inputStartSearchDate,
+.cls_Dash_Category_Contents_Search_inputEndSearchDate{
+  margin-right:16px;
+  background-color:rgba(17,17,17,0.5);
+  border:1px solid #9D9C9C;
+  border-radius:4px;
+  outline:none;
+  padding:4px;
+  font:inherit;
+  letter-spacing:inherit;
+  color:inherit;
+  line-height:inherit;
+  width:150px;
+}
+
+.cls_Dash_Category_Contents_Search_divMessage{
+
+}
+
+.cls_Dash_Category_Contents_Search_divMessageIcon{
+  width:32px;
+  height:32px;
+  float:left;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 24px;
+}
+
+.cls_Dash_Category_Contents_Search_divMessageText{
+  float:left;
+  padding-left:8px;
+}

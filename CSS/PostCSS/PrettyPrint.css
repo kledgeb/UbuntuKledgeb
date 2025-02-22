@@ -1,0 +1,124 @@
+/*-- --------------------------------------------------------------------------------
+Post Item/Archive/Static prettyprint
+-------------------------------------------------------------------------------- */
+pre.prettyprint .pln {
+  color: #000;
+}
+    
+@media screen{
+  pre.prettyprint .str{
+    color:#080;
+  }
+
+  pre.prettyprint .kwd {
+    color:#008;
+  }
+
+  pre.prettyprint .com{
+    color:#800;
+  }
+  
+  pre.prettyprint .typ {
+    color:#606;
+  }
+  
+  pre.prettyprint .lit{
+    color:#066;
+  }
+  
+  pre.prettyprint .pun,
+  pre.prettyprint .opn,
+  pre.prettyprint .clo {
+    color:#660;
+  }
+  
+  pre.prettyprint .tag{
+    color:#008;
+  }
+  
+  pre.prettyprint .atn {
+    color:#606;
+  }
+  
+  pre.prettyprint .atv{
+    color:#080;
+  }
+  
+  pre.prettyprint .dec,
+  pre.prettyprint .var {
+    color:#606;
+  }
+
+  pre.prettyprint .fun{
+    color:red;
+  }
+}
+    
+@media print,projection{
+  pre.prettyprint .str{
+    color:#060;
+  }
+
+  pre.prettyprint .kwd {
+    color: #006;
+    font-weight:bold;
+  }
+  
+  pre.prettyprint .com{
+    color:#600;
+    font-style: italic;
+  }
+  
+  pre.prettyprint .typ {
+    color: #404;
+    font-weight:bold;
+  }
+
+  pre.prettyprint .lit{
+    color:#044;
+  }
+  
+  pre.prettyprint .pun,
+  pre.prettyprint .opn,
+  pre.prettyprint .clo {
+    color: #440;
+  }
+  
+  pre.prettyprint .tag{
+    color:#006;
+    font-weight: bold;
+  }
+  
+  pre.prettyprint .atn {
+    color: #404;
+  }
+  
+  pre.prettyprint .atv{
+    color:#060;
+  }
+}
+
+/*   font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif; */
+
+pre.prettyprint {
+  font-size: inherit;
+  padding: 4px;
+  margin-left:16px;
+  margin-right:24px;
+  border:1px solid gray;
+  display:block;
+  overflow:auto;
+  max-height:30em;
+}
+
+pre.prettyprint ol.linenums{
+  padding-left: 40px;
+  list-style-type:decimal;
+  list-style-position: outside;
+}
+
+pre.prettyprint li{
+  border-left:3px solid #184583;
+  padding-left:4px;
+}
+    

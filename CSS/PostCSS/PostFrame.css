@@ -1,0 +1,59 @@
+/*-- --------------------------------------------------------------------------------
+Post Item/Archive/Static clPostFrame
+-------------------------------------------------------------------------------- */
+
+/*   font-family: 'Ubuntu Mono','Takaoゴシック','VL ゴシック','メイリオ','ヒラギノ角ゴ Pro W3',sans-serif; */
+div.clPostFrame{
+  font-family: 'monospace';
+  padding: 4px;
+  margin-left:16px;
+  margin-right:24px;
+  border:1px solid gray;
+}
+      
+div.clPostFrame_XScroll{
+  overflow-x:auto;
+  white-space:nowrap;
+}
+
+div.clPostFrame_YScroll_Medium{
+  overflow-y:auto;
+  max-height:30em;
+}
+
+div.clPostFrame_Notify{
+  background-color: whitesmoke;
+}
+
+div.clPostFrame_Warn{
+  border-color:red;
+  background-color: lavenderblush;
+}
+
+div.clPostFrame_GNOMETerminal{
+  color:white;
+  background-color: #300a24;
+}
+
+div.clPostFrame h2{
+  background-color:transparent;
+  background-image:none;
+
+  color:#222222;
+
+  margin:8px 4px;
+}
+
+div.clPostFrame h3{
+  border-bottom-style:none;
+      
+  margin: 4px 0px;
+}
+
+.clBlockquote {
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid gray;
+    border-left-width: 8px;
+    background-color: WhiteSmoke;
+}

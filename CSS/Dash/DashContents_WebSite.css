@@ -1,0 +1,15 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents WebSite
+-------------------------------------------------------------------------------- */
+
+/* Dash LinuxDistributionWebSite Category */
+.cls_Dash_Category_Title_divLinuxDistributionWebSite{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Linux_Logo.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+
+.cls_Dash_Category_Contents_LinuxDistributionWebSite_divIcon{
+  background-size:auto;
+}

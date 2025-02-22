@@ -1,0 +1,29 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Ubuntu
+-------------------------------------------------------------------------------- */
+
+/* Dash ReleaseSchedule Category */
+.cls_Dash_Category_Title_divReleaseSchedule{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Ubuntu.svg");
+  background-repeat:no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+
+.cls_Dash_Category_Contents_ReleaseSchedule_divItem{
+  background-size:64px;
+}
+
+/* Dash SupportedVersion Category */
+.cls_Dash_Category_Title_divSupportedVersion{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Ubuntu.svg");
+  background-repeat:no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+
+.cls_Dash_Category_Contents_SupportedVersion_divItem{
+  background-size:64px;
+}
+
+

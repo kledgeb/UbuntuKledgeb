@@ -1,0 +1,34 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Home
+-------------------------------------------------------------------------------- */
+
+/* Dash RelatedPost Category */
+.cls_Dash_Category_Contents_divRelatedPost{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+.cls_Dash_Category_Title_divRelatedPost{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_RelatedPost.svg");
+  background-repeat:no-repeat;
+  background-position: center left;
+  background-size: 16px;
+}
+
+/* Dash Latest Post Category */
+.cls_Dash_Category_Contents_divLatestPost{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+}
+
+.cls_Dash_Category_Title_divLatestPost{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_LatestPost.svg");
+  background-repeat:no-repeat;
+  background-position:center left;
+  background-size:16px;
+}
+

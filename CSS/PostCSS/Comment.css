@@ -1,0 +1,31 @@
+/*-- --------------------------------------------------------------------------------
+Comment
+-------------------------------------------------------------------------------- */
+.cls_divCommentTitle{
+    font-size:medium;
+    font-weight:bold;
+
+    background-color:#333333;
+    color:white;
+
+    padding-left:8px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin-top:16px;
+    margin-bottom:8px;
+}
+
+.cls_divCommentPolicy{
+    margin-bottom:8px;
+    padding: 8px;
+}
+
+.cls_divCommentPolicyTitle{
+    font-weight:bold;
+    margin-bottom:16px;
+}
+
+.cls_divCommentPolicy{
+    background-color:#eaeaea;
+    color:black;
+}

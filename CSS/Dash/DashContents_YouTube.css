@@ -1,0 +1,24 @@
+.cls_Dash_Category_Contents_divVideoList{
+    background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+  }
+
+.cls_Dash_Category_Title_divVideoList{
+    background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_YouTube.svg");
+}
+
+.cls_DashContentsDetail_VideoList_divYouTubeContainer{
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+
+.cls_DashContentsDetail_VideoList_divYouTubeEmbed{
+  aspect-ratio: 16/9;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Loading.svg");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:48px;
+}

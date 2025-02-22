@@ -1,0 +1,147 @@
+/*-- --------------------------------------------------------------------------------
+Dash Contents Detail
+-------------------------------------------------------------------------------- */
+/* Dash Contents Detail */
+.cls_Dash_divContentsDetail{
+  display:none;
+  }
+
+.cls_DashContentsDetail_divLeftSection{
+  float:left;
+  width:64px;
+  position:relative;
+}
+
+.cls_DashContentsDetail_divLeftArrow,
+.cls_DashContentsDetail_divRightArrow{
+  position:absolute;
+  width:64px;
+  height:160px;
+  margin:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:12px;
+
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  cursor: pointer;
+}
+
+.cls_DashContentsDetail_divLeftArrow{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoPrevious.svg");
+}
+
+.cls_DashContentsDetail_divCenterSectionContainer{
+  float:left;
+  padding-left:8px;
+  padding-right:8px;
+}
+
+.cls_DashContentsDetail_divCenterSection{
+  overflow:auto;
+  padding-bottom:8px;
+}
+
+
+.cls_DashContentsDetail_divRightSection{
+  float:left;
+  width:64px;
+  position:relative;
+}
+
+.cls_DashContentsDetail_divRightArrow{
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_GoNext.svg");
+}
+
+.cls_DashContentsDetail_divTitle{
+  font-size:x-large;
+  font-weight:bold;
+
+  padding-bottom:8px;
+
+}
+
+.cls_DashContentsDetail_divPostInfoContainer{
+  padding-bottom:8px;
+
+}
+
+.cls_DashContentsDetail_divPostTag{
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_MultiTag.svg");
+  background-size: contain;
+
+  float:right;
+
+  min-width:24px;
+  padding-left:32px;
+  margin-left:16px;
+}
+
+.cls_DashContentsDetail_divPostTag a{
+  color:white;
+}
+
+.cls_DashContentsDetail_divPostDate{
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("//kledgeb.github.io/UbuntuKledgeb/Image/Dash_Calendar.svg");
+  background-size: contain;
+  float:right;
+
+  min-width:24px;
+  padding-left:32px;
+}
+
+.cls_DashContentsDetail_divPostThumbnail{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  float:left;
+  width:196px;
+  height:196px;
+
+  margin-right:16px;
+  margin-bottom:16px;
+}
+
+.cls_DashContentsDetail_divBottomSection{
+  padding-bottom:8px;
+}
+
+.cls_DashContentsDetail_divButtonContainer a{
+  color:white;
+  cursor:pointer;
+}
+
+.cls_DashContentsDetail_anchorShowPostButton{
+  float:right;
+  border-radius:4px;
+  border:1px solid #9D9C9C;
+  padding:8px;
+  color:white;
+  display:block;
+}
+
+.cls_DashContentsDetail_divBackButton,
+.cls_DashContentsDetail_divRemoveButton,
+.cls_DashContentsDetail_divAllRemoveButton{
+  float:right;
+  border-radius:4px;
+  border:1px solid #9D9C9C;
+  padding:8px;
+  cursor:pointer;
+  margin-top:16px;
+}
+
+.cls_DashContentsDetail_anchorShowPostButton,
+.cls_DashContentsDetail_divRemoveButton,
+.cls_DashContentsDetail_divAllRemoveButton{
+  margin-right:16px;
+  margin-top:16px;
+}
+
+
