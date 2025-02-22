@@ -78,7 +78,7 @@ function setupSNSLens_DeliveryPost(){
     },
 
     {
-      title:'Twitterをフォロー',
+      title:'X をフォロー',
       link:'//x.com/intent/user?screen_name=kledgeb',
       iconURL:'//kledgeb.github.io/UbuntuKledgeb/Image/TwitterLogo_White.svg',
     },
